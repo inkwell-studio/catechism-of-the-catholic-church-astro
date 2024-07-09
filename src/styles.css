@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'PTSans';
+    font-weight: 400;
+    src:
+        local('PT Sans'),
+        url(/fonts/PTSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: 700;
+    src:
+        local('PT Sans Bold'),
+        url(/fonts/PTSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-weight: 600;
+    src:
+        local('JetBrains Mono Regular'),
+        url(/fonts/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+h1 {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply mb-8;
+}
+
+h2 {
+    @apply text-lg;
+    @apply font-bold;
+    @apply mb-4;
+}
+
+.text-code {
+    @apply bg-black/10;
+    @apply dark:bg-black/30;
+    @apply text-sm;
+    @apply font-mono;
+    @apply p-1;
+    @apply rounded-sm;
+}

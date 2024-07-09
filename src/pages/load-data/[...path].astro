@@ -1,0 +1,52 @@
+---
+import BaseLayout from '@layouts/base.astro';
+import { getDataFromJson } from './_logic';
+
+export function getStaticPaths() {
+    // Accept paths of numbers in the range [1, 100]
+    const numberPaths = [...Array(100).keys()].map((i) => ({
+        params: { path: ++i },
+    }));
+
+    return [
+        // Accept an empty path
+        { params: { path: undefined } },
+        ...numberPaths,
+    ];
+}
+
+const { path } = Astro.params;
+const data = path ? getDataFromJson(path) : '(empty path)';
+---
+
+<BaseLayout>
+    <div class="flex flex-col justify-center items-center h-[70vh] gap-14">
+        <div class="font-mono space-y-4">
+            <div class="text-sm text-center text-stone-700 dark:text-slate-400">Example paths:</div>
+            <ul class="flex gap-8">
+                <li>
+                    <a class="hover:underline underline-offset-2" href="/load-data/">(empty path)</a>
+                </li>
+                <li>
+                    <a class="hover:underline underline-offset-2" href="/load-data/22/">22</a>
+                </li>
+                <li>
+                    <a class="hover:underline underline-offset-2" href="/load-data/78/">78</a>
+                </li>
+                <li>
+                    <a class="hover:underline underline-offset-2" href="/load-data/100/">100</a>
+                </li>
+            </ul>
+        </div>
+        <div class="text-center py-16 px-32 border border-stone-400 rounded">
+            <h2>Data loaded:</h2>
+            {data}
+        </div>
+        <!-- <div class="h-px w-2/3 bg-black">&nbsp;</div> -->
+        <a
+            href="/"
+            class="text-5xl text-stone-500 hover:text-stone-950 dark:text-slate-500 dark:hover:text-slate-300 font-bold transition-colors"
+            >home</a
+        >
+    </div>
+</BaseLayout>

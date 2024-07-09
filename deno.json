@@ -1,0 +1,30 @@
+{
+    "fmt": {
+        "indentWidth": 4,
+        "lineWidth": 140,
+        "singleQuote": true,
+        "exclude": [
+            "dist/",
+            "public/"
+        ]
+    },
+    "lint": {
+        "rules": {
+            "tags": [
+                "recommended"
+            ]
+        },
+        "exclude": [
+            "dist/",
+            "public/"
+        ]
+    },
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "https://esm.sh/react@18.3.1",
+        "lib": [
+            "deno.ns",
+            "DOM"
+        ]
+    }
+}

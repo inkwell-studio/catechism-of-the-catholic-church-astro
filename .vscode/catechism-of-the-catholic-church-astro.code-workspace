@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "deno.enable": true,
+        "deno.lint": true,
+        "deno.unstable": false,
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.formatOnSave": true,
+        "[astro]": {
+            "editor.defaultFormatter": "astro-build.astro-vscode"
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "denoland.vscode-deno"
+        }
+    }
+}

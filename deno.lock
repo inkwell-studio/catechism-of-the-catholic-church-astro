@@ -1,0 +1,22 @@
+{
+  "version": "3",
+  "redirects": {
+    "https://esm.sh/v128/@types/react@~18.3/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts"
+  },
+  "remote": {},
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@astrojs/react@^3.6.0",
+        "npm:@astrojs/tailwind@^5.1.0",
+        "npm:@headlessui/react@^2.1.1",
+        "npm:@nanostores/react@^0.7.2",
+        "npm:astro@^4.10.1",
+        "npm:nanostores@^0.10.3",
+        "npm:react-dom@^18.3.1",
+        "npm:react@^18.3.1",
+        "npm:tailwindcss@^3.4.4"
+      ]
+    }
+  }
+}
