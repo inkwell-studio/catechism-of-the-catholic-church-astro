@@ -1,0 +1,25 @@
+{
+    "name": "catechism-of-the-catholic-church-astro",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
+    },
+    "dependencies": {
+        "@astrojs/react": "^3.6.0",
+        "@astrojs/sitemap": "^3.1.6",
+        "@astrojs/tailwind": "^5.1.0",
+        "@headlessui/react": "^2.1.1",
+        "@nanostores/react": "^0.7.2",
+        "astro": "^4.10.1",
+        "nanostores": "^0.10.3",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "tailwindcss": "^3.4.4"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 140,
+        "singleQuote": true
+    }
+}

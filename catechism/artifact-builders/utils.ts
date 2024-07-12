@@ -1,0 +1,81 @@
+import { Content, Language } from '../source/types/types.ts';
+
+export function getContentTitle(language: Language, contentType: Content): string | null {
+    const title = contentTitles[language][contentType];
+    return title ? title : null;
+}
+
+const contentTitles: Record<Language, Record<Content, string>> = {
+    [Language.ENGLISH]: {
+        [Content.PROLOGUE]: 'Prologue',
+        [Content.PART]: 'Part',
+        [Content.SECTION]: 'Section',
+        [Content.CHAPTER]: 'Chapter',
+        [Content.CHAPTER_SECTION]: 'Chapter Section',
+        [Content.ARTICLE]: 'Article',
+        [Content.ARTICLE_PARAGRAPH]: 'Article Paragraph',
+        [Content.SUB_ARTICLE]: 'Subarticle',
+        [Content.IN_BRIEF]: 'In Brief',
+        [Content.PARAGRAPH_GROUP]: 'Paragraph Group',
+        [Content.PARAGRAPH]: 'Paragraph',
+        // The following values are intentionally empty
+        [Content.GENERIC_CONTENT_CONTAINER]: '',
+        [Content.BLOCK_QUOTE]: '',
+        [Content.PARAGRAPH_SUB_ITEM_CONTAINER]: '',
+        [Content.PARAGRAPH_SUB_ITEM]: '',
+        [Content.TEXT_BLOCK]: '',
+        [Content.TEXT_HEADING]: '',
+        [Content.TEXT_WRAPPER]: '',
+        [Content.TEXT]: '',
+        [Content.CREED]: '',
+        [Content.TEN_COMMANDMENTS]: '',
+    },
+    [Language.LATIN]: {
+        [Content.PROLOGUE]: 'Prooemium',
+        [Content.PART]: 'Pars',
+        [Content.SECTION]: 'Sectio',
+        [Content.CHAPTER]: 'Caput',
+        [Content.CHAPTER_SECTION]: 'Caput Sectio',
+        [Content.ARTICLE]: 'Articulus',
+        [Content.ARTICLE_PARAGRAPH]: 'Articulus Paragraphus',
+        [Content.SUB_ARTICLE]: 'Subarticulus',
+        [Content.IN_BRIEF]: 'Compendium',
+        [Content.PARAGRAPH_GROUP]: 'Paragraphus Classis',
+        [Content.PARAGRAPH]: 'Paragraphus',
+        // The following values are intentionally empty
+        [Content.GENERIC_CONTENT_CONTAINER]: '',
+        [Content.BLOCK_QUOTE]: '',
+        [Content.PARAGRAPH_SUB_ITEM_CONTAINER]: '',
+        [Content.PARAGRAPH_SUB_ITEM]: '',
+        [Content.TEXT_BLOCK]: '',
+        [Content.TEXT_HEADING]: '',
+        [Content.TEXT_WRAPPER]: '',
+        [Content.TEXT]: '',
+        [Content.CREED]: '',
+        [Content.TEN_COMMANDMENTS]: '',
+    },
+    [Language.SPANISH]: {
+        [Content.PROLOGUE]: 'Prologo',
+        [Content.PART]: 'Parte',
+        [Content.SECTION]: 'Seccion',
+        [Content.CHAPTER]: 'Capitulo',
+        [Content.CHAPTER_SECTION]: 'Capitulo Seccion',
+        [Content.ARTICLE]: 'Articulo',
+        [Content.ARTICLE_PARAGRAPH]: 'Articulo Parrafo',
+        [Content.SUB_ARTICLE]: 'Subartículo',
+        [Content.IN_BRIEF]: 'Resumen',
+        [Content.PARAGRAPH_GROUP]: 'Parrafo Grupo',
+        [Content.PARAGRAPH]: 'Parrafo',
+        // The following values are intentionally empty
+        [Content.GENERIC_CONTENT_CONTAINER]: '',
+        [Content.BLOCK_QUOTE]: '',
+        [Content.PARAGRAPH_SUB_ITEM_CONTAINER]: '',
+        [Content.PARAGRAPH_SUB_ITEM]: '',
+        [Content.TEXT_BLOCK]: '',
+        [Content.TEXT_HEADING]: '',
+        [Content.TEXT_WRAPPER]: '',
+        [Content.TEXT]: '',
+        [Content.CREED]: '',
+        [Content.TEN_COMMANDMENTS]: '',
+    },
+} as const;

@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@catechism/*": ["../catechism/*"],
+            "@components/*": ["src/components/*"],
+            "@layouts/*": ["src/layouts/*"]
+        }
+    }
+}

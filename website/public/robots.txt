@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://TODO.com/sitemap-index.xml

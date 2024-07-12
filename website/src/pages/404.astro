@@ -1,0 +1,31 @@
+---
+import BaseLayout from '@layouts/base.astro';
+import { DEFAULT_LANGUAGE } from '../logic/utils';
+---
+
+<script>
+    import { translate } from '../logic/translation';
+    import { DEFAULT_LANGUAGE, getLanguageFromPathname } from '../logic/utils';
+
+    const language = getLanguageFromPathname(location.pathname) ?? DEFAULT_LANGUAGE;
+    const homeUrl = language === DEFAULT_LANGUAGE ? '/' : `/${language}`;
+
+    document.documentElement.setAttribute('lang', language);
+
+    document.getElementById('header').innerText = translate('Page not found.', language);
+
+    const link = document.getElementById('link');
+    link.innerText = translate('Go Home', language);
+    link.setAttribute('href', homeUrl);
+</script>
+
+<BaseLayout language={DEFAULT_LANGUAGE}>
+    <div class="h-[70vh] flex flex-col justify-center">
+        <div class="flex flex-col justify-center items-center">
+            <h1 id="header" class="opacity-0 animate-fade-in">Page not found.</h1>
+            <h2>
+                <a id="link" href="/" class="opacity-0 animate-fade-in">Go Home</a>
+            </h2>
+        </div>
+    </div>
+</BaseLayout>

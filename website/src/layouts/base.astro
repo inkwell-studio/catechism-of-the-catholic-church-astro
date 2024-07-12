@@ -1,0 +1,93 @@
+---
+import { Language } from '@catechism/source/types/language';
+import { translate as t } from '../logic/translation';
+import { DEFAULT_LANGUAGE } from '../logic/utils';
+import '../styles.css';
+
+interface Props {
+    language: Language;
+    includeHtmx?: boolean;
+}
+const { language, includeHtmx = false } = Astro.props;
+
+const secondsPerWeek = 604800;
+Astro.response.headers.set('Cache-Control', `max-age=${secondsPerWeek}`);
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const redirectUrl = getRedirectUrl(Astro.url.pathname);
+
+/**
+ * @returns the URL that the route should be redirected to, or `null` if no redirection is necessary
+ */
+function getRedirectUrl(pathname: string): string | null {
+    const atDefaultLanguageRoot = pathname === `/${DEFAULT_LANGUAGE}`;
+    const atDefaultLanguageSubpage = pathname.includes(`/${DEFAULT_LANGUAGE}/`);
+    const shouldRedirect = atDefaultLanguageRoot || atDefaultLanguageSubpage;
+
+    if (shouldRedirect) {
+        if (atDefaultLanguageRoot) {
+            return '/';
+        } else {
+            return new URL(pathname.replace(`/${DEFAULT_LANGUAGE}/`, '/'), Astro.site).href;
+        }
+    } else {
+        return null;
+    }
+}
+---
+
+<html lang={language}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#1F293B" />
+        <meta name="color-scheme" content="light dark" />
+        {redirectUrl && <meta http-equiv="Refresh" content={`0; url=${redirectUrl}`} />}
+
+        <title>{t('Catechism of the Catholic Church', language)}</title>
+        <meta
+            name="description"
+            content="A web app of the Catechism of the Catholic Church, an official doctrinal reference of the Catholic Church, first published in 1992."
+        />
+
+        <link rel="canonical" href={canonicalUrl} />
+        <link rel="sitemap" href="/sitemap-index.xml" />
+
+        <!-- The favicon files were generated with [RealFaviconGenerator](https://realfavicongenerator.net/) [v0.16](https://realfavicongenerator.net/change_log#v0.16) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#adcff4" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- This script is necessary to prevent a flash of the inaccurate theme being applied. It must be included inline within the <head> element to function properly.
+             The logic and constant values here must be kept in sync with those of `src/logic/theme.ts`. -->
+        <script is:inline>
+            (() => {
+                const theme = globalThis.localStorage.getItem('theme');
+                if ('DARK' === theme || ('SYSTEM' === theme && globalThis.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                }
+            })();
+        </script>
+        <script>
+            import { watchForThemeChanges } from '../logic/store';
+            watchForThemeChanges();
+        </script>
+
+        {includeHtmx && <script src="/htmx.min.js" is:inline />}
+    </head>
+    <body class="bg-stone-200 text-stone-900 dark:bg-slate-800 dark:text-slate-200">
+        <slot />
+
+        <div
+            class="fixed bottom-12 right-12 opacity-20 hover:opacity-100 bg-stone-100 dark:bg-slate-900 border border-stone-400 dark:border-slate-500 p-4 rounded transition-opacity delay-100 hover:delay-0"
+        >
+            <span class="font-bold">Theme: </span>
+            <span class="hidden dark:inline">Dark</span>
+            <span class="dark:hidden">Light</span>
+        </div>
+    </body>
+</html>

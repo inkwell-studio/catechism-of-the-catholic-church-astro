@@ -1,0 +1,26 @@
+---
+import { Language } from '@catechism/source/types/language';
+import { getSupportedLanguages } from '@catechism/source/utils/language';
+
+import BaseLayout from '@layouts/base.astro';
+import LandingPage from './_landing.astro';
+
+export function getStaticPaths() {
+    const landingPages = getSupportedLanguages().map(([languageKey, language]) => ({
+        params: { path: language },
+    }));
+
+    return [
+        ...landingPages,
+        // The empty path
+        { params: { path: undefined } },
+    ];
+}
+
+const defaultLanguage = Language.ENGLISH;
+const language = Astro.params.path ?? defaultLanguage;
+---
+
+<BaseLayout language={language}>
+    <LandingPage language={language} />
+</BaseLayout>
