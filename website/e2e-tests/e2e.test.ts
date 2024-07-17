@@ -1,9 +1,10 @@
 import { assert, assertStrictEquals } from '$std/assert';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
-import { DEFAULT_LANGUAGE } from '../src/logic/utils.ts';
+import { Language } from '@catechism/source/types/language.ts';
 
-const baseUrl = 'http://localhost:4321';
+import { baseUrl } from '../config.ts';
+import { DEFAULT_LANGUAGE } from '../config.ts';
 
 //#region tests: rendered content
 Deno.test('website: rendered content', async (test) => {
@@ -16,13 +17,6 @@ Deno.test('website: rendered content', async (test) => {
         responses.push(response);
 
         return response;
-    }
-
-    async function isRedirected(requestUrl: string, expectedRedirectUrl: string): Promise<boolean> {
-        const r = await get(requestUrl);
-        assertStrictEquals(r.status, 200);
-        const html = await r.text();
-        return html.includes(`<meta http-equiv="Refresh" content="0; url=${expectedRedirectUrl}">`);
     }
 
     await test.step('the root page is accessible', async () => {
@@ -38,26 +32,42 @@ Deno.test('website: rendered content', async (test) => {
         assertStrictEquals(lang, DEFAULT_LANGUAGE);
     });
 
-    await test.step(`the '${DEFAULT_LANGUAGE}' route is redirected to the root page`, async () => {
-        assert(await isRedirected(DEFAULT_LANGUAGE, `${baseUrl}/`));
-    });
+    await test.step('paths including the default language code are redirected to the same subpath without the language code', async (t) => {
+        const tests = [
+            [DEFAULT_LANGUAGE, 'root'],
+            [`${DEFAULT_LANGUAGE}/`, 'root (with trailing slash)'],
+            [`${DEFAULT_LANGUAGE}/abc`, 'subpath'],
+            [`${DEFAULT_LANGUAGE}/abc/123/xyz`, 'subpath (multilevel)'],
+        ];
 
-    await test.step(`the '${DEFAULT_LANGUAGE}/' route is redirected to the root page`, async () => {
-        assert(await isRedirected(`${DEFAULT_LANGUAGE}/`, `${baseUrl}/`));
-    });
+        for (const [url, description] of tests) {
+            await t.step(description, async () => {
+                const r = await get(url);
 
-    // TODO: Implement when valid subpage routing has been implemented
-    /*
-    await test.step(`the '${DEFAULT_LANGUAGE}/some/sub/page' route is redirected to the same subpage without the default language path`, () => {
-        testForRedirect(`${DEFAULT_LANGUAGE}/some/sub/page`, `${baseUrl}/some/sub/page`);
+                assert(r.redirected);
+
+                const expectedUrl = baseUrl + (DEFAULT_LANGUAGE === url ? '/' : url.slice(2));
+                assertStrictEquals(r.url, expectedUrl);
+
+                const html = await r.text();
+                const lang = getLangAttribute(html);
+                assertStrictEquals(lang, DEFAULT_LANGUAGE);
+            });
+        }
     });
-    */
 
     await test.step('the `lang` attribute is correct for the landing page of each supported language', async (t) => {
         for (const [languageKey, language] of getSupportedLanguages()) {
             await t.step(`${languageKey}`, async () => {
                 const r = await get(language);
                 assertStrictEquals(r.status, 200);
+
+                if (DEFAULT_LANGUAGE === language) {
+                    assert(r.redirected);
+                } else {
+                    assert(!r.redirected);
+                }
+
                 const html = await r.text();
                 const lang = getLangAttribute(html);
                 assertStrictEquals(lang, language);
@@ -65,21 +75,20 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    // TODO: Reimplement
-    /*
-    await test.step('unsupported valid language codes are recognized', async () => {
-        // Force the language to be English for the next error page
-        await get('en');
+    await test.step('invalid routes: 404 page', async (t) => {
+        await t.step('default language', async () => {
+            const r = await get('/invalid-route');
+            await assert404(r, DEFAULT_LANGUAGE);
+        });
 
-        const r = await get('fr');
-        assertStrictEquals(r.status, 200);
-        await assertContent(r, 'Unsupported language: ');
-    });
-    */
-
-    await test.step('invalid routes: 404 page', async () => {
-        const r = await get('qwertyuiop');
-        assert404(r);
+        // invalid language-specific routes
+        for (const [languageKey, language] of getSupportedLanguages()) {
+            await t.step(`${languageKey}`, async () => {
+                const route = `${language}/invalid-route`;
+                const r = await get(route);
+                await assert404(r, language);
+            });
+        }
     });
 
     /*
@@ -90,13 +99,14 @@ Deno.test('website: rendered content', async (test) => {
 
     await test.step('/{paragraph-number} redirects to a SemanticPath URL', async () => {
         const r = await get('1');
-        assertStrictEquals(r.status, 307);
+        assertStrictEquals(r.status, 308);
         assert(r.headers.get('location')?.includes('/prologue#1'));
     });
 
     await test.step('/en/{paragraph-number} redirects to a SemanticPath URL', async () => {
+        // TODO: Replace all instances of 'en' with DEFAULT_LANGUAGE
         const r = await get('en/1');
-        assertStrictEquals(r.status, 307);
+        assertStrictEquals(r.status, 308);
         assert(r.headers.get('location')?.includes('/en/prologue#1'));
     });
 
@@ -206,17 +216,25 @@ Deno.test('website: data API', async (test) => {
 //#endregion
 
 //#region helpers
-async function assert404(response: Response): Promise<void> {
+async function assert404(response: Response, expectedLanguage: Language): Promise<void> {
     assertStrictEquals(response.status, 404);
     const html = await response.text();
-    assert(html.includes('Page not found.'));
+
+    const language = getLangAttribute(html);
+    assertStrictEquals(language, expectedLanguage);
+
+    // Look for: `<a href="/"`
+    const urlRegex = /(<a href=")(\/[a-z,A-Z]*)(")/;
+    const homeLinkUrl = urlRegex.exec(html)?.[2];
+    const expectedHomeLinkUrl = DEFAULT_LANGUAGE === expectedLanguage ? '/' : `/${expectedLanguage}`;
+    assertStrictEquals(homeLinkUrl, expectedHomeLinkUrl);
 }
 
 /**
  * @returns the value of the `lang` attribute within the `<html>` element, or `null` if no such element or attribute exists
  */
 function getLangAttribute(html: string): string | null {
-    // Look for: `<html lang="en">`
+    // Look for: `<html lang="en"`
     const regex = /(<html lang=")([a-z,A-Z]*)(")/;
     return regex.exec(html)?.[2] ?? null;
 }

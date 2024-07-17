@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@layouts/base.astro';
+import LandingPage from './_landing.astro';
+import { DEFAULT_LANGUAGE } from '../../config';
+---
+
+<BaseLayout language={DEFAULT_LANGUAGE}>
+    <LandingPage language={DEFAULT_LANGUAGE} />
+</BaseLayout>

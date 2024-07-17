@@ -1,8 +1,6 @@
 import { Language } from '@catechism/source/types/language.ts';
 import { getLanguage } from '@catechism/source/utils/language.ts';
 
-export const DEFAULT_LANGUAGE = Language.ENGLISH;
-
 export const IS_BROWSER = !!globalThis.window;
 
 export function getLanguageFromPathname(pathname: string): Language | null {

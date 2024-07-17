@@ -4,6 +4,11 @@
 
 This is a website for the _Catechism of the Catholic Church_, built with [Astro](https://astro.build/) and [Deno](https://deno.com/).
 
+## Repository structure
+
+- `catechism` contains the Catechism data
+- `website` contains the Astro project that builds a website from the Catechism data
+
 ## Potentially useful links
 
 - [Catechism of the Catholic Church, Libreria Editrice Vaticana](http://www.vatican.va/archive/ENG0015/_INDEX.HTM)

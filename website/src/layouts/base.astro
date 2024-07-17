@@ -1,7 +1,6 @@
 ---
 import { Language } from '@catechism/source/types/language';
 import { translate as t } from '../logic/translation';
-import { DEFAULT_LANGUAGE } from '../logic/utils';
 import '../styles.css';
 
 interface Props {
@@ -14,26 +13,6 @@ const secondsPerWeek = 604800;
 Astro.response.headers.set('Cache-Control', `max-age=${secondsPerWeek}`);
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
-const redirectUrl = getRedirectUrl(Astro.url.pathname);
-
-/**
- * @returns the URL that the route should be redirected to, or `null` if no redirection is necessary
- */
-function getRedirectUrl(pathname: string): string | null {
-    const atDefaultLanguageRoot = pathname === `/${DEFAULT_LANGUAGE}`;
-    const atDefaultLanguageSubpage = pathname.includes(`/${DEFAULT_LANGUAGE}/`);
-    const shouldRedirect = atDefaultLanguageRoot || atDefaultLanguageSubpage;
-
-    if (shouldRedirect) {
-        if (atDefaultLanguageRoot) {
-            return '/';
-        } else {
-            return new URL(pathname.replace(`/${DEFAULT_LANGUAGE}/`, '/'), Astro.site).href;
-        }
-    } else {
-        return null;
-    }
-}
 ---
 
 <html lang={language}>
@@ -42,7 +21,6 @@ function getRedirectUrl(pathname: string): string | null {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1F293B" />
         <meta name="color-scheme" content="light dark" />
-        {redirectUrl && <meta http-equiv="Refresh" content={`0; url=${redirectUrl}`} />}
 
         <title>{t('Catechism of the Catholic Church', language)}</title>
         <meta

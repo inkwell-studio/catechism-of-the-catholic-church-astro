@@ -74,3 +74,10 @@ Where `type` is one of:
 - `fix`
 - `refactor`
 - `style`
+
+## Deployment
+
+This project is deployed to [Deno Deploy](https://deno.com/deploy) via [Github Actions](https://docs.github.com/en/actions). The deployment
+is configured by `.github/workflows/deploy.yml`.
+
+Deployments are triggered by pushes to the `master` and `dev` branches.

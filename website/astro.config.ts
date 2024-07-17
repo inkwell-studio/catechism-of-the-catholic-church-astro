@@ -2,12 +2,16 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import deno from '@deno/astro-adapter';
 
+import { baseUrl, DEFAULT_LANGUAGE, port } from './config.ts';
 import { getSupportedLanguages } from '../catechism/source/utils/language.ts';
 
 export default defineConfig({
     // TODO: Implement the correct value once this is deployed (and update `baseUrl` in `e2e.test.ts` and run all e2e tests)
-    site: 'http://localhost:4321',
+    site: baseUrl,
+    output: 'hybrid',
+    adapter: deno({ port }),
     integrations: [
         react(),
         sitemap(buildSitemapConfig()),
@@ -24,7 +28,7 @@ function buildSitemapConfig() {
 
     return {
         i18n: {
-            defaultLocale: 'en',
+            defaultLocale: DEFAULT_LANGUAGE,
             locales,
         },
     };
