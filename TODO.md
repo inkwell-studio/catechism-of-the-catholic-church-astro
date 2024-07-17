@@ -6,16 +6,6 @@
 
 # Tasks to complete now
 
-- [ ] determine deployment mechanism
-  - [ ] consider updating the template repository
-- [ ] update `master`
-- [ ] deploy
-  - [ ] update `website/config.ts`: `port` and `baseUrl`
-  - [ ] update `astro.config.ts::site`
-  - [ ] update `e2e.test.ts::baseUrl`
-  - [ ] update `robots.txt::Sitemap`
-- [ ] consider removing the JSON artifacts from source control, and making their creation part of the website build step (perhaps
-      indirectly)
 - [ ] implement routing
   - [ ] add e2e tests for subpages for [default language, other languages]
 - [ ] verify helper function usage (in the `website/src/logic` directory):

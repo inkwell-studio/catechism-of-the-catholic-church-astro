@@ -3,8 +3,37 @@ import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
 import { Language } from '@catechism/source/types/language.ts';
 
-import { baseUrl } from '../config.ts';
 import { DEFAULT_LANGUAGE } from '../config.ts';
+
+const baseUrl = 'http://localhost:8085';
+
+//#region tests: static content
+Deno.test('website: static files', async (test) => {
+    const responses: Array<Response> = [];
+
+    async function get(url = ''): Promise<Response> {
+        url = url ? `${baseUrl}/${url}` : baseUrl;
+
+        const response = await fetch(new Request(url));
+        responses.push(response);
+
+        return response;
+    }
+
+    await test.step('a robots.txt file is accessible', async () => {
+        const r = await get('robots.txt');
+        assertStrictEquals(r.status, 200);
+    });
+
+    await test.step('a sitemap is accessible', async () => {
+        const r = await get('sitemap-index.xml');
+        assertStrictEquals(r.status, 200);
+    });
+
+    await test.step('close all responses', () => {
+        close(responses);
+    });
+});
 
 //#region tests: rendered content
 Deno.test('website: rendered content', async (test) => {
