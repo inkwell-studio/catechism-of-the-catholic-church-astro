@@ -56,7 +56,6 @@ function writeJson(
 ): void {
     Deno.writeTextFileSync(
         `catechism/artifacts/${filename}-${language}.json`,
-        // TODO: For production, write the files without formatting
         JSON.stringify(object, undefined, '  ') + '\n',
     );
 }

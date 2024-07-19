@@ -45,10 +45,11 @@ export function getElementAndPathID(
  */
 export function getUrl(language: Language, semanticPath: SemanticPath): string {
     const fragmentInfo = getUrlFragment(semanticPath, true, language);
+
     if (fragmentInfo.portionToReplace) {
-        return `/${language}/` + semanticPath.replace(`/${fragmentInfo.portionToReplace}`, `#${fragmentInfo.fragment}`);
+        return '/' + semanticPath.replace(`/${fragmentInfo.portionToReplace}`, `#${fragmentInfo.fragment}`);
     } else {
-        return `/${language}/${semanticPath}`;
+        return '/' + semanticPath;
     }
 }
 

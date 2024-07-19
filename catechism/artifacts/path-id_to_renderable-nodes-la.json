@@ -2,275 +2,289 @@
   "0": {
     "here": {
       "pathID": "0",
-      "url": "/la/prooemium"
+      "url": "/prooemium"
     },
     "next": {
       "pathID": "1",
-      "url": "/la/pars-1"
+      "url": "/pars-1"
     },
     "previous": null
   },
   "1": {
     "here": {
       "pathID": "1",
-      "url": "/la/pars-1"
+      "url": "/pars-1"
     },
     "next": {
       "pathID": "1__m.1",
-      "url": "/la/pars-1/sectio-2"
+      "url": "/pars-1/sectio-2"
     },
     "previous": {
       "pathID": "0",
-      "url": "/la/prooemium"
+      "url": "/prooemium"
     }
   },
   "2": {
     "here": {
       "pathID": "2",
-      "url": "/la/pars-2"
+      "url": "/pars-2"
     },
     "next": {
-      "pathID": "2__m.1",
-      "url": "/la/pars-2/sectio-2"
+      "pathID": "3",
+      "url": "/pars-3"
     },
     "previous": {
-      "pathID": "1__m.2__m.0__m.1",
-      "url": "/la/pars-1/sectio-3/caput-1/articulus-2"
+      "pathID": "1__m.2__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3/articulus-3"
     }
   },
   "3": {
     "here": {
       "pathID": "3",
-      "url": "/la/pars-3"
+      "url": "/pars-3"
     },
     "next": {
-      "pathID": "3__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2"
+      "pathID": "3__m.1",
+      "url": "/pars-3/sectio-2"
     },
     "previous": {
-      "pathID": "2__m.1__m.1",
-      "url": "/la/pars-2/sectio-2/articulus-2"
+      "pathID": "2",
+      "url": "/pars-2"
     }
   },
   "1__m.1": {
     "here": {
       "pathID": "1__m.1",
-      "url": "/la/pars-1/sectio-2"
+      "url": "/pars-1/sectio-2"
     },
     "next": {
-      "pathID": "1__m.2",
-      "url": "/la/pars-1/sectio-3"
+      "pathID": "1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2"
     },
     "previous": {
       "pathID": "1",
-      "url": "/la/pars-1"
+      "url": "/pars-1"
+    }
+  },
+  "1__m.1__m.1": {
+    "here": {
+      "pathID": "1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2"
+    },
+    "next": {
+      "pathID": "1__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2/articulus-2"
+    },
+    "previous": {
+      "pathID": "1__m.1",
+      "url": "/pars-1/sectio-2"
+    }
+  },
+  "1__m.1__m.1__m.1": {
+    "here": {
+      "pathID": "1__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2/articulus-2"
+    },
+    "next": {
+      "pathID": "1__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-2/caput-2/articulus-3"
+    },
+    "previous": {
+      "pathID": "1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2"
+    }
+  },
+  "1__m.1__m.1__m.2": {
+    "here": {
+      "pathID": "1__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-2/caput-2/articulus-3"
+    },
+    "next": {
+      "pathID": "1__m.2",
+      "url": "/pars-1/sectio-3"
+    },
+    "previous": {
+      "pathID": "1__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-2/caput-2/articulus-2"
     }
   },
   "1__m.2": {
     "here": {
       "pathID": "1__m.2",
-      "url": "/la/pars-1/sectio-3"
+      "url": "/pars-1/sectio-3"
     },
     "next": {
-      "pathID": "1__m.2__m.0__m.1",
-      "url": "/la/pars-1/sectio-3/caput-1/articulus-2"
+      "pathID": "1__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-2"
     },
     "previous": {
-      "pathID": "1__m.1",
-      "url": "/la/pars-1/sectio-2"
+      "pathID": "1__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-2/caput-2/articulus-3"
     }
   },
-  "1__m.2__m.0__m.1": {
+  "1__m.2__m.1": {
     "here": {
-      "pathID": "1__m.2__m.0__m.1",
-      "url": "/la/pars-1/sectio-3/caput-1/articulus-2"
+      "pathID": "1__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-2"
     },
     "next": {
-      "pathID": "2",
-      "url": "/la/pars-2"
+      "pathID": "1__m.2__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2"
     },
     "previous": {
       "pathID": "1__m.2",
-      "url": "/la/pars-1/sectio-3"
+      "url": "/pars-1/sectio-3"
     }
   },
-  "2__m.1": {
+  "1__m.2__m.1__m.1": {
     "here": {
-      "pathID": "2__m.1",
-      "url": "/la/pars-2/sectio-2"
+      "pathID": "1__m.2__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2"
     },
     "next": {
-      "pathID": "2__m.1__m.1",
-      "url": "/la/pars-2/sectio-2/articulus-2"
+      "pathID": "1__m.2__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2"
     },
     "previous": {
+      "pathID": "1__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-2"
+    }
+  },
+  "1__m.2__m.1__m.1__m.1": {
+    "here": {
+      "pathID": "1__m.2__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2"
+    },
+    "next": {
+      "pathID": "1__m.2__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3"
+    },
+    "previous": {
+      "pathID": "1__m.2__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2"
+    }
+  },
+  "1__m.2__m.1__m.1__m.2": {
+    "here": {
+      "pathID": "1__m.2__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3"
+    },
+    "next": {
+      "pathID": "1__m.2__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-3"
+    },
+    "previous": {
+      "pathID": "1__m.2__m.1__m.1__m.1",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2"
+    }
+  },
+  "1__m.2__m.1__m.2": {
+    "here": {
+      "pathID": "1__m.2__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-3"
+    },
+    "next": {
+      "pathID": "1__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3"
+    },
+    "previous": {
+      "pathID": "1__m.2__m.1__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3"
+    }
+  },
+  "1__m.2__m.2": {
+    "here": {
+      "pathID": "1__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3"
+    },
+    "next": {
+      "pathID": "1__m.2__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-3/articulus-2"
+    },
+    "previous": {
+      "pathID": "1__m.2__m.1__m.2",
+      "url": "/pars-1/sectio-3/caput-2/articulus-3"
+    }
+  },
+  "1__m.2__m.2__m.1": {
+    "here": {
+      "pathID": "1__m.2__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-3/articulus-2"
+    },
+    "next": {
+      "pathID": "1__m.2__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3/articulus-3"
+    },
+    "previous": {
+      "pathID": "1__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3"
+    }
+  },
+  "1__m.2__m.2__m.2": {
+    "here": {
+      "pathID": "1__m.2__m.2__m.2",
+      "url": "/pars-1/sectio-3/caput-3/articulus-3"
+    },
+    "next": {
       "pathID": "2",
-      "url": "/la/pars-2"
-    }
-  },
-  "2__m.1__m.1": {
-    "here": {
-      "pathID": "2__m.1__m.1",
-      "url": "/la/pars-2/sectio-2/articulus-2"
-    },
-    "next": {
-      "pathID": "3",
-      "url": "/la/pars-3"
+      "url": "/pars-2"
     },
     "previous": {
-      "pathID": "2__m.1",
-      "url": "/la/pars-2/sectio-2"
-    }
-  },
-  "3__m.0__m.1": {
-    "here": {
-      "pathID": "3__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2"
-    },
-    "previous": {
-      "pathID": "3",
-      "url": "/la/pars-3"
-    }
-  },
-  "3__m.0__m.1__m.0__m.1": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2"
-    }
-  },
-  "3__m.0__m.1__m.0__m.2": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-2"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.0__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2"
-    }
-  },
-  "3__m.0__m.1__m.1": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-2"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3"
-    }
-  },
-  "3__m.0__m.1__m.2": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.2__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-2"
-    }
-  },
-  "3__m.0__m.1__m.2__m.1": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.2__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2"
-    },
-    "next": {
-      "pathID": "3__m.0__m.1__m.2__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3"
-    }
-  },
-  "3__m.0__m.1__m.2__m.2": {
-    "here": {
-      "pathID": "3__m.0__m.1__m.2__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3"
-    },
-    "next": {
-      "pathID": "3__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-3"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.2__m.1",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2"
-    }
-  },
-  "3__m.0__m.2": {
-    "here": {
-      "pathID": "3__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-3"
-    },
-    "next": {
-      "pathID": "3__m.1",
-      "url": "/la/pars-3/sectio-2"
-    },
-    "previous": {
-      "pathID": "3__m.0__m.1__m.2__m.2",
-      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3"
+      "pathID": "1__m.2__m.2__m.1",
+      "url": "/pars-1/sectio-3/caput-3/articulus-2"
     }
   },
   "3__m.1": {
     "here": {
       "pathID": "3__m.1",
-      "url": "/la/pars-3/sectio-2"
+      "url": "/pars-3/sectio-2"
+    },
+    "next": {
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-2"
+    },
+    "previous": {
+      "pathID": "3",
+      "url": "/pars-3"
+    }
+  },
+  "3__m.1__m.0__m.1": {
+    "here": {
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-2"
+    },
+    "next": {
+      "pathID": "3__m.1__m.0__m.2",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-3"
+    },
+    "previous": {
+      "pathID": "3__m.1",
+      "url": "/pars-3/sectio-2"
+    }
+  },
+  "3__m.1__m.0__m.2": {
+    "here": {
+      "pathID": "3__m.1__m.0__m.2",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-3"
     },
     "next": {
       "pathID": "3__m.1__m.1",
-      "url": "/la/pars-3/sectio-2/articulus-2"
+      "url": "/pars-3/sectio-2/articulus-2"
     },
     "previous": {
-      "pathID": "3__m.0__m.2",
-      "url": "/la/pars-3/sectio-1/caput-3"
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-2"
     }
   },
   "3__m.1__m.1": {
     "here": {
       "pathID": "3__m.1__m.1",
-      "url": "/la/pars-3/sectio-2/articulus-2"
-    },
-    "next": {
-      "pathID": "3__m.1__m.2",
-      "url": "/la/pars-3/sectio-2/articulus-3"
-    },
-    "previous": {
-      "pathID": "3__m.1",
-      "url": "/la/pars-3/sectio-2"
-    }
-  },
-  "3__m.1__m.2": {
-    "here": {
-      "pathID": "3__m.1__m.2",
-      "url": "/la/pars-3/sectio-2/articulus-3"
+      "url": "/pars-3/sectio-2/articulus-2"
     },
     "next": null,
     "previous": {
-      "pathID": "3__m.1__m.1",
-      "url": "/la/pars-3/sectio-2/articulus-2"
+      "pathID": "3__m.1__m.0__m.2",
+      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-3"
     }
   }
 }

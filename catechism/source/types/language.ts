@@ -4,3 +4,5 @@ export enum Language {
     LATIN = 'la',
     SPANISH = 'es',
 }
+
+export const DEFAULT_LANGUAGE = Language.ENGLISH;

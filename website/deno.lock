@@ -65,6 +65,7 @@
         "npm:@headlessui/react@^2.1.1",
         "npm:@nanostores/react@^0.7.2",
         "npm:astro@^4.10.1",
+        "npm:fs@0.0.1-security",
         "npm:nanostores@^0.10.3",
         "npm:react-dom@^18.3.1",
         "npm:react@^18.3.1",

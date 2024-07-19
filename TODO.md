@@ -7,10 +7,14 @@
 # Tasks to complete now
 
 - [ ] implement routing
-  - [ ] add e2e tests for subpages for [default language, other languages]
-- [ ] verify helper function usage (in the `website/src/logic` directory):
-  - [ ] all exported functions are used externally
-  - [ ] all functions are used
+  - [ ] execute tests (`catechism/`)
+  - [ ] add e2e tests for semantic paths
+  - [ ] add tests in `website/src/logic/routing.test.ts` for URLs that begin with a language tag
+  - [ ] add e2e tests for paragraph numbers
+  - [ ] add e2e tests for the table-of-contents pages (may need to determine desired URL)
+  - [ ] implement TOC pages
+- [ ] implement API demo
+- [ ] implement landing page
 - [ ] update UI
   - [ ] when relevant, re-add the following to the `deno.jsonc::check` task: `deno check website/src/**/*.tsx`
   - [ ] implement Action Bar menus
@@ -57,6 +61,13 @@
   - [ ] consider all notes about colors found elsewhere in this file
   - [ ] update text on intro page
   - merge
+- [ ] remove all unused artifacts and their generators
+- [ ] remove all unused artifact utility functions
+- [ ] determine if the Catechism JSON artifacts should be created without formatting (will the saved disk space be beneficial?) (see
+      `catechism/artifact-builders/build.ts`)
+- [ ] verify helper function usage (in the `website/src/logic` directory):
+- [ ] all exported functions are used externally
+- [ ] all functions are used
 
 - [ ] update the intro page if appropriate
 - merge

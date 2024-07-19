@@ -1,4 +1,4 @@
-import { Language } from '@catechism/source/types/language.ts';
+import { Language } from '@catechism/source/types/types.ts';
 import { getLanguage } from '@catechism/source/utils/language.ts';
 
 export const IS_BROWSER = !!globalThis.window;

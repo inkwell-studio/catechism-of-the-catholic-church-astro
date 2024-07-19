@@ -4,7 +4,7 @@
     "title": "Prooemium",
     "pathID": "0",
     "semanticPath": "prooemium",
-    "url": "/la/prooemium",
+    "url": "/prooemium",
     "firstParagraphNumber": 1,
     "lastParagraphNumber": 17,
     "children": [
@@ -13,7 +13,7 @@
         "title": "Subarticulus 1",
         "pathID": "0__m.0",
         "semanticPath": "prooemium/subarticulus-1",
-        "url": "/la/prooemium#subarticulus-1",
+        "url": "/prooemium#subarticulus-1",
         "firstParagraphNumber": 1,
         "lastParagraphNumber": 7,
         "children": []
@@ -23,9 +23,9 @@
         "title": "Subarticulus 2",
         "pathID": "0__m.1",
         "semanticPath": "prooemium/subarticulus-2",
-        "url": "/la/prooemium#subarticulus-2",
+        "url": "/prooemium#subarticulus-2",
         "firstParagraphNumber": 8,
-        "lastParagraphNumber": 13,
+        "lastParagraphNumber": 10,
         "children": []
       },
       {
@@ -33,8 +33,8 @@
         "title": "Subarticulus 3",
         "pathID": "0__m.2",
         "semanticPath": "prooemium/subarticulus-3",
-        "url": "/la/prooemium#subarticulus-3",
-        "firstParagraphNumber": 14,
+        "url": "/prooemium#subarticulus-3",
+        "firstParagraphNumber": 11,
         "lastParagraphNumber": 17,
         "children": []
       }
@@ -46,28 +46,70 @@
       "title": "Pars 1",
       "pathID": "1",
       "semanticPath": "pars-1",
-      "url": "/la/pars-1",
+      "url": "/pars-1",
       "firstParagraphNumber": 18,
-      "lastParagraphNumber": 66,
+      "lastParagraphNumber": 235,
       "children": [
         {
           "contentType": "SECTION",
           "title": "Sectio 1",
           "pathID": "1__m.0",
           "semanticPath": "pars-1/sectio-1",
-          "url": "/la/pars-1#sectio-1",
+          "url": "/pars-1#sectio-1",
           "firstParagraphNumber": 18,
-          "lastParagraphNumber": 24,
+          "lastParagraphNumber": 35,
           "children": [
             {
-              "contentType": "IN_BRIEF",
-              "title": "Compendium",
-              "pathID": "1__m.0__i",
-              "semanticPath": "pars-1/sectio-1/compendium",
-              "url": "/la/pars-1#sectio-1/compendium",
-              "firstParagraphNumber": 22,
-              "lastParagraphNumber": 24,
-              "children": []
+              "contentType": "CHAPTER",
+              "title": "Caput 1",
+              "pathID": "1__m.0__m.0",
+              "semanticPath": "pars-1/sectio-1/caput-1",
+              "url": "/pars-1#sectio-1/caput-1",
+              "firstParagraphNumber": 20,
+              "lastParagraphNumber": 35,
+              "children": [
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 1",
+                  "pathID": "1__m.0__m.0__m.0",
+                  "semanticPath": "pars-1/sectio-1/caput-1/articulus-1",
+                  "url": "/pars-1#sectio-1/caput-1/articulus-1",
+                  "firstParagraphNumber": 20,
+                  "lastParagraphNumber": 35,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 1",
+                      "pathID": "1__m.0__m.0__m.0__m.0",
+                      "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/subarticulus-1",
+                      "url": "/pars-1#sectio-1/caput-1/articulus-1/subarticulus-1",
+                      "firstParagraphNumber": 20,
+                      "lastParagraphNumber": 26,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 2",
+                      "pathID": "1__m.0__m.0__m.0__m.1",
+                      "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/subarticulus-2",
+                      "url": "/pars-1#sectio-1/caput-1/articulus-1/subarticulus-2",
+                      "firstParagraphNumber": 27,
+                      "lastParagraphNumber": 32,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.0__m.0__m.0__i",
+                      "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/compendium",
+                      "url": "/pars-1#sectio-1/caput-1/articulus-1/compendium",
+                      "firstParagraphNumber": 33,
+                      "lastParagraphNumber": 35,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -76,27 +118,47 @@
           "title": "Sectio 2",
           "pathID": "1__m.1",
           "semanticPath": "pars-1/sectio-2",
-          "url": "/la/pars-1/sectio-2",
-          "firstParagraphNumber": 25,
-          "lastParagraphNumber": 33,
+          "url": "/pars-1/sectio-2",
+          "firstParagraphNumber": 36,
+          "lastParagraphNumber": 97,
           "children": [
             {
               "contentType": "CHAPTER",
               "title": "Caput 1",
               "pathID": "1__m.1__m.0",
               "semanticPath": "pars-1/sectio-2/caput-1",
-              "url": "/la/pars-1/sectio-2#caput-1",
-              "firstParagraphNumber": 25,
-              "lastParagraphNumber": 33,
+              "url": "/pars-1/sectio-2#caput-1",
+              "firstParagraphNumber": 38,
+              "lastParagraphNumber": 57,
               "children": [
                 {
                   "contentType": "SUB_ARTICLE",
                   "title": "Subarticulus 1",
                   "pathID": "1__m.1__m.0__m.0",
                   "semanticPath": "pars-1/sectio-2/caput-1/subarticulus-1",
-                  "url": "/la/pars-1/sectio-2#caput-1/subarticulus-1",
-                  "firstParagraphNumber": 25,
-                  "lastParagraphNumber": 28,
+                  "url": "/pars-1/sectio-2#caput-1/subarticulus-1",
+                  "firstParagraphNumber": 38,
+                  "lastParagraphNumber": 43,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subarticulus 2",
+                  "pathID": "1__m.1__m.0__m.1",
+                  "semanticPath": "pars-1/sectio-2/caput-1/subarticulus-2",
+                  "url": "/pars-1/sectio-2#caput-1/subarticulus-2",
+                  "firstParagraphNumber": 44,
+                  "lastParagraphNumber": 49,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subarticulus 3",
+                  "pathID": "1__m.1__m.0__m.2",
+                  "semanticPath": "pars-1/sectio-2/caput-1/subarticulus-3",
+                  "url": "/pars-1/sectio-2#caput-1/subarticulus-3",
+                  "firstParagraphNumber": 50,
+                  "lastParagraphNumber": 54,
                   "children": []
                 },
                 {
@@ -104,10 +166,124 @@
                   "title": "Compendium",
                   "pathID": "1__m.1__m.0__i",
                   "semanticPath": "pars-1/sectio-2/caput-1/compendium",
-                  "url": "/la/pars-1/sectio-2#caput-1/compendium",
-                  "firstParagraphNumber": 29,
-                  "lastParagraphNumber": 33,
+                  "url": "/pars-1/sectio-2#caput-1/compendium",
+                  "firstParagraphNumber": 55,
+                  "lastParagraphNumber": 57,
                   "children": []
+                }
+              ]
+            },
+            {
+              "contentType": "CHAPTER",
+              "title": "Caput 2",
+              "pathID": "1__m.1__m.1",
+              "semanticPath": "pars-1/sectio-2/caput-2",
+              "url": "/pars-1/sectio-2/caput-2",
+              "firstParagraphNumber": 58,
+              "lastParagraphNumber": 97,
+              "children": [
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 1",
+                  "pathID": "1__m.1__m.1__m.0",
+                  "semanticPath": "pars-1/sectio-2/caput-2/articulus-1",
+                  "url": "/pars-1/sectio-2/caput-2#articulus-1",
+                  "firstParagraphNumber": 58,
+                  "lastParagraphNumber": 69,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.1__m.1__m.0__i",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-1/compendium",
+                      "url": "/pars-1/sectio-2/caput-2#articulus-1/compendium",
+                      "firstParagraphNumber": 67,
+                      "lastParagraphNumber": 69,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 2",
+                  "pathID": "1__m.1__m.1__m.1",
+                  "semanticPath": "pars-1/sectio-2/caput-2/articulus-2",
+                  "url": "/pars-1/sectio-2/caput-2/articulus-2",
+                  "firstParagraphNumber": 70,
+                  "lastParagraphNumber": 86,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 1",
+                      "pathID": "1__m.1__m.1__m.1__m.0",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-2/subarticulus-1",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-2#subarticulus-1",
+                      "firstParagraphNumber": 70,
+                      "lastParagraphNumber": 72,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 2",
+                      "pathID": "1__m.1__m.1__m.1__m.1",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-2/subarticulus-2",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-2#subarticulus-2",
+                      "firstParagraphNumber": 73,
+                      "lastParagraphNumber": 77,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 3",
+                      "pathID": "1__m.1__m.1__m.1__m.2",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-2/subarticulus-3",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-2#subarticulus-3",
+                      "firstParagraphNumber": 78,
+                      "lastParagraphNumber": 82,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.1__m.1__m.1__i",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-2/compendium",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-2#compendium",
+                      "firstParagraphNumber": 83,
+                      "lastParagraphNumber": 86,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 3",
+                  "pathID": "1__m.1__m.1__m.2",
+                  "semanticPath": "pars-1/sectio-2/caput-2/articulus-3",
+                  "url": "/pars-1/sectio-2/caput-2/articulus-3",
+                  "firstParagraphNumber": 87,
+                  "lastParagraphNumber": 97,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.1__m.1__m.2__i",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-3/compendium",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-3#compendium",
+                      "firstParagraphNumber": 91,
+                      "lastParagraphNumber": 95,
+                      "children": []
+                    },
+                    {
+                      "contentType": "PARAGRAPH_GROUP",
+                      "title": "Paragraphus Classis 2",
+                      "pathID": "1__m.1__m.1__m.2__f.0",
+                      "semanticPath": "pars-1/sectio-2/caput-2/articulus-3/finalis-contentus",
+                      "url": "/pars-1/sectio-2/caput-2/articulus-3#finalis-contentus",
+                      "firstParagraphNumber": 96,
+                      "lastParagraphNumber": 97,
+                      "children": []
+                    }
+                  ]
                 }
               ]
             }
@@ -118,66 +294,98 @@
           "title": "Sectio 3",
           "pathID": "1__m.2",
           "semanticPath": "pars-1/sectio-3",
-          "url": "/la/pars-1/sectio-3",
-          "firstParagraphNumber": 34,
-          "lastParagraphNumber": 66,
+          "url": "/pars-1/sectio-3",
+          "firstParagraphNumber": 98,
+          "lastParagraphNumber": 235,
           "children": [
             {
               "contentType": "CHAPTER",
               "title": "Caput 1",
               "pathID": "1__m.2__m.0",
               "semanticPath": "pars-1/sectio-3/caput-1",
-              "url": "/la/pars-1/sectio-3#caput-1",
-              "firstParagraphNumber": 36,
-              "lastParagraphNumber": 66,
+              "url": "/pars-1/sectio-3#caput-1",
+              "firstParagraphNumber": 98,
+              "lastParagraphNumber": 105,
               "children": [
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulus 1",
                   "pathID": "1__m.2__m.0__m.0",
                   "semanticPath": "pars-1/sectio-3/caput-1/articulus-1",
-                  "url": "/la/pars-1/sectio-3#caput-1/articulus-1",
-                  "firstParagraphNumber": 36,
-                  "lastParagraphNumber": 55,
+                  "url": "/pars-1/sectio-3#caput-1/articulus-1",
+                  "firstParagraphNumber": 98,
+                  "lastParagraphNumber": 105,
                   "children": [
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 1",
-                      "pathID": "1__m.2__m.0__m.0__m.0",
-                      "semanticPath": "pars-1/sectio-3/caput-1/articulus-1/subarticulus-1",
-                      "url": "/la/pars-1/sectio-3#caput-1/articulus-1/subarticulus-1",
-                      "firstParagraphNumber": 36,
-                      "lastParagraphNumber": 39,
-                      "children": []
-                    },
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 2",
-                      "pathID": "1__m.2__m.0__m.0__m.1",
-                      "semanticPath": "pars-1/sectio-3/caput-1/articulus-1/subarticulus-2",
-                      "url": "/la/pars-1/sectio-3#caput-1/articulus-1/subarticulus-2",
-                      "firstParagraphNumber": 40,
-                      "lastParagraphNumber": 44,
-                      "children": []
-                    },
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 3",
-                      "pathID": "1__m.2__m.0__m.0__m.2",
-                      "semanticPath": "pars-1/sectio-3/caput-1/articulus-1/subarticulus-3",
-                      "url": "/la/pars-1/sectio-3#caput-1/articulus-1/subarticulus-3",
-                      "firstParagraphNumber": 45,
-                      "lastParagraphNumber": 51,
-                      "children": []
-                    },
                     {
                       "contentType": "IN_BRIEF",
                       "title": "Compendium",
                       "pathID": "1__m.2__m.0__m.0__i",
                       "semanticPath": "pars-1/sectio-3/caput-1/articulus-1/compendium",
-                      "url": "/la/pars-1/sectio-3#caput-1/articulus-1/compendium",
-                      "firstParagraphNumber": 52,
-                      "lastParagraphNumber": 55,
+                      "url": "/pars-1/sectio-3#caput-1/articulus-1/compendium",
+                      "firstParagraphNumber": 103,
+                      "lastParagraphNumber": 105,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contentType": "CHAPTER",
+              "title": "Caput 2",
+              "pathID": "1__m.2__m.1",
+              "semanticPath": "pars-1/sectio-3/caput-2",
+              "url": "/pars-1/sectio-3/caput-2",
+              "firstParagraphNumber": 106,
+              "lastParagraphNumber": 183,
+              "children": [
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 1",
+                  "pathID": "1__m.2__m.1__m.0",
+                  "semanticPath": "pars-1/sectio-3/caput-2/articulus-1",
+                  "url": "/pars-1/sectio-3/caput-2#articulus-1",
+                  "firstParagraphNumber": 106,
+                  "lastParagraphNumber": 122,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 1",
+                      "pathID": "1__m.2__m.1__m.0__m.0",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-1/subarticulus-1",
+                      "url": "/pars-1/sectio-3/caput-2#articulus-1/subarticulus-1",
+                      "firstParagraphNumber": 106,
+                      "lastParagraphNumber": 110,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 2",
+                      "pathID": "1__m.2__m.1__m.0__m.1",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-1/subarticulus-2",
+                      "url": "/pars-1/sectio-3/caput-2#articulus-1/subarticulus-2",
+                      "firstParagraphNumber": 111,
+                      "lastParagraphNumber": 114,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 3",
+                      "pathID": "1__m.2__m.1__m.0__m.2",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-1/subarticulus-3",
+                      "url": "/pars-1/sectio-3/caput-2#articulus-1/subarticulus-3",
+                      "firstParagraphNumber": 115,
+                      "lastParagraphNumber": 119,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.2__m.1__m.0__i",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-1/compendium",
+                      "url": "/pars-1/sectio-3/caput-2#articulus-1/compendium",
+                      "firstParagraphNumber": 120,
+                      "lastParagraphNumber": 122,
                       "children": []
                     }
                   ]
@@ -185,20 +393,238 @@
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulus 2",
-                  "pathID": "1__m.2__m.0__m.1",
-                  "semanticPath": "pars-1/sectio-3/caput-1/articulus-2",
-                  "url": "/la/pars-1/sectio-3/caput-1/articulus-2",
-                  "firstParagraphNumber": 56,
-                  "lastParagraphNumber": 66,
+                  "pathID": "1__m.2__m.1__m.1",
+                  "semanticPath": "pars-1/sectio-3/caput-2/articulus-2",
+                  "url": "/pars-1/sectio-3/caput-2/articulus-2",
+                  "firstParagraphNumber": 123,
+                  "lastParagraphNumber": 174,
+                  "children": [
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulus Paragraphus 1",
+                      "pathID": "1__m.2__m.1__m.1__m.0",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-1",
+                      "url": "/pars-1/sectio-3/caput-2/articulus-2#articulus-paragraphus-1",
+                      "firstParagraphNumber": 123,
+                      "lastParagraphNumber": 140,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Compendium",
+                          "pathID": "1__m.2__m.1__m.1__m.0__i",
+                          "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-1/compendium",
+                          "url": "/pars-1/sectio-3/caput-2/articulus-2#articulus-paragraphus-1/compendium",
+                          "firstParagraphNumber": 136,
+                          "lastParagraphNumber": 140,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulus Paragraphus 2",
+                      "pathID": "1__m.2__m.1__m.1__m.1",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2",
+                      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2",
+                      "firstParagraphNumber": 141,
+                      "lastParagraphNumber": 152,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Compendium",
+                          "pathID": "1__m.2__m.1__m.1__m.1__i",
+                          "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2/compendium",
+                          "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-2#compendium",
+                          "firstParagraphNumber": 150,
+                          "lastParagraphNumber": 152,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulus Paragraphus 3",
+                      "pathID": "1__m.2__m.1__m.1__m.2",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3",
+                      "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3",
+                      "firstParagraphNumber": 153,
+                      "lastParagraphNumber": 174,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Compendium",
+                          "pathID": "1__m.2__m.1__m.1__m.2__i",
+                          "semanticPath": "pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3/compendium",
+                          "url": "/pars-1/sectio-3/caput-2/articulus-2/articulus-paragraphus-3#compendium",
+                          "firstParagraphNumber": 171,
+                          "lastParagraphNumber": 174,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 3",
+                  "pathID": "1__m.2__m.1__m.2",
+                  "semanticPath": "pars-1/sectio-3/caput-2/articulus-3",
+                  "url": "/pars-1/sectio-3/caput-2/articulus-3",
+                  "firstParagraphNumber": 175,
+                  "lastParagraphNumber": 183,
                   "children": [
                     {
                       "contentType": "IN_BRIEF",
                       "title": "Compendium",
-                      "pathID": "1__m.2__m.0__m.1__i",
-                      "semanticPath": "pars-1/sectio-3/caput-1/articulus-2/compendium",
-                      "url": "/la/pars-1/sectio-3/caput-1/articulus-2#compendium",
-                      "firstParagraphNumber": 64,
-                      "lastParagraphNumber": 66,
+                      "pathID": "1__m.2__m.1__m.2__i",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-3/compendium",
+                      "url": "/pars-1/sectio-3/caput-2/articulus-3#compendium",
+                      "firstParagraphNumber": 179,
+                      "lastParagraphNumber": 182,
+                      "children": []
+                    },
+                    {
+                      "contentType": "PARAGRAPH_GROUP",
+                      "title": "Paragraphus Classis 2",
+                      "pathID": "1__m.2__m.1__m.2__f.0",
+                      "semanticPath": "pars-1/sectio-3/caput-2/articulus-3/finalis-contentus",
+                      "url": "/pars-1/sectio-3/caput-2/articulus-3#finalis-contentus",
+                      "firstParagraphNumber": 183,
+                      "lastParagraphNumber": 183,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contentType": "CHAPTER",
+              "title": "Caput 3",
+              "pathID": "1__m.2__m.2",
+              "semanticPath": "pars-1/sectio-3/caput-3",
+              "url": "/pars-1/sectio-3/caput-3",
+              "firstParagraphNumber": 184,
+              "lastParagraphNumber": 235,
+              "children": [
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 1",
+                  "pathID": "1__m.2__m.2__m.0",
+                  "semanticPath": "pars-1/sectio-3/caput-3/articulus-1",
+                  "url": "/pars-1/sectio-3/caput-3#articulus-1",
+                  "firstParagraphNumber": 184,
+                  "lastParagraphNumber": 204,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 1",
+                      "pathID": "1__m.2__m.2__m.0__m.0",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-1/subarticulus-1",
+                      "url": "/pars-1/sectio-3/caput-3#articulus-1/subarticulus-1",
+                      "firstParagraphNumber": 184,
+                      "lastParagraphNumber": 190,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 2",
+                      "pathID": "1__m.2__m.2__m.0__m.1",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-1/subarticulus-2",
+                      "url": "/pars-1/sectio-3/caput-3#articulus-1/subarticulus-2",
+                      "firstParagraphNumber": 191,
+                      "lastParagraphNumber": 196,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 3",
+                      "pathID": "1__m.2__m.2__m.0__m.2",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-1/subarticulus-3",
+                      "url": "/pars-1/sectio-3/caput-3#articulus-1/subarticulus-3",
+                      "firstParagraphNumber": 197,
+                      "lastParagraphNumber": 200,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.2__m.2__m.0__i",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-1/compendium",
+                      "url": "/pars-1/sectio-3/caput-3#articulus-1/compendium",
+                      "firstParagraphNumber": 201,
+                      "lastParagraphNumber": 204,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 2",
+                  "pathID": "1__m.2__m.2__m.1",
+                  "semanticPath": "pars-1/sectio-3/caput-3/articulus-2",
+                  "url": "/pars-1/sectio-3/caput-3/articulus-2",
+                  "firstParagraphNumber": 205,
+                  "lastParagraphNumber": 223,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 1",
+                      "pathID": "1__m.2__m.2__m.1__m.0",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-2/subarticulus-1",
+                      "url": "/pars-1/sectio-3/caput-3/articulus-2#subarticulus-1",
+                      "firstParagraphNumber": 205,
+                      "lastParagraphNumber": 208,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subarticulus 2",
+                      "pathID": "1__m.2__m.2__m.1__m.1",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-2/subarticulus-2",
+                      "url": "/pars-1/sectio-3/caput-3/articulus-2#subarticulus-2",
+                      "firstParagraphNumber": 209,
+                      "lastParagraphNumber": 215,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.2__m.2__m.1__i",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-2/compendium",
+                      "url": "/pars-1/sectio-3/caput-3/articulus-2#compendium",
+                      "firstParagraphNumber": 216,
+                      "lastParagraphNumber": 220,
+                      "children": []
+                    },
+                    {
+                      "contentType": "PARAGRAPH_GROUP",
+                      "title": "Paragraphus Classis 1",
+                      "pathID": "1__m.2__m.2__m.1__f.0",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-2/finalis-contentus",
+                      "url": "/pars-1/sectio-3/caput-3/articulus-2#finalis-contentus",
+                      "firstParagraphNumber": 221,
+                      "lastParagraphNumber": 223,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulus 3",
+                  "pathID": "1__m.2__m.2__m.2",
+                  "semanticPath": "pars-1/sectio-3/caput-3/articulus-3",
+                  "url": "/pars-1/sectio-3/caput-3/articulus-3",
+                  "firstParagraphNumber": 224,
+                  "lastParagraphNumber": 235,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "1__m.2__m.2__m.2__i",
+                      "semanticPath": "pars-1/sectio-3/caput-3/articulus-3/compendium",
+                      "url": "/pars-1/sectio-3/caput-3/articulus-3#compendium",
+                      "firstParagraphNumber": 233,
+                      "lastParagraphNumber": 235,
                       "children": []
                     }
                   ]
@@ -214,128 +640,36 @@
       "title": "Pars 2",
       "pathID": "2",
       "semanticPath": "pars-2",
-      "url": "/la/pars-2",
-      "firstParagraphNumber": 67,
-      "lastParagraphNumber": 112,
+      "url": "/pars-2",
+      "firstParagraphNumber": 236,
+      "lastParagraphNumber": 247,
       "children": [
         {
           "contentType": "SECTION",
           "title": "Sectio 1",
           "pathID": "2__m.0",
           "semanticPath": "pars-2/sectio-1",
-          "url": "/la/pars-2#sectio-1",
-          "firstParagraphNumber": 67,
-          "lastParagraphNumber": 75,
+          "url": "/pars-2#sectio-1",
+          "firstParagraphNumber": 243,
+          "lastParagraphNumber": 247,
           "children": [
             {
-              "contentType": "IN_BRIEF",
-              "title": "Compendium",
-              "pathID": "2__m.0__i",
-              "semanticPath": "pars-2/sectio-1/compendium",
-              "url": "/la/pars-2#sectio-1/compendium",
-              "firstParagraphNumber": 73,
-              "lastParagraphNumber": 75,
-              "children": []
-            }
-          ]
-        },
-        {
-          "contentType": "SECTION",
-          "title": "Sectio 2",
-          "pathID": "2__m.1",
-          "semanticPath": "pars-2/sectio-2",
-          "url": "/la/pars-2/sectio-2",
-          "firstParagraphNumber": 76,
-          "lastParagraphNumber": 112,
-          "children": [
-            {
-              "contentType": "ARTICLE",
-              "title": "Articulus 1",
-              "pathID": "2__m.1__m.0",
-              "semanticPath": "pars-2/sectio-2/articulus-1",
-              "url": "/la/pars-2/sectio-2#articulus-1",
-              "firstParagraphNumber": 76,
-              "lastParagraphNumber": 94,
+              "contentType": "CHAPTER",
+              "title": "Caput 1",
+              "pathID": "2__m.0__m.0",
+              "semanticPath": "pars-2/sectio-1/caput-1",
+              "url": "/pars-2#sectio-1/caput-1",
+              "firstParagraphNumber": 243,
+              "lastParagraphNumber": 247,
               "children": [
                 {
                   "contentType": "SUB_ARTICLE",
                   "title": "Subarticulus 1",
-                  "pathID": "2__m.1__m.0__m.0",
-                  "semanticPath": "pars-2/sectio-2/articulus-1/subarticulus-1",
-                  "url": "/la/pars-2/sectio-2#articulus-1/subarticulus-1",
-                  "firstParagraphNumber": 76,
-                  "lastParagraphNumber": 82,
-                  "children": []
-                },
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 2",
-                  "pathID": "2__m.1__m.0__m.1",
-                  "semanticPath": "pars-2/sectio-2/articulus-1/subarticulus-2",
-                  "url": "/la/pars-2/sectio-2#articulus-1/subarticulus-2",
-                  "firstParagraphNumber": 83,
-                  "lastParagraphNumber": 88,
-                  "children": []
-                },
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 3",
-                  "pathID": "2__m.1__m.0__m.2",
-                  "semanticPath": "pars-2/sectio-2/articulus-1/subarticulus-3",
-                  "url": "/la/pars-2/sectio-2#articulus-1/subarticulus-3",
-                  "firstParagraphNumber": 89,
-                  "lastParagraphNumber": 90,
-                  "children": []
-                },
-                {
-                  "contentType": "IN_BRIEF",
-                  "title": "Compendium",
-                  "pathID": "2__m.1__m.0__i",
-                  "semanticPath": "pars-2/sectio-2/articulus-1/compendium",
-                  "url": "/la/pars-2/sectio-2#articulus-1/compendium",
-                  "firstParagraphNumber": 91,
-                  "lastParagraphNumber": 94,
-                  "children": []
-                }
-              ]
-            },
-            {
-              "contentType": "ARTICLE",
-              "title": "Articulus 2",
-              "pathID": "2__m.1__m.1",
-              "semanticPath": "pars-2/sectio-2/articulus-2",
-              "url": "/la/pars-2/sectio-2/articulus-2",
-              "firstParagraphNumber": 95,
-              "lastParagraphNumber": 112,
-              "children": [
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 1",
-                  "pathID": "2__m.1__m.1__m.0",
-                  "semanticPath": "pars-2/sectio-2/articulus-2/subarticulus-1",
-                  "url": "/la/pars-2/sectio-2/articulus-2#subarticulus-1",
-                  "firstParagraphNumber": 95,
-                  "lastParagraphNumber": 99,
-                  "children": []
-                },
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 2",
-                  "pathID": "2__m.1__m.1__m.1",
-                  "semanticPath": "pars-2/sectio-2/articulus-2/subarticulus-2",
-                  "url": "/la/pars-2/sectio-2/articulus-2#subarticulus-2",
-                  "firstParagraphNumber": 100,
-                  "lastParagraphNumber": 107,
-                  "children": []
-                },
-                {
-                  "contentType": "IN_BRIEF",
-                  "title": "Compendium",
-                  "pathID": "2__m.1__m.1__i",
-                  "semanticPath": "pars-2/sectio-2/articulus-2/compendium",
-                  "url": "/la/pars-2/sectio-2/articulus-2#compendium",
-                  "firstParagraphNumber": 108,
-                  "lastParagraphNumber": 112,
+                  "pathID": "2__m.0__m.0__m.0",
+                  "semanticPath": "pars-2/sectio-1/caput-1/subarticulus-1",
+                  "url": "/pars-2#sectio-1/caput-1/subarticulus-1",
+                  "firstParagraphNumber": 243,
+                  "lastParagraphNumber": 247,
                   "children": []
                 }
               ]
@@ -349,297 +683,56 @@
       "title": "Pars 3",
       "pathID": "3",
       "semanticPath": "pars-3",
-      "url": "/la/pars-3",
-      "firstParagraphNumber": 113,
-      "lastParagraphNumber": 294,
+      "url": "/pars-3",
+      "firstParagraphNumber": 248,
+      "lastParagraphNumber": 336,
       "children": [
         {
           "contentType": "SECTION",
           "title": "Sectio 1",
           "pathID": "3__m.0",
           "semanticPath": "pars-3/sectio-1",
-          "url": "/la/pars-3#sectio-1",
-          "firstParagraphNumber": 116,
-          "lastParagraphNumber": 248,
+          "url": "/pars-3#sectio-1",
+          "firstParagraphNumber": 257,
+          "lastParagraphNumber": 276,
           "children": [
             {
               "contentType": "CHAPTER",
               "title": "Caput 1",
               "pathID": "3__m.0__m.0",
               "semanticPath": "pars-3/sectio-1/caput-1",
-              "url": "/la/pars-3#sectio-1/caput-1",
-              "firstParagraphNumber": 116,
-              "lastParagraphNumber": 126,
+              "url": "/pars-3#sectio-1/caput-1",
+              "firstParagraphNumber": 260,
+              "lastParagraphNumber": 276,
               "children": [
                 {
                   "contentType": "SUB_ARTICLE",
                   "title": "Subarticulus 1",
                   "pathID": "3__m.0__m.0__m.0",
                   "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-1",
-                  "url": "/la/pars-3#sectio-1/caput-1/subarticulus-1",
-                  "firstParagraphNumber": 116,
-                  "lastParagraphNumber": 122,
-                  "children": []
-                },
-                {
-                  "contentType": "IN_BRIEF",
-                  "title": "Compendium",
-                  "pathID": "3__m.0__m.0__i",
-                  "semanticPath": "pars-3/sectio-1/caput-1/compendium",
-                  "url": "/la/pars-3#sectio-1/caput-1/compendium",
-                  "firstParagraphNumber": 123,
-                  "lastParagraphNumber": 126,
-                  "children": []
-                }
-              ]
-            },
-            {
-              "contentType": "CHAPTER",
-              "title": "Caput 2",
-              "pathID": "3__m.0__m.1",
-              "semanticPath": "pars-3/sectio-1/caput-2",
-              "url": "/la/pars-3/sectio-1/caput-2",
-              "firstParagraphNumber": 127,
-              "lastParagraphNumber": 234,
-              "children": [
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulus 1",
-                  "pathID": "3__m.0__m.1__m.0",
-                  "semanticPath": "pars-3/sectio-1/caput-2/articulus-1",
-                  "url": "/la/pars-3/sectio-1/caput-2#articulus-1",
-                  "firstParagraphNumber": 127,
-                  "lastParagraphNumber": 170,
-                  "children": [
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 1",
-                      "pathID": "3__m.0__m.1__m.0__m.0",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-1",
-                      "url": "/la/pars-3/sectio-1/caput-2#articulus-1/articulus-paragraphus-1",
-                      "firstParagraphNumber": 127,
-                      "lastParagraphNumber": 144,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.0__m.0__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-1/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2#articulus-1/articulus-paragraphus-1/compendium",
-                          "firstParagraphNumber": 140,
-                          "lastParagraphNumber": 144,
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 2",
-                      "pathID": "3__m.0__m.1__m.0__m.1",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2",
-                      "firstParagraphNumber": 145,
-                      "lastParagraphNumber": 158,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.0__m.1__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-2#compendium",
-                          "firstParagraphNumber": 156,
-                          "lastParagraphNumber": 158,
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 3",
-                      "pathID": "3__m.0__m.1__m.0__m.2",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3",
-                      "firstParagraphNumber": 159,
-                      "lastParagraphNumber": 170,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.0__m.2__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2/articulus-1/articulus-paragraphus-3#compendium",
-                          "firstParagraphNumber": 167,
-                          "lastParagraphNumber": 170,
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulus 2",
-                  "pathID": "3__m.0__m.1__m.1",
-                  "semanticPath": "pars-3/sectio-1/caput-2/articulus-2",
-                  "url": "/la/pars-3/sectio-1/caput-2/articulus-2",
-                  "firstParagraphNumber": 171,
-                  "lastParagraphNumber": 189,
-                  "children": [
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 1",
-                      "pathID": "3__m.0__m.1__m.1__m.0",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-2/subarticulus-1",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-2#subarticulus-1",
-                      "firstParagraphNumber": 171,
-                      "lastParagraphNumber": 176,
-                      "children": []
-                    },
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 2",
-                      "pathID": "3__m.0__m.1__m.1__m.1",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-2/subarticulus-2",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-2#subarticulus-2",
-                      "firstParagraphNumber": 177,
-                      "lastParagraphNumber": 180,
-                      "children": []
-                    },
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subarticulus 3",
-                      "pathID": "3__m.0__m.1__m.1__m.2",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-2/subarticulus-3",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-2#subarticulus-3",
-                      "firstParagraphNumber": 181,
-                      "lastParagraphNumber": 184,
-                      "children": []
-                    },
-                    {
-                      "contentType": "IN_BRIEF",
-                      "title": "Compendium",
-                      "pathID": "3__m.0__m.1__m.1__i",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-2/compendium",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-2#compendium",
-                      "firstParagraphNumber": 185,
-                      "lastParagraphNumber": 189,
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulus 3",
-                  "pathID": "3__m.0__m.1__m.2",
-                  "semanticPath": "pars-3/sectio-1/caput-2/articulus-3",
-                  "url": "/la/pars-3/sectio-1/caput-2/articulus-3",
-                  "firstParagraphNumber": 190,
-                  "lastParagraphNumber": 234,
-                  "children": [
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 1",
-                      "pathID": "3__m.0__m.1__m.2__m.0",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-1",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-3#articulus-paragraphus-1",
-                      "firstParagraphNumber": 190,
-                      "lastParagraphNumber": 204,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.2__m.0__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-1/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2/articulus-3#articulus-paragraphus-1/compendium",
-                          "firstParagraphNumber": 202,
-                          "lastParagraphNumber": 204,
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 2",
-                      "pathID": "3__m.0__m.1__m.2__m.1",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2",
-                      "firstParagraphNumber": 205,
-                      "lastParagraphNumber": 218,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.2__m.1__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-2#compendium",
-                          "firstParagraphNumber": 216,
-                          "lastParagraphNumber": 218,
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulus Paragraphus 3",
-                      "pathID": "3__m.0__m.1__m.2__m.2",
-                      "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3",
-                      "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3",
-                      "firstParagraphNumber": 219,
-                      "lastParagraphNumber": 234,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Compendium",
-                          "pathID": "3__m.0__m.1__m.2__m.2__i",
-                          "semanticPath": "pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3/compendium",
-                          "url": "/la/pars-3/sectio-1/caput-2/articulus-3/articulus-paragraphus-3#compendium",
-                          "firstParagraphNumber": 230,
-                          "lastParagraphNumber": 234,
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "contentType": "CHAPTER",
-              "title": "Caput 3",
-              "pathID": "3__m.0__m.2",
-              "semanticPath": "pars-3/sectio-1/caput-3",
-              "url": "/la/pars-3/sectio-1/caput-3",
-              "firstParagraphNumber": 235,
-              "lastParagraphNumber": 248,
-              "children": [
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 1",
-                  "pathID": "3__m.0__m.2__m.0",
-                  "semanticPath": "pars-3/sectio-1/caput-3/subarticulus-1",
-                  "url": "/la/pars-3/sectio-1/caput-3#subarticulus-1",
-                  "firstParagraphNumber": 235,
-                  "lastParagraphNumber": 238,
+                  "url": "/pars-3#sectio-1/caput-1/subarticulus-1",
+                  "firstParagraphNumber": 260,
+                  "lastParagraphNumber": 264,
                   "children": []
                 },
                 {
                   "contentType": "SUB_ARTICLE",
                   "title": "Subarticulus 2",
-                  "pathID": "3__m.0__m.2__m.1",
-                  "semanticPath": "pars-3/sectio-1/caput-3/subarticulus-2",
-                  "url": "/la/pars-3/sectio-1/caput-3#subarticulus-2",
-                  "firstParagraphNumber": 239,
-                  "lastParagraphNumber": 244,
+                  "pathID": "3__m.0__m.0__m.1",
+                  "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-2",
+                  "url": "/pars-3#sectio-1/caput-1/subarticulus-2",
+                  "firstParagraphNumber": 265,
+                  "lastParagraphNumber": 270,
                   "children": []
                 },
                 {
                   "contentType": "SUB_ARTICLE",
                   "title": "Subarticulus 3",
-                  "pathID": "3__m.0__m.2__m.2",
-                  "semanticPath": "pars-3/sectio-1/caput-3/subarticulus-3",
-                  "url": "/la/pars-3/sectio-1/caput-3#subarticulus-3",
-                  "firstParagraphNumber": 245,
-                  "lastParagraphNumber": 248,
+                  "pathID": "3__m.0__m.0__m.2",
+                  "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-3",
+                  "url": "/pars-3#sectio-1/caput-1/subarticulus-3",
+                  "firstParagraphNumber": 271,
+                  "lastParagraphNumber": 276,
                   "children": []
                 }
               ]
@@ -651,58 +744,81 @@
           "title": "Sectio 2",
           "pathID": "3__m.1",
           "semanticPath": "pars-3/sectio-2",
-          "url": "/la/pars-3/sectio-2",
-          "firstParagraphNumber": 249,
-          "lastParagraphNumber": 294,
+          "url": "/pars-3/sectio-2",
+          "firstParagraphNumber": 277,
+          "lastParagraphNumber": 336,
           "children": [
             {
               "contentType": "ARTICLE",
               "title": "Articulus 1",
               "pathID": "3__m.1__m.0",
               "semanticPath": "pars-3/sectio-2/articulus-1",
-              "url": "/la/pars-3/sectio-2#articulus-1",
-              "firstParagraphNumber": 249,
-              "lastParagraphNumber": 274,
+              "url": "/pars-3/sectio-2#articulus-1",
+              "firstParagraphNumber": 277,
+              "lastParagraphNumber": 325,
               "children": [
                 {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 1",
+                  "contentType": "ARTICLE_PARAGRAPH",
+                  "title": "Articulus Paragraphus 1",
                   "pathID": "3__m.1__m.0__m.0",
-                  "semanticPath": "pars-3/sectio-2/articulus-1/subarticulus-1",
-                  "url": "/la/pars-3/sectio-2#articulus-1/subarticulus-1",
-                  "firstParagraphNumber": 249,
-                  "lastParagraphNumber": 256,
-                  "children": []
+                  "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-1",
+                  "url": "/pars-3/sectio-2#articulus-1/articulus-paragraphus-1",
+                  "firstParagraphNumber": 277,
+                  "lastParagraphNumber": 297,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "3__m.1__m.0__m.0__i",
+                      "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-1/compendium",
+                      "url": "/pars-3/sectio-2#articulus-1/articulus-paragraphus-1/compendium",
+                      "firstParagraphNumber": 293,
+                      "lastParagraphNumber": 297,
+                      "children": []
+                    }
+                  ]
                 },
                 {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 2",
+                  "contentType": "ARTICLE_PARAGRAPH",
+                  "title": "Articulus Paragraphus 2",
                   "pathID": "3__m.1__m.0__m.1",
-                  "semanticPath": "pars-3/sectio-2/articulus-1/subarticulus-2",
-                  "url": "/la/pars-3/sectio-2#articulus-1/subarticulus-2",
-                  "firstParagraphNumber": 257,
-                  "lastParagraphNumber": 263,
-                  "children": []
+                  "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-2",
+                  "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-2",
+                  "firstParagraphNumber": 298,
+                  "lastParagraphNumber": 314,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "3__m.1__m.0__m.1__i",
+                      "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-2/compendium",
+                      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-2#compendium",
+                      "firstParagraphNumber": 310,
+                      "lastParagraphNumber": 314,
+                      "children": []
+                    }
+                  ]
                 },
                 {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 3",
+                  "contentType": "ARTICLE_PARAGRAPH",
+                  "title": "Articulus Paragraphus 3",
                   "pathID": "3__m.1__m.0__m.2",
-                  "semanticPath": "pars-3/sectio-2/articulus-1/subarticulus-3",
-                  "url": "/la/pars-3/sectio-2#articulus-1/subarticulus-3",
-                  "firstParagraphNumber": 264,
-                  "lastParagraphNumber": 270,
-                  "children": []
-                },
-                {
-                  "contentType": "IN_BRIEF",
-                  "title": "Compendium",
-                  "pathID": "3__m.1__m.0__i",
-                  "semanticPath": "pars-3/sectio-2/articulus-1/compendium",
-                  "url": "/la/pars-3/sectio-2#articulus-1/compendium",
-                  "firstParagraphNumber": 271,
-                  "lastParagraphNumber": 274,
-                  "children": []
+                  "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-3",
+                  "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-3",
+                  "firstParagraphNumber": 315,
+                  "lastParagraphNumber": 325,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Compendium",
+                      "pathID": "3__m.1__m.0__m.2__i",
+                      "semanticPath": "pars-3/sectio-2/articulus-1/articulus-paragraphus-3/compendium",
+                      "url": "/pars-3/sectio-2/articulus-1/articulus-paragraphus-3#compendium",
+                      "firstParagraphNumber": 321,
+                      "lastParagraphNumber": 325,
+                      "children": []
+                    }
+                  ]
                 }
               ]
             },
@@ -711,59 +827,18 @@
               "title": "Articulus 2",
               "pathID": "3__m.1__m.1",
               "semanticPath": "pars-3/sectio-2/articulus-2",
-              "url": "/la/pars-3/sectio-2/articulus-2",
-              "firstParagraphNumber": 275,
-              "lastParagraphNumber": 284,
+              "url": "/pars-3/sectio-2/articulus-2",
+              "firstParagraphNumber": 326,
+              "lastParagraphNumber": 336,
               "children": [
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 1",
-                  "pathID": "3__m.1__m.1__m.0",
-                  "semanticPath": "pars-3/sectio-2/articulus-2/subarticulus-1",
-                  "url": "/la/pars-3/sectio-2/articulus-2#subarticulus-1",
-                  "firstParagraphNumber": 275,
-                  "lastParagraphNumber": 276,
-                  "children": []
-                },
-                {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subarticulus 2",
-                  "pathID": "3__m.1__m.1__m.1",
-                  "semanticPath": "pars-3/sectio-2/articulus-2/subarticulus-2",
-                  "url": "/la/pars-3/sectio-2/articulus-2#subarticulus-2",
-                  "firstParagraphNumber": 277,
-                  "lastParagraphNumber": 280,
-                  "children": []
-                },
                 {
                   "contentType": "IN_BRIEF",
                   "title": "Compendium",
                   "pathID": "3__m.1__m.1__i",
                   "semanticPath": "pars-3/sectio-2/articulus-2/compendium",
-                  "url": "/la/pars-3/sectio-2/articulus-2#compendium",
-                  "firstParagraphNumber": 281,
-                  "lastParagraphNumber": 284,
-                  "children": []
-                }
-              ]
-            },
-            {
-              "contentType": "ARTICLE",
-              "title": "Articulus 3",
-              "pathID": "3__m.1__m.2",
-              "semanticPath": "pars-3/sectio-2/articulus-3",
-              "url": "/la/pars-3/sectio-2/articulus-3",
-              "firstParagraphNumber": 285,
-              "lastParagraphNumber": 294,
-              "children": [
-                {
-                  "contentType": "IN_BRIEF",
-                  "title": "Compendium",
-                  "pathID": "3__m.1__m.2__i",
-                  "semanticPath": "pars-3/sectio-2/articulus-3/compendium",
-                  "url": "/la/pars-3/sectio-2/articulus-3#compendium",
-                  "firstParagraphNumber": 291,
-                  "lastParagraphNumber": 294,
+                  "url": "/pars-3/sectio-2/articulus-2#compendium",
+                  "firstParagraphNumber": 332,
+                  "lastParagraphNumber": 336,
                   "children": []
                 }
               ]

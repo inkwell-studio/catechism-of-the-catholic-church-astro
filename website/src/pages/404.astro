@@ -1,9 +1,9 @@
 ---
+import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 import BaseLayout from '@layouts/base.astro';
 
 import { translate as t } from '../logic/translation';
 import { getLanguageFromPathname } from '../logic/utils';
-import { DEFAULT_LANGUAGE } from '../../config';
 
 export const prerender = false;
 

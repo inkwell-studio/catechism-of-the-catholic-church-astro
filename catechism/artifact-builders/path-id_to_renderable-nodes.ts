@@ -1,9 +1,10 @@
 import { RenderableNode, RenderableNodeMap, TableOfContentsEntry, TableOfContentsType } from '../source/types/types.ts';
+import { getTopLevelEntries } from '../source/utils/table-of-contents.ts';
 
 export function build(tableOfContents: TableOfContentsType): RenderableNodeMap {
     const map: RenderableNodeMap = {};
 
-    const topLevelEntries = getAllEntries([tableOfContents.prologue, ...tableOfContents.parts]).filter((entry) => !entry.url.includes('#'));
+    const topLevelEntries = getTopLevelEntries(tableOfContents);
 
     topLevelEntries.forEach((entry, index, entries) => {
         const here = buildNode(entry);
@@ -18,15 +19,6 @@ export function build(tableOfContents: TableOfContentsType): RenderableNodeMap {
     });
 
     return map;
-}
-
-function getAllEntries(entries: Array<TableOfContentsEntry>): Array<TableOfContentsEntry> {
-    return entries.flatMap((entry) =>
-        // deno-fmt-ignore
-        entry.children.length > 0
-            ? [ entry, ...getAllEntries(entry.children) ]
-            : [ entry ]
-    );
 }
 
 function buildNode(entry: TableOfContentsEntry): RenderableNode | null {

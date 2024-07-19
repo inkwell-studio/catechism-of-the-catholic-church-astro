@@ -51,10 +51,10 @@ deno task test-e2e
 
 ### Committing to `master`
 
-The `pre-commit` task should be successfully executed before committing to ensure that the code is linted, correct, and formatted, and that
-the artifacts are kept in-sync with the source.
+The `build` task should be successfully executed before committing to ensure that the code is linted, correct, and formatted, and that the
+artifacts are kept in-sync with the source.
 
-The end-to-end tests should also be successfully executed (see _End-to-end testing_ above).
+After that, the end-to-end tests should be successfully executed (see _End-to-end testing_ above).
 
 Commit messages should follow the following pattern:
 

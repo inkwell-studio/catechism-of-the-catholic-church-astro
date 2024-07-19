@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@layouts/base.astro';
+import { getTopLevelUrls } from '../_utils';
+
+export function getStaticPaths() {
+    return getTopLevelUrls('excludeDefaultLanguage').map(({ language, url }) => ({
+        params: { language, path: url },
+    }));
+}
+
+const language = Astro.params.language;
+const path = Astro.params.path;
+---
+
+<BaseLayout language={language}>
+    <div class="flex flex-col p-48 gap-4">
+        <div class="text-xl font-bold font-mono">{language}</div>
+        <div class="border-t border-stone-400 dark:border-slate-400"></div>
+        <div class="font-mono">{path}</div>
+    </div>
+</BaseLayout>

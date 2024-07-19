@@ -1,18 +1,18 @@
 import { assert, assertStrictEquals } from '$std/assert';
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
-import { Language } from '@catechism/source/types/language.ts';
-
-import { DEFAULT_LANGUAGE } from '../config.ts';
+import { translate } from '../src/logic/translation.ts';
 
 const baseUrl = 'http://localhost:8085';
+const supportedLanguages = getSupportedLanguages();
 
-//#region tests: static content
+//#region tests: static files
 Deno.test('website: static files', async (test) => {
     const responses: Array<Response> = [];
 
     async function get(url = ''): Promise<Response> {
-        url = url ? `${baseUrl}/${url}` : baseUrl;
+        url = new URL(url, baseUrl).href;
 
         const response = await fetch(new Request(url));
         responses.push(response);
@@ -34,13 +34,14 @@ Deno.test('website: static files', async (test) => {
         close(responses);
     });
 });
+//#endregion
 
 //#region tests: rendered content
 Deno.test('website: rendered content', async (test) => {
     const responses: Array<Response> = [];
 
     async function get(url = ''): Promise<Response> {
-        url = url ? `${baseUrl}/${url}` : baseUrl;
+        url = new URL(url, baseUrl).href;
 
         const response = await fetch(new Request(url));
         responses.push(response);
@@ -61,7 +62,7 @@ Deno.test('website: rendered content', async (test) => {
         assertStrictEquals(lang, DEFAULT_LANGUAGE);
     });
 
-    await test.step('paths including the default language code are redirected to the same subpath without the language code', async (t) => {
+    await test.step('paths with the default language code are redirected to the same subpath without the language code', async (t) => {
         const tests = [
             [DEFAULT_LANGUAGE, 'root'],
             [`${DEFAULT_LANGUAGE}/`, 'root (with trailing slash)'],
@@ -86,7 +87,7 @@ Deno.test('website: rendered content', async (test) => {
     });
 
     await test.step('the `lang` attribute is correct for the landing page of each supported language', async (t) => {
-        for (const [languageKey, language] of getSupportedLanguages()) {
+        for (const [languageKey, language] of supportedLanguages) {
             await t.step(`${languageKey}`, async () => {
                 const r = await get(language);
                 assertStrictEquals(r.status, 200);
@@ -105,13 +106,14 @@ Deno.test('website: rendered content', async (test) => {
     });
 
     await test.step('invalid routes: 404 page', async (t) => {
+        // invalid default language route
         await t.step('default language', async () => {
             const r = await get('/invalid-route');
             await assert404(r, DEFAULT_LANGUAGE);
         });
 
         // invalid language-specific routes
-        for (const [languageKey, language] of getSupportedLanguages()) {
+        for (const [languageKey, language] of supportedLanguages) {
             await t.step(`${languageKey}`, async () => {
                 const route = `${language}/invalid-route`;
                 const r = await get(route);
@@ -120,11 +122,19 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    /*
-    await test.step('can navigate to the prologue', async () => {
-        const r = await get('en/prologue');
-        assertStrictEquals(r.status, 200);
+    await test.step('can navigate to the prologue', async (t) => {
+        const routes = getAllRoutes('/prologue');
+
+        for (const route of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+            });
+        }
     });
+
+    /*
+    // TODO: Add a test for a nested semantic path URL
 
     await test.step('/{paragraph-number} redirects to a SemanticPath URL', async () => {
         const r = await get('1');
@@ -168,7 +178,7 @@ Deno.test('website: data API', async (test) => {
     const responses: Array<Response> = [];
 
     async function get(url = ''): Promise<Response> {
-        url = `${baseUrl}/api/${url}`;
+        url = new URL(`/api/${url}`, baseUrl).href;
         const response = await fetch(new Request(url));
         responses.push(response);
         return response;
@@ -266,6 +276,30 @@ function getLangAttribute(html: string): string | null {
     // Look for: `<html lang="en"`
     const regex = /(<html lang=")([a-z,A-Z]*)(")/;
     return regex.exec(html)?.[2] ?? null;
+}
+
+function getAllRoutes(subpath: string): Array<string> {
+    const routes = [
+        // the default-language route
+        subpath,
+    ];
+
+    for (const [_languageKey, language] of supportedLanguages) {
+        // deno-fmt-ignore
+        // This is a simple path translation function, and only needs to be robust enough for the corresponding e2e tests to pass
+        const translatedSubpath = subpath
+            .split('/')
+            .map((part) => part && DEFAULT_LANGUAGE !== language
+                ? translate(part, language)
+                : part
+            )
+            .join('/');
+
+        // It is assumed that `subpath` includes a preceding slash
+        routes.push(language + translatedSubpath);
+    }
+
+    return routes;
 }
 
 function close(responses: Array<Response>): void {
