@@ -1,12 +1,11 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 import BaseLayout from '@layouts/base.astro';
-import { getTopLevelUrls } from './_utils';
+
+import { getTableOfContentsUrls } from './_utils';
 
 export function getStaticPaths() {
-    return getTopLevelUrls('onlyDefaultLanguage').map(({ language, url }) => ({
-        params: { path: url },
-    }));
+    return getTableOfContentsUrls('onlyDefaultLanguage').map(({ language, url }) => ({ params: { path: url } }));
 }
 
 const path = Astro.params.path;

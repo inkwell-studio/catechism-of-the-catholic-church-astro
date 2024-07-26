@@ -6,13 +6,9 @@
 
 # Tasks to complete now
 
-- [ ] implement routing
-  - [ ] execute tests (`catechism/`)
-  - [ ] add e2e tests for semantic paths
-  - [ ] add tests in `website/src/logic/routing.test.ts` for URLs that begin with a language tag
-  - [ ] add e2e tests for paragraph numbers
-  - [ ] add e2e tests for the table-of-contents pages (may need to determine desired URL)
-  - [ ] implement TOC pages
+- [ ] implement app shell with content-HTMX functionality
+  - [ ] add e2e tests for the table-of-contents pages?
+- [ ] add a 500 page
 - [ ] implement API demo
 - [ ] implement landing page
 - [ ] update UI

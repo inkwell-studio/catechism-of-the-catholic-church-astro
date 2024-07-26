@@ -1,11 +1,10 @@
 ---
 import BaseLayout from '@layouts/base.astro';
-import { getTopLevelUrls } from '../_utils';
+
+import { getTableOfContentsUrls } from '../_utils';
 
 export function getStaticPaths() {
-    return getTopLevelUrls('excludeDefaultLanguage').map(({ language, url }) => ({
-        params: { language, path: url },
-    }));
+    return getTableOfContentsUrls('excludeDefaultLanguage').map(({ language, url }) => ({ params: { language, path: url } }));
 }
 
 const language = Astro.params.language;

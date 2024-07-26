@@ -1,7 +1,8 @@
 import { assertExists, assertStrictEquals } from '$std/assert';
-
-import { Element, getElementAndPathID, getUrl } from './routing.ts';
 import { Language, SemanticPath } from '@catechism/source/types/types.ts';
+import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+
+import { Element, getElementAndPathID, getLanguageFromPathname, getParagraphNumber, getUrl } from './routing.ts';
 
 console.log('\nrouting utils (server) ...');
 
@@ -256,5 +257,102 @@ Deno.test('getElementAndPathID(): Content', () => {
     assertExists(result);
     assertStrictEquals(result.element, Element.CONTENT);
     assertExists(result.pathID);
+});
+//#endregion
+
+//#region getLanguageFromPathname()
+Deno.test('getLanguageFromPathname()', async (test) => {
+    await test.step('supported languages', async (t) => {
+        for (const [_languageKey, language] of getSupportedLanguages()) {
+            const tests = buildTestCases(language);
+            for (const pathname of tests) {
+                await t.step(pathname, () => {
+                    const result = getLanguageFromPathname(pathname);
+                    assertStrictEquals(result, language);
+                });
+            }
+        }
+    });
+
+    await test.step('unsupported language', async (t) => {
+        const tests = buildTestCases('fake');
+        for (const pathname of tests) {
+            await t.step(pathname, () => {
+                const result = getLanguageFromPathname(pathname);
+                assertStrictEquals(result, null);
+            });
+        }
+    });
+
+    function buildTestCases(language: string): Array<string> {
+        return [
+            language,
+            `/${language}`,
+            `/${language}/`,
+            `/${language}/123`,
+            `/${language}/123/456`,
+            `/${language}/prologue`,
+            `/${language}/prologue/something-more`,
+        ];
+    }
+});
+//#endregion
+
+//#region getParagraphNumberUrl()
+Deno.test('getParagraphNumberUrl(): null', () => {
+    const result = getParagraphNumber('');
+    assertStrictEquals(result, null);
+});
+
+Deno.test('getParagraphNumberUrl(): ""', () => {
+    const result = getParagraphNumber('');
+    assertStrictEquals(result, null);
+});
+
+Deno.test('getParagraphNumberUrl(): /123', () => {
+    const result = getParagraphNumber('/123');
+    assertStrictEquals(result, 123);
+});
+
+Deno.test('getParagraphNumberUrl(): 123', () => {
+    const result = getParagraphNumber('123');
+    assertStrictEquals(result, 123);
+});
+
+Deno.test('getParagraphNumberUrl(): all languages', async (t) => {
+    const num = 123;
+
+    for (const [_languageKey, language] of getSupportedLanguages()) {
+        await t.step(`${language}/${num}`, () => {
+            const result = getParagraphNumber(`${language}/${num}`);
+            assertStrictEquals(result, num);
+        });
+
+        await t.step(`/${language}/${num}`, () => {
+            const result = getParagraphNumber(`/${language}/${num}`);
+            assertStrictEquals(result, num);
+        });
+    }
+});
+
+Deno.test('getParagraphNumberUrl(): semantic paths', async (t) => {
+    const paths = [
+        '/prologue',
+        '/part-1',
+        '/part-2/section-1',
+        '/part-3/section-3/chapter-2',
+        // Same paths as above, but without the leading slash
+        'prologue',
+        'part-1',
+        'part-2/section-1',
+        'part-3/section-3/chapter-2',
+    ];
+
+    for (const path of paths) {
+        await t.step(path, () => {
+            const result = getParagraphNumber(path);
+            assertStrictEquals(result, null);
+        });
+    }
 });
 //#endregion

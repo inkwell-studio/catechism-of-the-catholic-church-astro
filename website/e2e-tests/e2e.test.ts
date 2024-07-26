@@ -123,7 +123,7 @@ Deno.test('website: rendered content', async (test) => {
     });
 
     await test.step('can navigate to the prologue', async (t) => {
-        const routes = getAllRoutes('/prologue');
+        const routes = getAllTranslatableRoutes('/prologue');
 
         for (const route of routes) {
             await t.step(route, async () => {
@@ -133,37 +133,35 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    /*
-    // TODO: Add a test for a nested semantic path URL
+    await test.step('paragraph numbers are redirected to SemanticPath URLs', async (t) => {
+        await t.step('/1', async () => {
+            const r = await get('/1');
+            assert(r.redirected);
+        });
 
-    await test.step('/{paragraph-number} redirects to a SemanticPath URL', async () => {
-        const r = await get('1');
-        assertStrictEquals(r.status, 308);
-        assert(r.headers.get('location')?.includes('/prologue#1'));
+        for (const [_languageKey, language] of supportedLanguages) {
+            const route = `/${language}/1`;
+            await t.step(`${route}`, async () => {
+                const r = await get(route);
+                assert(r.redirected);
+            });
+        }
     });
 
-    await test.step('/en/{paragraph-number} redirects to a SemanticPath URL', async () => {
-        // TODO: Replace all instances of 'en' with DEFAULT_LANGUAGE
-        const r = await get('en/1');
-        assertStrictEquals(r.status, 308);
-        assert(r.headers.get('location')?.includes('/en/prologue#1'));
-    });
+    await test.step('invalid paragraph numbers: 404 page', async (t) => {
+        const routes = [
+            '0',
+            '-1',
+            '9999999',
+        ];
 
-    await test.step('invalid routes (paragraph number: 0): 404 page', async () => {
-        const r = await get('0');
-        assert404(r);
+        for (const route of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assert404(r, DEFAULT_LANGUAGE);
+            });
+        }
     });
-
-    await test.step('invalid routes (paragraph number: negative): 404 page', async () => {
-        const r = await get('-1');
-        assert404(r);
-    });
-
-    await test.step('invalid routes (paragraph number: excessive): 404 page', async () => {
-        const r = await get('99999');
-        assert404(r);
-    });
-    */
 
     await test.step('close all responses', () => {
         close(responses);
@@ -278,7 +276,7 @@ function getLangAttribute(html: string): string | null {
     return regex.exec(html)?.[2] ?? null;
 }
 
-function getAllRoutes(subpath: string): Array<string> {
+function getAllTranslatableRoutes(subpath: string): Array<string> {
     const routes = [
         // the default-language route
         subpath,

@@ -1,7 +1,20 @@
 import PathMapEnglish from '@catechism/artifacts/semantic-path_to_renderable-path-id-en.json' with { type: 'json' };
 import PathMapLatin from '@catechism/artifacts/semantic-path_to_renderable-path-id-la.json' with { type: 'json' };
 import PathMapSpanish from '@catechism/artifacts/semantic-path_to_renderable-path-id-es.json' with { type: 'json' };
-import { Language, PathID, SemanticPath, SemanticPathPathIdMap } from '@catechism/source/types/types.ts';
+
+import ParagraphUrlMapEnglish from '@catechism/artifacts/paragraph-number_to_url-en.json' with { type: 'json' };
+import ParagraphUrlMapLatin from '@catechism/artifacts/paragraph-number_to_url-la.json' with { type: 'json' };
+import ParagraphUrlMapSpanish from '@catechism/artifacts/paragraph-number_to_url-es.json' with { type: 'json' };
+
+import {
+    DEFAULT_LANGUAGE,
+    Language,
+    ParagraphNumberUrlMap,
+    PathID,
+    SemanticPath,
+    SemanticPathPathIdMap,
+} from '@catechism/source/types/types.ts';
+import { getLanguage } from '@catechism/source/utils/language.ts';
 
 import { translate } from './translation.ts';
 
@@ -9,6 +22,12 @@ const pathMaps = {
     [Language.ENGLISH]: PathMapEnglish,
     [Language.LATIN]: PathMapLatin,
     [Language.SPANISH]: PathMapSpanish,
+} as const;
+
+const paragraphUrlMaps = {
+    [Language.ENGLISH]: ParagraphUrlMapEnglish,
+    [Language.LATIN]: ParagraphUrlMapLatin,
+    [Language.SPANISH]: ParagraphUrlMapSpanish,
 } as const;
 
 export enum Element {
@@ -84,6 +103,40 @@ export function getUrlFragment(
     }
 }
 
+export function getLanguageFromPathname(pathname: string): Language | null {
+    // Look for `/en/`, where the slashes are optional
+    const firstSegment = /(^|\/)([a-z]+)(\/?)/.exec(pathname)?.[2] ?? '';
+    return getLanguage(firstSegment);
+}
+
+export function getParagraphNumberRedirectionUrl(url: URL): string | null {
+    const paragraphNumber = getParagraphNumber(url.pathname);
+
+    if (paragraphNumber) {
+        const language = getLanguageFromPathname(url.pathname) ?? DEFAULT_LANGUAGE;
+        const newPathname = getParagraphUrlMap(language)[paragraphNumber] ?? null;
+
+        if (newPathname) {
+            return new URL(newPathname, url.origin).href;
+        } else {
+            return null;
+        }
+    } else {
+        return null;
+    }
+}
+
+/**
+ * @returns the paragraph number from the given URL pathname, or `null` if the given URL pathname contains no paragraph number
+ */
+export function getParagraphNumber(urlPathname: string): number | null {
+    // Look for a series of digits at the end of the string that either begin at the start of the string or follow a slash
+    const regex = /(^|\/)(\d+)$/;
+    const potentialNumber = regex.exec(urlPathname)?.[2];
+    const numberValue = Number(potentialNumber);
+    return !isNaN(numberValue) && numberValue > 0 ? numberValue : null;
+}
+
 /**
  * @returns the renderable `PathID` corresponding to the given value, or `null` if no such `PathID` exists
  */
@@ -93,6 +146,10 @@ function getRenderablePathID(language: Language, semanticPath: SemanticPath): Pa
 
 function getPathMap(language: Language): SemanticPathPathIdMap {
     return pathMaps[language];
+}
+
+function getParagraphUrlMap(language: Language): ParagraphNumberUrlMap {
+    return paragraphUrlMaps[language];
 }
 
 function getHighLevelUrlFragment(semanticPath: SemanticPath, language: Language): string | undefined {
