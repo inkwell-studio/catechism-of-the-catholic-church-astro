@@ -8,7 +8,6 @@ import {
     Language,
     PathID,
 } from '@catechism/source/types/types.ts';
-import { getContentMap } from '@catechism/source/utils/artifacts.ts';
 import { hasInBrief } from '@catechism/source/utils/content.ts';
 import {
     getContainerInfo,
@@ -19,9 +18,11 @@ import {
     isPrologueContent,
 } from '@catechism/source/utils/path-id.ts';
 
-export async function loadContent(language: Language, pathID: PathID): Promise<ContentContainer> {
+import { getContentMap } from './artifacts.ts';
+
+export function loadContent(language: Language, pathID: PathID): ContentContainer {
     try {
-        const contentMap = await getContentMap(language);
+        const contentMap = getContentMap(language);
         return contentMap[pathID];
     } catch (error) {
         throw new Error(`Failed to load content (${language}: ${pathID})`, error);

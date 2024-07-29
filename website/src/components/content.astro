@@ -1,0 +1,19 @@
+---
+import { Language, PathID } from '@catechism/source/types/types';
+
+import { loadContent } from '../logic/rendering';
+
+interface Props {
+    language: Language;
+    pathID: PathID;
+}
+
+const { language, pathID } = Astro.props;
+const content = loadContent(language, pathID);
+---
+
+<div id="content">
+    <div class="max-h-48 overflow-y-scroll border border-white rounded p-4">
+        {JSON.stringify(content)}
+    </div>
+</div>

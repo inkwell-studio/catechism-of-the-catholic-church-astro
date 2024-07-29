@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '@layouts/base.astro';
+import ContentDemo from '@components/content-demo.astro';
 
-import { getTableOfContentsUrls } from '../_utils';
+import { getTableOfContentsUrls } from '../../logic/artifacts';
 
 export function getStaticPaths() {
     return getTableOfContentsUrls('excludeDefaultLanguage').map(({ language, url }) => ({ params: { language, path: url } }));
@@ -12,9 +13,5 @@ const path = Astro.params.path;
 ---
 
 <BaseLayout language={language}>
-    <div class="flex flex-col p-48 gap-4">
-        <div class="text-xl font-bold font-mono">{language}</div>
-        <div class="border-t border-stone-400 dark:border-slate-400"></div>
-        <div class="font-mono">{path}</div>
-    </div>
+    <ContentDemo path={path} language={language} />
 </BaseLayout>

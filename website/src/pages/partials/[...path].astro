@@ -1,0 +1,35 @@
+---
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
+
+import Content from '@components/content.astro';
+
+import { getTableOfContentsUrls } from '../../logic/artifacts';
+import { getRenderablePathID } from '../../logic/routing';
+import { path as joinPaths, removeLanguageTag } from '../../logic/utils';
+
+export const partial = true;
+
+interface Props {
+    language: Language;
+    path: string;
+}
+
+export function getStaticPaths() {
+    return getTableOfContentsUrls('allLanguages').map(({ language, url }) => {
+        // prettier-ignore
+        const path = DEFAULT_LANGUAGE === language
+            ? url
+            : joinPaths(language, url);
+
+        return { params: { path }, props: { language } };
+    });
+}
+
+const { path } = Astro.params;
+const { language } = Astro.props;
+
+const semanticPath = removeLanguageTag(path, language);
+const pathID = getRenderablePathID(language, semanticPath);
+---
+
+<Content pathID={pathID} language={language} />

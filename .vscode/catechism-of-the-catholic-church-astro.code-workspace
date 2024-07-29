@@ -10,6 +10,9 @@
         "deno.unstable": false,
         "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.formatOnSave": true,
+        "files.associations": {
+            "*.css": "tailwindcss"
+        },
         "[astro]": {
             "editor.defaultFormatter": "astro-build.astro-vscode"
         },

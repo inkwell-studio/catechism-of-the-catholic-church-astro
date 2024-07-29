@@ -1,8 +1,8 @@
-import { assertExists, assertStrictEquals } from '$std/assert';
+import { assertStrictEquals } from '$std/assert';
 import { Language, SemanticPath } from '@catechism/source/types/types.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
-import { Element, getElementAndPathID, getLanguageFromPathname, getParagraphNumber, getUrl } from './routing.ts';
+import { getLanguageFromPathname, getParagraphNumber, getUrl } from './routing.ts';
 
 console.log('\nrouting utils (server) ...');
 
@@ -234,29 +234,6 @@ Deno.test('getUrl(): low-level content within a subsequent ArticleParagraph', ()
             '/part-1/section-3/chapter-2/article-4/article-paragraph-7#702',
         ],
     ].forEach((testCase) => urlTest(testCase[0], testCase[1]));
-});
-//#endregion
-
-//#region getElementAndPathID()
-Deno.test('getElementAndPathID(): empty path', () => {
-    const result = getElementAndPathID(Language.ENGLISH, '');
-    assertExists(result);
-    assertStrictEquals(result.element, Element.TABLE_OF_CONTENTS);
-    assertStrictEquals(result.pathID, null);
-});
-
-Deno.test('getElementAndPathID(): Table of Contents', () => {
-    const result = getElementAndPathID(Language.ENGLISH, 'table-of-contents');
-    assertExists(result);
-    assertStrictEquals(result.element, Element.TABLE_OF_CONTENTS);
-    assertStrictEquals(result.pathID, null);
-});
-
-Deno.test('getElementAndPathID(): Content', () => {
-    const result = getElementAndPathID(Language.ENGLISH, 'prologue');
-    assertExists(result);
-    assertStrictEquals(result.element, Element.CONTENT);
-    assertExists(result.pathID);
 });
 //#endregion
 

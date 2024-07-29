@@ -1,28 +1,12 @@
-import PathMapEnglish from '@catechism/artifacts/semantic-path_to_renderable-path-id-en.json' with { type: 'json' };
-import PathMapLatin from '@catechism/artifacts/semantic-path_to_renderable-path-id-la.json' with { type: 'json' };
-import PathMapSpanish from '@catechism/artifacts/semantic-path_to_renderable-path-id-es.json' with { type: 'json' };
-
 import ParagraphUrlMapEnglish from '@catechism/artifacts/paragraph-number_to_url-en.json' with { type: 'json' };
 import ParagraphUrlMapLatin from '@catechism/artifacts/paragraph-number_to_url-la.json' with { type: 'json' };
 import ParagraphUrlMapSpanish from '@catechism/artifacts/paragraph-number_to_url-es.json' with { type: 'json' };
 
-import {
-    DEFAULT_LANGUAGE,
-    Language,
-    ParagraphNumberUrlMap,
-    PathID,
-    SemanticPath,
-    SemanticPathPathIdMap,
-} from '@catechism/source/types/types.ts';
+import { DEFAULT_LANGUAGE, Language, ParagraphNumberUrlMap, PathID, SemanticPath } from '@catechism/source/types/types.ts';
 import { getLanguage } from '@catechism/source/utils/language.ts';
 
+import { getPathMap } from './artifacts.ts';
 import { translate } from './translation.ts';
-
-const pathMaps = {
-    [Language.ENGLISH]: PathMapEnglish,
-    [Language.LATIN]: PathMapLatin,
-    [Language.SPANISH]: PathMapSpanish,
-} as const;
 
 const paragraphUrlMaps = {
     [Language.ENGLISH]: ParagraphUrlMapEnglish,
@@ -37,26 +21,11 @@ export enum Element {
     INDEX = 'INDEX',
 }
 
-export function getElementAndPathID(
-    language: Language,
-    contentPath: string,
-): { element: Element; pathID: PathID | null } | null {
-    if (!contentPath || 'table-of-contents' === contentPath) {
-        return {
-            element: Element.TABLE_OF_CONTENTS,
-            pathID: null,
-        };
-    } else {
-        const pathID = getRenderablePathID(language, contentPath);
-        if (pathID) {
-            return {
-                element: Element.CONTENT,
-                pathID,
-            };
-        } else {
-            return null;
-        }
-    }
+/**
+ * @returns the renderable `PathID` corresponding to the given value, or `null` if no such `PathID` exists
+ */
+export function getRenderablePathID(language: Language, semanticPath: SemanticPath): PathID | null {
+    return getPathMap(language)[semanticPath] ?? null;
 }
 
 /**
@@ -135,17 +104,6 @@ export function getParagraphNumber(urlPathname: string): number | null {
     const potentialNumber = regex.exec(urlPathname)?.[2];
     const numberValue = Number(potentialNumber);
     return !isNaN(numberValue) && numberValue > 0 ? numberValue : null;
-}
-
-/**
- * @returns the renderable `PathID` corresponding to the given value, or `null` if no such `PathID` exists
- */
-function getRenderablePathID(language: Language, semanticPath: SemanticPath): PathID | null {
-    return getPathMap(language)[semanticPath] ?? null;
-}
-
-function getPathMap(language: Language): SemanticPathPathIdMap {
-    return pathMaps[language];
 }
 
 function getParagraphUrlMap(language: Language): ParagraphNumberUrlMap {

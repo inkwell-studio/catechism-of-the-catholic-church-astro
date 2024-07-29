@@ -1,0 +1,49 @@
+---
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
+
+import PartialLink from './partial-link.astro';
+
+import { getTableOfContents } from '../logic/artifacts';
+import { translate } from '../logic/translation';
+import { path } from '../logic/utils';
+
+interface Props {
+    language: Language;
+}
+
+const { language } = Astro.props;
+
+const tableOfContents = getTableOfContents(language);
+const entries = [tableOfContents.prologue, ...tableOfContents.parts].map((entry) => {
+    // prettier-ignore
+    const clientUrl = DEFAULT_LANGUAGE === language
+        ? path(entry.url)
+        : path('/', language, entry.url);
+
+    // prettier-ignore
+    const contentUrl = DEFAULT_LANGUAGE === language
+        ? path('/partials', entry.url)
+        : path('/partials', language, entry.url);
+
+    return {
+        clientUrl,
+        contentUrl,
+        label: entry.title,
+    };
+});
+---
+
+<h2>{translate('Table of Contents', language)}</h2>
+<div class="flex flex-wrap gap-4">
+    {
+        entries.map((entry) => (
+            <PartialLink
+                target="#content"
+                clientUrl={entry.clientUrl}
+                contentUrl={entry.contentUrl}
+                label={entry.label}
+                class="block border border-white rounded p-4"
+            />
+        ))
+    }
+</div>

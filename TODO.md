@@ -7,7 +7,11 @@
 # Tasks to complete now
 
 - [ ] implement app shell with content-HTMX functionality
+  - [ ] navigation: "Next" and "Previous" links
+  - [ ] cross-reference functionality (TBD)
+  - [ ] language switching (new URL: swap/add/remove language tag; translate other segments (ignore the post-# value))
   - [ ] add e2e tests for the table-of-contents pages?
+- [ ] add theme switching (light/dark/system)
 - [ ] add a 500 page
 - [ ] implement API demo
 - [ ] implement landing page
@@ -59,6 +63,7 @@
   - merge
 - [ ] remove all unused artifacts and their generators
 - [ ] remove all unused artifact utility functions
+- [ ] remove unused entries from `translation.ts`
 - [ ] determine if the Catechism JSON artifacts should be created without formatting (will the saved disk space be beneficial?) (see
       `catechism/artifact-builders/build.ts`)
 - [ ] verify helper function usage (in the `website/src/logic` directory):

@@ -1,8 +1,9 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 import { getSupportedLanguages } from '@catechism/source/utils/language';
+
 import BaseLayout from '@layouts/base.astro';
-import LandingPage from '../_landing.astro';
+import ContentDemo from '@components/content-demo.astro';
 
 export function getStaticPaths() {
     return getSupportedLanguages()
@@ -11,8 +12,9 @@ export function getStaticPaths() {
 }
 
 const language = Astro.params.language;
+const path = Astro.url.pathname;
 ---
 
 <BaseLayout language={language}>
-    <LandingPage language={language} />
+    <ContentDemo path={path} language={language} />
 </BaseLayout>

@@ -1,0 +1,46 @@
+---
+interface Props {
+    clientUrl: string;
+    contentUrl: string;
+    target: string;
+    label: string;
+    id?: string;
+    class?: string;
+}
+
+const uniqueID = 'partial-link_' + setTimeout(() => {});
+
+// `...rest` is needed in order for the classes from the parent to be properly scoped for the styling specified within by parent
+const { id = uniqueID, clientUrl, contentUrl, target, label, class: className, ...rest } = Astro.props;
+---
+
+<script>
+    import { prefetch } from 'astro:prefetch';
+
+    class AstroPartialLink extends HTMLElement {
+        constructor() {
+            super();
+
+            document.getElementById(this.dataset.uniqueId).addEventListener('mouseover', () => {
+                prefetch(this.dataset.contentUrl);
+            });
+        }
+    }
+
+    customElements.define('astro-partial-link', AstroPartialLink);
+</script>
+
+<astro-partial-link data-unique-id={id} data-content-url={contentUrl}>
+    <a
+        id={id}
+        hx-push-url={clientUrl}
+        hx-get={contentUrl}
+        hx-trigger="click"
+        hx-swap="innerHTML"
+        hx-target={target}
+        class={`${className} cursor-pointer`}
+        {...rest}
+    >
+        {label}
+    </a>
+</astro-partial-link>

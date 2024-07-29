@@ -34,9 +34,9 @@ const translationMap: Record<string, Record<Exclude<Language, Language.ENGLISH>,
         [Language.LATIN]: 'Praelocutio (Initium)',
         [Language.SPANISH]: 'Introducción (Empezar)',
     },
-    'Select Language': {
-        [Language.LATIN]: 'Eligere Lingua',
-        [Language.SPANISH]: 'Seleccione el Idioma',
+    'Language': {
+        [Language.LATIN]: 'Lingua',
+        [Language.SPANISH]: 'Idioma',
     },
     'Open': {
         [Language.LATIN]: 'Pando',
