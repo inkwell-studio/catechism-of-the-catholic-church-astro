@@ -36,7 +36,7 @@ const { id = uniqueID, clientUrl, contentUrl, target, label, class: className, .
         hx-push-url={clientUrl}
         hx-get={contentUrl}
         hx-trigger="click"
-        hx-swap="innerHTML"
+        hx-swap="outerHTML"
         hx-target={target}
         class={`${className} cursor-pointer`}
         {...rest}

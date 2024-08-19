@@ -1,0 +1,34 @@
+---
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
+
+import PartialLink from './partial-link.astro';
+
+import { ElementID } from '../logic/element-id';
+import { path } from '../logic/utils';
+
+interface Props {
+    url: string;
+    direction: 'next' | 'previous';
+    language: Language;
+}
+
+const { url, direction, language } = Astro.props;
+
+// prettier-ignore
+const clientUrl = DEFAULT_LANGUAGE === language
+        ? path(url)
+        : path('/', language, url);
+
+// prettier-ignore
+const contentUrl = DEFAULT_LANGUAGE === language
+        ? path('/partials', url)
+        : path('/partials', language, url);
+---
+
+<PartialLink
+    target={ElementID.CONTENT_SELECTOR}
+    clientUrl={clientUrl}
+    contentUrl={contentUrl}
+    label={direction === 'next' ? '>' : '<'}
+    class="block text-center text-3xl font-mono p-2 border border-stone-400 dark:border-slate-500 rounded-sm hover:bg-white/30 dark:hover:bg-white/5"
+/>

@@ -5,11 +5,24 @@ import {
     DEFAULT_LANGUAGE,
     Language,
     PathIdContentMap,
+    RenderableNodeMap,
     SemanticPathPathIdMap,
     TableOfContentsType,
 } from '@catechism/source/types/types.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 import { getTopLevelUrls } from '@catechism/source/utils/table-of-contents.ts';
+
+export function getContentMap(language: Language): PathIdContentMap {
+    return getArtifact(Artifact.RENDERABLE_PATH_ID_TO_CONTENT, language);
+}
+
+export function getPathMap(language: Language): SemanticPathPathIdMap {
+    return getArtifact(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
+}
+
+export function getRenderableNodeMap(language: Language): RenderableNodeMap {
+    return getArtifact(Artifact.PATH_ID_TO_RENDERABLE_NODES, language);
+}
 
 export function getTableOfContentsUrls(
     languageSelection: 'allLanguages' | 'onlyDefaultLanguage' | 'excludeDefaultLanguage',
@@ -29,14 +42,6 @@ export function getTableOfContentsUrls(
 
 export function getTableOfContents(language: Language): TableOfContentsType {
     return getArtifact(Artifact.TABLE_OF_CONTENTS, language);
-}
-
-export function getContentMap(language: Language): PathIdContentMap {
-    return getArtifact(Artifact.RENDERABLE_PATH_ID_TO_CONTENT, language);
-}
-
-export function getPathMap(language: Language): SemanticPathPathIdMap {
-    return getArtifact(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
 }
 
 // deno-lint-ignore no-explicit-any

@@ -4,6 +4,7 @@ import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
 import PartialLink from './partial-link.astro';
 
 import { getTableOfContents } from '../logic/artifacts';
+import { ElementID } from '../logic/element-id';
 import { translate } from '../logic/translation';
 import { path } from '../logic/utils';
 
@@ -38,7 +39,7 @@ const entries = [tableOfContents.prologue, ...tableOfContents.parts].map((entry)
     {
         entries.map((entry) => (
             <PartialLink
-                target="#content"
+                target={ElementID.CONTENT_SELECTOR}
                 clientUrl={entry.clientUrl}
                 contentUrl={entry.contentUrl}
                 label={entry.label}

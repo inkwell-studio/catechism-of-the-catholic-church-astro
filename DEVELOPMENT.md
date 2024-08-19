@@ -32,20 +32,24 @@ format files each time they are saved.
 
 ### Main tasks
 
-| task                        | description                                         |
-| --------------------------- | --------------------------------------------------- |
-| `deno task pre-commit`      | linting, testing, formatting, and artifact creation |
-| `deno task build-mock-data` | re-generate mock Catechism data                     |
-| `deno task dev`             | serve a development version of the website locally  |
-| `deno task prod`            | serve a production version of the website locally   |
+| task                        | description                                                    |
+| --------------------------- | -------------------------------------------------------------- |
+| `deno task pre-commit`      | linting, testing, formatting, and artifact creation            |
+| `deno task build-mock-data` | re-generate mock Catechism data                                |
+| `deno task dev`             | locally serve a development version of the website             |
+| `deno task build`           | build the production version of the website                    |
+| `deno task serve-prod`      | locally serve the last built production version of the website |
 
 ### End-to-end testing
 
 ```
-deno task prod
+# if necessary, build the production version of the website:
+deno task build
 
-# in a separate shell
+# serve the website
+deno task serve-prod
 
+# in a separate shell:
 deno task test-e2e
 ```
 
@@ -80,4 +84,4 @@ Where `type` is one of:
 This project is deployed to [Deno Deploy](https://deno.com/deploy) via [Github Actions](https://docs.github.com/en/actions). The deployment
 is configured by `.github/workflows/deploy.yml`.
 
-Deployments are triggered by pushed commits on the `master` and `dev` branches. The `master` branch is deployed to production.
+Deployments are triggered by pushed commits on the `master` and `dev` branches. Code from the `master` branch is deployed to production.
