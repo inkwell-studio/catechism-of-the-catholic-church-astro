@@ -1,0 +1,43 @@
+---
+import { Language, TextWrapper } from '@catechism/source/types/types';
+
+import CrossReferenceTrigger from './cross-reference-trigger.astro';
+import PlainText from './plain-text.astro';
+import ReferenceCollection from './reference-collection.astro';
+
+interface Props {
+    textWrapper: TextWrapper;
+    language: Language;
+}
+
+const { textWrapper, language } = Astro.props;
+---
+
+<span>
+    <span class="absolute right-0 text-left">
+        {
+            textWrapper.paragraphReferences.map((reference, index, allReferences) => {
+                const separator = index < allReferences.length - 1 ? ', ' : '';
+
+                return (
+                    <>
+                        <CrossReferenceTrigger reference={reference} language={language} />
+                        {separator}
+                    </>
+                );
+            })
+        }
+    </span>
+    <span>
+        {
+            textWrapper.mainContent.map((text, index) => (
+                <PlainText text={text} lastFragment={index === textWrapper.mainContent.length - 1} />
+            ))
+        }
+        {
+            textWrapper.referenceCollection?.references.length > 0 && (
+                <ReferenceCollection language={language} referenceCollection={textWrapper.referenceCollection} />
+            )
+        }
+    </span>
+</span>

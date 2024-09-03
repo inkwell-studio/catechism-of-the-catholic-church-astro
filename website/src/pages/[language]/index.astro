@@ -1,20 +1,17 @@
 ---
-import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
-import { getSupportedLanguages } from '@catechism/source/utils/language';
+import BaseLayout from '@layouts/base-layout.astro';
 
-import BaseLayout from '@layouts/base.astro';
-import ContentDemo from '@components/content-demo.astro';
+import { ContentRoute, getIndexPageRoutes } from '@pages/_route-generator';
 
-export function getStaticPaths() {
-    return getSupportedLanguages()
-        .filter(([_languageKey, language]) => DEFAULT_LANGUAGE !== language)
-        .map(([_languageKey, language]) => ({ params: { language } }));
+export function getStaticPaths(): Array<ContentRoute> {
+    return getIndexPageRoutes();
 }
 
 const language = Astro.params.language;
-const path = Astro.url.pathname;
 ---
 
 <BaseLayout language={language}>
-    <ContentDemo path={path} language={language} />
+    <div class="flex justify-center items-center">
+        <h1>Index: {language}</h1>
+    </div>
 </BaseLayout>

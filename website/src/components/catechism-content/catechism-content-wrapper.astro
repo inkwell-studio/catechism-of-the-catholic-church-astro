@@ -1,0 +1,15 @@
+---
+import { Language, PathID } from '@catechism/source/types/types';
+
+import CatechismContent from '@components/catechism-content/catechism-content.astro';
+import { ElementID } from '@logic/element-id';
+
+interface Props {
+    pathID: PathID;
+    language: Language;
+}
+---
+
+<div id={ElementID.CATECHISM_CONTENT} class="bg-white/10 rounded-sm">
+    <CatechismContent pathID={Astro.props.pathID} language={Astro.props.language} />
+</div>

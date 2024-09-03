@@ -1,7 +1,9 @@
 import {
     Artifact,
     Language,
+    ParagraphCrossReferenceContentMap,
     ParagraphNumberContentMap,
+    ParagraphNumberPathIdMap,
     ParagraphNumberUrlMap,
     PathIdContentMap,
     RenderableNodeMap,
@@ -21,8 +23,16 @@ export function getRenderablePathMap(language: Language): Promise<SemanticPathPa
     return getArtifact(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
 }
 
+export function getParagraphCrossReferenceContentMap(language: Language): Promise<ParagraphCrossReferenceContentMap> {
+    return getArtifact(Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, language);
+}
+
 export function getParagraphNumberContentMap(language: Language): Promise<ParagraphNumberContentMap> {
     return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_CONTENT, language);
+}
+
+export function getParagraphNumberPathMap(language: Language): Promise<ParagraphNumberPathIdMap> {
+    return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_RENDERABLE_PATH_ID, language);
 }
 
 export function getParagraphNumberUrlMap(language: Language): Promise<ParagraphNumberUrlMap> {

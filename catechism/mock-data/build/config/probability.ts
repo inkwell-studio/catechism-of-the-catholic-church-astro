@@ -14,11 +14,11 @@ export const Probability = {
         inBrief: 0.1,
     },
     crossReference: {
-        // The probability of creating a Paragraph cross reference from a Text object
+        // The probability of creating a Paragraph cross-reference from a Text object
         create: 0.5,
-        // The probability that multiple cross references will be created instead of a single one
+        // The probability that multiple cross-references will be created instead of a single one
         multiple: 0.20,
-        // The probability that a cross reference will reference a range paragraphs instead of a single one
+        // The probability that a cross-reference will reference a range paragraphs instead of a single one
         range: 0.15,
     },
     part: {

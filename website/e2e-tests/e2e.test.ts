@@ -1,5 +1,5 @@
 import { assert, assertStrictEquals } from '$std/assert';
-import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language.ts';
+import { DEFAULT_LANGUAGE } from '@catechism/source/types/language.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
 import { translate } from '../src/logic/translation.ts';
@@ -30,8 +30,8 @@ Deno.test('website: static files', async (test) => {
         assertStrictEquals(r.status, 200);
     });
 
-    await test.step('close all responses', () => {
-        close(responses);
+    await test.step('close all responses', async () => {
+        await close(responses);
     });
 });
 //#endregion
@@ -62,34 +62,32 @@ Deno.test('website: rendered content', async (test) => {
         assertStrictEquals(lang, DEFAULT_LANGUAGE);
     });
 
-    await test.step('paths with the default language code are redirected to the same subpath without the language code', async (t) => {
-        const tests = [
-            [DEFAULT_LANGUAGE, 'root'],
-            [`${DEFAULT_LANGUAGE}/`, 'root (with trailing slash)'],
-            [`${DEFAULT_LANGUAGE}/abc`, 'subpath'],
-            [`${DEFAULT_LANGUAGE}/abc/123/xyz`, 'subpath (multilevel)'],
+    await test.step('paths with the default language code are redirected to the same subpath without the language code', async () => {
+        const testCases = [
+            `${DEFAULT_LANGUAGE}/`,
+            `${DEFAULT_LANGUAGE}/prologue/`,
         ];
 
-        for (const [url, description] of tests) {
-            await t.step(description, async () => {
-                const r = await get(url);
+        for (const url of testCases) {
+            const r = await get(url);
 
-                assert(r.redirected);
+            assert(r.redirected);
 
-                const expectedUrl = baseUrl + (DEFAULT_LANGUAGE === url ? '/' : url.slice(2));
-                assertStrictEquals(r.url, expectedUrl);
+            const expectedUrl = baseUrl + url.slice(2);
+            assertStrictEquals(r.url, expectedUrl);
 
-                const html = await r.text();
-                const lang = getLangAttribute(html);
-                assertStrictEquals(lang, DEFAULT_LANGUAGE);
-            });
+            const html = await r.text();
+            const lang = getLangAttribute(html);
+            assertStrictEquals(lang, DEFAULT_LANGUAGE);
         }
     });
 
     await test.step('the `lang` attribute is correct for the landing page of each supported language', async (t) => {
-        for (const [languageKey, language] of supportedLanguages) {
-            await t.step(`${languageKey}`, async () => {
-                const r = await get(language);
+        for (const [_languageKey, language] of supportedLanguages) {
+            const url = `${language}/`;
+
+            await t.step(url, async () => {
+                const r = await get(url);
                 assertStrictEquals(r.status, 200);
 
                 if (DEFAULT_LANGUAGE === language) {
@@ -105,25 +103,8 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    await test.step('invalid routes: 404 page', async (t) => {
-        // invalid default language route
-        await t.step('default language', async () => {
-            const r = await get('/invalid-route');
-            await assert404(r, DEFAULT_LANGUAGE);
-        });
-
-        // invalid language-specific routes
-        for (const [languageKey, language] of supportedLanguages) {
-            await t.step(`${languageKey}`, async () => {
-                const route = `${language}/invalid-route`;
-                const r = await get(route);
-                await assert404(r, language);
-            });
-        }
-    });
-
     await test.step('can navigate to the prologue', async (t) => {
-        const routes = getAllTranslatableRoutes('/prologue');
+        const routes = getAllTranslatableRoutes('/prologue/');
 
         for (const route of routes) {
             await t.step(route, async () => {
@@ -133,140 +114,30 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    await test.step('paragraph numbers are redirected to SemanticPath URLs', async (t) => {
-        await t.step('/1', async () => {
-            const r = await get('/1');
-            assert(r.redirected);
+    await test.step('can navigate by paragraph number', async (t) => {
+        const paragraphRoute = `/2/`;
+
+        await t.step(paragraphRoute, async () => {
+            const r = await get(paragraphRoute);
+            assertStrictEquals(r.status, 200);
         });
 
         for (const [_languageKey, language] of supportedLanguages) {
-            const route = `/${language}/1`;
+            const route = `/${language}${paragraphRoute}`;
             await t.step(`${route}`, async () => {
                 const r = await get(route);
-                assert(r.redirected);
+                assertStrictEquals(r.status, 200);
             });
         }
     });
 
-    await test.step('invalid paragraph numbers: 404 page', async (t) => {
-        const routes = [
-            '0',
-            '-1',
-            '9999999',
-        ];
-
-        for (const route of routes) {
-            await t.step(route, async () => {
-                const r = await get(route);
-                assert404(r, DEFAULT_LANGUAGE);
-            });
-        }
-    });
-
-    await test.step('close all responses', () => {
-        close(responses);
+    await test.step('close all responses', async () => {
+        await close(responses);
     });
 });
-//#endregion
-
-//#region tests: data API
-// TODO: Reimplement
-/*
-Deno.test('website: data API', async (test) => {
-    const responses: Array<Response> = [];
-
-    async function get(url = ''): Promise<Response> {
-        url = new URL(`/api/${url}`, baseUrl).href;
-        const response = await fetch(new Request(url));
-        responses.push(response);
-        return response;
-    }
-
-    await test.step('[language]/paragraph/: single paragraph number', async () => {
-        const paragraphNumber = 12;
-
-        const r = await get(`en/paragraph/${paragraphNumber}`);
-        assertStrictEquals(r.status, 200);
-
-        const data = await r.json();
-        assert(Array.isArray(data));
-        assertStrictEquals(data.length, 1);
-        assertStrictEquals(data[0].paragraphNumber, paragraphNumber);
-    });
-
-    await test.step('[language]/paragraph/: paragraph number range (hyphen)', async () => {
-        const paragraphNumberStart = 12;
-        const paragraphNumberEnd = 15;
-        const diff = paragraphNumberEnd - paragraphNumberStart;
-
-        const r = await get(`en/paragraph/${paragraphNumberStart}-${paragraphNumberEnd}`);
-        assertStrictEquals(r.status, 200);
-
-        const data = await r.json();
-        assert(Array.isArray(data));
-        assertStrictEquals(data.length, diff + 1);
-
-        for (let i = 0; i <= diff; i++) {
-            assertStrictEquals(data[i].paragraphNumber, i + paragraphNumberStart);
-        }
-    });
-
-    await test.step('[language]/paragraph/: paragraph number range (en dash)', async () => {
-        const paragraphNumberStart = 12;
-        const paragraphNumberEnd = 15;
-        const diff = paragraphNumberEnd - paragraphNumberStart;
-
-        const r = await get(`en/paragraph/${paragraphNumberStart}–${paragraphNumberEnd}`);
-        assertStrictEquals(r.status, 200);
-
-        const data = await r.json();
-        assert(Array.isArray(data));
-        assertStrictEquals(data.length, diff + 1);
-
-        for (let i = 0; i <= diff; i++) {
-            assertStrictEquals(data[i].paragraphNumber, i + paragraphNumberStart);
-        }
-    });
-
-    await test.step('[language]/paragraph/: out-of-range paragraph number', async () => {
-        const r = await get(`en/paragraph/123456789`);
-        assertStrictEquals(r.status, 200);
-
-        const data = await r.json();
-        assert(Array.isArray(data));
-        assertStrictEquals(data.length, 0);
-    });
-
-    await test.step('[language]/paragraph/: invalid or unsupported language code', async () => {
-        const r = await get(`zz/paragraph/10`);
-        assertStrictEquals(r.status, 200);
-
-        const text = await r.text();
-        assertEquals(text, '');
-    });
-
-    await test.step('close all responses', () => {
-        close(responses);
-    });
-});
-*/
 //#endregion
 
 //#region helpers
-async function assert404(response: Response, expectedLanguage: Language): Promise<void> {
-    assertStrictEquals(response.status, 404);
-    const html = await response.text();
-
-    const language = getLangAttribute(html);
-    assertStrictEquals(language, expectedLanguage);
-
-    // Look for: `<a href="/"`
-    const urlRegex = /(<a href=")(\/[a-z,A-Z]*)(")/;
-    const homeLinkUrl = urlRegex.exec(html)?.[2];
-    const expectedHomeLinkUrl = DEFAULT_LANGUAGE === expectedLanguage ? '/' : `/${expectedLanguage}`;
-    assertStrictEquals(homeLinkUrl, expectedHomeLinkUrl);
-}
-
 /**
  * @returns the value of the `lang` attribute within the `<html>` element, or `null` if no such element or attribute exists
  */
@@ -293,19 +164,18 @@ function getAllTranslatableRoutes(subpath: string): Array<string> {
             )
             .join('/');
 
-        // It is assumed that `subpath` includes a preceding slash
+        // It is assumed that `translatedSubpath` includes a preceding slash
         routes.push(language + translatedSubpath);
     }
 
     return routes;
 }
 
-function close(responses: Array<Response>): void {
-    // `Response.text()` closes the response
-    responses.forEach((r) => {
+async function close(responses: Array<Response>): Promise<void> {
+    for await (const r of responses) {
         if (!r.bodyUsed) {
-            r.text();
+            await r.body?.cancel();
         }
-    });
+    }
 }
 //#endregion

@@ -2,7 +2,7 @@ import { type Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme.js';
 
 export default {
-    content: ['**/*.{astro,tsx}'],
+    content: ['./src/**/*.{astro,tsx}'],
     darkMode: 'selector',
     theme: {
         fontFamily: {

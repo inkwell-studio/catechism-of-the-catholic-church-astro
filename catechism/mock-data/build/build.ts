@@ -19,7 +19,9 @@ import {
 import {
     getAllChildContent,
     getAllContent,
+    getAllCrossReferences,
     getAllParagraphs,
+    getParagraphNumbers,
     hasFinalContent,
     hasInBrief,
     hasMainContent,
@@ -47,19 +49,18 @@ export function buildMockData(): CatechismStructure {
     catechism = setSemanticPaths(catechism);
     catechism = setParagraphUrls(catechism);
 
-    console.log('Validating mock data...');
-    const valid = validateCatechism(catechism);
-    if (!valid) {
-        console.log('\nExiting without writing data.');
-        Deno.exit(-1);
-    }
-
-    console.log('Creating cross references...');
     const results = buildParagraphCrossReferences(catechism);
     catechism = results.catechism;
 
+    console.log('Validating mock data...');
+    const valid = validateCatechism(catechism);
+    if (!valid) {
+        console.log('\nExited without writing data.');
+        Deno.exit(-1);
+    }
+
     const paragraphCount = getAllParagraphs(catechism).length;
-    console.log(`Finished: built ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross references`);
+    console.log(`Finished: built ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross-references`);
 
     return catechism;
 }
@@ -316,7 +317,7 @@ function setParagraphUrlHelper(content: Array<ContentBase>, language: Language):
             (c as any).url = getUrl(language, c.semanticPath);
         } else if (hasMainContent(c)) {
             const childContent = getAllChildContent(c);
-            const results = setParagraphUrlHelper(childContent, language);
+            setParagraphUrlHelper(childContent, language);
         }
     });
 }
@@ -342,6 +343,16 @@ function validateCatechism(catechism: CatechismStructure): boolean {
     if (finalParagraphNumber !== numParagraphs) {
         return fail(
             `The final paragraph number is incorrect: expected ${numParagraphs}, found ${finalParagraphNumber}`,
+        );
+    }
+
+    const crossReferences = getAllCrossReferences(catechism);
+    const highestParagraphCrossReferenceValue = Math.max(
+        ...crossReferences.flatMap((reference) => getParagraphNumbers(reference)),
+    );
+    if (highestParagraphCrossReferenceValue > finalParagraphNumber) {
+        return fail(
+            `A cross-reference was created for a non-existent paragraph ${highestParagraphCrossReferenceValue} (the final paragraph is ${finalParagraphNumber})`,
         );
     }
 
@@ -373,7 +384,7 @@ function buildParagraphCrossReferences(
         crossReferenceCount: number,
     ): { content: Array<ContentBase>; crossReferenceCount: number } {
         content.forEach((c) => {
-            // Only build cross references for paragraphs outside of the "In Brief" sections
+            // Only build cross-references for paragraphs outside of the "In Brief" sections
             const properContent = Content.PARAGRAPH_GROUP === c.contentType || Content.TEXT_WRAPPER === c.contentType;
             if (properContent && chance(Probability.crossReference.create)) {
                 const references = buildReferences(maxParagraphNumber);
@@ -403,7 +414,7 @@ function buildParagraphCrossReferences(
     }
 
     function buildMultipleReferences(maxParagraphNumber: number): Array<NumberOrNumberRange> {
-        const references = intArrayOfRandomLength(Limit.paragraph.crossReference.count).map((i) => buildReference(maxParagraphNumber));
+        const references = intArrayOfRandomLength(Limit.paragraph.crossReference.count).map(() => buildReference(maxParagraphNumber));
 
         // Ensure there are no duplicate cross-references
         return Array.from(new Set(references));
@@ -415,8 +426,16 @@ function buildParagraphCrossReferences(
 
         if (buildRange) {
             const num1 = randomInt(paragraphLimits);
-            const num2 = num1 + randomInt(Limit.paragraph.crossReference.range);
-            return `${num1}–${num2}`;
+            let num2 = num1 + randomInt(Limit.paragraph.crossReference.range);
+
+            while (num2 > maxParagraphNumber) {
+                num2--;
+            }
+
+            // deno-fmt-ignore
+            return  num2 > num1
+                ? `${num1}–${num2}`
+                : num1;
         } else {
             return randomInt(paragraphLimits);
         }

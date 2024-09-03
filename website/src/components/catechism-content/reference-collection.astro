@@ -1,0 +1,57 @@
+---
+import { Language, ReferenceCollection } from '@catechism/source/types/types';
+
+import Reference from './reference.astro';
+
+interface Props {
+    referenceCollection: ReferenceCollection | null;
+    language: Language;
+}
+
+const { referenceCollection, language } = Astro.props;
+---
+
+<script>
+    import { hide, onClick, toggle } from '@logic/dom-utils';
+
+    class ReferenceCollection extends HTMLElement {
+        closeButton = this.querySelector('.closeButton');
+        toggleButton = this.querySelector('.toggleButton');
+        expandedView = this.querySelector('.expandedView');
+
+        constructor() {
+            super();
+
+            onClick(this.closeButton, () => hide(this.expandedView));
+            onClick(this.toggleButton, () => toggle(this.expandedView));
+        }
+    }
+
+    customElements.define('reference-collection', ReferenceCollection);
+</script>
+
+<reference-collection>
+    <span class="relative">
+        <button type="button" class="toggleButton px-0.5">
+            <sup>{referenceCollection.referenceNumber}</sup>
+        </button>
+
+        <div class="expandedView absolute hidden z-10 bottom-6 -left-8 w-max bg-slate-800 py-1 px-2 rounded-sm">
+            {
+                referenceCollection.references.map((reference, i, allRefs) => {
+                    const divider = i > 0 && i < allRefs.length ? '| ' : '';
+                    return (
+                        <>
+                            {divider}
+                            <Reference reference={reference} language={language} />
+                        </>
+                    );
+                })
+            }
+
+            <button type="button" class="closeButton">
+                <sup>X</sup>
+            </button>
+        </div>
+    </span>
+</reference-collection>

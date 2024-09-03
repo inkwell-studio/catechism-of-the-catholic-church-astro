@@ -4,7 +4,9 @@
         "paths": {
             "@catechism/*": ["../catechism/*"],
             "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"]
+            "@layouts/*": ["src/layouts/*"],
+            "@logic/*": ["src/logic/*"],
+            "@pages/*": ["src/pages/*"]
         }
     }
 }

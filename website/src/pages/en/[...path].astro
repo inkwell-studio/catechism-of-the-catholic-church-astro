@@ -1,6 +1,6 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
-import BaseLayout from '@layouts/base.astro';
+import BaseLayout from '@layouts/base-layout.astro';
 
 export const prerender = false;
 
@@ -9,7 +9,7 @@ const redirectUrl = `/${DEFAULT_LANGUAGE}` === Astro.url.pathname
     ? Astro.url.href.replace(`/${DEFAULT_LANGUAGE}`, '/')
     : Astro.url.href.replace(`/${DEFAULT_LANGUAGE}/`, '/');
 
-// Redirect all routes that include the default language in their path to the same subpath without the preceding language tag (e.g. `/en/something` => `/something`)
+// Redirect all routes that include the default language in their path to the same subpath without the preceding language tag (e.g. `/en/something/` => `/something/`)
 return Astro.redirect(redirectUrl, 308);
 ---
 

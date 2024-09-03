@@ -1,0 +1,24 @@
+---
+import { BibleReference, Language } from '@catechism/source/types/types';
+
+import { getBibleReferenceUrl } from '@logic/reference';
+import { translate } from '@logic/translation';
+
+interface Props {
+    reference: BibleReference;
+    language: Language;
+}
+
+const { reference, language } = Astro.props;
+
+const prefix = reference.direct ? '' : translate('Cf. ', language);
+const postfix = reference.auxillaryText ? ` (${translate(reference.auxillaryText, language)})` : '';
+const book = translate(reference.book, language);
+const text = `${prefix}${book} ${reference.chapter}:${reference.verses}${postfix}`;
+
+const url = getBibleReferenceUrl(reference, language);
+---
+
+<a href={url} target="_blank">
+    {text}
+</a>

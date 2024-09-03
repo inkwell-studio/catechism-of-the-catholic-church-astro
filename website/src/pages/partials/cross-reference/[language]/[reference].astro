@@ -1,0 +1,63 @@
+---
+import { DEFAULT_LANGUAGE, NumberOrNumberRange } from '@catechism/source/types/types';
+
+import ContentBaseArray from '@components/catechism-content/content-base-array.astro';
+import PartialLink from '@components/partial-link.astro';
+
+import { getParagraphCrossReferenceContentMap, getParagraphNumberUrlMap } from '@logic/artifacts';
+import { ElementID } from '@logic/element-id';
+import { path } from '@logic/utils';
+import { CrossReferenceRoute, getCrossReferencePartialRoutes } from '@pages/_route-generator';
+
+export const partial = true;
+
+export function getStaticPaths(): Array<CrossReferenceRoute> {
+    return getCrossReferencePartialRoutes();
+}
+
+const language = Astro.params.language;
+// Replace hyphens with en dashes
+const reference = Astro.params.reference
+    // Decode UTF-8-encoded en dashes
+    .replace('%E2%80%93', '–')
+    // Replace a hyphen with an en dash
+    .replace('-', '–') as NumberOrNumberRange;
+
+const contentMap = getParagraphCrossReferenceContentMap(language);
+const paragraphs = contentMap[reference];
+
+const firstParagraphNumber = paragraphs[0].paragraphNumber;
+const url = getParagraphNumberUrlMap(language)[firstParagraphNumber];
+
+// prettier-ignore
+const clientUrl = DEFAULT_LANGUAGE === language
+? path(url)
+: path('/', language, url);
+
+// prettier-ignore
+const contentUrl = (
+    DEFAULT_LANGUAGE === language
+        ? path('/partials', url)
+        : path('/partials', language, url)
+    /* Remove the hash of the URL, as including it causes a bug when interacting with HTMX,
+    as HTMX will use it the hash and fragment value in `document.querySelector()`, which
+    considers ID selectors that start with numbers as invalid (e.g. `#123`).
+    IDs that start with numbers are valid according to HTML5, but invalid according to HTML4. */
+    ).replace(/#.*/, '');
+---
+
+<div id={ElementID.CROSS_REFERENCE_NAVIGATE_TO} hx-swap-oob="innerHTML">
+    <PartialLink clientUrl={clientUrl} contentUrl={contentUrl} target={ElementID.CATECHISM_CONTENT_SELECTOR}>
+        navigate-to: {reference}
+    </PartialLink>
+</div>
+
+<div id={ElementID.CROSS_REFERENCE_CONTENT} hx-swap-oob="innerHTML">
+    <div class="text-3xl font-bold">
+        {reference}
+    </div>
+
+    <div>
+        {paragraphs && <ContentBaseArray content={paragraphs} language={language} />}
+    </div>
+</div>

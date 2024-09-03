@@ -32,9 +32,9 @@ export const Limit = {
     },
     paragraph: {
         crossReference: {
-            // The number of cross references to build when building multiple
+            // The number of cross-references to build when building multiple
             count: { min: 2, max: 3 },
-            // The size of the verse range to build to when building a range-type cross reference (e.g. §1147-1149)
+            // The size of the verse range to build to when building a range-type cross-reference (e.g. §1147-1149)
             range: { min: 2, max: 3 },
         },
         textBlock: { min: 1, max: 3 },

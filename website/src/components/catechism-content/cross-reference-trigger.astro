@@ -1,0 +1,41 @@
+---
+import { Language, NumberOrNumberRange } from '@catechism/source/types/types';
+
+import PartialTrigger from '../partial-trigger.astro';
+
+import { path } from '@logic/utils';
+
+interface Props {
+    reference: NumberOrNumberRange;
+    language: Language;
+}
+
+const { reference, language } = Astro.props;
+
+const referenceForUrl = reference.toString().replace('–', '-');
+const contentUrl = path('/partials/cross-reference', language, referenceForUrl);
+---
+
+<script>
+    import { NumberOrNumberRange } from '@catechism/source/types/number-or-number-range';
+    import { onClick } from '@logic/dom-utils';
+    import { select } from '@logic/store/cross-reference';
+
+    class CrossReferenceTrigger extends HTMLElement {
+        trigger = this.querySelector('.trigger');
+
+        constructor() {
+            super();
+
+            onClick(this.trigger, () => select(this.dataset.reference as NumberOrNumberRange));
+        }
+    }
+
+    customElements.define('cross-reference-trigger', CrossReferenceTrigger);
+</script>
+
+<cross-reference-trigger data-reference={reference}>
+    <PartialTrigger contentUrl={contentUrl} class="trigger">
+        {reference.toString()}
+    </PartialTrigger>
+</cross-reference-trigger>

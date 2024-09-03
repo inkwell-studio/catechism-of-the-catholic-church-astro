@@ -7,13 +7,17 @@
 # Tasks to complete now
 
 - [ ] implement app shell with content-HTMX functionality
-  - [ ] cross-reference functionality (TBD)
-  - [ ] language switching (new URL: swap/add/remove language tag; translate other segments (ignore the post-# value))
+  - [ ] language switching (new URL: swap/add/remove language tag; translate other segments (ignore the post-# value — keep it))
   - [ ] add e2e tests for the table-of-contents pages?
+  - [ ] implement "sketch" versions of the index pages
 - [ ] add theme switching (light/dark/system)
+- [ ] consider adding a note to `DEVELOPMENT.md` about adding languages (does just `catechism/source/types/language.ts` have to be modified
+      for additional language support, and the `~/pages/en/index.astro` path have to be modified if the default language changes?)
+- [ ] diagnose e2e test-runner failures
 - [ ] add a 500 page
 - [ ] implement API demo
 - [ ] implement landing page
+- [ ] look into removing `website/src/env.d.ts` (https://github.com/withastro/astro/pull/11859)
 - [ ] update UI
   - [ ] when relevant, re-add the following to the `deno.jsonc::check` task: `deno check website/src/**/*.tsx`
   - [ ] implement Action Bar menus
@@ -60,8 +64,10 @@
   - [ ] consider all notes about colors found elsewhere in this file
   - [ ] update text on intro page
   - merge
+- [ ] consider opening the cross-reference window only after the desired response is received (or otherwise improve the behavior)
 - [ ] remove all unused artifacts and their generators
 - [ ] remove all unused artifact utility functions
+- [ ] remove all unused utility function (e.g. `website/src/logic/routing.ts::*`)
 - [ ] remove unused entries from `translation.ts`
 - [ ] determine if the Catechism JSON artifacts should be created without formatting (will the saved disk space be beneficial?) (see
       `catechism/artifact-builders/build.ts`)
@@ -96,8 +102,7 @@
   - [ ] update all user-facing text to be
 - [ ] add JSON validation for `catechism.json`
 - [ ] render all content
-  - [ ] handle all TODO's in `content.tsx`
-  - [ ] re-do the rendering structures (reorganize components, etc.)
+  - [ ] handle all TODO's in the component files
   - [ ] opening content
   - [ ] citation markers
   - [ ] is there anything else?

@@ -1,0 +1,14 @@
+---
+import { ContentBase as ContentBaseType, Language } from '@catechism/source/types/types';
+
+import ContentBase from './content-base.astro';
+
+interface Props {
+    content: Array<ContentBaseType>;
+    language: Language;
+}
+
+const { content, language } = Astro.props;
+---
+
+{content.map((c) => <ContentBase content={c} language={language} />)}

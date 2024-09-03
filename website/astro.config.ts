@@ -11,6 +11,7 @@ import { getSupportedLanguages } from '../catechism/source/utils/language.ts';
 export default defineConfig({
     site: baseUrl,
     output: 'hybrid',
+    trailingSlash: 'never',
     adapter: deno(),
     integrations: [
         react(),
@@ -31,5 +32,6 @@ function buildSitemapConfig() {
             defaultLocale: DEFAULT_LANGUAGE,
             locales,
         },
+        filter: (page: string) => !page.includes('/partials/'),
     };
 }

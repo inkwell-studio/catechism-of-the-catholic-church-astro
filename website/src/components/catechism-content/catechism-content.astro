@@ -1,0 +1,37 @@
+---
+import { Language, PathID } from '@catechism/source/types/types';
+
+import ContentBase from '@components/catechism-content/content-base.astro';
+import NavigationButton from '@components/navigation-button.astro';
+
+import { getRenderableNodeMap } from '@logic/artifacts';
+import { loadContent } from '@logic/rendering';
+
+interface Props {
+    pathID: PathID;
+    language: Language;
+}
+
+const { pathID, language } = Astro.props;
+
+const content = loadContent(language, pathID);
+
+const renderableNodes = getRenderableNodeMap(language)[pathID] ?? null;
+const nextUrl = renderableNodes?.next?.url;
+const previousUrl = renderableNodes?.previous?.url;
+---
+
+{
+    /* TODO:
+        - Remove `break-all` when finalizing the appearance
+        - Finalize the bottom padding when the position and height of the navigation buttons container is finalized
+    */
+}
+<div class="max-w-prose mx-auto pt-8 pb-4 break-all">
+    {content && <ContentBase content={content} language={language} />}
+</div>
+
+<div class="sticky bottom-0 inset-x-0 h-44 grid grid-cols-2 gap-4 p-4 mt-4 bg-slate-600 border-t border-slate-900">
+    {previousUrl ? <NavigationButton url={previousUrl} direction="previous" language={language} /> : <div />}
+    {nextUrl ? <NavigationButton url={nextUrl} direction="next" language={language} /> : <div />}
+</div>

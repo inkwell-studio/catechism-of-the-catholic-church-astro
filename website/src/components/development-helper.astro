@@ -1,0 +1,36 @@
+---
+import { Language } from '@catechism/source/types/types';
+import { getSupportedLanguages } from '@catechism/source/utils/language';
+
+import TableOfContentsDemo from '@components/table-of-contents-demo.astro';
+
+import { path } from '@logic/utils';
+
+interface Props {
+    language: Language;
+}
+
+const { language } = Astro.props;
+
+const languages = getSupportedLanguages().map(([key, lang]) => lang);
+---
+
+<div
+    class="opacity-20 hover:opacity-100 flex flex-col gap-2 p-3 rounded border-4 border-black/20 dark:border-white/20 transition-opacity delay-100 hover:delay-0"
+>
+    <TableOfContentsDemo language={language} />
+
+    <div class="font-bold font-mono text-center py-4 border-b border-white/40">{language}</div>
+
+    <ul class="flex flex-col align-stretch gap-4">
+        {
+            languages.map((language) => (
+                <li>
+                    <a class="block font-mono text-center opacity-80 p-4 hover:bg-white/20 rounded" href={path('/', language)}>
+                        {language}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</div>

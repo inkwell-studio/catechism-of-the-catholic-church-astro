@@ -1,0 +1,68 @@
+---
+import {
+    ArticleParagraph          as ArticleParagraphObject,
+    Content                   as ContentEnum,
+    ContentBase,
+    Language,
+    Article                   as ArticleObject,
+    BlockQuote                as BlockQuoteObject,
+    Chapter                   as ChapterObject,
+    InBrief                   as InBriefObject,
+    Paragraph                 as ParagraphObject,
+    ParagraphGroup            as ParagraphGroupObject,
+    ParagraphSubitem          as ParagraphSubitemObject,
+    ParagraphSubitemContainer as ParagraphSubitemContainerObject,
+    Part                      as PartObject,
+    Prologue                  as PrologueObject,
+    Section                   as SectionObject,
+    Subarticle                as SubarticleObject,
+    TextBlock                 as TextBlockObject,
+    TextHeading               as TextHeadingObject,
+    TextWrapper               as TextWrapperObject,
+} from '@catechism/source/types/types';
+
+import ArticleParagraph          from './article-paragraph.astro';
+import Article                   from './article.astro';
+import BlockQuote                from './block-quote.astro';
+import Chapter                   from './chapter.astro';
+import InBrief                   from './in-brief.astro';
+import ParagraphGroup            from './paragraph-group.astro';
+import ParagraphSubitemContainer from './paragraph-subitem-container.astro';
+import ParagraphSubitem          from './paragraph-subitem.astro';
+import Paragraph                 from './paragraph.astro';
+import Part                      from './part.astro';
+import Prologue                  from './prologue.astro';
+import Section                   from './section.astro';
+import Subarticle                from './subarticle.astro';
+import TextBlock                 from './text-block.astro';
+import TextHeading               from './text-heading.astro';
+import TextWrapper               from './text-wrapper.astro';
+import UnknownContent            from './unknown-content.astro';
+
+interface Props {
+    content: ContentBase;
+    language: Language;
+}
+
+const { content, language } = Astro.props;
+const isUnknownContent = !Object.values(ContentEnum).includes(content.contentType);
+---
+
+{isUnknownContent && <UnknownContent content={content} />}
+
+{content.contentType === ContentEnum.ARTICLE                      && <Article                   language={language} article={content as ArticleObject} />}
+{content.contentType === ContentEnum.ARTICLE_PARAGRAPH            && <ArticleParagraph          language={language} articleParagraph={content as ArticleParagraphObject} />}
+{content.contentType === ContentEnum.BLOCK_QUOTE                  && <BlockQuote                language={language} blockQuote={content as BlockQuoteObject} />}
+{content.contentType === ContentEnum.CHAPTER                      && <Chapter                   language={language} chapter={content as ChapterObject} />}
+{content.contentType === ContentEnum.IN_BRIEF                     && <InBrief                   language={language} inBrief={content as InBriefObject} />}
+{content.contentType === ContentEnum.PARAGRAPH                    && <Paragraph                 language={language} paragraph={content as ParagraphObject} />}
+{content.contentType === ContentEnum.PARAGRAPH_GROUP              && <ParagraphGroup            language={language} paragraphGroup={content as ParagraphGroupObject} />}
+{content.contentType === ContentEnum.PARAGRAPH_SUB_ITEM_CONTAINER && <ParagraphSubitemContainer language={language} paragraphSubitemContainer={content as ParagraphSubitemContainerObject} />}
+{content.contentType === ContentEnum.PARAGRAPH_SUB_ITEM           && <ParagraphSubitem          language={language} paragraphSubitem={content as ParagraphSubitemObject} />}
+{content.contentType === ContentEnum.PART                         && <Part                      language={language} part={content as PartObject} />}
+{content.contentType === ContentEnum.PROLOGUE                     && <Prologue                  language={language} prologue={content as PrologueObject} />}
+{content.contentType === ContentEnum.SECTION                      && <Section                   language={language} section={content as SectionObject} />}
+{content.contentType === ContentEnum.SUB_ARTICLE                  && <Subarticle                language={language} subarticle={content as SubarticleObject} />}
+{content.contentType === ContentEnum.TEXT_BLOCK                   && <TextBlock                 language={language} textBlock={content as TextBlockObject} />}
+{content.contentType === ContentEnum.TEXT_HEADING                 && <TextHeading                                   textHeading={content as TextHeadingObject} />}
+{content.contentType === ContentEnum.TEXT_WRAPPER                 && <TextWrapper               language={language} textWrapper={content as TextWrapperObject} />}

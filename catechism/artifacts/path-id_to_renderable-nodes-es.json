@@ -16,8 +16,8 @@
       "url": "/parte-1"
     },
     "next": {
-      "pathID": "1__m.0__m.0__m.1",
-      "url": "/parte-1/seccion-1/capitulo-1/articulo-2"
+      "pathID": "1__m.0__m.1",
+      "url": "/parte-1/seccion-1/capitulo-2"
     },
     "previous": {
       "pathID": "0",
@@ -30,12 +30,12 @@
       "url": "/parte-2"
     },
     "next": {
-      "pathID": "2__m.0__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2"
+      "pathID": "2__m.0__m.0__m.1",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-2"
     },
     "previous": {
-      "pathID": "1__m.1__m.1__m.0__m.2",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-3"
+      "pathID": "1__m.2",
+      "url": "/parte-1/seccion-3"
     }
   },
   "3": {
@@ -44,18 +44,18 @@
       "url": "/parte-3"
     },
     "next": {
-      "pathID": "3__m.0__m.1",
-      "url": "/parte-3/seccion-1/articulo-2"
+      "pathID": "3__m.0__m.0__m.1",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-2"
     },
     "previous": {
-      "pathID": "2__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-3"
+      "pathID": "2__m.1__m.1",
+      "url": "/parte-2/seccion-2/articulo-2"
     }
   },
-  "1__m.0__m.0__m.1": {
+  "1__m.0__m.1": {
     "here": {
-      "pathID": "1__m.0__m.0__m.1",
-      "url": "/parte-1/seccion-1/capitulo-1/articulo-2"
+      "pathID": "1__m.0__m.1",
+      "url": "/parte-1/seccion-1/capitulo-2"
     },
     "next": {
       "pathID": "1__m.1",
@@ -72,110 +72,68 @@
       "url": "/parte-1/seccion-2"
     },
     "next": {
-      "pathID": "1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-1/articulo-2"
+      "pathID": "1__m.1__m.1",
+      "url": "/parte-1/seccion-2/articulo-2"
     },
     "previous": {
-      "pathID": "1__m.0__m.0__m.1",
-      "url": "/parte-1/seccion-1/capitulo-1/articulo-2"
+      "pathID": "1__m.0__m.1",
+      "url": "/parte-1/seccion-1/capitulo-2"
     }
   },
-  "1__m.1__m.0__m.1": {
+  "1__m.1__m.1": {
     "here": {
-      "pathID": "1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-1/articulo-2"
+      "pathID": "1__m.1__m.1",
+      "url": "/parte-1/seccion-2/articulo-2"
     },
     "next": {
-      "pathID": "1__m.1__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2"
+      "pathID": "1__m.2",
+      "url": "/parte-1/seccion-3"
     },
     "previous": {
       "pathID": "1__m.1",
       "url": "/parte-1/seccion-2"
     }
   },
-  "1__m.1__m.1": {
+  "1__m.2": {
     "here": {
-      "pathID": "1__m.1__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2"
-    },
-    "next": {
-      "pathID": "1__m.1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-2"
-    },
-    "previous": {
-      "pathID": "1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-1/articulo-2"
-    }
-  },
-  "1__m.1__m.1__m.0__m.1": {
-    "here": {
-      "pathID": "1__m.1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-2"
-    },
-    "next": {
-      "pathID": "1__m.1__m.1__m.0__m.2",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-3"
-    },
-    "previous": {
-      "pathID": "1__m.1__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2"
-    }
-  },
-  "1__m.1__m.1__m.0__m.2": {
-    "here": {
-      "pathID": "1__m.1__m.1__m.0__m.2",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-3"
+      "pathID": "1__m.2",
+      "url": "/parte-1/seccion-3"
     },
     "next": {
       "pathID": "2",
       "url": "/parte-2"
     },
     "previous": {
-      "pathID": "1__m.1__m.1__m.0__m.1",
-      "url": "/parte-1/seccion-2/capitulo-2/articulo-1/articulo-parrafo-2"
+      "pathID": "1__m.1__m.1",
+      "url": "/parte-1/seccion-2/articulo-2"
     }
   },
-  "2__m.0__m.1": {
+  "2__m.0__m.0__m.1": {
     "here": {
-      "pathID": "2__m.0__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2"
+      "pathID": "2__m.0__m.0__m.1",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-2"
     },
     "next": {
-      "pathID": "2__m.0__m.1__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-2"
+      "pathID": "2__m.0__m.0__m.2",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-3"
     },
     "previous": {
       "pathID": "2",
       "url": "/parte-2"
     }
   },
-  "2__m.0__m.1__m.1": {
+  "2__m.0__m.0__m.2": {
     "here": {
-      "pathID": "2__m.0__m.1__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-2"
-    },
-    "next": {
-      "pathID": "2__m.0__m.1__m.2",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-3"
-    },
-    "previous": {
-      "pathID": "2__m.0__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2"
-    }
-  },
-  "2__m.0__m.1__m.2": {
-    "here": {
-      "pathID": "2__m.0__m.1__m.2",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-3"
+      "pathID": "2__m.0__m.0__m.2",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-3"
     },
     "next": {
       "pathID": "2__m.1",
       "url": "/parte-2/seccion-2"
     },
     "previous": {
-      "pathID": "2__m.0__m.1__m.1",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-2"
+      "pathID": "2__m.0__m.0__m.1",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-2"
     }
   },
   "2__m.1": {
@@ -184,152 +142,54 @@
       "url": "/parte-2/seccion-2"
     },
     "next": {
-      "pathID": "2__m.1__m.0__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-2"
-    },
-    "previous": {
-      "pathID": "2__m.0__m.1__m.2",
-      "url": "/parte-2/seccion-1/capitulo-2/articulo-3"
-    }
-  },
-  "2__m.1__m.0__m.1": {
-    "here": {
-      "pathID": "2__m.1__m.0__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-2"
-    },
-    "next": {
-      "pathID": "2__m.1__m.0__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3"
-    },
-    "previous": {
-      "pathID": "2__m.1",
-      "url": "/parte-2/seccion-2"
-    }
-  },
-  "2__m.1__m.0__m.2": {
-    "here": {
-      "pathID": "2__m.1__m.0__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3"
-    },
-    "next": {
-      "pathID": "2__m.1__m.0__m.2__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-2"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.0__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-2"
-    }
-  },
-  "2__m.1__m.0__m.2__m.1": {
-    "here": {
-      "pathID": "2__m.1__m.0__m.2__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-2"
-    },
-    "next": {
-      "pathID": "2__m.1__m.0__m.2__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-3"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.0__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3"
-    }
-  },
-  "2__m.1__m.0__m.2__m.2": {
-    "here": {
-      "pathID": "2__m.1__m.0__m.2__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-3"
-    },
-    "next": {
       "pathID": "2__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2"
+      "url": "/parte-2/seccion-2/articulo-2"
     },
     "previous": {
-      "pathID": "2__m.1__m.0__m.2__m.1",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-2"
+      "pathID": "2__m.0__m.0__m.2",
+      "url": "/parte-2/seccion-1/capitulo-1/articulo-3"
     }
   },
   "2__m.1__m.1": {
     "here": {
       "pathID": "2__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2"
-    },
-    "next": {
-      "pathID": "2__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.0__m.2__m.2",
-      "url": "/parte-2/seccion-2/capitulo-1/articulo-3/articulo-parrafo-3"
-    }
-  },
-  "2__m.1__m.1__m.1": {
-    "here": {
-      "pathID": "2__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2"
-    },
-    "next": {
-      "pathID": "2__m.1__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-2"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2"
-    }
-  },
-  "2__m.1__m.1__m.1__m.1": {
-    "here": {
-      "pathID": "2__m.1__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-2"
-    },
-    "next": {
-      "pathID": "2__m.1__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-3"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2"
-    }
-  },
-  "2__m.1__m.1__m.1__m.2": {
-    "here": {
-      "pathID": "2__m.1__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-3"
-    },
-    "next": {
-      "pathID": "2__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-3"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.1__m.1__m.1",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-2"
-    }
-  },
-  "2__m.1__m.1__m.2": {
-    "here": {
-      "pathID": "2__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-3"
-    },
-    "next": {
-      "pathID": "2__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-3"
-    },
-    "previous": {
-      "pathID": "2__m.1__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-2/articulo-parrafo-3"
-    }
-  },
-  "2__m.1__m.2": {
-    "here": {
-      "pathID": "2__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-3"
+      "url": "/parte-2/seccion-2/articulo-2"
     },
     "next": {
       "pathID": "3",
       "url": "/parte-3"
     },
     "previous": {
-      "pathID": "2__m.1__m.1__m.2",
-      "url": "/parte-2/seccion-2/capitulo-2/articulo-3"
+      "pathID": "2__m.1",
+      "url": "/parte-2/seccion-2"
+    }
+  },
+  "3__m.0__m.0__m.1": {
+    "here": {
+      "pathID": "3__m.0__m.0__m.1",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-2"
+    },
+    "next": {
+      "pathID": "3__m.0__m.0__m.2",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-3"
+    },
+    "previous": {
+      "pathID": "3",
+      "url": "/parte-3"
+    }
+  },
+  "3__m.0__m.0__m.2": {
+    "here": {
+      "pathID": "3__m.0__m.0__m.2",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-3"
+    },
+    "next": {
+      "pathID": "3__m.0__m.1",
+      "url": "/parte-3/seccion-1/articulo-2"
+    },
+    "previous": {
+      "pathID": "3__m.0__m.0__m.1",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-2"
     }
   },
   "3__m.0__m.1": {
@@ -338,26 +198,12 @@
       "url": "/parte-3/seccion-1/articulo-2"
     },
     "next": {
-      "pathID": "3__m.0__m.2",
-      "url": "/parte-3/seccion-1/articulo-3"
-    },
-    "previous": {
-      "pathID": "3",
-      "url": "/parte-3"
-    }
-  },
-  "3__m.0__m.2": {
-    "here": {
-      "pathID": "3__m.0__m.2",
-      "url": "/parte-3/seccion-1/articulo-3"
-    },
-    "next": {
       "pathID": "3__m.1",
       "url": "/parte-3/seccion-2"
     },
     "previous": {
-      "pathID": "3__m.0__m.1",
-      "url": "/parte-3/seccion-1/articulo-2"
+      "pathID": "3__m.0__m.0__m.2",
+      "url": "/parte-3/seccion-1/articulo-1/articulo-parrafo-3"
     }
   },
   "3__m.1": {
@@ -366,12 +212,54 @@
       "url": "/parte-3/seccion-2"
     },
     "next": {
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2"
+    },
+    "previous": {
+      "pathID": "3__m.0__m.1",
+      "url": "/parte-3/seccion-1/articulo-2"
+    }
+  },
+  "3__m.1__m.0__m.1": {
+    "here": {
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2"
+    },
+    "next": {
+      "pathID": "3__m.1__m.0__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-2"
+    },
+    "previous": {
+      "pathID": "3__m.1",
+      "url": "/parte-3/seccion-2"
+    }
+  },
+  "3__m.1__m.0__m.1__m.1": {
+    "here": {
+      "pathID": "3__m.1__m.0__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-2"
+    },
+    "next": {
+      "pathID": "3__m.1__m.0__m.1__m.2",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-3"
+    },
+    "previous": {
+      "pathID": "3__m.1__m.0__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2"
+    }
+  },
+  "3__m.1__m.0__m.1__m.2": {
+    "here": {
+      "pathID": "3__m.1__m.0__m.1__m.2",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-3"
+    },
+    "next": {
       "pathID": "3__m.1__m.1",
       "url": "/parte-3/seccion-2/capitulo-2"
     },
     "previous": {
-      "pathID": "3__m.0__m.2",
-      "url": "/parte-3/seccion-1/articulo-3"
+      "pathID": "3__m.1__m.0__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-2"
     }
   },
   "3__m.1__m.1": {
@@ -379,10 +267,38 @@
       "pathID": "3__m.1__m.1",
       "url": "/parte-3/seccion-2/capitulo-2"
     },
+    "next": {
+      "pathID": "3__m.1__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-2/articulo-2"
+    },
+    "previous": {
+      "pathID": "3__m.1__m.0__m.1__m.2",
+      "url": "/parte-3/seccion-2/capitulo-1/articulo-2/articulo-parrafo-3"
+    }
+  },
+  "3__m.1__m.1__m.1": {
+    "here": {
+      "pathID": "3__m.1__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-2/articulo-2"
+    },
+    "next": {
+      "pathID": "3__m.1__m.2",
+      "url": "/parte-3/seccion-2/capitulo-3"
+    },
+    "previous": {
+      "pathID": "3__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-2"
+    }
+  },
+  "3__m.1__m.2": {
+    "here": {
+      "pathID": "3__m.1__m.2",
+      "url": "/parte-3/seccion-2/capitulo-3"
+    },
     "next": null,
     "previous": {
-      "pathID": "3__m.1",
-      "url": "/parte-3/seccion-2"
+      "pathID": "3__m.1__m.1__m.1",
+      "url": "/parte-3/seccion-2/capitulo-2/articulo-2"
     }
   }
 }

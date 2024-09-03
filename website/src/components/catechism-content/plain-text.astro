@@ -1,0 +1,54 @@
+---
+import { Text } from '@catechism/source/types/types';
+
+interface Props {
+    text: Text;
+    lastFragment: boolean;
+}
+
+const { text, lastFragment } = Astro.props;
+
+const classes = [];
+if (text.strong) {
+    classes.push('font-bold');
+}
+if (text.emphasis) {
+    classes.push('italic');
+}
+if (text.smallCaps) {
+    // TODO: Handle
+}
+
+const spacer = lastFragment ? '' : ' ';
+
+const strong = text.strong;
+const emphasis = !strong && text.emphasis;
+const regular = !strong && !emphasis;
+---
+
+{
+    strong && (
+        <>
+            <strong class:list={classes}>{text.content}</strong>
+            {spacer}
+        </>
+    )
+}
+
+{
+    emphasis && (
+        <>
+            <em class:list={classes}>{text.content}</em>
+            {spacer}
+        </>
+    )
+}
+
+{
+    regular && (
+        <>
+            <span class:list={classes}>{text.content}</span>
+            {spacer}
+        </>
+    )
+}

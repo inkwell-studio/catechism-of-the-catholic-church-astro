@@ -1,0 +1,32 @@
+---
+import { InBrief, Language } from '@catechism/source/types/types';
+import { getAllChildContent } from '@catechism/source/utils/content';
+
+import { getUrlFragment } from '@logic/routing';
+import { translate } from '@logic/translation';
+
+import ContentBase from './content-base.astro';
+
+interface Props {
+    inBrief: InBrief;
+    language: Language;
+}
+
+const { inBrief, language } = Astro.props;
+
+const id = getUrlFragment(inBrief.semanticPath, false, language).fragment;
+const childContent = getAllChildContent(inBrief);
+---
+
+<div id={id}>
+    <strong class="block">{translate('In Brief', language)}</strong>
+    <ol>
+        {
+            childContent.map((c) => (
+                <li>
+                    <ContentBase content={c} language={language} />
+                </li>
+            ))
+        }
+    </ol>
+</div>

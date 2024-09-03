@@ -36,6 +36,6 @@ function runTests(
         const numCatechismParagraphs = catechismParagraphs.length;
         const numMapParagraphs = Object.keys(contentMap).length;
         const difference = numMapParagraphs - numCatechismParagraphs;
-        assertStrictEquals(difference, 0, `the map has ${difference} extra paragraph${difference > 1 ? 's' : ''}`);
+        assertStrictEquals(difference, 0, `the map has ${difference} extra paragraph${difference === 0 ? '' : 's'}`);
     });
 }

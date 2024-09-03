@@ -1,0 +1,15 @@
+---
+import { ContentBase } from '@catechism/source/types/types';
+
+interface Props {
+    content: ContentBase;
+}
+
+const { content } = Astro.props;
+
+console.warn(
+    `Unknown content type encountered: ${content.contentType} (pathID: ${content.pathID}, semantic path: ${content.semanticPath})`,
+);
+---
+
+<div>Unhandled content: {content.contentType}</div>

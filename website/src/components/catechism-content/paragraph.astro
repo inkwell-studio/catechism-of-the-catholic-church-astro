@@ -1,0 +1,27 @@
+---
+import { Language, Paragraph } from '@catechism/source/types/types';
+import { getAllChildContent } from '@catechism/source/utils/content';
+
+import { getUrlFragment } from '@logic/routing';
+
+import TextWrapperArray from './text-wrapper-array.astro';
+
+interface Props {
+    paragraph: Paragraph;
+    language: Language;
+}
+
+const { paragraph, language } = Astro.props;
+
+const id = getUrlFragment(paragraph.semanticPath, false, language).fragment;
+const childContent = getAllChildContent(paragraph);
+---
+
+<div id={id}>
+    <div class="inline">
+        {paragraph.paragraphNumber}
+    </div>
+    <div class="inline">
+        <TextWrapperArray content={childContent} language={language} />
+    </div>
+</div>

@@ -1,13 +1,24 @@
-import { build as buildContentMap } from './path-id-to-content-map.ts';
+import { build as buildCrossReferenceParagraphMap } from './paragraph-cross-reference-to-content-map.ts';
 import { build as buildParagraphContentMap } from './paragraph-number-to-content-map.ts';
 import { build as buildParagraphUrlMap } from './paragraph-number-to-url-map.ts';
-import { build as buildRenderableNodeMap } from './path-id_to_renderable-nodes.ts';
+import { build as buildRenderableNodeMap } from './path-id-to-renderable-nodes.ts';
+import { build as buildContentMap } from './path-id-to-content-map.ts';
+
+import { build as buildParagraphNumberRenderablePathIdMap } from './paragraph-number-to-renderable-path-id-map.ts';
+
 import { build as buildSemanticMap } from './semantic-path-to-renderable-path-id-map.ts';
 import { build as buildTableOfContents } from './table-of-contents.ts';
 import { Artifact, Language, ParagraphNumberContentMap, ParagraphNumberUrlMap, RenderableNodeMap } from '../source/types/types.ts';
 import { getCatechism } from '../source/utils/content.ts';
 import { getSupportedLanguages } from '../source/utils/language.ts';
-import { CatechismStructure, PathIdContentMap, SemanticPathPathIdMap, TableOfContentsType } from '../source/types/types.ts';
+import {
+    CatechismStructure,
+    ParagraphCrossReferenceContentMap,
+    ParagraphNumberPathIdMap,
+    PathIdContentMap,
+    SemanticPathPathIdMap,
+    TableOfContentsType,
+} from '../source/types/types.ts';
 
 getSupportedLanguages().forEach(([languageKey, language]) => {
     getCatechism(language)
@@ -22,6 +33,10 @@ function buildArtifacts(catechism: CatechismStructure): void {
     const tableOfContents = buildTableOfContents(catechism);
     writeJson(tableOfContents, Artifact.TABLE_OF_CONTENTS, catechism.language);
 
+    console.log('\tparagraph number to renderable PathID map ...');
+    const paragraphNumberPathIdMap = buildParagraphNumberRenderablePathIdMap(tableOfContents);
+    writeJson(paragraphNumberPathIdMap, Artifact.PARAGRAPH_NUMBER_TO_RENDERABLE_PATH_ID, catechism.language);
+
     console.log('\tparagraph number to content map ...');
     const paragraphContentMap = buildParagraphContentMap(catechism);
     writeJson(paragraphContentMap, Artifact.PARAGRAPH_NUMBER_TO_CONTENT, catechism.language);
@@ -29,6 +44,10 @@ function buildArtifacts(catechism: CatechismStructure): void {
     console.log('\tparagraph number to URL map ...');
     const paragraphUrlMap = buildParagraphUrlMap(catechism);
     writeJson(paragraphUrlMap, Artifact.PARAGRAPH_NUMBER_TO_URL, catechism.language);
+
+    console.log('\tparagraph cross-reference to content map ...');
+    const crossReferenceParagraphMap = buildCrossReferenceParagraphMap(catechism, paragraphContentMap);
+    writeJson(crossReferenceParagraphMap, Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, catechism.language);
 
     console.log('\tPathID to RenderableNode map ...');
     const renderableNodeMap = buildRenderableNodeMap(tableOfContents);
@@ -45,7 +64,9 @@ function buildArtifacts(catechism: CatechismStructure): void {
 
 function writeJson(
     object:
+        | ParagraphCrossReferenceContentMap
         | ParagraphNumberContentMap
+        | ParagraphNumberPathIdMap
         | ParagraphNumberUrlMap
         | PathIdContentMap
         | RenderableNodeMap

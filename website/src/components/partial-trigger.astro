@@ -1,0 +1,33 @@
+---
+interface Props {
+    contentUrl: string;
+    class?: string;
+}
+
+// `...rest` is needed in order for the classes from the parent to be properly scoped for the styling specified within by parent
+const { contentUrl, class: classes, ...rest } = Astro.props;
+---
+
+<script>
+    import { prefetch } from 'astro:prefetch';
+
+    class AstroPartialTrigger extends HTMLElement {
+        constructor() {
+            super();
+
+            this.addEventListener('mouseover', () => prefetch(this.dataset.contentUrl));
+        }
+    }
+
+    customElements.define('astro-partial-trigger', AstroPartialTrigger);
+</script>
+
+<astro-partial-trigger data-content-url={contentUrl}>
+    {
+        /* The `hx-target` value has no effect, since `hx-swap` is set to `none`,
+    but using `this` as the value ensures that an error will never be thrown by HTMX for a missing target */
+    }
+    <button type="button" hx-get={contentUrl} hx-trigger="click" hx-swap="none" hx-target="this" class={classes} {...rest}>
+        <slot />
+    </button>
+</astro-partial-trigger>

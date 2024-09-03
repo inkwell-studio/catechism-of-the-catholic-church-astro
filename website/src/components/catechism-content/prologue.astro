@@ -1,0 +1,18 @@
+---
+import { Language, Prologue } from '@catechism/source/types/types';
+import { getAllChildContent } from '@catechism/source/utils/content';
+
+import ContentBaseArray from './content-base-array.astro';
+
+interface Props {
+    prologue: Prologue;
+    language: Language;
+}
+
+const { prologue, language } = Astro.props;
+
+const childContent = getAllChildContent(prologue);
+---
+
+<h1>{prologue.title}</h1>
+<ContentBaseArray content={childContent} language={language} />

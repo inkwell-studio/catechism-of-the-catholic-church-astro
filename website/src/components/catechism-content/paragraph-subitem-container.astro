@@ -1,0 +1,16 @@
+---
+import { Language, ParagraphSubitemContainer as ParagraphSubitemContainerType } from '@catechism/source/types/types';
+
+import ParagraphSubitem from './paragraph-subitem.astro';
+
+interface Props {
+    paragraphSubitemContainer: ParagraphSubitemContainerType;
+    language: Language;
+}
+
+const { paragraphSubitemContainer, language } = Astro.props;
+---
+
+<ol>
+    {paragraphSubitemContainer.mainContent.map((subitem) => <ParagraphSubitem paragraphSubitem={subitem} language={language} />)}
+</ol>

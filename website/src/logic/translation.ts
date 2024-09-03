@@ -10,45 +10,13 @@ export function translate(englishText: string, language: Language): string {
 
 const translationMap: Record<string, Record<Exclude<Language, Language.ENGLISH>, string>> = {
     //#region UI messages and labels
-    'Server Error': {
-        [Language.LATIN]: 'Servo Errore',
-        [Language.SPANISH]: 'Error del Servidor',
-    },
-    'Error: No content found.': {
-        [Language.LATIN]: 'Errore: non contentus inventus est.',
-        [Language.SPANISH]: 'Error: no se encontró contenido.',
-    },
     'Page not found.': {
         [Language.LATIN]: 'Pagina non inveni.',
         [Language.SPANISH]: 'Página no encontrada.',
     },
-    'Unknown page:': {
-        [Language.LATIN]: 'ignota pagina:',
-        [Language.SPANISH]: 'Pagina desconocida:',
-    },
     'Go Home': {
         [Language.LATIN]: 'Redira ad Initium',
         [Language.SPANISH]: 'Volver a Empezar',
-    },
-    'Introduction (Home)': {
-        [Language.LATIN]: 'Praelocutio (Initium)',
-        [Language.SPANISH]: 'Introducción (Empezar)',
-    },
-    'Language': {
-        [Language.LATIN]: 'Lingua',
-        [Language.SPANISH]: 'Idioma',
-    },
-    'Open': {
-        [Language.LATIN]: 'Pando',
-        [Language.SPANISH]: 'Desplegar',
-    },
-    'Unsupported language': {
-        [Language.LATIN]: 'Sine lingua',
-        [Language.SPANISH]: 'Idioma no admitido',
-    },
-    'Available languages': {
-        [Language.LATIN]: 'Linguae Available',
-        [Language.SPANISH]: 'Idiomas Disponibles',
     },
     //#endregion
 

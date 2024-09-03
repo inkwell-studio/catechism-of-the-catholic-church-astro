@@ -1,0 +1,39 @@
+---
+import { ElementID } from '@logic/element-id';
+---
+
+<script>
+    import { hide, onClick, show } from '@logic/dom-utils';
+    import { $selectedCrossReference, clear } from '@logic/store/cross-reference';
+
+    class CrossReferenceWindow extends HTMLElement {
+        closeButton = document.getElementById('cross-reference-close');
+        navigateTo = document.getElementById('cross-reference-navigate-to');
+
+        constructor() {
+            super();
+
+            onClick(this.closeButton, () => clear());
+            onClick(this.navigateTo, () => clear());
+
+            $selectedCrossReference.subscribe((selection) => {
+                if (selection) {
+                    show(this);
+                } else {
+                    hide(this);
+                }
+            });
+        }
+    }
+
+    customElements.define('cross-reference-window', CrossReferenceWindow);
+</script>
+
+<cross-reference-window class="hidden">
+    <div class="bg-slate-500 flex flex-col justify-center items-center gap-4 p-24">
+        <button type="button" id={ElementID.CROSS_REFERENCE_CLOSE}>[ close ]</button>
+
+        <div id={ElementID.CROSS_REFERENCE_NAVIGATE_TO}></div>
+        <div id={ElementID.CROSS_REFERENCE_CONTENT} class="flex flex-col gap-4"></div>
+    </div>
+</cross-reference-window>

@@ -1,0 +1,23 @@
+---
+import { Language, Section } from '@catechism/source/types/types';
+import { getAllChildContent } from '@catechism/source/utils/content';
+
+import { getUrlFragment } from '@logic/routing';
+
+import ContentBaseArray from './content-base-array.astro';
+
+interface Props {
+    section: Section;
+    language: Language;
+}
+
+const { section, language } = Astro.props;
+
+const id = getUrlFragment(section.semanticPath, false, language).fragment;
+const childContent = getAllChildContent(section);
+---
+
+<h2 id={id}>
+    {section.title}
+</h2>
+<ContentBaseArray content={childContent} language={language} />

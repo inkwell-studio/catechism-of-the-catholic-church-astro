@@ -1,5 +1,7 @@
 // The logic and constant values of this script must be kept in sync with those of the inline script in the `<head>` element of `base.astro`.
 
+import { addClass, removeClass } from './dom-utils.ts';
+
 // By default, Tailwind looks for the 'dark' class when using the `class` strategy for dark mode (this can be set in tailwind.config.ts)
 export const DARK_MODE_CLASS = 'dark';
 export const DARK_MODE_MEDIA_QUERY = '(prefers-color-scheme: dark)';
@@ -19,18 +21,12 @@ export function onThemeSelection(themeValue: Theme): void {
 }
 
 export function updateTailwindClass(darkModeEnabled: boolean): void {
-    if (darkModeEnabled) {
-        document.documentElement.classList.add(DARK_MODE_CLASS);
-    } else {
-        document.documentElement.classList.remove(DARK_MODE_CLASS);
+    const e = document.documentElement;
 
-        /*
-        Remove the `class` attribute if it is empty to prevent the `class` attribute
-        being present without a value, which is invalid HTML (i.e. `<html class>`)
-        */
-        if (document.documentElement.classList.length === 0) {
-            document.documentElement.removeAttribute('class');
-        }
+    if (darkModeEnabled) {
+        addClass(e, DARK_MODE_CLASS);
+    } else {
+        removeClass(e, DARK_MODE_CLASS);
     }
 }
 

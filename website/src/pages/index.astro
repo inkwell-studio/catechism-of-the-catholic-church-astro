@@ -1,12 +1,11 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 
-import BaseLayout from '@layouts/base.astro';
-import ContentDemo from '@components/content-demo.astro';
-
-const path = Astro.url.pathname;
+import BaseLayout from '@layouts/base-layout.astro';
 ---
 
 <BaseLayout language={DEFAULT_LANGUAGE}>
-    <ContentDemo path={path} language={DEFAULT_LANGUAGE} />
+    <div class="flex justify-center items-center">
+        <h1>Index: root</h1>
+    </div>
 </BaseLayout>

@@ -90,6 +90,15 @@ export function getAllContent(catechism: CatechismStructure): Array<ContentConta
 }
 
 /**
+ * @returns the `Paragraph` cross-references of the Catechism in their listed order (duplicates may exists)
+ */
+export function getAllCrossReferences(catechism: CatechismStructure): Array<NumberOrNumberRange> {
+    const allContent = getAllContent(catechism);
+    const textWrappers = getAll(allContent, Content.TEXT_WRAPPER);
+    return textWrappers.flatMap((textWrapper) => (textWrapper as TextWrapper).paragraphReferences);
+}
+
+/**
  * @returns the `Paragraph`s of the Catechism in their listed order
  */
 export function getAllParagraphs(catechism: CatechismStructure): Array<Paragraph> {

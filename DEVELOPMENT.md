@@ -22,13 +22,24 @@ Opt-out of Astro data collection:
 
 ```
 cd website
-npx astro telemetry disable
+pnpm astro telemetry disable
 ```
+
+Disable the Astro developer toolbar:
+
+```
+cd website
+pnpm astro preferences disable devToolbar
+```
+
+See the [Astro documentation](https://docs.astro.build/en/reference/cli-reference/#astro-preferences) for more information.
 
 ## Writing code
 
 This project is set up for development with [Visual Studio Code](https://code.visualstudio.com/), and is configured to have the editor
 format files each time they are saved.
+
+Files excluded from formatting are specified by `deno.jsonc > fmt` and `.prettierignore`.
 
 ### Main tasks
 

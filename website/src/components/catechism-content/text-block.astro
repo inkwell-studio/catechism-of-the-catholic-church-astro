@@ -1,0 +1,19 @@
+---
+import { Language, TextBlock } from '@catechism/source/types/types';
+import { getAllChildContent } from '@catechism/source/utils/content';
+
+import TextWrapperArray from './text-wrapper-array.astro';
+
+interface Props {
+    textBlock: TextBlock;
+    language: Language;
+}
+
+const { textBlock, language } = Astro.props;
+
+const childContent = getAllChildContent(textBlock);
+---
+
+<div>
+    <TextWrapperArray content={childContent} language={language} />
+</div>

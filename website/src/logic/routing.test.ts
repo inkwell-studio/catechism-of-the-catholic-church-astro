@@ -286,13 +286,23 @@ Deno.test('getParagraphNumberUrl(): ""', () => {
     assertStrictEquals(result, null);
 });
 
+Deno.test('getParagraphNumberUrl(): 123', () => {
+    const result = getParagraphNumber('123');
+    assertStrictEquals(result, 123);
+});
+
 Deno.test('getParagraphNumberUrl(): /123', () => {
     const result = getParagraphNumber('/123');
     assertStrictEquals(result, 123);
 });
 
-Deno.test('getParagraphNumberUrl(): 123', () => {
-    const result = getParagraphNumber('123');
+Deno.test('getParagraphNumberUrl(): 123/', () => {
+    const result = getParagraphNumber('123/');
+    assertStrictEquals(result, 123);
+});
+
+Deno.test('getParagraphNumberUrl(): /123/', () => {
+    const result = getParagraphNumber('/123/');
     assertStrictEquals(result, 123);
 });
 

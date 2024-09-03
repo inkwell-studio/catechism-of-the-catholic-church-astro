@@ -1,35 +1,21 @@
 ---
-import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
+import { DEFAULT_LANGUAGE } from '@catechism/source/types/language';
 
-import Content from '@components/content.astro';
-
-import { getTableOfContentsUrls } from '../../logic/artifacts';
-import { getRenderablePathID } from '../../logic/routing';
-import { path as joinPaths, removeLanguageTag } from '../../logic/utils';
+import CatechismContent from '@components/catechism-content/catechism-content.astro';
+import { getSemanticPathPathIdMap } from '@logic/artifacts';
+import { getLanguageTag, removeLanguageTag } from '@logic/utils';
+import { ContentRoute, getTableOfContentsRoutes } from '@pages/_route-generator';
 
 export const partial = true;
 
-interface Props {
-    language: Language;
-    path: string;
+export function getStaticPaths(): Array<ContentRoute> {
+    return getTableOfContentsRoutes();
 }
 
-export function getStaticPaths() {
-    return getTableOfContentsUrls('allLanguages').map(({ language, url }) => {
-        // prettier-ignore
-        const path = DEFAULT_LANGUAGE === language
-            ? url
-            : joinPaths(language, url);
+const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
+const path = removeLanguageTag(Astro.params.path, language);
 
-        return { params: { path }, props: { language } };
-    });
-}
-
-const { path } = Astro.params;
-const { language } = Astro.props;
-
-const semanticPath = removeLanguageTag(path, language);
-const pathID = getRenderablePathID(language, semanticPath);
+const pathID = getSemanticPathPathIdMap(language)[path] ?? null;
 ---
 
-<Content pathID={pathID} language={language} />
+{pathID && <CatechismContent pathID={pathID} language={language} />}

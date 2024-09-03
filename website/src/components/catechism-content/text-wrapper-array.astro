@@ -1,0 +1,32 @@
+---
+import { Content, ContentBase as ContentBaseType, Language, TextWrapper as TextWrapperType } from '@catechism/source/types/types';
+
+import ContentBase from './content-base.astro';
+import TextWrapper from './text-wrapper.astro';
+
+interface Props {
+    content: Array<ContentBaseType | TextWrapperType>;
+    language: Language;
+}
+
+const { content, language } = Astro.props;
+---
+
+{
+    content.map((c, index) => {
+        const isTextWrapper = Content.TEXT_WRAPPER === c.contentType;
+        if (isTextWrapper) {
+            const precedingContentWasTextWrapper = index > 0 && Content.TEXT_WRAPPER === content[index - 1].contentType;
+            const spacer = precedingContentWasTextWrapper ? ' ' : '';
+
+            return (
+                <>
+                    {spacer}
+                    <TextWrapper textWrapper={c as TextWrapperType} language={language} />
+                </>
+            );
+        } else {
+            return <ContentBase content={c} language={language} />;
+        }
+    })
+}

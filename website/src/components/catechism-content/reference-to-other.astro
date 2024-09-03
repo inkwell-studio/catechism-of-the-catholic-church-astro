@@ -1,0 +1,24 @@
+---
+import { OtherReference, Language } from '@catechism/source/types/types';
+
+import { getOtherReferenceUrl } from '@logic/reference';
+import { translate } from '@logic/translation';
+
+interface Props {
+    reference: OtherReference;
+    language: Language;
+}
+
+const { reference, language } = Astro.props;
+
+const prefix = reference.direct ? '' : translate('Cf. ', language);
+const source = reference.source;
+const pointer = reference.pointer ? `: ${reference.pointer}` : '';
+const text = `${prefix}${source}${pointer}`;
+
+const url = getOtherReferenceUrl(reference, language);
+---
+
+<a href={url} target="_blank">
+    {text}
+</a>
