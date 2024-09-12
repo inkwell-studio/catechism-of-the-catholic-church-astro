@@ -5,7 +5,7 @@ import { buildParagraph } from './paragraph.ts';
 import { buildParagraphGroup } from './paragraph-group.ts';
 import { buildSubarticle } from './subarticle.ts';
 import { buildTextContent } from './text-content.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { chance, getContentCounts, intArrayOfRandomLength } from '../utils.ts';
 import {
@@ -45,7 +45,7 @@ export function buildArticle(articleNumber: number): Article {
 }
 
 function buildOpeningContent(): Array<TextContent> {
-    return intArrayOfRandomLength(Limit.article.textContent).map(() => buildTextContent(false));
+    return intArrayOfRandomLength(getLimits().article.textContent).map(() => buildTextContent(false));
 }
 
 function buildMainContent(
@@ -55,7 +55,7 @@ function buildMainContent(
     const contentCounts = getContentCounts(precedingContent);
 
     if (useArticleParagraphs) {
-        return intArrayOfRandomLength(Limit.article.articleParagraph).map((i) => {
+        return intArrayOfRandomLength(getLimits().article.articleParagraph).map((i) => {
             const offset = contentCounts.get(Content.ARTICLE_PARAGRAPH) ?? 0;
             return buildArticleParagraph(i + offset);
         });
@@ -63,11 +63,11 @@ function buildMainContent(
         const useSubarticles = chance(Probability.article.useSubarticles);
         if (useSubarticles) {
             const offset = contentCounts.get(Content.SUB_ARTICLE) ?? 0;
-            return intArrayOfRandomLength(Limit.article.subarticle).map((i) => buildSubarticle(i + offset));
+            return intArrayOfRandomLength(getLimits().article.subarticle).map((i) => buildSubarticle(i + offset));
         } else {
             const offset = contentCounts.get(Content.PARAGRAPH_GROUP) ?? 0;
-            const paragraphs = intArrayOfRandomLength(Limit.article.paragraph).map(() => buildParagraph());
-            const paragraphGroups = intArrayOfRandomLength(Limit.article.paragraphGroup).map((i) => buildParagraphGroup(i + offset));
+            const paragraphs = intArrayOfRandomLength(getLimits().article.paragraph).map(() => buildParagraph());
+            const paragraphGroups = intArrayOfRandomLength(getLimits().article.paragraphGroup).map((i) => buildParagraphGroup(i + offset));
 
             return [...paragraphs, ...paragraphGroups];
         }

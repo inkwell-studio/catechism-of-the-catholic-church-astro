@@ -4,6 +4,7 @@ import { CatechismStructure, TableOfContentsEntry, TableOfContentsType } from '.
 import { getTableOfContents } from '../source/utils/artifacts.ts';
 import { getAllParagraphs, getCatechism } from '../source/utils/content.ts';
 import { getSupportedLanguages } from '../source/utils/language.ts';
+import { getAllEntries } from '../source/utils/table-of-contents.ts';
 
 //#region tests
 console.log('\nTable of Contents ...');
@@ -114,29 +115,3 @@ function testSiblingContinuity(siblings: Array<TableOfContentsEntry>): void {
         latestParagraphNumber = sibling.lastParagraphNumber;
     });
 }
-
-/**
- * This pulls out all Table of Content entries into a single list, ordered by starting paragraph number
- */
-function getAllEntries(tableOfContents: TableOfContentsType): Array<TableOfContentsEntry> {
-    return [
-        ...helper([], [tableOfContents.prologue]),
-        ...tableOfContents.parts.flatMap((part) => helper([], [part])),
-    ];
-
-    function helper(
-        entries: Array<TableOfContentsEntry>,
-        children: Array<TableOfContentsEntry>,
-    ): Array<TableOfContentsEntry> {
-        children.forEach((child) => {
-            if (child.children.length > 0) {
-                return helper(entries, child.children);
-            } else {
-                entries.push(child);
-            }
-        });
-
-        return entries;
-    }
-}
-//#endregion

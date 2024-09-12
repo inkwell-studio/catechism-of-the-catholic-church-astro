@@ -1,5 +1,11 @@
 import {
+    Article,
+    ArticleParagraph,
+    BibleReference,
+    BlockQuote,
     CatechismStructure,
+    Chapter,
+    ChapterSection,
     Content,
     ContentBase,
     ContentContainer,
@@ -7,13 +13,27 @@ import {
     InBriefContainer,
     Language,
     NumberOrNumberRange,
+    OtherReference,
     Paragraph,
+    ParagraphGroup,
+    ParagraphSubitem,
+    ParagraphSubitemContainer,
+    Part,
     PathID,
+    Prologue,
     Reference,
+    ReferenceBase,
+    ReferenceEnum,
+    Section,
     SemanticPath,
+    Subarticle,
+    Text,
+    TextBlock,
+    TextHeading,
     TextWrapper,
 } from '../types/types.ts';
 
+//#region Specific content retrieval
 export async function getCatechism(language: Language): Promise<CatechismStructure> {
     /*
         A more idiomatic approach would be to use a dynamic JSON import, but this causes problems with Fresh 1.6.5+
@@ -25,20 +45,14 @@ export async function getCatechism(language: Language): Promise<CatechismStructu
     return JSON.parse(catechism);
 }
 
-export function hasFinalContent(content: ContentBase): boolean {
-    return 'finalContent' in content && Array.isArray(content.finalContent);
-}
-
-export function hasMainContent(content: ContentBase): boolean {
-    return 'mainContent' in content && Array.isArray(content.mainContent);
-}
-
-export function hasOpeningContent(content: ContentBase): boolean {
-    return 'openingContent' in content && Array.isArray(content.openingContent);
-}
-
-export function hasInBrief(content: ContentBase): boolean {
-    return 'inBrief' in content && !!content.inBrief;
+export async function* getCatechisms(languages: Array<Language>): AsyncGenerator<CatechismStructure> {
+    for (const language of languages) {
+        try {
+            yield getCatechism(language);
+        } catch (error) {
+            console.error(`Could not retrieve the Catechism JSON for [${language}]`, error);
+        }
+    }
 }
 
 /**
@@ -69,33 +83,13 @@ export function getInBrief(c: ContentBase | InBriefContainer): InBrief | null {
     return hasInBrief(c) ? (c as InBriefContainer).inBrief : null;
 }
 
-export function getAllChildContent(c: ContentBase): Array<ContentBase> {
-    const childContent = [
-        ...getOpeningContent(c),
-        ...getMainContent(c),
-    ];
-
-    const inBrief = getInBrief(c);
-    if (inBrief) {
-        childContent.push(inBrief);
-    }
-
-    childContent.push(...getFinalContent(c));
-
-    return childContent;
-}
-
-export function getAllContent(catechism: CatechismStructure): Array<ContentContainer> {
-    return [catechism.prologue, ...catechism.parts];
-}
-
 /**
  * @returns the `Paragraph` cross-references of the Catechism in their listed order (duplicates may exists)
  */
 export function getAllCrossReferences(catechism: CatechismStructure): Array<NumberOrNumberRange> {
     const allContent = getAllContent(catechism);
-    const textWrappers = getAll(allContent, Content.TEXT_WRAPPER);
-    return textWrappers.flatMap((textWrapper) => (textWrapper as TextWrapper).paragraphReferences);
+    const textWrappers = getAll<TextWrapper>(allContent, Content.TEXT_WRAPPER);
+    return textWrappers.flatMap((textWrapper) => textWrapper.paragraphReferences);
 }
 
 /**
@@ -144,6 +138,40 @@ export function getReferences(catechism: CatechismStructure): Array<Reference> {
         .filter((tw) => !!tw.referenceCollection)
         .flatMap((tw) => tw.referenceCollection?.references) as Array<Reference>;
 }
+//#endregion
+
+//#region Metadata retrieval
+export function getAllPathIDs(catechism: CatechismStructure): Array<PathID> {
+    const content = getAllContent(catechism);
+    return getAllOfProperty<PathID>('pathID', content);
+}
+
+export function getAllSemanticPaths(catechism: CatechismStructure): Array<SemanticPath> {
+    const content = getAllContent(catechism);
+    return getAllOfProperty<SemanticPath>('semanticPath', content);
+}
+//#endregion
+
+//#region General retrieval helpers
+export function getAllContent(catechism: CatechismStructure): Array<ContentContainer> {
+    return [catechism.prologue, ...catechism.parts];
+}
+
+export function getAllChildContent(c: ContentBase): Array<ContentBase> {
+    const childContent = [
+        ...getOpeningContent(c),
+        ...getMainContent(c),
+    ];
+
+    const inBrief = getInBrief(c);
+    if (inBrief) {
+        childContent.push(inBrief);
+    }
+
+    childContent.push(...getFinalContent(c));
+
+    return childContent;
+}
 
 /**
  * @returns all items of the given content type, in the order that they are listed
@@ -171,16 +199,6 @@ export function getAll<T extends ContentBase>(allContent: Array<ContentBase>, co
     }
 }
 
-export function getAllPathIDs(catechism: CatechismStructure): Array<PathID> {
-    const content = getAllContent(catechism);
-    return getAllOfProperty<PathID>('pathID', content);
-}
-
-export function getAllSemanticPaths(catechism: CatechismStructure): Array<SemanticPath> {
-    const content = getAllContent(catechism);
-    return getAllOfProperty<SemanticPath>('semanticPath', content);
-}
-
 export function getAllOfProperty<T>(propertyName: keyof ContentBase, allContent: Array<ContentBase>): Array<T> {
     return allContent.flatMap((content) => helper(content));
 
@@ -196,3 +214,113 @@ export function getAllOfProperty<T>(propertyName: keyof ContentBase, allContent:
         }
     }
 }
+//#endregion
+
+//#region Type guards
+export function isContentContainer(content: ContentBase): content is ContentContainer {
+    return hasOpeningContent(content) &&
+        hasMainContent(content) &&
+        hasFinalContent(content);
+}
+
+export function isArticle(c: ContentBase): c is Article {
+    return Content.ARTICLE === c.contentType;
+}
+
+export function isArticleParagraph(c: ContentBase): c is ArticleParagraph {
+    return Content.ARTICLE_PARAGRAPH === c.contentType;
+}
+
+export function isBibleReference(r: ReferenceBase | null): r is BibleReference {
+    return ReferenceEnum.BIBLE === r?.referenceType;
+}
+
+export function isChapter(c: ContentBase): c is Chapter {
+    return Content.CHAPTER === c.contentType;
+}
+
+export function isChapterSection(c: ContentBase): c is ChapterSection {
+    return Content.CHAPTER_SECTION === c.contentType;
+}
+
+export function isBlockQuote(c: ContentBase): c is BlockQuote {
+    return Content.BLOCK_QUOTE === c.contentType;
+}
+
+export function isInBrief(c: ContentBase): c is InBrief {
+    return Content.IN_BRIEF === c.contentType;
+}
+
+export function isInBriefContainer(content: ContentBase): content is InBriefContainer {
+    return hasInBrief(content);
+}
+
+export function isOtherReference(r: ReferenceBase | null): r is OtherReference {
+    return ReferenceEnum.OTHER === r?.referenceType;
+}
+
+export function isParagraph(c: ContentBase): c is Paragraph {
+    return Content.PARAGRAPH === c.contentType;
+}
+
+export function isParagraphGroup(c: ContentBase): c is ParagraphGroup {
+    return Content.PARAGRAPH_GROUP === c.contentType;
+}
+
+export function isParagraphSubitem(c: ContentBase): c is ParagraphSubitem {
+    return Content.PARAGRAPH_SUB_ITEM === c.contentType;
+}
+
+export function isParagraphSubitemContainer(c: ContentBase): c is ParagraphSubitemContainer {
+    return Content.PARAGRAPH_SUB_ITEM_CONTAINER === c.contentType;
+}
+
+export function isPart(c: ContentBase): c is Part {
+    return Content.PART === c.contentType;
+}
+export function isPrologue(c: ContentBase): c is Prologue {
+    return Content.PROLOGUE === c.contentType;
+}
+
+export function isSection(c: ContentBase): c is Section {
+    return Content.SECTION === c.contentType;
+}
+
+export function isSubarticle(c: ContentBase): c is Subarticle {
+    return Content.SUB_ARTICLE === c.contentType;
+}
+
+export function isText(c: ContentBase): c is Text {
+    return Content.TEXT === c.contentType;
+}
+
+export function isTextBlock(c: ContentBase): c is TextBlock {
+    return Content.TEXT_BLOCK === c.contentType;
+}
+
+export function isTextHeading(c: ContentBase): c is TextHeading {
+    return Content.TEXT_HEADING === c.contentType;
+}
+
+export function isTextWrapper(c: ContentBase): c is TextWrapper {
+    return Content.TEXT_WRAPPER === c.contentType;
+}
+//#endregion
+
+//#region Content checkers
+export function hasMainContent(content: ContentBase): boolean {
+    return 'mainContent' in content && Array.isArray(content.mainContent);
+}
+
+export function hasOpeningContent(content: ContentBase): boolean {
+    return 'openingContent' in content && Array.isArray(content.openingContent);
+}
+
+export function hasFinalContent(content: ContentBase): boolean {
+    return 'finalContent' in content && Array.isArray(content.finalContent);
+}
+
+export function hasInBrief(content: ContentBase): boolean {
+    return 'inBrief' in content && !!content.inBrief;
+}
+//#endregion

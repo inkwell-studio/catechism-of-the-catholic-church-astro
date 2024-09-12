@@ -1,4 +1,4 @@
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { getTitleText } from './general.ts';
 import { buildParagraphGroup } from './paragraph-group.ts';
@@ -30,8 +30,8 @@ function buildOpeningContent(): Array<ParagraphGroup | Paragraph> {
     if (chance(Probability.part.hasOpeningContent)) {
         const useParagraphGroups = randomBoolean();
         return useParagraphGroups
-            ? intArrayOfRandomLength(Limit.part.openingContent).map((i) => buildParagraphGroup(i))
-            : intArrayOfRandomLength(Limit.part.openingContent).map(() => buildParagraph());
+            ? intArrayOfRandomLength(getLimits().part.openingContent).map((i) => buildParagraphGroup(i))
+            : intArrayOfRandomLength(getLimits().part.openingContent).map(() => buildParagraph());
     } else {
         return [];
     }
@@ -40,7 +40,7 @@ function buildOpeningContent(): Array<ParagraphGroup | Paragraph> {
 function buildSections(): Array<Section> {
     const multipleSections = chance(Probability.part.multipleSections);
     if (multipleSections) {
-        return intArrayOfRandomLength(Limit.part.multipleSections).map((i) => buildSection(i));
+        return intArrayOfRandomLength(getLimits().part.multipleSections).map((i) => buildSection(i));
     } else {
         return [buildSection(1)];
     }

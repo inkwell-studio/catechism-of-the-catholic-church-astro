@@ -1,4 +1,4 @@
-import { getLanguage } from '../../language-state.ts';
+import { getLanguage } from '../../language/language-state.ts';
 import { Language } from '../../../source/types/types.ts';
 
 const sampleIndices = new Map<Language, number>();

@@ -2,6 +2,6 @@
 
 These files generate mock Catechism data.
 
-The mock data are generated as in-memory objects, and then written at `catechism/content/catechism.json`.
+The mock data are generated as in-memory objects, and then written at `catechism/content/catechism-[language code].json`.
 
-See `deno.json` for the appropriate build task.
+See `deno.jsonc` for the appropriate build task.

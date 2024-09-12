@@ -20,6 +20,24 @@ import {
     TextHeading               as TextHeadingObject,
     TextWrapper               as TextWrapperObject,
 } from '@catechism/source/types/types';
+import {
+    isArticle,
+    isArticleParagraph,
+    isBlockQuote,
+    isChapter,
+    isInBrief,
+    isParagraph,
+    isParagraphGroup,
+    isParagraphSubitem,
+    isParagraphSubitemContainer,
+    isPart,
+    isPrologue,
+    isSection,
+    isSubarticle,
+    isTextBlock,
+    isTextHeading,
+    isTextWrapper,
+} from '@catechism/source/utils/content';
 
 import ArticleParagraph          from './article-paragraph.astro';
 import Article                   from './article.astro';
@@ -50,19 +68,19 @@ const isUnknownContent = !Object.values(ContentEnum).includes(content.contentTyp
 
 {isUnknownContent && <UnknownContent content={content} />}
 
-{content.contentType === ContentEnum.ARTICLE                      && <Article                   language={language} article={content as ArticleObject} />}
-{content.contentType === ContentEnum.ARTICLE_PARAGRAPH            && <ArticleParagraph          language={language} articleParagraph={content as ArticleParagraphObject} />}
-{content.contentType === ContentEnum.BLOCK_QUOTE                  && <BlockQuote                language={language} blockQuote={content as BlockQuoteObject} />}
-{content.contentType === ContentEnum.CHAPTER                      && <Chapter                   language={language} chapter={content as ChapterObject} />}
-{content.contentType === ContentEnum.IN_BRIEF                     && <InBrief                   language={language} inBrief={content as InBriefObject} />}
-{content.contentType === ContentEnum.PARAGRAPH                    && <Paragraph                 language={language} paragraph={content as ParagraphObject} />}
-{content.contentType === ContentEnum.PARAGRAPH_GROUP              && <ParagraphGroup            language={language} paragraphGroup={content as ParagraphGroupObject} />}
-{content.contentType === ContentEnum.PARAGRAPH_SUB_ITEM_CONTAINER && <ParagraphSubitemContainer language={language} paragraphSubitemContainer={content as ParagraphSubitemContainerObject} />}
-{content.contentType === ContentEnum.PARAGRAPH_SUB_ITEM           && <ParagraphSubitem          language={language} paragraphSubitem={content as ParagraphSubitemObject} />}
-{content.contentType === ContentEnum.PART                         && <Part                      language={language} part={content as PartObject} />}
-{content.contentType === ContentEnum.PROLOGUE                     && <Prologue                  language={language} prologue={content as PrologueObject} />}
-{content.contentType === ContentEnum.SECTION                      && <Section                   language={language} section={content as SectionObject} />}
-{content.contentType === ContentEnum.SUB_ARTICLE                  && <Subarticle                language={language} subarticle={content as SubarticleObject} />}
-{content.contentType === ContentEnum.TEXT_BLOCK                   && <TextBlock                 language={language} textBlock={content as TextBlockObject} />}
-{content.contentType === ContentEnum.TEXT_HEADING                 && <TextHeading                                   textHeading={content as TextHeadingObject} />}
-{content.contentType === ContentEnum.TEXT_WRAPPER                 && <TextWrapper               language={language} textWrapper={content as TextWrapperObject} />}
+{isArticle(content)                   && <Article                   language={language} article={content} />}
+{isArticleParagraph(content)          && <ArticleParagraph          language={language} articleParagraph={content} />}
+{isBlockQuote(content)                && <BlockQuote                language={language} blockQuote={content} />}
+{isChapter(content)                   && <Chapter                   language={language} chapter={content} />}
+{isInBrief(content)                   && <InBrief                   language={language} inBrief={content} />}
+{isParagraph(content)                 && <Paragraph                 language={language} paragraph={content} />}
+{isParagraphGroup(content)            && <ParagraphGroup            language={language} paragraphGroup={content} />}
+{isParagraphSubitemContainer(content) && <ParagraphSubitemContainer language={language} paragraphSubitemContainer={content} />}
+{isParagraphSubitem(content)          && <ParagraphSubitem          language={language} paragraphSubitem={content} />}
+{isPart(content)                      && <Part                      language={language} part={content} />}
+{isPrologue(content)                  && <Prologue                  language={language} prologue={content} />}
+{isSection(content)                   && <Section                   language={language} section={content} />}
+{isSubarticle(content)                && <Subarticle                language={language} subarticle={content} />}
+{isTextBlock(content)                 && <TextBlock                 language={language} textBlock={content} />}
+{isTextHeading(content)               && <TextHeading                                   textHeading={content} />}
+{isTextWrapper(content)               && <TextWrapper               language={language} textWrapper={content} />}

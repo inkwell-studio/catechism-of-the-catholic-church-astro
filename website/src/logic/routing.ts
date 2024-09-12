@@ -1,5 +1,5 @@
 import { Language, SemanticPath } from '@catechism/source/types/types.ts';
-import { getLanguage } from '@catechism/source/utils/language.ts';
+import { getLanguage, getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
 import { translate } from './translation.ts';
 
@@ -52,6 +52,41 @@ export function getUrlFragment(
             fragment,
         };
     }
+}
+
+/**
+ * @returns the language tag from the start of the given path, or `null` if no language tag is present at the start
+ */
+export function getLanguageTag(path: string): Language | null {
+    for (const [_key, language] of getSupportedLanguages()) {
+        const regex = new RegExp(`(^|\/)?${language}(?=\/|$)`);
+        const matches = path.match(regex);
+
+        if (matches?.[0]) {
+            return matches?.[0].replaceAll('/', '') as Language;
+        }
+    }
+
+    return null;
+}
+
+/**
+ * @returns the given `path` without the language segment `zz/`, if such a language segment exists.
+ * It assumes that the language segment will either be the first segment or absent.
+ * `path` may or may not start with a slash (`/`).
+ */
+export function removeLanguageTag(path: string, language: Language): string {
+    const regex = new RegExp('^/?' + language + '(\/|$)');
+
+    const containsLanguageTag = regex.test(path);
+    if (containsLanguageTag) {
+        path = path.replace(language, '');
+        if (path.length > 1) {
+            path = path.slice(1);
+        }
+    }
+
+    return path;
 }
 
 export function getLanguageFromPathname(pathname: string): Language | null {

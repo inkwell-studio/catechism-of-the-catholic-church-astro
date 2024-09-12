@@ -1,16 +1,18 @@
 import { buildMockData } from './build/build.ts';
-import { setLanguage } from './language-state.ts';
-import { getSupportedLanguages } from '../source/utils/language.ts';
+import { getTranslations } from './language/translate.ts';
+
 import { CatechismStructure } from '../source/types/types.ts';
+import { LimitsSize, setLimits } from '@catechism/mock-data/build/config/limits.ts';
 
-getSupportedLanguages().forEach(([_key, language]) => {
-    setLanguage(language);
+console.log(`\nBuilding mock data...`);
+setLimits(LimitsSize.TINY);
+const catechism = buildMockData();
+writeToDisk(catechism);
 
-    console.log(`\nBuilding mock data (${language})...`);
-    const catechism = buildMockData();
-
-    writeToDisk(catechism);
-});
+const translations = getTranslations(catechism);
+for await (const translatedCatechism of translations) {
+    writeToDisk(translatedCatechism);
+}
 
 function writeToDisk(catechism: CatechismStructure): void {
     const json = JSON.stringify(catechism, undefined, '  ');

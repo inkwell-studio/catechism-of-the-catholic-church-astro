@@ -1,6 +1,6 @@
 import { getTitleText } from './general.ts';
 import { buildParagraph } from './paragraph.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { Content, Paragraph, ParagraphGroup } from '../../../source/types/types.ts';
 
@@ -22,5 +22,5 @@ export function buildParagraphGroup(paragraphGroupNumber: number): ParagraphGrou
 }
 
 function buildContent(): Array<Paragraph> {
-    return intArrayOfRandomLength(Limit.paragraphGroup.text).map(() => buildParagraph());
+    return intArrayOfRandomLength(getLimits().paragraphGroup.text).map(() => buildParagraph());
 }

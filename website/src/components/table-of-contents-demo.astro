@@ -5,7 +5,7 @@ import PartialLink from '@components/partial-link.astro';
 
 import { getTableOfContents } from '@logic/artifacts';
 import { ElementID } from '@logic/element-id';
-import { path } from '@logic/utils';
+import { path } from '@logic/navigation-utils';
 
 interface Props {
     language: Language;
@@ -38,7 +38,7 @@ const entries = [tableOfContents.prologue, ...tableOfContents.parts].map((entry)
     {
         entries.map((entry) => (
             <PartialLink
-                target={ElementID.CATECHISM_CONTENT_SELECTOR}
+                target={ElementID.CATECHISM_CONTENT_WRAPPER_SELECTOR}
                 clientUrl={entry.clientUrl}
                 contentUrl={entry.contentUrl}
                 class="block opacity-80 border border-white rounded p-4 text-center hover:bg-white/10"

@@ -1,5 +1,5 @@
 import { buildTextBlock } from './text-block.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { Content, ParagraphSubitem, TextBlock } from '../../../source/types/types.ts';
 
@@ -17,5 +17,5 @@ export function buildParagraphSubitem(): ParagraphSubitem {
 }
 
 function buildContent(): Array<TextBlock> {
-    return intArrayOfRandomLength(Limit.paragraphSubitem.textBlock).map(() => buildTextBlock());
+    return intArrayOfRandomLength(getLimits().paragraphSubitem.textBlock).map(() => buildTextBlock());
 }

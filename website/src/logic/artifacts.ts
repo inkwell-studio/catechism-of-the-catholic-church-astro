@@ -8,6 +8,7 @@ import {
     ParagraphNumberPathIdMap,
     ParagraphNumberUrlMap,
     PathIdContentMap,
+    PathIdLanguageUrlMap,
     RenderableNodeMap,
     SemanticPathPathIdMap,
     TableOfContentsType,
@@ -33,6 +34,10 @@ export function getParagraphPathIdMap(language: Language): ParagraphNumberPathId
     return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_RENDERABLE_PATH_ID, language);
 }
 
+export function getPathIdLanguageUrlMap(): PathIdLanguageUrlMap {
+    return getArtifact(Artifact.PATH_ID_TO_LANGUAGE_TO_URL);
+}
+
 export function getSemanticPathPathIdMap(language: Language): SemanticPathPathIdMap {
     return getArtifact(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
 }
@@ -52,8 +57,11 @@ export function getTableOfContents(language: Language): TableOfContentsType {
 }
 
 // deno-lint-ignore no-explicit-any
-function getArtifact(artifact: Artifact, language: Language): any {
-    const filepath = `../catechism/artifacts/${artifact}-${language}.json`;
+function getArtifact(artifact: Artifact, language?: Language): any {
+    // deno-fmt-ignore
+    const filepath = language
+        ? `../catechism/artifacts/${artifact}-${language}.json`
+        : `../catechism/artifacts/${artifact}.json`;
 
     try {
         return JSON.parse(fs.readFileSync(filepath, { encoding: 'utf8' }));

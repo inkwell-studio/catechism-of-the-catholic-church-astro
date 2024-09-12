@@ -1,7 +1,7 @@
 import { getTitleText } from './general.ts';
 import { buildInBrief } from './in-brief.ts';
 import { buildSubarticle } from './subarticle.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { ArticleParagraph, Content, Subarticle } from '../../../source/types/types.ts';
 
@@ -22,5 +22,5 @@ export function buildArticleParagraph(articleParagraphNumber: number): ArticlePa
 }
 
 function buildMainContent(): Array<Subarticle> {
-    return intArrayOfRandomLength(Limit.articleParagraph.subarticle).map((i) => buildSubarticle(i));
+    return intArrayOfRandomLength(getLimits().articleParagraph.subarticle).map((i) => buildSubarticle(i));
 }

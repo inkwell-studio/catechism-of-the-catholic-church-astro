@@ -1,7 +1,7 @@
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { chance, indexLimits, randomBoolean, randomInt } from '../utils.ts';
-import { getLanguage } from '../../language-state.ts';
+import { getLanguage } from '../../language/language-state.ts';
 import { getContentTitle } from '../../../artifact-builders/utils.ts';
 import {
     BibleBook,
@@ -64,10 +64,10 @@ function buildBibleReference(): BibleReference {
         BibleBook.HEBREWS,
     ];
 
-    let verses: NumberOrNumberRange = randomInt(Limit.bibleReference.verses);
+    let verses: NumberOrNumberRange = randomInt(getLimits().bibleReference.verses);
     const multipleVerses = randomBoolean();
     if (multipleVerses) {
-        const upperVerse = verses + randomInt(Limit.bibleReference.verseRangeSize);
+        const upperVerse = verses + randomInt(getLimits().bibleReference.verseRangeSize);
         verses = `${verses}–${upperVerse}`;
     }
 
@@ -77,7 +77,7 @@ function buildBibleReference(): BibleReference {
         referenceType: ReferenceEnum.BIBLE,
         direct: randomBoolean(),
         book: books[randomInt(indexLimits(books))],
-        chapter: randomInt(Limit.bibleReference.chapter),
+        chapter: randomInt(getLimits().bibleReference.chapter),
         verses,
         auxillaryText,
     };

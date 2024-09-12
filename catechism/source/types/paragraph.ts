@@ -8,7 +8,6 @@ import { TextHeading } from './text-heading.ts';
 export interface Paragraph extends ContentContainer {
     readonly contentType: Content.PARAGRAPH;
     readonly paragraphNumber: number;
-    readonly url: string;
     readonly openingContent: Array<never>;
     readonly mainContent: Array<BlockQuote | ParagraphSubitemContainer | TextHeading | TextBlock>;
     readonly finalContent: Array<never>;

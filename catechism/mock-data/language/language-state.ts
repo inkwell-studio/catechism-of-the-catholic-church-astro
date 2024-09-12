@@ -1,6 +1,6 @@
-import { Language } from '../source/types/types.ts';
+import { DEFAULT_LANGUAGE, Language } from '../../source/types/types.ts';
 
-let languageState = Language.ENGLISH;
+let languageState = DEFAULT_LANGUAGE;
 
 export function getLanguage(): Language {
     return languageState;

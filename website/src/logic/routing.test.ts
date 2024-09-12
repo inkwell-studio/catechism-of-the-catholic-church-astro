@@ -1,8 +1,8 @@
 import { assertStrictEquals } from '$std/assert';
-import { Language, SemanticPath } from '@catechism/source/types/types.ts';
+import { DEFAULT_LANGUAGE, Language, SemanticPath } from '@catechism/source/types/types.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 
-import { getLanguageFromPathname, getParagraphNumber, getUrl } from './routing.ts';
+import { getLanguageFromPathname, getLanguageTag, getParagraphNumber, getUrl, removeLanguageTag } from './routing.ts';
 
 console.log('\nrouting utils (server) ...');
 
@@ -234,6 +234,74 @@ Deno.test('getUrl(): low-level content within a subsequent ArticleParagraph', ()
             '/part-1/section-3/chapter-2/article-4/article-paragraph-7#702',
         ],
     ].forEach((testCase) => urlTest(testCase[0], testCase[1]));
+});
+//#endregion
+
+//#region getLanguageTag
+Deno.test('getLanguageTag()', async (t) => {
+    const testCases = [
+        ['', null],
+        ['/', null],
+        ['abc', null],
+        ['abc/', null],
+        ['/abc', null],
+        ['/abc/', null],
+        ['abc/xyz', null],
+        ['abc/xyz/', null],
+        ['/abc/xyz', null],
+        ['/abc/xyz/', null],
+        ['la', Language.LATIN],
+        ['/la', Language.LATIN],
+        ['la/', Language.LATIN],
+        ['/la/', Language.LATIN],
+        ['la/abc', Language.LATIN],
+        ['/la/abc', Language.LATIN],
+        ['la/abc/', Language.LATIN],
+        ['/la/abc/', Language.LATIN],
+        ['la/abc/xyz', Language.LATIN],
+        ['/la/abc/xyz', Language.LATIN],
+        ['la/abc/xyz/', Language.LATIN],
+        ['/la/abc/xyz/', Language.LATIN],
+    ] as const;
+
+    for (const [path, expectedResult] of testCases) {
+        await t.step(path, () => {
+            const result = getLanguageTag(path);
+            assertStrictEquals(result, expectedResult);
+        });
+    }
+});
+//#endregion
+
+//#region removeLanguageTag
+Deno.test('removeLanguageTag()', async (t) => {
+    const testCases = [
+        [DEFAULT_LANGUAGE, 'abc/xyz', 'abc/xyz'],
+        [DEFAULT_LANGUAGE, 'abc/xyz/', 'abc/xyz/'],
+        [DEFAULT_LANGUAGE, '/abc/xyz', '/abc/xyz'],
+        [DEFAULT_LANGUAGE, '/abc/xyz/', '/abc/xyz/'],
+        [Language.ENGLISH, 'en/abc/xyz', 'abc/xyz'],
+        [Language.ENGLISH, 'en/abc/xyz/', 'abc/xyz/'],
+        [Language.ENGLISH, '/en/abc/xyz', '/abc/xyz'],
+        [Language.ENGLISH, '/en/abc/xyz/', '/abc/xyz/'],
+        [Language.LATIN, '', ''],
+        [Language.LATIN, '/', '/'],
+        [Language.LATIN, 'la', ''],
+        [Language.LATIN, '/la', '/'],
+        [Language.LATIN, 'la/', '/'],
+        [Language.LATIN, '/la/', '/'],
+        [Language.LATIN, 'la/abc/xyz', 'abc/xyz'],
+        [Language.LATIN, 'la/abc/xyz/', 'abc/xyz/'],
+        [Language.LATIN, '/la/abc/xyz', '/abc/xyz'],
+        [Language.LATIN, '/la/abc/xyz/', '/abc/xyz/'],
+    ] as const;
+
+    for (const [language, path, expectedResult] of testCases) {
+        await t.step(path, () => {
+            const result = removeLanguageTag(path, language);
+            assertStrictEquals(result, expectedResult);
+        });
+    }
 });
 //#endregion
 

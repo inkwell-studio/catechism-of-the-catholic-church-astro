@@ -1,5 +1,6 @@
 ---
-import { BibleReference, Language, OtherReference, ReferenceBase, ReferenceEnum } from '@catechism/source/types/types';
+import { Language, ReferenceBase } from '@catechism/source/types/types';
+import { isBibleReference as isBibleReferenceUtil, isOtherReference as isOtherReferenceUtil } from '@catechism/source/utils/content';
 
 import ReferenceToBible from './reference-to-bible.astro';
 import ReferenceToOther from './reference-to-other.astro';
@@ -11,13 +12,13 @@ interface Props {
 
 const { reference, language } = Astro.props;
 
-const bibleReference = ReferenceEnum.BIBLE === reference.referenceType;
-const otherReference = ReferenceEnum.OTHER === reference.referenceType;
+const isBibleReference = isBibleReferenceUtil(reference);
+const isOtherReference = isOtherReferenceUtil(reference);
 
-if (!bibleReference && !otherReference) {
+if (!isBibleReference && !isOtherReference) {
     console.warn(`Unknown reference type encountered: ${reference.referenceType}`);
 }
 ---
 
-{bibleReference && <ReferenceToBible reference={reference as BibleReference} language={language} />}
-{otherReference && <ReferenceToOther reference={reference as OtherReference} language={language} />}
+{isBibleReference && <ReferenceToBible reference={reference} language={language} />}
+{isOtherReference && <ReferenceToOther reference={reference} language={language} />}

@@ -2,9 +2,13 @@
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/language';
 
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
+import Replacement from '@components/replacement.astro';
+
 import { getSemanticPathPathIdMap } from '@logic/artifacts';
-import { getLanguageTag, removeLanguageTag } from '@logic/utils';
+import { ElementID } from '@logic/element-id';
+import { getLanguageTag, removeLanguageTag } from '@logic/routing';
 import { ContentRoute, getTableOfContentsRoutes } from '@pages/_route-generator';
+import LanguageSwitcher from '../../components/language-switcher.astro';
 
 export const partial = true;
 
@@ -14,8 +18,11 @@ export function getStaticPaths(): Array<ContentRoute> {
 
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
-
 const pathID = getSemanticPathPathIdMap(language)[path] ?? null;
 ---
 
 {pathID && <CatechismContent pathID={pathID} language={language} />}
+
+<Replacement target={ElementID.LANGUAGE_SWITCHER_WRAPPER}>
+    <LanguageSwitcher currentLanguage={language} />
+</Replacement>

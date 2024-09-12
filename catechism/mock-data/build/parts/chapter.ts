@@ -3,7 +3,7 @@ import { getTitleText } from './general.ts';
 import { buildInBrief } from './in-brief.ts';
 import { buildSubarticle } from './subarticle.ts';
 import { buildTextContent } from './text-content.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { chance, getContentCounts, intArrayOfRandomLength, randomBoolean } from '../utils.ts';
 import { Article, Chapter, Content, ContentBase, InBrief, Subarticle, TextContent } from '../../../source/types/types.ts';
@@ -30,7 +30,7 @@ export function buildChapter(chapterNumber: number): Chapter {
 }
 
 function buildOpeningContent(): Array<TextContent> {
-    return intArrayOfRandomLength(Limit.chapter.openingContent.textContent).map(() => buildTextContent(true));
+    return intArrayOfRandomLength(getLimits().chapter.openingContent.textContent).map(() => buildTextContent(true));
 }
 
 function buildMainContent(
@@ -42,15 +42,15 @@ function buildMainContent(
     if (hasInBrief) {
         // Chapters with an In Brief item contain no Articles
         const offset = contentCounts.get(Content.SUB_ARTICLE) ?? 0;
-        return intArrayOfRandomLength(Limit.chapter.subarticle).map((i) => buildSubarticle(i + offset));
+        return intArrayOfRandomLength(getLimits().chapter.subarticle).map((i) => buildSubarticle(i + offset));
     } else {
         const useArticles = chance(Probability.chapter.useArticles);
         if (useArticles) {
             const offset = contentCounts.get(Content.ARTICLE) ?? 0;
-            return intArrayOfRandomLength(Limit.chapter.article).map((i) => buildArticle(i + offset));
+            return intArrayOfRandomLength(getLimits().chapter.article).map((i) => buildArticle(i + offset));
         } else {
             const offset = contentCounts.get(Content.SUB_ARTICLE) ?? 0;
-            return intArrayOfRandomLength(Limit.chapter.subarticle).map((i) => buildSubarticle(i + offset));
+            return intArrayOfRandomLength(getLimits().chapter.subarticle).map((i) => buildSubarticle(i + offset));
         }
     }
 }

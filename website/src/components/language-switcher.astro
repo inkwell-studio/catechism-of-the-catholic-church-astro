@@ -1,0 +1,51 @@
+---
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types';
+import { getSupportedLanguages } from '@catechism/source/utils/language';
+
+import { getPathIdLanguageUrlMap, getSemanticPathPathIdMap } from '@logic/artifacts';
+import { path as joinPaths } from '@logic/navigation-utils';
+import { getParagraphNumber, removeLanguageTag } from '@logic/routing';
+
+interface Props {
+    currentLanguage: Language;
+}
+
+const { currentLanguage } = Astro.props;
+
+const semanticPathPathIdMap = getSemanticPathPathIdMap(currentLanguage);
+const pathIdLanguageUrlMap = getPathIdLanguageUrlMap();
+
+const path = removeLanguageTag(Astro.params.path, currentLanguage);
+const pathID = semanticPathPathIdMap[path] ?? null;
+const paragraphNumber = getParagraphNumber(path);
+
+const languageUrlMap = pathID ? pathIdLanguageUrlMap[pathID] : [];
+
+const languagesAndUrls = getSupportedLanguages().map(([languageKey, language]) => {
+    let path = '';
+
+    if (paragraphNumber) {
+        path = paragraphNumber + '';
+    } else {
+        path = languageUrlMap[language];
+    }
+
+    const languagePrefix = DEFAULT_LANGUAGE === language ? '' : language;
+    const url = joinPaths('/', languagePrefix, path);
+
+    return { languageKey, language, url };
+});
+---
+
+<ol class="flex gap-4 p-4 border rounded-sm">
+    {
+        languagesAndUrls.map(({ languageKey, language, url }) => {
+            return (
+                <li>
+                    {language === currentLanguage && <div class="opacity-50">{languageKey}</div>}
+                    {language !== currentLanguage && <a href={url}>{languageKey}</a>}
+                </li>
+            );
+        })
+    }
+</ol>

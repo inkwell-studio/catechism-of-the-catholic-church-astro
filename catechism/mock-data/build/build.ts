@@ -1,10 +1,10 @@
 // deno-lint-ignore-file
-import { Limit } from './config/limit.ts';
+import { getLimits } from './config/limits.ts';
 import { Probability } from './config/probability.ts';
 import { buildPart } from './parts/part.ts';
 import { buildPrologue } from './parts/prologue.ts';
 import { chance, intArrayOfRandomLength, MinMax, randomInt } from './utils.ts';
-import { getLanguage } from '../language-state.ts';
+import { getLanguage } from '../language/language-state.ts';
 import {
     CatechismStructure,
     Container,
@@ -33,7 +33,7 @@ import { getUrl } from '../../../website/src/logic/routing.ts';
 
 //#region top-level functions
 export function buildMockData(): CatechismStructure {
-    let catechism = {
+    let catechism: CatechismStructure = {
         language: getLanguage(),
         prologue: buildPrologue('0'),
         parts: [
@@ -52,7 +52,7 @@ export function buildMockData(): CatechismStructure {
     const results = buildParagraphCrossReferences(catechism);
     catechism = results.catechism;
 
-    console.log('Validating mock data...');
+    console.log('Validating mock data ...');
     const valid = validateCatechism(catechism);
     if (!valid) {
         console.log('\nExited without writing data.');
@@ -60,7 +60,7 @@ export function buildMockData(): CatechismStructure {
     }
 
     const paragraphCount = getAllParagraphs(catechism).length;
-    console.log(`Finished: built ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross-references`);
+    console.log(`\t... built and validated ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross-references`);
 
     return catechism;
 }
@@ -222,7 +222,7 @@ function setReferenceNumbersHelper(
 /**
  * This depends on all `Paragraph.paragraphNumber` values being properly set
  */
-function setSemanticPaths(catechism: CatechismStructure): CatechismStructure {
+export function setSemanticPaths(catechism: CatechismStructure): CatechismStructure {
     catechism = structuredClone(catechism);
 
     getAllContent(catechism).forEach((topLevelContent) => {
@@ -414,7 +414,7 @@ function buildParagraphCrossReferences(
     }
 
     function buildMultipleReferences(maxParagraphNumber: number): Array<NumberOrNumberRange> {
-        const references = intArrayOfRandomLength(Limit.paragraph.crossReference.count).map(() => buildReference(maxParagraphNumber));
+        const references = intArrayOfRandomLength(getLimits().paragraph.crossReference.count).map(() => buildReference(maxParagraphNumber));
 
         // Ensure there are no duplicate cross-references
         return Array.from(new Set(references));
@@ -426,7 +426,7 @@ function buildParagraphCrossReferences(
 
         if (buildRange) {
             const num1 = randomInt(paragraphLimits);
-            let num2 = num1 + randomInt(Limit.paragraph.crossReference.range);
+            let num2 = num1 + randomInt(getLimits().paragraph.crossReference.range);
 
             while (num2 > maxParagraphNumber) {
                 num2--;

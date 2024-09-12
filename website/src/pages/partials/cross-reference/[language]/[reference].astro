@@ -3,10 +3,11 @@ import { DEFAULT_LANGUAGE, NumberOrNumberRange } from '@catechism/source/types/t
 
 import ContentBaseArray from '@components/catechism-content/content-base-array.astro';
 import PartialLink from '@components/partial-link.astro';
+import Replacement from '@components/replacement.astro';
 
 import { getParagraphCrossReferenceContentMap, getParagraphNumberUrlMap } from '@logic/artifacts';
 import { ElementID } from '@logic/element-id';
-import { path } from '@logic/utils';
+import { path } from '@logic/navigation-utils';
 import { CrossReferenceRoute, getCrossReferencePartialRoutes } from '@pages/_route-generator';
 
 export const partial = true;
@@ -42,17 +43,18 @@ const contentUrl = (
     /* Remove the hash of the URL, as including it causes a bug when interacting with HTMX,
     as HTMX will use it the hash and fragment value in `document.querySelector()`, which
     considers ID selectors that start with numbers as invalid (e.g. `#123`).
+
     IDs that start with numbers are valid according to HTML5, but invalid according to HTML4. */
     ).replace(/#.*/, '');
 ---
 
-<div id={ElementID.CROSS_REFERENCE_NAVIGATE_TO} hx-swap-oob="innerHTML">
-    <PartialLink clientUrl={clientUrl} contentUrl={contentUrl} target={ElementID.CATECHISM_CONTENT_SELECTOR}>
+<Replacement target={ElementID.CROSS_REFERENCE_NAVIGATE_TO}>
+    <PartialLink clientUrl={clientUrl} contentUrl={contentUrl} target={ElementID.CATECHISM_CONTENT_WRAPPER_SELECTOR}>
         navigate-to: {reference}
     </PartialLink>
-</div>
+</Replacement>
 
-<div id={ElementID.CROSS_REFERENCE_CONTENT} hx-swap-oob="innerHTML">
+<Replacement target={ElementID.CROSS_REFERENCE_CONTENT}>
     <div class="text-3xl font-bold">
         {reference}
     </div>
@@ -60,4 +62,4 @@ const contentUrl = (
     <div>
         {paragraphs && <ContentBaseArray content={paragraphs} language={language} />}
     </div>
-</div>
+</Replacement>

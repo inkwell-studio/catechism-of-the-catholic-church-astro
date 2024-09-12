@@ -1,5 +1,5 @@
 import { buildTextBlock } from './text-block.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { Content, Paragraph, ParagraphSubitemContainer, TextBlock } from '../../../source/types/types.ts';
 
@@ -14,10 +14,9 @@ export function buildParagraph(): Paragraph {
         pathID: '0',
         semanticPath: '',
         paragraphNumber: 1,
-        url: '',
     };
 }
 
 function buildContent(): Array<ParagraphSubitemContainer | TextBlock> {
-    return intArrayOfRandomLength(Limit.paragraph.textBlock).map(() => buildTextBlock());
+    return intArrayOfRandomLength(getLimits().paragraph.textBlock).map(() => buildTextBlock());
 }

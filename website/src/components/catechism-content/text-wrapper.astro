@@ -14,7 +14,7 @@ const { textWrapper, language } = Astro.props;
 ---
 
 <span>
-    <span class="absolute right-0 text-left">
+    <span class="absolute right-8 text-left">
         {
             textWrapper.paragraphReferences.map((reference, index, allReferences) => {
                 const separator = index < allReferences.length - 1 ? ', ' : '';

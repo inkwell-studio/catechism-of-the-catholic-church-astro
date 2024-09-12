@@ -3,7 +3,7 @@ import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 import { getTopLevelUrls } from '@catechism/source/utils/table-of-contents.ts';
 
 import { getAllCrossReferences, getAllParagraphNumbers, getTableOfContents } from '../logic/artifacts.ts';
-import { path as joinPaths } from '../logic/utils.ts';
+import { path as joinPaths } from '../logic/navigation-utils.ts';
 
 export interface ContentRoute {
     params: {

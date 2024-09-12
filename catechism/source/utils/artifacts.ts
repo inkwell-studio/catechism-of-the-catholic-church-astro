@@ -6,6 +6,7 @@ import {
     ParagraphNumberPathIdMap,
     ParagraphNumberUrlMap,
     PathIdContentMap,
+    PathIdLanguageUrlMap,
     RenderableNodeMap,
     SemanticPathPathIdMap,
     TableOfContentsType,
@@ -39,13 +40,20 @@ export function getParagraphNumberUrlMap(language: Language): Promise<ParagraphN
     return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_URL, language);
 }
 
+export function getPathIdLanguageUrlMap(): Promise<PathIdLanguageUrlMap> {
+    return getArtifact(Artifact.PATH_ID_TO_LANGUAGE_TO_URL);
+}
+
 export function getTableOfContents(language: Language): Promise<TableOfContentsType> {
     return getArtifact(Artifact.TABLE_OF_CONTENTS, language);
 }
 
 // deno-lint-ignore no-explicit-any
-async function getArtifact(artifact: Artifact, language: Language): Promise<any> {
-    const filepath = `./catechism/artifacts/${artifact}-${language}.json`;
+async function getArtifact(artifact: Artifact, language?: Language): Promise<any> {
+    // deno-fmt-ignore
+    const filepath = language
+        ? `./catechism/artifacts/${artifact}-${language}.json`
+        : `./catechism/artifacts/${artifact}.json`;
 
     try {
         const artifact = await Deno.readTextFile(filepath);

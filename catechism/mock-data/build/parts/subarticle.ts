@@ -1,7 +1,7 @@
 import { getTitleText } from './general.ts';
 import { buildParagraph } from './paragraph.ts';
 import { buildParagraphGroup } from './paragraph-group.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { chance, getContentCounts, intArrayOfRandomLength, randomInt } from '../utils.ts';
 import { Content, Paragraph, ParagraphGroup, Subarticle } from '../../../source/types/types.ts';
@@ -22,7 +22,7 @@ export function buildSubarticle(subarticleNumber: number): Subarticle {
 }
 
 function buildMainContent(): Array<ParagraphGroup | Paragraph> {
-    const numItems = randomInt(Limit.subarticle.contentItem);
+    const numItems = randomInt(getLimits().subarticle.contentItem);
 
     const items = [];
     let paragraphGroupIndex = 0;
@@ -35,7 +35,7 @@ function buildMainContent(): Array<ParagraphGroup | Paragraph> {
             items.push(buildParagraphGroup(paragraphGroupIndex + 1 + contentOffset));
             paragraphGroupIndex++;
         } else {
-            const textContent = intArrayOfRandomLength(Limit.subarticle.textContent).map(() => buildParagraph());
+            const textContent = intArrayOfRandomLength(getLimits().subarticle.textContent).map(() => buildParagraph());
             items.push(...textContent);
         }
     }

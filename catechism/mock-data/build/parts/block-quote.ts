@@ -1,7 +1,7 @@
 import { buildTextBlock } from './text-block.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { BlockQuote, Content, TextBlock } from '../../../source/types/types.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 
 export function buildBlockQuote(): BlockQuote {
     return {
@@ -17,5 +17,5 @@ export function buildBlockQuote(): BlockQuote {
 }
 
 function buildContent(): Array<TextBlock> {
-    return intArrayOfRandomLength(Limit.blockQuote.text).map(() => buildTextBlock());
+    return intArrayOfRandomLength(getLimits().blockQuote.text).map(() => buildTextBlock());
 }

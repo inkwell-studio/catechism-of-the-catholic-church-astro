@@ -61,10 +61,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
             })();
         </script>
         <script>
+            import { respondToNavigationEvent, watchForDomChanges } from '@logic/navigation-utils';
             import { watchForThemeChanges } from '@logic/store/theme';
-            import { autoScroll } from '@logic/utils';
 
-            autoScroll();
+            respondToNavigationEvent();
+            watchForDomChanges();
             watchForThemeChanges();
         </script>
         <script src="/htmx.min.js" is:inline></script>
@@ -79,7 +80,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
         <div class="fixed bottom-0 inset-x-0">
             <CrossReferenceWindow />
-            <ActionBar />
+            <ActionBar language={language} />
         </div>
 
         <div class="fixed bottom-4 left-4 w-min">

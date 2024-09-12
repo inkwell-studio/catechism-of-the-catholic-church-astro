@@ -1,7 +1,7 @@
 import { buildParagraph } from './paragraph.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { Content, InBrief, Paragraph } from '../../../source/types/types.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 
 export function buildInBrief(): InBrief {
     return {
@@ -17,5 +17,5 @@ export function buildInBrief(): InBrief {
 }
 
 function buildContent(): Array<Paragraph> {
-    return intArrayOfRandomLength(Limit.inBrief.paragraph).map(() => buildParagraph());
+    return intArrayOfRandomLength(getLimits().inBrief.paragraph).map(() => buildParagraph());
 }

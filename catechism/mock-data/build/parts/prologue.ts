@@ -3,7 +3,7 @@ import { buildTextBlock } from './text-block.ts';
 
 import { getTitleText } from './general.ts';
 
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { getContentCounts, intArrayOfRandomLength } from '../utils.ts';
 import { Content, ContentBase, PathID, Prologue, Subarticle, TextContent } from '../../../source/types/types.ts';
 
@@ -24,11 +24,11 @@ export function buildPrologue(pathID: PathID): Prologue {
 }
 
 function buildOpeningContent(): Array<TextContent> {
-    return intArrayOfRandomLength(Limit.prologue.text).map(() => buildTextBlock());
+    return intArrayOfRandomLength(getLimits().prologue.text).map(() => buildTextBlock());
 }
 
 function buildMainContent(precedingContent: Array<ContentBase>): Array<Subarticle> {
     const contentCounts = getContentCounts(precedingContent);
     const offset = contentCounts.get(Content.SUB_ARTICLE) ?? 0;
-    return intArrayOfRandomLength(Limit.prologue.subarticle).map((i) => buildSubarticle(i + offset));
+    return intArrayOfRandomLength(getLimits().prologue.subarticle).map((i) => buildSubarticle(i + offset));
 }

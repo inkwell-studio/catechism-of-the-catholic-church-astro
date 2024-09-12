@@ -1,4 +1,4 @@
-import { assert, assertNotMatch, assertStrictEquals } from '$std/assert';
+import { assert, assertEquals, assertNotMatch, assertStrictEquals } from '$std/assert';
 
 import {
     BibleReference,
@@ -7,6 +7,8 @@ import {
     Container,
     Content,
     ContentBase,
+    DEFAULT_LANGUAGE,
+    Language,
     PathID,
     ReferenceEnum,
     Section,
@@ -34,13 +36,14 @@ import { getContainerDesignator, isValid } from '../source/utils/path-id.ts';
 console.log('\nCatechism data ...');
 for await (const [key, language] of getSupportedLanguages()) {
     const catechism = await getCatechism(language);
-    runTests(key, catechism);
+    runTests(key, language, catechism);
 }
 
-function runTests(
+async function runTests(
     languageKey: string,
+    language: Language,
     catechism: CatechismStructure,
-): void {
+): Promise<void> {
     const paragraphs = getAllParagraphs(catechism);
 
     Deno.test(`[${languageKey}] the language is set`, () => {
@@ -240,5 +243,16 @@ function runTests(
             );
         });
     });
+
+    if (DEFAULT_LANGUAGE !== language) {
+        const defaultLanguageCatechism = await getCatechism(DEFAULT_LANGUAGE);
+
+        Deno.test(`[${languageKey}] the structure matches that of the default-language Catechism`, () => {
+            const expectedPathIDs = getAllPathIDs(defaultLanguageCatechism);
+            const actualPathIDs = getAllPathIDs(catechism);
+
+            assertEquals(actualPathIDs, expectedPathIDs);
+        });
+    }
 }
 //#endregion

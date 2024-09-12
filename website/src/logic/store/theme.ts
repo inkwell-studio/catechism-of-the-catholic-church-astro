@@ -1,7 +1,6 @@
 import { atom } from 'nanostores';
 
 import { DARK_MODE_MEDIA_QUERY, LOCAL_STORAGE_KEY_THEME, onThemeSelection, Theme, updateTailwindClass } from '../theme.ts';
-import { IS_BROWSER } from '../utils.ts';
 
 export const $theme = atom(getThemeValue());
 
@@ -19,7 +18,8 @@ export function watchForThemeChanges(): void {
 }
 
 function getThemeValue(): Theme {
-    if (IS_BROWSER) {
+    const isBrowser = !!globalThis.window;
+    if (isBrowser) {
         return (globalThis.localStorage.getItem(LOCAL_STORAGE_KEY_THEME) ?? Theme.SYSTEM) as Theme;
     } else {
         return Theme.SYSTEM;

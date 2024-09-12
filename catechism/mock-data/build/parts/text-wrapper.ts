@@ -1,6 +1,6 @@
 import { buildReferenceCollection } from './general.ts';
 import { buildText } from './text.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength } from '../utils.ts';
 import { Content, Text, TextWrapper } from '../../../source/types/types.ts';
 
@@ -21,5 +21,5 @@ export function buildTextWrapper(): TextWrapper {
 }
 
 function buildContent(): Array<Text> {
-    return intArrayOfRandomLength(Limit.textWrapper.part).map(() => buildText());
+    return intArrayOfRandomLength(getLimits().textWrapper.part).map(() => buildText());
 }

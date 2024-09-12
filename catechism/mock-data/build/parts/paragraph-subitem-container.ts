@@ -1,5 +1,5 @@
 import { buildParagraphSubitem } from './paragraph-subitem.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { intArrayOfRandomLength, randomBoolean } from '../utils.ts';
 import { Content, ParagraphSubitem, ParagraphSubitemContainer } from '../../../source/types/types.ts';
 
@@ -18,5 +18,5 @@ export function buildParagraphSubitemContainer(): ParagraphSubitemContainer {
 }
 
 function buildContent(): Array<ParagraphSubitem> {
-    return intArrayOfRandomLength(Limit.paragraphSubitemContainer.subitem).map(() => buildParagraphSubitem());
+    return intArrayOfRandomLength(getLimits().paragraphSubitemContainer.subitem).map(() => buildParagraphSubitem());
 }

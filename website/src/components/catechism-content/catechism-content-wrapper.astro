@@ -10,6 +10,7 @@ interface Props {
 }
 ---
 
-<div id={ElementID.CATECHISM_CONTENT} class="bg-white/10 rounded-sm">
+<!-- Finalize the height when the UI is finalized (ensure it handles the case of the screen being taller than the content) -->
+<div id={ElementID.CATECHISM_CONTENT_WRAPPER} class="min-h-[calc(100vh_-_16rem)] grid grid-rows-[1fr_auto] bg-white/10 rounded-sm">
     <CatechismContent pathID={Astro.props.pathID} language={Astro.props.language} />
 </div>

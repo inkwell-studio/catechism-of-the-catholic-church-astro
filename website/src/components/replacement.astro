@@ -1,0 +1,15 @@
+---
+import { ElementID } from '@logic/element-id';
+
+interface Props {
+    target: ElementID;
+}
+---
+
+<!--
+With the `innerHTML` swap strategy, it does not matter if this outer element matches the
+target element, as the target element itself is not replaced, but only its contents
+-->
+<div id={Astro.props.target} hx-swap-oob="innerHTML">
+    <slot />
+</div>

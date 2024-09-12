@@ -5,8 +5,7 @@ import BaseLayout from '@layouts/base-layout.astro';
 import CatechismContentWrapper from '@components/catechism-content/catechism-content-wrapper.astro';
 
 import { getAllParagraphNumbers, getParagraphPathIdMap, getSemanticPathPathIdMap } from '@logic/artifacts';
-import { getParagraphNumber } from '@logic/routing';
-import { getLanguageTag, removeLanguageTag } from '@logic/utils';
+import { getLanguageTag, getParagraphNumber, removeLanguageTag } from '@logic/routing';
 import { ContentRoute, getParagraphNumberRoutes, getTableOfContentsRoutes } from '@pages/_route-generator';
 
 export function getStaticPaths(): Array<ContentRoute> {

@@ -1,5 +1,21 @@
+---
+import { Language } from '@catechism/source/types/language';
+
+import LanguageSwitcher from './language-switcher.astro';
+import { ElementID } from '../logic/element-id';
+
+interface Props {
+    language: Language;
+}
+
+const { language } = Astro.props;
+---
+
 <div class="relative flex justify-center gap-8 p-8 bg-slate-800 border-t border-t-slate-900">
     <div>Navigation</div>
     <div>Search</div>
     <div>Settings</div>
+    <div id={ElementID.LANGUAGE_SWITCHER_WRAPPER}>
+        <LanguageSwitcher currentLanguage={language} />
+    </div>
 </div>

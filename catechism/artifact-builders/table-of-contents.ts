@@ -16,6 +16,7 @@ import { getUrl } from '../../website/src/logic/routing.ts';
 //#region builders
 export function build(catechism: CatechismStructure): TableOfContentsType {
     return {
+        language: catechism.language,
         prologue: buildEntry(catechism.language, catechism.prologue, [], { forceIncludeChildren: true }),
         parts: catechism.parts.map((part) => buildEntry(catechism.language, part, [])),
     };

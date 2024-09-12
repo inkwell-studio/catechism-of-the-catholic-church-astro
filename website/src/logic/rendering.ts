@@ -1,14 +1,24 @@
 import {
+    Article,
     CatechismStructure,
     Container,
-    Content,
     ContentBase,
     ContentContainer,
     InBriefContainer,
     Language,
+    Mutable,
     PathID,
 } from '@catechism/source/types/types.ts';
-import { hasInBrief } from '@catechism/source/utils/content.ts';
+import {
+    hasInBrief,
+    isArticle,
+    isArticleParagraph,
+    isChapter,
+    isInBrief,
+    isPart,
+    isPrologue,
+    isSection,
+} from '@catechism/source/utils/content.ts';
 import {
     getContainerInfo,
     getPartialDescendentPathID,
@@ -78,13 +88,11 @@ function getRenderableLeaf(
 
             // Except for Articles, only the first main child of an item may be a renderable leaf if the item itself is not.
             // The ArticleParagraphs within an Article are renderable leaves so long as they are not the first main child.
-            if (!is(Content.ARTICLE, potentialLeaf)) {
+            if (!isArticle(potentialLeaf)) {
                 potentialLeaf = getNextChild(potentialLeaf, partialPathID) as ContentContainer;
                 renderableLeafReached = isRenderableLeaf(potentialLeaf);
             } else {
-                const articleHasMultipleArticleParagraphs = potentialLeaf.mainContent.filter((c) =>
-                    is(Content.ARTICLE_PARAGRAPH, c)
-                ).length > 1;
+                const articleHasMultipleArticleParagraphs = potentialLeaf.mainContent.filter((c) => isArticleParagraph(c)).length > 1;
 
                 const child = getNextChild(potentialLeaf, partialPathID);
                 const isFinalContent = isFinalContentChild(child.pathID);
@@ -92,7 +100,7 @@ function getRenderableLeaf(
                 if (isFinalContent) {
                     articleTrimMode = articleHasMultipleArticleParagraphs ? TrimMode.KEEP_ENDING : TrimMode.BYPASS;
                 } else {
-                    if (is(Content.ARTICLE_PARAGRAPH, child)) {
+                    if (isArticleParagraph(child)) {
                         if (!articleHasMultipleArticleParagraphs) {
                             articleTrimMode = TrimMode.BYPASS;
                         } else {
@@ -106,10 +114,10 @@ function getRenderableLeaf(
                             } else if (isLastChild && (articleHasInBrief || articleHasFinalContent)) {
                                 articleTrimMode = TrimMode.KEEP_ENDING;
                             } else {
-                                potentialLeaf = child as ContentContainer;
+                                potentialLeaf = child;
                             }
                         }
-                    } else if (is(Content.IN_BRIEF, child)) {
+                    } else if (isInBrief(child)) {
                         articleTrimMode = articleHasMultipleArticleParagraphs ? TrimMode.KEEP_ENDING : TrimMode.BYPASS;
                     } else {
                         articleTrimMode = articleHasMultipleArticleParagraphs ? TrimMode.FULL : TrimMode.BYPASS;
@@ -173,23 +181,18 @@ function trim(content: ContentContainer, articleTrimMode: TrimMode): ContentCont
 
     return content;
 
-    function trimHelper(c: ContentContainer, articleTrimMode: TrimMode): void {
-        if (!is(Content.ARTICLE, c) || TrimMode.FULL === articleTrimMode) {
-            // deno-lint-ignore no-explicit-any
-            (c as any).mainContent = c.mainContent.slice(0, 1);
-            // deno-lint-ignore no-explicit-any
-            (c as any).finalContent = [];
+    function trimHelper(c: Mutable<ContentContainer>, articleTrimMode: TrimMode): void {
+        if (!isArticle(c) || TrimMode.FULL === articleTrimMode) {
+            c.mainContent = c.mainContent.slice(0, 1);
+            c.finalContent = [];
 
             const hasInBriefContent = hasInBrief(c);
             if (hasInBriefContent) {
-                // deno-lint-ignore no-explicit-any
-                (c as any).inBrief = null;
+                (c as Mutable<InBriefContainer>).inBrief = null;
             }
         } else if (TrimMode.KEEP_ENDING === articleTrimMode) {
-            // deno-lint-ignore no-explicit-any
-            (c as any).openingContent = [];
-            // deno-lint-ignore no-explicit-any
-            (c as any).mainContent = c.mainContent.slice(-1);
+            (c as Mutable<Article>).openingContent = [];
+            (c as Mutable<Article>).mainContent = c.mainContent.slice(-1);
         }
 
         const trimContent = contentShouldBeTrimmed(c.mainContent[0] as ContentContainer, articleTrimMode);
@@ -200,14 +203,15 @@ function trim(content: ContentContainer, articleTrimMode: TrimMode): ContentCont
 }
 
 function contentShouldBeTrimmed(c: ContentContainer, articleTrimMode: TrimMode): boolean {
-    const isHighLevelContent = is(Content.PROLOGUE, c) || is(Content.PART, c);
+    const child = getFirstMainChild(c);
 
-    const isSectionWithHighLevelContent = is(Content.SECTION, c) &&
-        (childIs(Content.CHAPTER, c) || childIs(Content.ARTICLE, c));
+    const isHighLevelContent = isPrologue(c) || isPart(c);
 
-    const isChapterWithArticles = is(Content.CHAPTER, c) && childIs(Content.ARTICLE, c);
+    const isSectionWithHighLevelContent = isSection(c) && (isChapter(child) || isArticle(child));
 
-    const isArticleWithArticleParagraphs = is(Content.ARTICLE, c) && childIs(Content.ARTICLE_PARAGRAPH, c);
+    const isChapterWithArticles = isChapter(c) && isArticle(child);
+
+    const isArticleWithArticleParagraphs = isArticle(c) && isArticleParagraph(child);
 
     return isHighLevelContent || isSectionWithHighLevelContent || isChapterWithArticles ||
         (isArticleWithArticleParagraphs && TrimMode.BYPASS !== articleTrimMode);
@@ -286,19 +290,17 @@ function isFinalContentChild(pathID: PathID): boolean {
  * @returns `true` if the content is a renderable item with no renderable children
  */
 function isRenderableLeaf(content: ContentBase): boolean {
-    if (is(Content.SECTION, content)) {
-        const hasChildChapter = (content as ContentContainer).mainContent.some((child) => is(Content.CHAPTER, child));
-        const hasChildArticle = (content as ContentContainer).mainContent.some((child) => is(Content.ARTICLE, child));
+    if (isSection(content)) {
+        const hasChildChapter = content.mainContent.some((child) => isChapter(child));
+        const hasChildArticle = content.mainContent.some((child) => isArticle(child));
         return !hasChildChapter && !hasChildArticle;
-    } else if (is(Content.CHAPTER, content)) {
-        const hasChildArticle = (content as ContentContainer).mainContent.some((child) => is(Content.ARTICLE, child));
+    } else if (isChapter(content)) {
+        const hasChildArticle = content.mainContent.some((child) => isArticle(child));
         return !hasChildArticle;
-    } else if (is(Content.ARTICLE, content)) {
-        const hasNonInitialArticleParagraph = (content as ContentContainer).mainContent.slice(1).some((
-            subsequentChild,
-        ) => is(Content.ARTICLE_PARAGRAPH, subsequentChild));
+    } else if (isArticle(content)) {
+        const hasNonInitialArticleParagraph = content.mainContent.slice(1).some((subsequentChild) => isArticleParagraph(subsequentChild));
         return !hasNonInitialArticleParagraph;
-    } else if (is(Content.ARTICLE_PARAGRAPH, content)) {
+    } else if (isArticleParagraph(content)) {
         const isFirstChild = isFirstMainChild(content.pathID);
         if (isFirstChild) {
             throw new Error(
@@ -312,10 +314,6 @@ function isRenderableLeaf(content: ContentBase): boolean {
     }
 }
 
-function is(contentType: Content, content: ContentBase): boolean {
-    return content.contentType === contentType;
-}
-
-function childIs(contentType: Content, content: ContentContainer): boolean {
-    return content.mainContent[0].contentType === contentType;
+function getFirstMainChild(content: ContentContainer): ContentBase {
+    return content.mainContent[0];
 }

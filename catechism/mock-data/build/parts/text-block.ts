@@ -1,5 +1,5 @@
 import { buildTextWrapper } from './text-wrapper.ts';
-import { Limit } from '../config/limit.ts';
+import { getLimits } from '../config/limits.ts';
 import { Probability } from '../config/probability.ts';
 import { chance, intArrayOfRandomLength } from '../utils.ts';
 import { Content, TextBlock, TextWrapper } from '../../../source/types/types.ts';
@@ -21,5 +21,5 @@ export function buildTextBlock(): TextBlock {
 }
 
 function buildContent(): Array<TextWrapper> {
-    return intArrayOfRandomLength(Limit.textBlock.textWrapper).map(() => buildTextWrapper());
+    return intArrayOfRandomLength(getLimits().textBlock.textWrapper).map(() => buildTextWrapper());
 }
