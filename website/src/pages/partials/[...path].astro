@@ -4,7 +4,7 @@ import { DEFAULT_LANGUAGE } from '@catechism/source/types/language';
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
 import Replacement from '@components/replacement.astro';
 
-import { getSemanticPathPathIdMap } from '@logic/artifacts';
+import { getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { ElementID } from '@logic/element-id';
 import { getLanguageTag, removeLanguageTag } from '@logic/routing';
 import { ContentRoute, getTableOfContentsRoutes } from '@pages/_route-generator';
@@ -18,7 +18,7 @@ export function getStaticPaths(): Array<ContentRoute> {
 
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
-const pathID = getSemanticPathPathIdMap(language)[path] ?? null;
+const pathID = getSemanticPathPathIdMapSync(language)[path] ?? null;
 ---
 
 {pathID && <CatechismContent pathID={pathID} language={language} />}

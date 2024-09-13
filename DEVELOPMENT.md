@@ -49,7 +49,7 @@ Files excluded from formatting are specified by `deno.jsonc > fmt` and `.prettie
 | `deno task build-mock-data` | re-generate mock Catechism data                                |
 | `deno task dev`             | locally serve a development version of the website             |
 | `deno task build`           | build the production version of the website                    |
-| `deno task serve-prod`      | locally serve the last built production version of the website |
+| `deno task serve-website`   | locally serve the last built production version of the website |
 
 ### End-to-end testing
 
@@ -58,7 +58,7 @@ Files excluded from formatting are specified by `deno.jsonc > fmt` and `.prettie
 deno task build
 
 # serve the website
-deno task serve-prod
+deno task serve-website
 
 # in a separate shell:
 deno task test-e2e

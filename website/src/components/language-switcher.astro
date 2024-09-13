@@ -2,7 +2,7 @@
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types';
 import { getSupportedLanguages } from '@catechism/source/utils/language';
 
-import { getPathIdLanguageUrlMap, getSemanticPathPathIdMap } from '@logic/artifacts';
+import { getPathIdLanguageUrlMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { path as joinPaths } from '@logic/navigation-utils';
 import { getParagraphNumber, removeLanguageTag } from '@logic/routing';
 
@@ -12,8 +12,8 @@ interface Props {
 
 const { currentLanguage } = Astro.props;
 
-const semanticPathPathIdMap = getSemanticPathPathIdMap(currentLanguage);
-const pathIdLanguageUrlMap = getPathIdLanguageUrlMap();
+const semanticPathPathIdMap = getSemanticPathPathIdMapSync(currentLanguage);
+const pathIdLanguageUrlMap = getPathIdLanguageUrlMapSync();
 
 const path = removeLanguageTag(Astro.params.path, currentLanguage);
 const pathID = semanticPathPathIdMap[path] ?? null;

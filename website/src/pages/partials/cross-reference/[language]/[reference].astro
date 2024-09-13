@@ -5,7 +5,7 @@ import ContentBaseArray from '@components/catechism-content/content-base-array.a
 import PartialLink from '@components/partial-link.astro';
 import Replacement from '@components/replacement.astro';
 
-import { getParagraphCrossReferenceContentMap, getParagraphNumberUrlMap } from '@logic/artifacts';
+import { getParagraphCrossReferenceContentMapSync, getParagraphNumberUrlMapSync } from '@logic/artifacts';
 import { ElementID } from '@logic/element-id';
 import { path } from '@logic/navigation-utils';
 import { CrossReferenceRoute, getCrossReferencePartialRoutes } from '@pages/_route-generator';
@@ -24,11 +24,11 @@ const reference = Astro.params.reference
     // Replace a hyphen with an en dash
     .replace('-', '–') as NumberOrNumberRange;
 
-const contentMap = getParagraphCrossReferenceContentMap(language);
+const contentMap = getParagraphCrossReferenceContentMapSync(language);
 const paragraphs = contentMap[reference];
 
 const firstParagraphNumber = paragraphs[0].paragraphNumber;
-const url = getParagraphNumberUrlMap(language)[firstParagraphNumber];
+const url = getParagraphNumberUrlMapSync(language)[firstParagraphNumber];
 
 // prettier-ignore
 const clientUrl = DEFAULT_LANGUAGE === language

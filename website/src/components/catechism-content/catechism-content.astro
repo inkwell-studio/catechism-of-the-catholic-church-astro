@@ -4,7 +4,7 @@ import { Language, PathID } from '@catechism/source/types/types';
 import ContentBase from '@components/catechism-content/content-base.astro';
 import NavigationButton from '@components/navigation-button.astro';
 
-import { getRenderableNodeMap } from '@logic/artifacts';
+import { getRenderableNodeMapSync } from '@logic/artifacts';
 import { loadContent } from '@logic/rendering';
 
 interface Props {
@@ -16,7 +16,7 @@ const { pathID, language } = Astro.props;
 
 const content = loadContent(language, pathID);
 
-const renderableNodes = getRenderableNodeMap(language)[pathID] ?? null;
+const renderableNodes = getRenderableNodeMapSync(language)[pathID] ?? null;
 const nextUrl = renderableNodes?.next?.url;
 const previousUrl = renderableNodes?.previous?.url;
 ---

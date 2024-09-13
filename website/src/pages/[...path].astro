@@ -4,7 +4,7 @@ import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 import BaseLayout from '@layouts/base-layout.astro';
 import CatechismContentWrapper from '@components/catechism-content/catechism-content-wrapper.astro';
 
-import { getAllParagraphNumbers, getParagraphPathIdMap, getSemanticPathPathIdMap } from '@logic/artifacts';
+import { getAllParagraphNumbersSync, getParagraphPathIdMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { getLanguageTag, getParagraphNumber, removeLanguageTag } from '@logic/routing';
 import { ContentRoute, getParagraphNumberRoutes, getTableOfContentsRoutes } from '@pages/_route-generator';
 
@@ -18,14 +18,14 @@ export function getStaticPaths(): Array<ContentRoute> {
 
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
-let pathID = getSemanticPathPathIdMap(language)[path] ?? null;
+let pathID = getSemanticPathPathIdMapSync(language)[path] ?? null;
 
 if (!pathID) {
     const paragraphNumber = getParagraphNumber(path);
     if (paragraphNumber) {
-        const paragraphNumbers = getAllParagraphNumbers(language);
+        const paragraphNumbers = getAllParagraphNumbersSync(language);
         if (paragraphNumbers.includes(paragraphNumber)) {
-            pathID = getParagraphPathIdMap(language)[paragraphNumber] ?? null;
+            pathID = getParagraphPathIdMapSync(language)[paragraphNumber] ?? null;
         }
     }
 }

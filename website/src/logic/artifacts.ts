@@ -5,6 +5,7 @@ import {
     Language,
     NumberOrNumberRange,
     ParagraphCrossReferenceContentMap,
+    ParagraphNumberContentMap,
     ParagraphNumberPathIdMap,
     ParagraphNumberUrlMap,
     PathIdContentMap,
@@ -14,50 +15,54 @@ import {
     TableOfContentsType,
 } from '@catechism/source/types/types.ts';
 
-export function getContentMap(language: Language): PathIdContentMap {
-    return getArtifact(Artifact.RENDERABLE_PATH_ID_TO_CONTENT, language);
+export function getContentMapSync(language: Language): PathIdContentMap {
+    return getArtifactSync(Artifact.RENDERABLE_PATH_ID_TO_CONTENT, language);
 }
 
-export function getRenderableNodeMap(language: Language): RenderableNodeMap {
-    return getArtifact(Artifact.PATH_ID_TO_RENDERABLE_NODES, language);
+export function getRenderableNodeMapSync(language: Language): RenderableNodeMap {
+    return getArtifactSync(Artifact.PATH_ID_TO_RENDERABLE_NODES, language);
 }
 
-export function getParagraphCrossReferenceContentMap(language: Language): ParagraphCrossReferenceContentMap {
-    return getArtifact(Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, language);
+export function getParagraphCrossReferenceContentMapSync(language: Language): ParagraphCrossReferenceContentMap {
+    return getArtifactSync(Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, language);
 }
 
-export function getParagraphNumberUrlMap(language: Language): ParagraphNumberUrlMap {
-    return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_URL, language);
+export function getParagraphNumberUrlMapSync(language: Language): ParagraphNumberUrlMap {
+    return getArtifactSync(Artifact.PARAGRAPH_NUMBER_TO_URL, language);
 }
 
-export function getParagraphPathIdMap(language: Language): ParagraphNumberPathIdMap {
-    return getArtifact(Artifact.PARAGRAPH_NUMBER_TO_RENDERABLE_PATH_ID, language);
+export function getParagraphContentMapSync(language: Language): ParagraphNumberContentMap {
+    return getArtifactSync(Artifact.PARAGRAPH_NUMBER_TO_CONTENT, language);
 }
 
-export function getPathIdLanguageUrlMap(): PathIdLanguageUrlMap {
-    return getArtifact(Artifact.PATH_ID_TO_LANGUAGE_TO_URL);
+export function getParagraphPathIdMapSync(language: Language): ParagraphNumberPathIdMap {
+    return getArtifactSync(Artifact.PARAGRAPH_NUMBER_TO_RENDERABLE_PATH_ID, language);
 }
 
-export function getSemanticPathPathIdMap(language: Language): SemanticPathPathIdMap {
-    return getArtifact(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
+export function getPathIdLanguageUrlMapSync(): PathIdLanguageUrlMap {
+    return getArtifactSync(Artifact.PATH_ID_TO_LANGUAGE_TO_URL);
 }
 
-export function getAllCrossReferences(language: Language): Array<NumberOrNumberRange> {
-    const map = getArtifact(Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, language);
+export function getSemanticPathPathIdMapSync(language: Language): SemanticPathPathIdMap {
+    return getArtifactSync(Artifact.SEMANTIC_PATH_TO_RENDERABLE_PATH_ID, language);
+}
+
+export function getAllCrossReferencesSync(language: Language): Array<NumberOrNumberRange> {
+    const map = getArtifactSync(Artifact.PARAGRAPH_CROSS_REFERENCE_TO_CONTENT, language);
     return Object.keys(map) as Array<NumberOrNumberRange>;
 }
 
-export function getAllParagraphNumbers(language: Language): Array<number> {
-    const map = getArtifact(Artifact.PARAGRAPH_NUMBER_TO_URL, language);
+export function getAllParagraphNumbersSync(language: Language): Array<number> {
+    const map = getArtifactSync(Artifact.PARAGRAPH_NUMBER_TO_URL, language);
     return Object.keys(map).map((n) => Number(n));
 }
 
-export function getTableOfContents(language: Language): TableOfContentsType {
-    return getArtifact(Artifact.TABLE_OF_CONTENTS, language);
+export function getTableOfContentsSync(language: Language): TableOfContentsType {
+    return getArtifactSync(Artifact.TABLE_OF_CONTENTS, language);
 }
 
 // deno-lint-ignore no-explicit-any
-function getArtifact(artifact: Artifact, language?: Language): any {
+function getArtifactSync(artifact: Artifact, language?: Language): any {
     // deno-fmt-ignore
     const filepath = language
         ? `../catechism/artifacts/${artifact}-${language}.json`

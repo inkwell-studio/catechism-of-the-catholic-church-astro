@@ -6,7 +6,6 @@
 
 # Tasks to complete now
 
-- [ ] implement API demo
 - [ ] add routing for other content:
   - [ ] pages (add e2e tests as you go)
     - [ ] project-explanation landing page (no need to populate it yet)

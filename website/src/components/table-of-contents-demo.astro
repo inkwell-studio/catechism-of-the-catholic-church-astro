@@ -3,7 +3,7 @@ import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/language';
 
 import PartialLink from '@components/partial-link.astro';
 
-import { getTableOfContents } from '@logic/artifacts';
+import { getTableOfContentsSync } from '@logic/artifacts';
 import { ElementID } from '@logic/element-id';
 import { path } from '@logic/navigation-utils';
 
@@ -14,7 +14,7 @@ interface Props {
 const { language } = Astro.props;
 
 // TODO: Consider moving this file into the `components/catechism-content` directory when finalizing it
-const tableOfContents = getTableOfContents(language);
+const tableOfContents = getTableOfContentsSync(language);
 const entries = [tableOfContents.prologue, ...tableOfContents.parts].map((entry) => {
     // prettier-ignore
     const clientUrl = DEFAULT_LANGUAGE === language

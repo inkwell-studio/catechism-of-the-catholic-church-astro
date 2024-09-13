@@ -2,7 +2,7 @@ import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
 import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
 import { getTopLevelUrls } from '@catechism/source/utils/table-of-contents.ts';
 
-import { getAllCrossReferences, getAllParagraphNumbers, getTableOfContents } from '../logic/artifacts.ts';
+import { getAllCrossReferencesSync, getAllParagraphNumbersSync, getTableOfContentsSync } from '../logic/artifacts.ts';
 import { path as joinPaths } from '../logic/navigation-utils.ts';
 
 export interface ContentRoute {
@@ -23,7 +23,7 @@ export function getCrossReferencePartialRoutes(): Array<CrossReferenceRoute> {
     return getSupportedLanguages()
         .map(([_languageKey, language]) => language)
         .flatMap((language) =>
-            getAllCrossReferences(language).flatMap((reference) => {
+            getAllCrossReferencesSync(language).flatMap((reference) => {
                 /*
                 For robustness, build an endpoint for each cross-reference specifying
                 multiple paragraphs with an en dash and a hyphen (e.g. `/101–105` and `/101-105`)
@@ -49,7 +49,7 @@ export function getIndexPageRoutes(): Array<ContentRoute> {
 
 export function getParagraphNumberRoutes(): Array<ContentRoute> {
     return getSupportedLanguages().flatMap(([_languageKey, language]) =>
-        getAllParagraphNumbers(language)
+        getAllParagraphNumbersSync(language)
             .map((n) =>
                 // deno-fmt-ignore
                 DEFAULT_LANGUAGE === language
@@ -62,7 +62,7 @@ export function getParagraphNumberRoutes(): Array<ContentRoute> {
 
 export function getTableOfContentsRoutes(): Array<ContentRoute> {
     return getSupportedLanguages().flatMap(([_languageKey, language]) => {
-        const table = getTableOfContents(language);
+        const table = getTableOfContentsSync(language);
         return getTopLevelUrls(table)
             .map((path) =>
                 // deno-fmt-ignore

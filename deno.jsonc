@@ -12,10 +12,11 @@
         "build-artifacts": "deno run --allow-read --allow-write catechism/artifact-builders/build.ts",
         "build-mock-data": "deno run --allow-read --allow-write catechism/mock-data/run.ts && deno task test-content && deno task build-artifacts && deno task test-artifacts",
         "build-robots-txt": "deno run --allow-write website/src/robots.txt.ts",
+
         "build-website": "cd website && pnpm build && cd .. && deno task build-robots-txt",
+        "serve-website": "deno run --allow-read --allow-env --allow-net website/dist/server/entry.mjs",
 
         "build": "deno task pre-commit && deno task build-website",
-        "serve-prod": "deno run --allow-read --allow-env --allow-net website/dist/server/entry.mjs",
 
         "dev": "cd website && pnpm dev"
     },

@@ -52,12 +52,12 @@ export function getTableOfContents(language: Language): Promise<TableOfContentsT
 async function getArtifact(artifact: Artifact, language?: Language): Promise<any> {
     // deno-fmt-ignore
     const filepath = language
-        ? `./catechism/artifacts/${artifact}-${language}.json`
-        : `./catechism/artifacts/${artifact}.json`;
+        ? `${Deno.cwd()}/catechism/artifacts/${artifact}-${language}.json`
+        : `${Deno.cwd()}/catechism/artifacts/${artifact}.json`;
 
     try {
-        const artifact = await Deno.readTextFile(filepath);
-        return JSON.parse(artifact);
+        const artifactJson = await import(filepath, { with: { type: 'json' } });
+        return artifactJson.default;
     } catch (error) {
         throw new Error(`Failed to load artifact: ${filepath}`, error);
     }

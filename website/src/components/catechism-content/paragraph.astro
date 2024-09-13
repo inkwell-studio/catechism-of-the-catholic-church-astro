@@ -4,7 +4,7 @@ import { getAllChildContent } from '@catechism/source/utils/content';
 
 import { getUrlFragment } from '@logic/routing';
 
-import TextWrapperArray from './text-wrapper-array.astro';
+import ContentBaseArray from './content-base-array.astro';
 
 interface Props {
     paragraph: Paragraph;
@@ -22,6 +22,6 @@ const childContent = getAllChildContent(paragraph);
         {paragraph.paragraphNumber}
     </div>
     <div class="inline">
-        <TextWrapperArray content={childContent} language={language} />
+        <ContentBaseArray content={childContent} language={language} />
     </div>
 </div>

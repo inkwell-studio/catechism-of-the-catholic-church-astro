@@ -2,7 +2,7 @@
 import { Language, ParagraphSubitem } from '@catechism/source/types/types';
 import { getAllChildContent } from '@catechism/source/utils/content';
 
-import TextWrapperArray from './text-wrapper-array.astro';
+import ContentBaseArray from './content-base-array.astro';
 
 interface Props {
     paragraphSubitem: ParagraphSubitem;
@@ -15,5 +15,5 @@ const childContent = getAllChildContent(paragraphSubitem);
 ---
 
 <li>
-    <TextWrapperArray content={childContent} language={language} />
+    <ContentBaseArray content={childContent} language={language} />
 </li>

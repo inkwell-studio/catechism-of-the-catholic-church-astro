@@ -35,14 +35,8 @@ import {
 
 //#region Specific content retrieval
 export async function getCatechism(language: Language): Promise<CatechismStructure> {
-    /*
-        A more idiomatic approach would be to use a dynamic JSON import, but this causes problems with Fresh 1.6.5+
-        e.g.
-            const catechism = await import('./catechism-${language}.json`, { with: { type: 'json' } });
-    */
-    const filepath = `./catechism/content/catechism-${language}.json`;
-    const catechism = await Deno.readTextFile(filepath);
-    return JSON.parse(catechism);
+    const catechismJson = await import(`@catechism/content/catechism-${language}.json`, { with: { type: 'json' } });
+    return catechismJson.default;
 }
 
 export async function* getCatechisms(languages: Array<Language>): AsyncGenerator<CatechismStructure> {

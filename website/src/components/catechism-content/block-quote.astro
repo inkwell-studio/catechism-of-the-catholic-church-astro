@@ -2,7 +2,7 @@
 import { BlockQuote, Language } from '@catechism/source/types/types';
 import { getAllChildContent } from '@catechism/source/utils/content';
 
-import TextWrapperArray from './text-wrapper-array.astro';
+import ContentBaseArray from './content-base-array.astro';
 
 interface Props {
     blockQuote: BlockQuote;
@@ -14,5 +14,5 @@ const childContent = getAllChildContent(blockQuote);
 ---
 
 <blockquote class="px-8 mb-4">
-    <TextWrapperArray content={childContent} language={language} />
+    <ContentBaseArray content={childContent} language={language} />
 </blockquote>

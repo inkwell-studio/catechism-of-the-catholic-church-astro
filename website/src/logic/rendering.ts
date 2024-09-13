@@ -28,11 +28,11 @@ import {
     isPrologueContent,
 } from '@catechism/source/utils/path-id.ts';
 
-import { getContentMap } from './artifacts.ts';
+import { getContentMapSync } from './artifacts.ts';
 
 export function loadContent(language: Language, pathID: PathID): ContentContainer {
     try {
-        const contentMap = getContentMap(language);
+        const contentMap = getContentMapSync(language);
         return contentMap[pathID];
     } catch (error) {
         throw new Error(`Failed to load content (${language}: ${pathID})`, error);
