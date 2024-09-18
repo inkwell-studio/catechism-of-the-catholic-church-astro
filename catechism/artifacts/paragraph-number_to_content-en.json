@@ -5,22 +5,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "0__m.0__m.0__m.0__m.0",
-        "semanticPath": "prologue/subarticle-1/paragraph-group-1/paragraph-1/text-block-1",
-        "supplementary": false,
+        "pathID": "0__m.0__m.0__m.0",
+        "semanticPath": "prologue/subarticle-1/paragraph-1/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "prologue/subarticle-1/paragraph-group-1/paragraph-1/text-block-1/text-wrapper-1",
+            "pathID": "0__m.0__m.0__m.0__m.0",
+            "semanticPath": "prologue/subarticle-1/paragraph-1/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "prologue/subarticle-1/paragraph-group-1/paragraph-1/text-block-1/text-wrapper-1/text-1",
-                "content": "And saying: Do penance: for the kingdom of heaven is at hand.",
+                "pathID": "0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "prologue/subarticle-1/paragraph-1/text-block-1/text-wrapper-1/text-1",
+                "content": "And the earth was void and empty, and darkness was upon the face of the deep; and the spirit of God moved over the waters.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -29,17 +29,29 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 2,
-              "references": []
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              36
+            ]
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "0__m.0__m.0__m.0",
-    "semanticPath": "prologue/subarticle-1/paragraph-group-1/paragraph-1",
+    "pathID": "0__m.0__m.0",
+    "semanticPath": "prologue/subarticle-1/paragraph-1",
     "paragraphNumber": 1,
     "url": "/prologue#1"
   },
@@ -64,8 +76,8 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.1__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prologue/subarticle-2/paragraph-group-1/paragraph-2/text-block-1/text-wrapper-1/text-1",
-                "content": "For this is he that was spoken of by Isaias the prophet, saying: A voice of one crying in the desert, Prepare ye the way of the Lord, make straight his paths.",
-                "strong": false,
+                "content": "And God said: Be light made. And light was made.",
+                "strong": true,
                 "emphasis": false,
                 "smallCaps": false
               }
@@ -76,8 +88,9 @@
               "references": [
                 {
                   "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Genesis",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
                   "chapter": 1,
                   "verses": 1,
                   "auxillaryText": null
@@ -104,7 +117,7 @@
         "contentType": "TEXT_BLOCK",
         "pathID": "0__m.2__m.0__m.0__m.0",
         "semanticPath": "prologue/subarticle-3/paragraph-group-1/paragraph-3/text-block-1",
-        "supplementary": true,
+        "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
@@ -117,43 +130,20 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.2__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prologue/subarticle-3/paragraph-group-1/paragraph-3/text-block-1/text-wrapper-1/text-1",
-                "content": "And the same John had his garment of camels' hair, and a leathern girdle about his loins: and his meat was locusts and wild honey.",
+                "content": "And God saw the light that it was good; and he divided the light from the darkness.",
                 "strong": false,
                 "emphasis": false,
-                "smallCaps": true
+                "smallCaps": false
               }
             ],
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 4,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Genesis",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Acts of the Apostles",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Psalms",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              34
+            ]
           }
         ],
         "finalContent": []
@@ -171,22 +161,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__o.0__m.0",
-        "semanticPath": "part-1/paragraph-4/text-block-1",
+        "pathID": "1__m.0__o.0__m.0",
+        "semanticPath": "part-1/section-1/paragraph-4/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__o.0__m.0__m.0",
-            "semanticPath": "part-1/paragraph-4/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__o.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/paragraph-4/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__o.0__m.0__m.0__m.0",
-                "semanticPath": "part-1/paragraph-4/text-block-1/text-wrapper-1/text-1",
-                "content": "Then went out to him Jerusalem and all Judea, and all the country about Jordan:",
+                "pathID": "1__m.0__o.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/paragraph-4/text-block-1/text-wrapper-1/text-1",
+                "content": "And he called the light Day, and the darkness Night; and there was evening and morning one day.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -195,28 +185,17 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 1,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "John",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": [
-              13
-            ]
+            "paragraphReferences": []
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "1__o.0",
-    "semanticPath": "part-1/paragraph-4",
+    "pathID": "1__m.0__o.0",
+    "semanticPath": "part-1/section-1/paragraph-4",
     "paragraphNumber": 4,
     "url": "/part-1#4"
   },
@@ -226,110 +205,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-1/section-1/paragraph-group-1/paragraph-5/text-block-1",
-        "supplementary": false,
+        "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-5/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-1/section-1/paragraph-group-1/paragraph-5/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-5/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-1/section-1/paragraph-group-1/paragraph-5/text-block-1/text-wrapper-1/text-1",
-                "content": "And seeing many of the Pharisees and Sadducees coming to his baptism, he said to them: Ye brood of vipers, who hath shewed you to flee from the wrath to come?",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__m.0__m.0",
-    "semanticPath": "part-1/section-1/paragraph-group-1/paragraph-5",
-    "paragraphNumber": 5,
-    "url": "/part-1#5"
-  },
-  "6": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__i__m.0__m.0",
-        "semanticPath": "part-1/section-1/in-brief/paragraph-6/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-1/section-1/in-brief/paragraph-6/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-1/section-1/in-brief/paragraph-6/text-block-1/text-wrapper-1/text-1",
-                "content": "And were baptized by him in the Jordan, confessing their sins.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__i__m.0",
-    "semanticPath": "part-1/section-1/in-brief/paragraph-6",
-    "paragraphNumber": 6,
-    "url": "/part-1#6"
-  },
-  "7": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__o.0__m.0",
-        "semanticPath": "part-2/paragraph-7/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__o.0__m.0__m.0",
-            "semanticPath": "part-2/paragraph-7/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__o.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/paragraph-7/text-block-1/text-wrapper-1/text-1",
-                "content": "Bring forth therefore fruit worthy of penance.",
+                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-5/text-block-1/text-wrapper-1/text-1",
+                "content": "And God called the firmament, Heaven; and the evening and morning were the second day.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -338,104 +229,13 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__o.0",
-    "semanticPath": "part-2/paragraph-7",
-    "paragraphNumber": 7,
-    "url": "/part-2#7"
-  },
-  "8": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__o.0__m.0",
-        "semanticPath": "part-2/section-1/paragraph-8/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__o.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/paragraph-8/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__o.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/paragraph-8/text-block-1/text-wrapper-1/text-1",
-                "content": "And think not to say within yourselves, We have Abraham for our father. For I tell you that God is able of these stones to raise up children to Abraham.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              20
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__o.0",
-    "semanticPath": "part-2/section-1/paragraph-8",
-    "paragraphNumber": 8,
-    "url": "/part-2#8"
-  },
-  "9": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-9/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-9/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-9/text-block-1/text-wrapper-1/text-1",
-                "content": "I indeed baptize you in the water unto penance, but he that shall come after me, is mightier than I, whose shoes I am not worthy to bear; he shall baptize you in the Holy Ghost and fire.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
               "references": [
                 {
-                  "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Ephesians",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
                 }
               ]
             },
@@ -446,79 +246,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-9",
-    "paragraphNumber": 9,
-    "url": "/part-2#9"
+    "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-5",
+    "paragraphNumber": 5,
+    "url": "/part-1#5"
   },
-  "10": {
+  "6": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-group-1/paragraph-10/text-block-1",
+        "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-6/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-group-1/paragraph-10/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-6/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-group-1/paragraph-10/text-block-1/text-wrapper-1/text-1",
-                "content": "Whose fan is in his hand, and he will thoroughly cleanse his floor and gather his wheat into the barn; but the chaff he will burn with unquenchable fire.",
+                "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-6/text-block-1/text-wrapper-1/text-1",
+                "content": "God also said: Let the waters that are under the heaven, be gathered together into one place: and let the dry land appear. And it was so done.",
                 "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.1__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-1/paragraph-group-1/paragraph-10",
-    "paragraphNumber": 10,
-    "url": "/part-2#10"
-  },
-  "11": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-1/in-brief/paragraph-11/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-1/in-brief/paragraph-11/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-1/in-brief/paragraph-11/text-block-1/text-wrapper-1/text-1",
-                "content": "Then cometh Jesus from Galilee to the Jordan, unto John, to be baptized by him.",
-                "strong": false,
-                "emphasis": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -529,8 +285,18 @@
                 {
                   "referenceType": "OTHER",
                   "direct": false,
-                  "source": "Humanae Vitae",
-                  "pointer": "Article VII, 8, 3, 1-2"
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
                 }
               ]
             },
@@ -541,35 +307,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__i__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-1/in-brief/paragraph-11",
-    "paragraphNumber": 11,
-    "url": "/part-2#11"
+    "pathID": "1__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "part-1/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-6",
+    "paragraphNumber": 6,
+    "url": "/part-1#6"
   },
-  "12": {
+  "7": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-12/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-7/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-12/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-7/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-12/text-block-1/text-wrapper-1/text-1",
-                "content": "And Jesus answering, said to him: Suffer it to be so now. For so it becometh us to fulfill all justice. Then he suffered him.",
-                "strong": true,
-                "emphasis": false,
+                "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-7/text-block-1/text-wrapper-1/text-1",
+                "content": "And he said: Let the earth bring forth the green herb, and such as may seed, and the fruit tree yielding fruit after its kind, which may have seed in itself upon the earth. And it was so done.",
+                "strong": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -585,33 +351,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-12",
-    "paragraphNumber": 12,
-    "url": "/part-2/section-1/chapter-1/article-2#12"
+    "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-7",
+    "paragraphNumber": 7,
+    "url": "/part-1/section-1/chapter-1/article-2#7"
   },
-  "13": {
+  "8": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-13/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-8/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-13/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-8/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-13/text-block-1/text-wrapper-1/text-1",
-                "content": "And Jesus being baptized, forthwith came out of the water: and lo, the heavens were opened to him: and he saw the Spirit of God descending as a dove, and coming upon him.",
+                "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-8/text-block-1/text-wrapper-1/text-1",
+                "content": "And the earth brought forth the green herb, and such as yieldeth seed according to its kind, and the tree that beareth fruit, having seed each one according to its kind. And God saw that it was good.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -629,10 +395,284 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-13",
+    "pathID": "1__m.0__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "part-1/section-1/chapter-1/article-2/article-paragraph-1/in-brief/paragraph-8",
+    "paragraphNumber": 8,
+    "url": "/part-1/section-1/chapter-1/article-2#8"
+  },
+  "9": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-2/subarticle-1/paragraph-9/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-2/subarticle-1/paragraph-9/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-2/subarticle-1/paragraph-9/text-block-1/text-wrapper-1/text-1",
+                "content": "And the evening and the morning were the third day.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 1,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.1__m.0__m.0",
+    "semanticPath": "part-1/section-1/chapter-2/subarticle-1/paragraph-9",
+    "paragraphNumber": 9,
+    "url": "/part-1/section-1/chapter-2#9"
+  },
+  "10": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-10/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-10/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-10/text-block-1/text-wrapper-1/text-1",
+                "content": "And God made two great lights: a greater light to rule the day; and a lesser light to rule the night: and the stars.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": []
+            },
+            "paragraphReferences": [
+              16
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-1/section-1/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-10",
+    "paragraphNumber": 10,
+    "url": "/part-1/section-1/chapter-3#10"
+  },
+  "11": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__i__m.0__m.0",
+        "semanticPath": "part-1/section-1/chapter-3/article-1/in-brief/paragraph-11/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-1/section-1/chapter-3/article-1/in-brief/paragraph-11/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-1/section-1/chapter-3/article-1/in-brief/paragraph-11/text-block-1/text-wrapper-1/text-1",
+                "content": "And he set them in the firmament of heaven to shine upon the earth.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__i__m.0",
+    "semanticPath": "part-1/section-1/chapter-3/article-1/in-brief/paragraph-11",
+    "paragraphNumber": 11,
+    "url": "/part-1/section-1/chapter-3#11"
+  },
+  "12": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__o.0__m.0",
+        "semanticPath": "part-2/paragraph-12/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__o.0__m.0__m.0",
+            "semanticPath": "part-2/paragraph-12/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__o.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/paragraph-12/text-block-1/text-wrapper-1/text-1",
+                "content": "And to rule the day and the night, and to divide the light and the darkness. And God saw that it was good.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__o.0",
+    "semanticPath": "part-2/paragraph-12",
+    "paragraphNumber": 12,
+    "url": "/part-2#12"
+  },
+  "13": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-13/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-13/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-13/text-block-1/text-wrapper-1/text-1",
+                "content": "God also said: Let the waters bring forth the creeping creature having life, and the fowl that may fly over the earth under the firmament of heaven.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": [
+              27
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/subarticle-1/paragraph-group-1/paragraph-13",
     "paragraphNumber": 13,
-    "url": "/part-2/section-1/chapter-1/article-2#13"
+    "url": "/part-2#13"
   },
   "14": {
     "contentType": "PARAGRAPH",
@@ -640,22 +680,1158 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/subarticle-1/paragraph-group-1/paragraph-14/text-block-1",
+        "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-14/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/subarticle-1/paragraph-group-1/paragraph-14/text-block-1/text-wrapper-1",
+            "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-14/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/subarticle-1/paragraph-group-1/paragraph-14/text-block-1/text-wrapper-1/text-1",
+                "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-14/text-block-1/text-wrapper-1/text-1",
+                "content": "And God created the great whales, and every living and moving creature, which the waters brought forth, according to their kinds, and every winged fowl according to its kind. And God saw that it was good.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "part-2/section-1/chapter-1/article-1/article-paragraph-1/in-brief/paragraph-14",
+    "paragraphNumber": 14,
+    "url": "/part-2#14"
+  },
+  "15": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-15/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-15/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-15/text-block-1/text-wrapper-1/text-1",
+                "content": "And the evening and morning were the fifth day.",
+                "strong": false,
+                "emphasis": true,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-2/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-15",
+    "paragraphNumber": 15,
+    "url": "/part-2/section-1/chapter-2#15"
+  },
+  "16": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-2/article-1/in-brief/paragraph-16/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-2/article-1/in-brief/paragraph-16/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-2/article-1/in-brief/paragraph-16/text-block-1/text-wrapper-1/text-1",
+                "content": "And God said: Let the earth bring forth the living creature in its kind, cattle and creeping things, and beasts of the earth, according to their kinds. And it was so done.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "part-2/section-1/chapter-2/article-1/in-brief/paragraph-16",
+    "paragraphNumber": 16,
+    "url": "/part-2/section-1/chapter-2#16"
+  },
+  "17": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-17/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-17/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-17/text-block-1/text-wrapper-1/text-1",
+                "content": "And he said: Let us make man to our image and likeness: and let him have dominion over the fishes of the sea, and the fowls of the air, and the beasts, and the whole earth, and every creeping creature that moveth upon the earth.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "John",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              26
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.0",
+    "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-17",
+    "paragraphNumber": 17,
+    "url": "/part-2/section-1/chapter-2/article-2#17"
+  },
+  "18": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-group-1/paragraph-18/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-group-1/paragraph-18/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-group-1/paragraph-18/text-block-1/text-wrapper-1/text-1",
+                "content": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.1__m.0",
+    "semanticPath": "part-2/section-1/chapter-2/article-2/paragraph-group-1/paragraph-18",
+    "paragraphNumber": 18,
+    "url": "/part-2/section-1/chapter-2/article-2#18"
+  },
+  "19": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__i__m.0__m.0",
+        "semanticPath": "part-2/section-1/chapter-2/article-2/in-brief/paragraph-19/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-1/chapter-2/article-2/in-brief/paragraph-19/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-1/chapter-2/article-2/in-brief/paragraph-19/text-block-1/text-wrapper-1/text-1",
+                "content": "And God blessed them, saying: Increase and multiply, and fill the earth, and subdue it, and rule over the fishes of the sea, and the fowls of the air, and all living creatures that move upon the earth.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__i__m.0",
+    "semanticPath": "part-2/section-1/chapter-2/article-2/in-brief/paragraph-19",
+    "paragraphNumber": 19,
+    "url": "/part-2/section-1/chapter-2/article-2#19"
+  },
+  "20": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1/text-wrapper-1/text-1",
+                "content": "And God saw all the things that he had made, and they were very good. And the evening and morning were the sixth day.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-1/subarticle-1/paragraph-group-1/paragraph-20",
+    "paragraphNumber": 20,
+    "url": "/part-2/section-2#20"
+  },
+  "21": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-1/in-brief/paragraph-21/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-1/in-brief/paragraph-21/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-1/in-brief/paragraph-21/text-block-1/text-wrapper-1/text-1",
+                "content": "And in those days cometh John the Baptist preaching in the desert of Judea.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__i__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-1/in-brief/paragraph-21",
+    "paragraphNumber": 21,
+    "url": "/part-2/section-2#21"
+  },
+  "22": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-2/subarticle-1/paragraph-22/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-2/subarticle-1/paragraph-22/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-2/subarticle-1/paragraph-22/text-block-1/text-wrapper-1/text-1",
+                "content": "For this is he that was spoken of by Isaias the prophet, saying: A voice of one crying in the desert, Prepare ye the way of the Lord, make straight his paths.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": [
+              6
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__m.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-2/subarticle-1/paragraph-22",
+    "paragraphNumber": 22,
+    "url": "/part-2/section-2/chapter-1/article-2#22"
+  },
+  "23": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-2/in-brief/paragraph-23/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-2/in-brief/paragraph-23/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-2/in-brief/paragraph-23/text-block-1/text-wrapper-1/text-1",
+                "content": "And the same John had his garment of camels' hair, and a leathern girdle about his loins: and his meat was locusts and wild honey.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Hebrews",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__i__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-2/in-brief/paragraph-23",
+    "paragraphNumber": 23,
+    "url": "/part-2/section-2/chapter-1/article-2#23"
+  },
+  "24": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-3/subarticle-1/paragraph-group-1/paragraph-24/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-3/subarticle-1/paragraph-group-1/paragraph-24/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-3/subarticle-1/paragraph-group-1/paragraph-24/text-block-1/text-wrapper-1/text-1",
+                "content": "And were baptized by him in the Jordan, confessing their sins.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 9,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-3/subarticle-1/paragraph-group-1/paragraph-24",
+    "paragraphNumber": 24,
+    "url": "/part-2/section-2/chapter-1/article-3#24"
+  },
+  "25": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-3/in-brief/paragraph-25/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-3/in-brief/paragraph-25/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-3/in-brief/paragraph-25/text-block-1/text-wrapper-1/text-1",
+                "content": "And seeing many of the Pharisees and Sadducees coming to his baptism, he said to them: Ye brood of vipers, who hath shewed you to flee from the wrath to come?",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 10,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__i__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-3/in-brief/paragraph-25",
+    "paragraphNumber": 25,
+    "url": "/part-2/section-2/chapter-1/article-3#25"
+  },
+  "26": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-1/article-3/final-content/paragraph-26/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-1/article-3/final-content/paragraph-26/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-1/article-3/final-content/paragraph-26/text-block-1/text-wrapper-1/text-1",
+                "content": "Bring forth therefore fruit worthy of penance.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 11,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__f.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-1/article-3/final-content/paragraph-26",
+    "paragraphNumber": 26,
+    "url": "/part-2/section-2/chapter-1/article-3#26"
+  },
+  "27": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-27/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-27/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-27/text-block-1/text-wrapper-1/text-1",
+                "content": "I indeed baptize you in the water unto penance, but he that shall come after me, is mightier than I, whose shoes I am not worthy to bear; he shall baptize you in the Holy Ghost and fire.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-27",
+    "paragraphNumber": 27,
+    "url": "/part-2/section-2/chapter-2#27"
+  },
+  "28": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-group-1/paragraph-28/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-group-1/paragraph-28/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-group-1/paragraph-28/text-block-1/text-wrapper-1/text-1",
+                "content": "Whose fan is in his hand, and he will thoroughly cleanse his floor and gather his wheat into the barn; but the chaff he will burn with unquenchable fire.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": []
+            },
+            "paragraphReferences": [
+              5
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.1__m.0",
+    "semanticPath": "part-2/section-2/chapter-2/article-1/paragraph-group-1/paragraph-28",
+    "paragraphNumber": 28,
+    "url": "/part-2/section-2/chapter-2#28"
+  },
+  "29": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-2/article-1/in-brief/paragraph-29/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-2/article-1/in-brief/paragraph-29/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-2/article-1/in-brief/paragraph-29/text-block-1/text-wrapper-1/text-1",
+                "content": "Then cometh Jesus from Galilee to the Jordan, unto John, to be baptized by him.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__i__m.0",
+    "semanticPath": "part-2/section-2/chapter-2/article-1/in-brief/paragraph-29",
+    "paragraphNumber": 29,
+    "url": "/part-2/section-2/chapter-2#29"
+  },
+  "30": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0",
+        "semanticPath": "part-2/section-2/chapter-2/article-1/final-content/paragraph-30/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "part-2/section-2/chapter-2/article-1/final-content/paragraph-30/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-2/section-2/chapter-2/article-1/final-content/paragraph-30/text-block-1/text-wrapper-1/text-1",
+                "content": "But John stayed him, saying: I ought to be baptized by thee, and comest thou to me?",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__f.0__m.0",
+    "semanticPath": "part-2/section-2/chapter-2/article-1/final-content/paragraph-30",
+    "paragraphNumber": 30,
+    "url": "/part-2/section-2/chapter-2#30"
+  },
+  "31": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-31/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-31/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-31/text-block-1/text-wrapper-1/text-1",
                 "content": "And behold a voice from heaven, saying: This is my beloved Son, in whom I am well pleased.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              "16–17"
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-31",
+    "paragraphNumber": 31,
+    "url": "/part-3#31"
+  },
+  "32": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-group-1/paragraph-32/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-group-1/paragraph-32/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-group-1/paragraph-32/text-block-1/text-wrapper-1/text-1",
+                "content": "Then Jesus was led by the spirit into the desert, to be tempted by the devil.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              12
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.1__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-1/paragraph-group-1/paragraph-32",
+    "paragraphNumber": 32,
+    "url": "/part-3#32"
+  },
+  "33": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-1/in-brief/paragraph-33/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-1/in-brief/paragraph-33/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-1/in-brief/paragraph-33/text-block-1/text-wrapper-1/text-1",
+                "content": "And when he had fasted forty days and forty nights, afterwards he was hungry.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-1/in-brief/paragraph-33",
+    "paragraphNumber": 33,
+    "url": "/part-3#33"
+  },
+  "34": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-1/final-content/paragraph-34/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-1/final-content/paragraph-34/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-1/final-content/paragraph-34/text-block-1/text-wrapper-1/text-1",
+                "content": "And the tempter coming said to him: If thou be the Son of God, command that these stones be made bread.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__f.0__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-1/final-content/paragraph-34",
+    "paragraphNumber": 34,
+    "url": "/part-3#34"
+  },
+  "35": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-35/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-35/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-35/text-block-1/text-wrapper-1/text-1",
+                "content": "Then the devil took him up into the holy city, and set him upon the pinnacle of the temple,",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -673,33 +1849,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/subarticle-1/paragraph-group-1/paragraph-14",
-    "paragraphNumber": 14,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#14"
+    "pathID": "3__m.0__m.0__m.1__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-35",
+    "paragraphNumber": 35,
+    "url": "/part-3/section-1/chapter-1/article-2#35"
   },
-  "15": {
+  "36": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/in-brief/paragraph-15/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-group-1/paragraph-36/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/in-brief/paragraph-15/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-group-1/paragraph-36/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/in-brief/paragraph-15/text-block-1/text-wrapper-1/text-1",
-                "content": "Then Jesus was led by the spirit into the desert, to be tempted by the devil.",
+                "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-group-1/paragraph-36/text-block-1/text-wrapper-1/text-1",
+                "content": "And said to him: If thou be the Son of God, cast thyself down, for it is written: That he hath given his angels charge over thee, and in their hands shall they bear thee up, lest perhaps thou dash thy foot against a stone.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -711,7 +1887,15 @@
               "references": [
                 {
                   "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
                   "direct": false,
+                  "folio": false,
                   "source": "Christifideles Laici",
                   "pointer": "742"
                 }
@@ -724,33 +1908,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__i__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-2/in-brief/paragraph-15",
-    "paragraphNumber": 15,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#15"
+    "pathID": "3__m.0__m.0__m.1__m.1__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-2/paragraph-group-1/paragraph-36",
+    "paragraphNumber": 36,
+    "url": "/part-3/section-1/chapter-1/article-2#36"
   },
-  "16": {
+  "37": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/subarticle-1/paragraph-group-1/paragraph-16/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-2/in-brief/paragraph-37/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/subarticle-1/paragraph-group-1/paragraph-16/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-2/in-brief/paragraph-37/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/subarticle-1/paragraph-group-1/paragraph-16/text-block-1/text-wrapper-1/text-1",
-                "content": "And when he had fasted forty days and forty nights, afterwards he was hungry.",
+                "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-2/in-brief/paragraph-37/text-block-1/text-wrapper-1/text-1",
+                "content": "Jesus said to him: It is written again: Thou shalt not tempt the Lord thy God.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -768,228 +1952,32 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/subarticle-1/paragraph-group-1/paragraph-16",
-    "paragraphNumber": 16,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#16"
+    "pathID": "3__m.0__m.0__m.1__i__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-2/in-brief/paragraph-37",
+    "paragraphNumber": 37,
+    "url": "/part-3/section-1/chapter-1/article-2#37"
   },
-  "17": {
+  "38": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0",
-        "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/in-brief/paragraph-17/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-38/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/in-brief/paragraph-17/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-38/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/in-brief/paragraph-17/text-block-1/text-wrapper-1/text-1",
-                "content": "And the tempter coming said to him: If thou be the Son of God, command that these stones be made bread.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 11,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__i__m.0",
-    "semanticPath": "part-2/section-1/chapter-1/article-2/article-paragraph-3/in-brief/paragraph-17",
-    "paragraphNumber": 17,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#17"
-  },
-  "18": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-1/subarticle-1/paragraph-group-1/paragraph-18/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-1/subarticle-1/paragraph-group-1/paragraph-18/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-1/subarticle-1/paragraph-group-1/paragraph-18/text-block-1/text-wrapper-1/text-1",
-                "content": "Then the devil took him up into the holy city, and set him upon the pinnacle of the temple,",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-1/chapter-1/subarticle-1/paragraph-group-1/paragraph-18",
-    "paragraphNumber": 18,
-    "url": "/part-3#18"
-  },
-  "19": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-1/in-brief/paragraph-19/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-1/in-brief/paragraph-19/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-1/in-brief/paragraph-19/text-block-1/text-wrapper-1/text-1",
-                "content": "Who answered and said: It is written, Not in bread alone doth man live, but in every word that proceedeth from the mouth of God.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Ch. IX, p.4"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__i__m.0",
-    "semanticPath": "part-3/section-1/chapter-1/in-brief/paragraph-19",
-    "paragraphNumber": 19,
-    "url": "/part-3#19"
-  },
-  "20": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-20/text-block-1/text-wrapper-1/text-1",
-                "content": "Again the devil took him up into a very high mountain, and shewed him all the kingdoms of the world, and the glory of them,",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": false,
-                  "source": "Gaudium et spes",
-                  "pointer": null
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Article VII, 8, 3, 1-2"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-1/chapter-2/article-1/subarticle-1/paragraph-group-1/paragraph-20",
-    "paragraphNumber": 20,
-    "url": "/part-3/section-1/chapter-2#20"
-  },
-  "21": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-2/article-1/in-brief/paragraph-21/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-2/article-1/in-brief/paragraph-21/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-2/article-1/in-brief/paragraph-21/text-block-1/text-wrapper-1/text-1",
+                "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-38/text-block-1/text-wrapper-1/text-1",
                 "content": "And said to him: All these will I give thee, if falling down thou wilt adore me.",
                 "strong": false,
                 "emphasis": false,
@@ -998,7 +1986,68 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 4,
+              "referenceNumber": 12,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "John",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.2__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-38",
+    "paragraphNumber": 38,
+    "url": "/part-3/section-1/chapter-1/article-3#38"
+  },
+  "39": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-group-1/paragraph-39/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-group-1/paragraph-39/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-group-1/paragraph-39/text-block-1/text-wrapper-1/text-1",
+                "content": "Then Jesus saith to him: Begone, Satan: for it is written, The Lord thy God shalt thou adore, and him only shalt thou serve.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 13,
               "references": []
             },
             "paragraphReferences": []
@@ -1008,32 +2057,32 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "part-3/section-1/chapter-2/article-1/in-brief/paragraph-21",
-    "paragraphNumber": 21,
-    "url": "/part-3/section-1/chapter-2#21"
+    "pathID": "3__m.0__m.0__m.2__m.1__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-3/paragraph-group-1/paragraph-39",
+    "paragraphNumber": 39,
+    "url": "/part-3/section-1/chapter-1/article-3#39"
   },
-  "22": {
+  "40": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-3/article-1/subarticle-1/paragraph-22/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "part-3/section-1/chapter-1/article-3/in-brief/paragraph-40/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-3/article-1/subarticle-1/paragraph-22/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "part-3/section-1/chapter-1/article-3/in-brief/paragraph-40/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-3/article-1/subarticle-1/paragraph-22/text-block-1/text-wrapper-1/text-1",
+                "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "part-3/section-1/chapter-1/article-3/in-brief/paragraph-40/text-block-1/text-wrapper-1/text-1",
                 "content": "Then the devil left him; and behold angels came and ministered to him.",
                 "strong": false,
                 "emphasis": false,
@@ -1042,332 +2091,20 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 2,
+              "referenceNumber": 14,
               "references": [
                 {
                   "referenceType": "OTHER",
                   "direct": true,
-                  "source": "Humanae Vitae",
-                  "pointer": "Ch. IX, p.4"
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Hebrews",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": [
-              6
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-1/chapter-3/article-1/subarticle-1/paragraph-22",
-    "paragraphNumber": 22,
-    "url": "/part-3/section-1/chapter-3#22"
-  },
-  "23": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "part-3/section-1/chapter-3/article-1/in-brief/paragraph-23/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-1/chapter-3/article-1/in-brief/paragraph-23/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-1/chapter-3/article-1/in-brief/paragraph-23/text-block-1/text-wrapper-1/text-1",
-                "content": "And when Jesus had heard that John was delivered up, he retired into Galilee:",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Micah",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__i__m.0",
-    "semanticPath": "part-3/section-1/chapter-3/article-1/in-brief/paragraph-23",
-    "paragraphNumber": 23,
-    "url": "/part-3/section-1/chapter-3#23"
-  },
-  "24": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-1/subarticle-1/paragraph-24/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-1/subarticle-1/paragraph-24/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-1/subarticle-1/paragraph-24/text-block-1/text-wrapper-1/text-1",
-                "content": "And leaving the city Nazareth, he came and dwelt in Capharnaum on the sea coast, in the borders of Zabulon and Nephthalim;",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              "7–8"
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-2/chapter-1/subarticle-1/paragraph-24",
-    "paragraphNumber": 24,
-    "url": "/part-3/section-2#24"
-  },
-  "25": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-2/subarticle-1/paragraph-group-1/paragraph-25/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-2/subarticle-1/paragraph-group-1/paragraph-25/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-2/subarticle-1/paragraph-group-1/paragraph-25/text-block-1/text-wrapper-1/text-1",
-                "content": "Land of Zabulon and land of Nephthalim, the way of the sea beyond the Jordan, Galilee of the Gentiles:",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-2/chapter-2/subarticle-1/paragraph-group-1/paragraph-25",
-    "paragraphNumber": 25,
-    "url": "/part-3/section-2/chapter-2#25"
-  },
-  "26": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-26/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-26/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-26/text-block-1/text-wrapper-1/text-1",
-                "content": "From that time Jesus began to preach, and to say: Do penance, for the kingdom of heaven is at hand.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                }
-              ]
-            },
-            "paragraphReferences": [
-              17
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-2/chapter-3/article-1/subarticle-1/paragraph-group-1/paragraph-26",
-    "paragraphNumber": 26,
-    "url": "/part-3/section-2/chapter-3#26"
-  },
-  "27": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-3/article-1/in-brief/paragraph-27/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-3/article-1/in-brief/paragraph-27/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-3/article-1/in-brief/paragraph-27/text-block-1/text-wrapper-1/text-1",
-                "content": "And Jesus walking by the sea of Galilee, saw two brethren, Simon who is called Peter, and Andrew his brother, casting a net into the sea (for they were fishers).",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
+                  "folio": false,
                   "source": "Gaudium et spes",
                   "pointer": "Ch. IX, p.4"
                 },
                 {
-                  "referenceType": "OTHER",
-                  "direct": false,
-                  "source": "Humanae Vitae",
-                  "pointer": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__i__m.0",
-    "semanticPath": "part-3/section-2/chapter-3/article-1/in-brief/paragraph-27",
-    "paragraphNumber": 27,
-    "url": "/part-3/section-2/chapter-3#27"
-  },
-  "28": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-3/article-2/subarticle-1/paragraph-group-1/paragraph-28/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-3/article-2/subarticle-1/paragraph-group-1/paragraph-28/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-3/article-2/subarticle-1/paragraph-group-1/paragraph-28/text-block-1/text-wrapper-1/text-1",
-                "content": "And they immediately leaving their nets, followed him.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 5,
-              "references": [
-                {
                   "referenceType": "BIBLE",
                   "direct": true,
-                  "book": "Acts of the Apostles",
+                  "folio": false,
+                  "book": "Psalms",
                   "chapter": 1,
                   "verses": "1–2",
                   "auxillaryText": null
@@ -1381,187 +2118,9 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0",
-    "semanticPath": "part-3/section-2/chapter-3/article-2/subarticle-1/paragraph-group-1/paragraph-28",
-    "paragraphNumber": 28,
-    "url": "/part-3/section-2/chapter-3/article-2#28"
-  },
-  "29": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__i__m.0__m.0",
-        "semanticPath": "part-3/section-2/chapter-3/article-2/in-brief/paragraph-29/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-2/chapter-3/article-2/in-brief/paragraph-29/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-2/chapter-3/article-2/in-brief/paragraph-29/text-block-1/text-wrapper-1/text-1",
-                "content": "And going on from thence, he saw other two brethren, James the son of Zebedee, and John his brother, in a ship with Zebedee their father, mending their nets: and he called them.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 6,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__i__m.0",
-    "semanticPath": "part-3/section-2/chapter-3/article-2/in-brief/paragraph-29",
-    "paragraphNumber": 29,
-    "url": "/part-3/section-2/chapter-3/article-2#29"
-  },
-  "30": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.0__m.0__m.0",
-        "semanticPath": "part-3/section-3/paragraph-group-1/paragraph-30/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.0__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-3/paragraph-group-1/paragraph-30/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-3/paragraph-group-1/paragraph-30/text-block-1/text-wrapper-1/text-1",
-                "content": "And Jesus went about all Galilee, teaching in their synagogues, and preaching the gospel of the kingdom: and healing all manner of sickness and every infirmity, among the people.",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.0__m.0",
-    "semanticPath": "part-3/section-3/paragraph-group-1/paragraph-30",
-    "paragraphNumber": 30,
-    "url": "/part-3/section-3#30"
-  },
-  "31": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.1__m.0__m.0",
-        "semanticPath": "part-3/section-3/paragraph-group-2/paragraph-31/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.1__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-3/paragraph-group-2/paragraph-31/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-3/paragraph-group-2/paragraph-31/text-block-1/text-wrapper-1/text-1",
-                "content": "And his fame went throughout all Syria, and they presented to him all sick people that were taken with divers diseases and torments, and such as were possessed by devils, and lunatics, and those that had palsy, and he cured them:",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": [
-              4
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.1__m.0",
-    "semanticPath": "part-3/section-3/paragraph-group-2/paragraph-31",
-    "paragraphNumber": 31,
-    "url": "/part-3/section-3#31"
-  },
-  "32": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__i__m.0__m.0",
-        "semanticPath": "part-3/section-3/in-brief/paragraph-32/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "part-3/section-3/in-brief/paragraph-32/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "part-3/section-3/in-brief/paragraph-32/text-block-1/text-wrapper-1/text-1",
-                "content": "And they forthwith left their nets and father, and followed him.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": true
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__i__m.0",
-    "semanticPath": "part-3/section-3/in-brief/paragraph-32",
-    "paragraphNumber": 32,
-    "url": "/part-3/section-3#32"
+    "pathID": "3__m.0__m.0__m.2__i__m.0",
+    "semanticPath": "part-3/section-1/chapter-1/article-3/in-brief/paragraph-40",
+    "paragraphNumber": 40,
+    "url": "/part-3/section-1/chapter-1/article-3#40"
   }
 }

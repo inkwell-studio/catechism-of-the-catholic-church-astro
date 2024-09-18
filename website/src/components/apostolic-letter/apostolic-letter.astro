@@ -1,0 +1,21 @@
+---
+import { Language } from '@catechism/source/types/types';
+
+import { AuthorText, Body, Intro, Title, Subtitle, getLetter } from './components';
+
+interface Props {
+    language: Language;
+}
+
+const { language } = Astro.props;
+
+const letter = getLetter(language);
+---
+
+<div class="max-w-[40rem] mx-auto px-12">
+    <Title text={letter.title} />
+    <Subtitle text={letter.subtitle} />
+    <AuthorText lines={letter.authorText} />
+    <Intro text={letter.intro} />
+    <Body language={language} />
+</div>

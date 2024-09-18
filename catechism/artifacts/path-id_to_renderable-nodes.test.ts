@@ -2,7 +2,7 @@ import { assert, assertStrictEquals } from '$std/assert';
 import { RenderableNode } from '../source/types/renderable-node.ts';
 import { RenderableNodeMap } from '../source/types/types.ts';
 import { getRenderableNodeMap } from '../source/utils/artifacts.ts';
-import { getSupportedLanguages } from '../source/utils/language.ts';
+import { getLanguages } from '../source/utils/language.ts';
 
 type MapEntry = {
     here: RenderableNode;
@@ -11,7 +11,7 @@ type MapEntry = {
 };
 
 console.log('\nPathID to RenderableNodes map ...');
-for await (const [key, language] of getSupportedLanguages()) {
+for await (const [key, language] of getLanguages()) {
     const renderableNodeMap = await getRenderableNodeMap(language);
     runTests(key, renderableNodeMap);
 }

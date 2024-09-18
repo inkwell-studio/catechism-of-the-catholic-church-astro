@@ -62,6 +62,13 @@ interface Limits {
             textContent: Limit;
         };
     };
+    glossary: {
+        entries: Limit;
+        entry: {
+            paragraphReferences: Limit;
+            seeAlso: Limit;
+        };
+    };
     inBrief: {
         paragraph: Limit;
     };
@@ -138,6 +145,13 @@ const limitsMinimal: Limits = {
             textContent: { min: 1, max: 1 },
         },
     },
+    glossary: {
+        entries: { min: 1, max: 1 },
+        entry: {
+            paragraphReferences: { min: 1, max: 1 },
+            seeAlso: { min: 1, max: 1 },
+        },
+    },
     inBrief: {
         paragraph: { min: 1, max: 1 },
     },
@@ -210,6 +224,13 @@ const limitsTiny: Limits = {
             textContent: { min: 1, max: 1 },
         },
     },
+    glossary: {
+        entries: { min: 400, max: 400 },
+        entry: {
+            paragraphReferences: { min: 1, max: 3 },
+            seeAlso: { min: 1, max: 3 },
+        },
+    },
     inBrief: {
         paragraph: { min: 1, max: 1 },
     },
@@ -280,6 +301,13 @@ const limitsMedium: Limits = {
         openingContent: {
             subarticle: { min: 1, max: 3 },
             textContent: { min: 1, max: 3 },
+        },
+    },
+    glossary: {
+        entries: { min: 400, max: 400 },
+        entry: {
+            paragraphReferences: { min: 1, max: 4 },
+            seeAlso: { min: 1, max: 3 },
         },
     },
     inBrief: {

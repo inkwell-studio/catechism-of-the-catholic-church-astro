@@ -2,7 +2,7 @@ import { APIRoute } from 'astro';
 
 import { Language, NumberOrNumberRange, ParagraphNumberContentMap } from '@catechism/source/types/types.ts';
 import { getParagraphNumbers } from '@catechism/source/utils/content.ts';
-import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { getLanguages } from '@catechism/source/utils/language.ts';
 
 const map_en = (await import('@catechism/artifacts/paragraph-number_to_content-en.json', { with: { type: 'json' } })).default;
 const map_es = (await import('@catechism/artifacts/paragraph-number_to_content-es.json', { with: { type: 'json' } })).default;
@@ -23,7 +23,7 @@ export const GET: APIRoute = ({ params }) => {
     const paragraphMap = contentMaps[language] as ParagraphNumberContentMap;
 
     if (!paragraphMap) {
-        const validLanguagesText = getSupportedLanguages()
+        const validLanguagesText = getLanguages()
             .map(([languageKey, language]) => `- ${language} (${languageKey})`)
             .join('\n');
 

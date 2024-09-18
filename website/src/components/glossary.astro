@@ -1,0 +1,13 @@
+---
+import { Language } from '@catechism/source/types/types';
+
+interface Props {
+    language: Language;
+}
+
+const { language } = Astro.props;
+---
+
+<div class="flex justify-center items-center">
+    <h1>Glossary: {language}</h1>
+</div>

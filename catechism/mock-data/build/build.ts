@@ -4,7 +4,8 @@ import { Probability } from './config/probability.ts';
 import { buildPart } from './parts/part.ts';
 import { buildPrologue } from './parts/prologue.ts';
 import { chance, intArrayOfRandomLength, MinMax, randomInt } from './utils.ts';
-import { getLanguage } from '../language/language-state.ts';
+import { getLanguage, setLanguage } from '../language/language-state.ts';
+
 import {
     CatechismStructure,
     Container,
@@ -16,6 +17,7 @@ import {
     SemanticPathSource,
     TextWrapper,
 } from '../../source/types/types.ts';
+
 import {
     getAllChildContent,
     getAllContent,
@@ -27,8 +29,10 @@ import {
     hasMainContent,
     hasOpeningContent,
 } from '../../source/utils/content.ts';
+
 import { getContainerDesignator } from '../../source/utils/path-id.ts';
 import { buildSemanticPath, getSemanticPathSource } from '../../source/utils/semantic-path.ts';
+
 import { getUrl } from '../../../website/src/logic/routing.ts';
 
 //#region top-level functions
@@ -60,7 +64,7 @@ export function buildMockData(): CatechismStructure {
     }
 
     const paragraphCount = getAllParagraphs(catechism).length;
-    console.log(`\t... built and validated ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross-references`);
+    console.log(`\t... built and validated ${paragraphCount} paragraphs with ${results.crossReferenceCount} cross-references\n`);
 
     return catechism;
 }

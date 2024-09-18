@@ -3,10 +3,10 @@ import { assertExists, assertStrictEquals } from '$std/assert';
 import { CatechismStructure, ParagraphNumberPathIdMap } from '../source/types/types.ts';
 import { getParagraphNumberPathMap } from '../source/utils/artifacts.ts';
 import { getAllParagraphs, getCatechism } from '../source/utils/content.ts';
-import { getSupportedLanguages } from '../source/utils/language.ts';
+import { getLanguages } from '../source/utils/language.ts';
 
 console.log('\nParagraph number to renderable PathID map ...');
-for await (const [key, language] of getSupportedLanguages()) {
+for await (const [key, language] of getLanguages()) {
     const catechism = await getCatechism(language);
     const renderablePathMap = await getParagraphNumberPathMap(language);
 

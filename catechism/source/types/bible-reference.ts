@@ -5,7 +5,6 @@ import { ReferenceEnum } from './reference-enum.ts';
 
 export interface BibleReference extends ReferenceBase {
     readonly referenceType: ReferenceEnum.BIBLE;
-    readonly direct: boolean;
     readonly book: BibleBook;
     readonly chapter: number;
     // A number designates a single verse; a string like `3-10` designates a range of verses

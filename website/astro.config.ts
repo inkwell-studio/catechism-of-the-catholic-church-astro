@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
+import deno from '@deno/astro-adapter';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import deno from '@deno/astro-adapter';
 
 import { baseUrl } from './config.ts';
 import { DEFAULT_LANGUAGE } from '../catechism/source/types/types.ts';
-import { getSupportedLanguages } from '../catechism/source/utils/language.ts';
+import { getLanguages } from '../catechism/source/utils/language.ts';
 
 export default defineConfig({
     site: baseUrl,
@@ -25,7 +25,7 @@ export default defineConfig({
 
 function buildSitemapConfig() {
     const locales: Record<string, string> = {};
-    getSupportedLanguages().forEach(([_languageKey, language]) => locales[language] = language);
+    getLanguages().forEach(([_languageKey, language]) => locales[language] = language);
 
     return {
         i18n: {

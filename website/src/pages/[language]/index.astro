@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '@layouts/base-layout.astro';
 
-import { ContentRoute, getIndexPageRoutes } from '@pages/_route-generator';
+import { ContentRoute, getLandingPageRoutes } from '@pages/_routes';
 
 export function getStaticPaths(): Array<ContentRoute> {
-    return getIndexPageRoutes();
+    return getLandingPageRoutes();
 }
 
 const language = Astro.params.language;
@@ -12,6 +12,6 @@ const language = Astro.params.language;
 
 <BaseLayout language={language}>
     <div class="flex justify-center items-center">
-        <h1>Index: {language}</h1>
+        <h1>Landing: {language}</h1>
     </div>
 </BaseLayout>

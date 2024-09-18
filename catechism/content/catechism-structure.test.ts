@@ -29,12 +29,12 @@ import {
     getOpeningContent,
     getReferences,
 } from '../source/utils/content.ts';
-import { getSupportedLanguages } from '../source/utils/language.ts';
+import { getLanguages } from '../source/utils/language.ts';
 import { getContainerDesignator, isValid } from '../source/utils/path-id.ts';
 
 //#region tests
 console.log('\nCatechism data ...');
-for await (const [key, language] of getSupportedLanguages()) {
+for await (const [key, language] of getLanguages()) {
     const catechism = await getCatechism(language);
     runTests(key, language, catechism);
 }
@@ -47,7 +47,7 @@ async function runTests(
     const paragraphs = getAllParagraphs(catechism);
 
     Deno.test(`[${languageKey}] the language is set`, () => {
-        const languages = getSupportedLanguages().map(([_key, language]) => language);
+        const languages = getLanguages().map(([_key, language]) => language);
         assert(
             languages.includes(catechism.language),
             `the Catechism language is not set to a valid value: ${catechism.language}`,

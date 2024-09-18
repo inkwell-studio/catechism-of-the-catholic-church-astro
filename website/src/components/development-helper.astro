@@ -1,6 +1,6 @@
 ---
 import { Language } from '@catechism/source/types/types';
-import { getSupportedLanguages } from '@catechism/source/utils/language';
+import { getLanguages } from '@catechism/source/utils/language';
 
 import TableOfContentsDemo from '@components/table-of-contents-demo.astro';
 
@@ -12,7 +12,7 @@ interface Props {
 
 const { language } = Astro.props;
 
-const languages = getSupportedLanguages().map(([key, lang]) => lang);
+const languages = getLanguages().map(([key, lang]) => lang);
 ---
 
 <div

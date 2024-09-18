@@ -10,23 +10,21 @@ import { build as buildTableOfContents } from './table-of-contents.ts';
 
 import {
     Artifact,
+    CatechismStructure,
     Language,
+    ParagraphCrossReferenceContentMap,
     ParagraphNumberContentMap,
+    ParagraphNumberPathIdMap,
     ParagraphNumberUrlMap,
+    PathIdContentMap,
     PathIdLanguageUrlMap,
     RenderableNodeMap,
-} from '../source/types/types.ts';
-
-import { getCatechisms } from '../source/utils/content.ts';
-import { getSupportedLanguages } from '../source/utils/language.ts';
-import {
-    CatechismStructure,
-    ParagraphCrossReferenceContentMap,
-    ParagraphNumberPathIdMap,
-    PathIdContentMap,
     SemanticPathPathIdMap,
     TableOfContentsType,
 } from '../source/types/types.ts';
+
+import { getCatechisms } from '../source/utils/content.ts';
+import { getLanguages } from '../source/utils/language.ts';
 
 build();
 
@@ -35,12 +33,14 @@ async function build(): Promise<void> {
 
     const allTableOfContents: Array<TableOfContentsType> = [];
 
-    const languages = getSupportedLanguages().map(([_languageKey, language]) => language);
+    const languages = getLanguages().map(([_languageKey, language]) => language);
     const catechisms = getCatechisms(languages);
 
     for await (const catechism of catechisms) {
         console.log(`\n\t[${catechism.language}]`);
+
         const { tableOfContents } = buildArtifacts(catechism);
+
         allTableOfContents.push(tableOfContents);
     }
 

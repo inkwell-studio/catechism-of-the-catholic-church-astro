@@ -37,12 +37,15 @@ Deno.test('do not contain any British English spellings ("ou")', () => {
     const ouFalsePositives = [
         'about',
         'bound',
+        'brought',
         'country',
+        'fourth',
         'group',
         'mountain',
         'mouth',
         'thoroughly',
         'throughout',
+        'your',
         'yourselves',
     ];
 

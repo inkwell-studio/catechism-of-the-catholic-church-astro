@@ -1,6 +1,6 @@
 {
     "tasks": {
-        "check": "deno fmt --check && deno lint && deno check catechism/**/*.ts && deno check website/src/**/*.ts",
+        "check": "deno fmt --check && deno lint && deno check catechism/**/*.ts && deno check website/src/**/*.ts && deno check website/src/**/*.tsx",
         "pre-commit": "deno lint && deno task check && deno fmt && deno task test-source && deno task test-content && deno task build-artifacts && deno task test-artifacts",
 
         "test-source": "deno test catechism/source website/src",

@@ -8,19 +8,24 @@
 
 - [ ] add routing for other content:
   - [ ] pages (add e2e tests as you go)
+    - [ ] language-specific landing/"home" pages
+      - include layout demo
+    - [ ] index: citations
+      - include backend work
+    - [ ] index: topics
+    - [ ] table of contents (same page as above?)
+    - [ ] concordance (?)
     - [ ] project-explanation landing page (no need to populate it yet)
+    - [ ] handle language-switching navigation links
       - eventually add:
         - what the CCC is
         - how the Search may be used (e.g. keywords, phrases, content titles, paragraph numbers)
         - how the JSON API may be used
-    - [ ] language-specific landing/"home" pages
-    - [ ] introductory Apostolic Letter
-    - [ ] table of contents (same page as above?)
-    - [ ] glossary
-    - [ ] topical index
-    - [ ] citation index (Bible verses, other references)
-    - [ ] concordance (?)
   - [ ] ensure content navigation with HTMX works appropriately in all cases
+  - [ ] see note in `website/src/artifacts.ts` about tyring to use `import.meta.*`
+  - [ ] handle Vite rollup error from
+        `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
+
 - [ ] implement app shell with content-HTMX functionality
   - [ ] language switching: consider adding the React menu for proof of full functionality
   - [ ] add e2e tests for the table-of-contents pages?

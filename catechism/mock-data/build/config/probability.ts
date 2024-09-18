@@ -21,6 +21,14 @@ export const Probability = {
         // The probability that a cross-reference will reference a range paragraphs instead of a single one
         range: 0.15,
     },
+    glossary: {
+        // The probability that a glossary entry is directed to another glossary entry
+        seeAlso: 0.10,
+        // The probability that a glossary entry has any text if it is directed to another glossary entry
+        hasTextIfHasSeeAlso: 0.5,
+        // The probability that a glossary entry has a reference to one or more Catechism paragraphs
+        paragraphReference: 0.2,
+    },
     part: {
         hasOpeningContent: 0.3,
         multipleSections: 0.75,

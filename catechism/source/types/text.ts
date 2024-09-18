@@ -1,10 +1,7 @@
 import { Content } from './content.ts';
 import { ContentBase } from './content-base.ts';
+import { TextSimple } from './text-simple.ts';
 
-export interface Text extends ContentBase {
+export interface Text extends ContentBase, TextSimple {
     readonly contentType: Content.TEXT;
-    readonly content: string;
-    readonly strong: boolean;
-    readonly emphasis: boolean;
-    readonly smallCaps: boolean;
 }

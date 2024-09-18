@@ -1,5 +1,6 @@
 import {
     Artifact,
+    Glossary,
     Language,
     ParagraphCrossReferenceContentMap,
     ParagraphNumberContentMap,
@@ -14,6 +15,10 @@ import {
 
 export function getContentMap(language: Language): Promise<PathIdContentMap> {
     return getArtifact(Artifact.RENDERABLE_PATH_ID_TO_CONTENT, language);
+}
+
+export function getGlossary(language: Language): Promise<Glossary> {
+    return getArtifact(Artifact.GLOSSARY, language);
 }
 
 export function getRenderableNodeMap(language: Language): Promise<RenderableNodeMap> {

@@ -69,6 +69,7 @@ function getArtifactSync(artifact: Artifact, language?: Language): any {
         : `../catechism/artifacts/${artifact}.json`;
 
     try {
+        // TODO: Can `import.meta.<X>` be used in the `.astro` components instead of this?
         return JSON.parse(fs.readFileSync(filepath, { encoding: 'utf8' }));
     } catch (error) {
         throw new Error(`Failed to load artifact: ${filepath}`, error);

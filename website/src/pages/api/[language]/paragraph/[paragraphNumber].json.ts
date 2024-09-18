@@ -1,6 +1,6 @@
 import { APIRoute } from 'astro';
 
-import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { getLanguages } from '@catechism/source/utils/language.ts';
 import { Language } from '@catechism/source/types/types.ts';
 
 import { getAllParagraphNumbersSync, getParagraphContentMapSync } from '../../../../logic/artifacts.ts';
@@ -13,7 +13,7 @@ interface Route {
 }
 
 export function getStaticPaths(): Array<Route> {
-    return getSupportedLanguages().flatMap(([_languageKey, language]) =>
+    return getLanguages().flatMap(([_languageKey, language]) =>
         getAllParagraphNumbersSync(language)
             .map((paragraphNumber) => ({ params: { language, paragraphNumber } }))
     );

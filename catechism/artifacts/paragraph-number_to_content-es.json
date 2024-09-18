@@ -5,22 +5,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "0__m.0__m.0__m.0__m.0",
-        "semanticPath": "prologo/subartículo-1/parrafo-grupo-1/parrafo-1/text-block-1",
-        "supplementary": false,
+        "pathID": "0__m.0__m.0__m.0",
+        "semanticPath": "prologo/subartículo-1/parrafo-1/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "prologo/subartículo-1/parrafo-grupo-1/parrafo-1/text-block-1/text-wrapper-1",
+            "pathID": "0__m.0__m.0__m.0__m.0",
+            "semanticPath": "prologo/subartículo-1/parrafo-1/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "prologo/subartículo-1/parrafo-grupo-1/parrafo-1/text-block-1/text-wrapper-1/text-1",
-                "content": "Y después de haber ayunado cuarenta días con cuarenta noches, tuvo hambre.",
+                "pathID": "0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "prologo/subartículo-1/parrafo-1/text-block-1/text-wrapper-1/text-1",
+                "content": "La tierra, estaba informe y vacía, las tinieblas cubrían la superficie del abismo, y el espíritu de Dios se movía sobre las aguas.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -29,17 +29,29 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 2,
-              "references": []
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              36
+            ]
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "0__m.0__m.0__m.0",
-    "semanticPath": "prologo/subartículo-1/parrafo-grupo-1/parrafo-1",
+    "pathID": "0__m.0__m.0",
+    "semanticPath": "prologo/subartículo-1/parrafo-1",
     "paragraphNumber": 1,
     "url": "/prologue#1"
   },
@@ -64,8 +76,8 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.1__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prologo/subartículo-2/parrafo-grupo-1/parrafo-2/text-block-1/text-wrapper-1/text-1",
-                "content": "Entonces, acercándose el tentador, le dijo: Si eres el Hijo de Dios, di que esas piedras se conviertan en panes.",
-                "strong": false,
+                "content": "Dijo, pues, Dios: Sea hecha la luz. Y la luz quedó hecha.",
+                "strong": true,
                 "emphasis": false,
                 "smallCaps": false
               }
@@ -76,8 +88,9 @@
               "references": [
                 {
                   "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Genesis",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
                   "chapter": 1,
                   "verses": 1,
                   "auxillaryText": null
@@ -104,7 +117,7 @@
         "contentType": "TEXT_BLOCK",
         "pathID": "0__m.2__m.0__m.0__m.0",
         "semanticPath": "prologo/subartículo-3/parrafo-grupo-1/parrafo-3/text-block-1",
-        "supplementary": true,
+        "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
@@ -117,43 +130,20 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.2__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prologo/subartículo-3/parrafo-grupo-1/parrafo-3/text-block-1/text-wrapper-1/text-1",
-                "content": "Mas Jesús le respondió: Escrito está: No sólo de pan vive el hombre, sino de toda palabra o disposición que sale de la boca de Dios.",
+                "content": "Y vio Dios que la luz era buena, y dividió la luz de las tinieblas.",
                 "strong": false,
                 "emphasis": false,
-                "smallCaps": true
+                "smallCaps": false
               }
             ],
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 4,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Genesis",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Acts of the Apostles",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Psalms",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              34
+            ]
           }
         ],
         "finalContent": []
@@ -171,22 +161,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__o.0__m.0",
-        "semanticPath": "parte-1/parrafo-4/text-block-1",
+        "pathID": "1__m.0__o.0__m.0",
+        "semanticPath": "parte-1/seccion-1/parrafo-4/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__o.0__m.0__m.0",
-            "semanticPath": "parte-1/parrafo-4/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__o.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/parrafo-4/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__o.0__m.0__m.0__m.0",
-                "semanticPath": "parte-1/parrafo-4/text-block-1/text-wrapper-1/text-1",
-                "content": "Después de esto lo transportó el diablo a la santa ciudad de Jerusalén , y lo puso sobre lo alto del templo;",
+                "pathID": "1__m.0__o.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/parrafo-4/text-block-1/text-wrapper-1/text-1",
+                "content": "A la luz la llamó día, y a las tinieblas noche; así de la tarde aquella y de la mañana siguiente resultó el primer día.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -195,28 +185,17 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 1,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "John",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": [
-              13
-            ]
+            "paragraphReferences": []
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "1__o.0",
-    "semanticPath": "parte-1/parrafo-4",
+    "pathID": "1__m.0__o.0",
+    "semanticPath": "parte-1/seccion-1/parrafo-4",
     "paragraphNumber": 4,
     "url": "/part-1#4"
   },
@@ -226,110 +205,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-1/seccion-1/parrafo-grupo-1/parrafo-5/text-block-1",
-        "supplementary": false,
+        "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-5/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-1/seccion-1/parrafo-grupo-1/parrafo-5/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-5/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-1/seccion-1/parrafo-grupo-1/parrafo-5/text-block-1/text-wrapper-1/text-1",
-                "content": "y le dijo: Si eres el Hijo de Dios, échate de aquí abajo; pues está escrito: Que te ha encomendado a sus ángeles, los cuales te tomarán en las palmas de sus manos para que tu pie no tropiece contra alguna piedra.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__m.0__m.0",
-    "semanticPath": "parte-1/seccion-1/parrafo-grupo-1/parrafo-5",
-    "paragraphNumber": 5,
-    "url": "/part-1#5"
-  },
-  "6": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__i__m.0__m.0",
-        "semanticPath": "parte-1/seccion-1/resumen/parrafo-6/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-1/seccion-1/resumen/parrafo-6/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-1/seccion-1/resumen/parrafo-6/text-block-1/text-wrapper-1/text-1",
-                "content": "Le replicó Jesús : También está escrito: No tentarás al Señor tu Dios.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__i__m.0",
-    "semanticPath": "parte-1/seccion-1/resumen/parrafo-6",
-    "paragraphNumber": 6,
-    "url": "/part-1#6"
-  },
-  "7": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__o.0__m.0",
-        "semanticPath": "parte-2/parrafo-7/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__o.0__m.0__m.0",
-            "semanticPath": "parte-2/parrafo-7/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__o.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/parrafo-7/text-block-1/text-wrapper-1/text-1",
-                "content": "Todavía le subió el diablo a un monte muy encumbrado, y le mostró todos los reinos del mundo y la gloria de ellos.",
+                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-5/text-block-1/text-wrapper-1/text-1",
+                "content": "Y al firmamento le llamó Dios cielo. Con lo que de tarde y de mañana se cumplió el día segundo.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -338,104 +229,13 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__o.0",
-    "semanticPath": "parte-2/parrafo-7",
-    "paragraphNumber": 7,
-    "url": "/part-2#7"
-  },
-  "8": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__o.0__m.0",
-        "semanticPath": "parte-2/seccion-1/parrafo-8/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__o.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/parrafo-8/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__o.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/parrafo-8/text-block-1/text-wrapper-1/text-1",
-                "content": "Y le dijo: Todas estas cosas te daré si, postrándote delante de mí, me adorares.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              20
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__o.0",
-    "semanticPath": "parte-2/seccion-1/parrafo-8",
-    "paragraphNumber": 8,
-    "url": "/part-2#8"
-  },
-  "9": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-9/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-9/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-9/text-block-1/text-wrapper-1/text-1",
-                "content": "Y con esto le dejó el diablo; y he aquí que se acercaron los ángeles y le servían.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
               "references": [
                 {
-                  "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Ephesians",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
                 }
               ]
             },
@@ -446,79 +246,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-9",
-    "paragraphNumber": 9,
-    "url": "/part-2#9"
+    "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-5",
+    "paragraphNumber": 5,
+    "url": "/part-1#5"
   },
-  "10": {
+  "6": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-10/text-block-1",
+        "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-6/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-10/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-6/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-10/text-block-1/text-wrapper-1/text-1",
-                "content": "Oyendo después Jesús que Juan había sido encarcelado, se retiró a Galilea.",
+                "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-6/text-block-1/text-wrapper-1/text-1",
+                "content": "Dijo también Dios: Reúnanse en un lugar las aguas que están debajo del cielo y aparezca lo árido o seco. Y así se hizo.",
                 "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.1__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-10",
-    "paragraphNumber": 10,
-    "url": "/part-2#10"
-  },
-  "11": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/resumen/parrafo-11/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/resumen/parrafo-11/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/resumen/parrafo-11/text-block-1/text-wrapper-1/text-1",
-                "content": "Y dejando la ciudad de Nazaret, fue a morar en Cafarnaúm, ciudad marítima en los confines de Zabulón y Neftalí;",
-                "strong": false,
-                "emphasis": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -529,8 +285,18 @@
                 {
                   "referenceType": "OTHER",
                   "direct": false,
-                  "source": "Humanae Vitae",
-                  "pointer": "Article VII, 8, 3, 1-2"
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
                 }
               ]
             },
@@ -541,35 +307,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__i__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/resumen/parrafo-11",
-    "paragraphNumber": 11,
-    "url": "/part-2#11"
+    "pathID": "1__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-6",
+    "paragraphNumber": 6,
+    "url": "/part-1#6"
   },
-  "12": {
+  "7": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-12/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-7/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-12/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-7/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-12/text-block-1/text-wrapper-1/text-1",
-                "content": "El país de Zabulón y el país de Neftalí, por donde se va al mar de Tiberíades a la otra parte del Jordán, la Galilea de los gentiles,",
-                "strong": true,
-                "emphasis": false,
+                "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-7/text-block-1/text-wrapper-1/text-1",
+                "content": "Dijo asimismo: Produzca la tierra hierba verde y que dé simiente, y plantas fructíferas que den fruto conforme a su especie, y contengan en sí mismas su simiente sobre la tierra. Y así se hizo.",
+                "strong": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -585,33 +351,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-12",
-    "paragraphNumber": 12,
-    "url": "/part-2/section-1/chapter-1/article-2#12"
+    "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-7",
+    "paragraphNumber": 7,
+    "url": "/part-1/section-1/chapter-1/article-2#7"
   },
-  "13": {
+  "8": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-13/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-8/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-13/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-8/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-13/text-block-1/text-wrapper-1/text-1",
-                "content": "este pueblo que yacía en las tinieblas, ha visto una luz grande: Luz que ha venido a iluminar a los que habitan en la región de las sombras de la muerte.",
+                "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-8/text-block-1/text-wrapper-1/text-1",
+                "content": "Con lo que produjo la tierra hierba verde, que da simiente según su especie, y árboles que dan fruto, de los cuales cada uno tiene su propia semilla según la especie suya. Y vio Dios que la cosa era buena.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -629,10 +395,284 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-13",
+    "pathID": "1__m.0__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen/parrafo-8",
+    "paragraphNumber": 8,
+    "url": "/part-1/section-1/chapter-1/article-2#8"
+  },
+  "9": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-2/subartículo-1/parrafo-9/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-2/subartículo-1/parrafo-9/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-2/subartículo-1/parrafo-9/text-block-1/text-wrapper-1/text-1",
+                "content": "Y de la tarde y mañana resultó el día tercero.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 1,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.1__m.0__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-2/subartículo-1/parrafo-9",
+    "paragraphNumber": 9,
+    "url": "/part-1/section-1/chapter-2#9"
+  },
+  "10": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-10/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-10/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-10/text-block-1/text-wrapper-1/text-1",
+                "content": "Hizo, pues; Dios dos grandes lumbreras: la lumbrera mayor para que presidiese al día; y la lumbrera menor, para presidir la noche; e hizo las estrellas.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": []
+            },
+            "paragraphReferences": [
+              16
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-10",
+    "paragraphNumber": 10,
+    "url": "/part-1/section-1/chapter-3#10"
+  },
+  "11": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__i__m.0__m.0",
+        "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/resumen/parrafo-11/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/resumen/parrafo-11/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/resumen/parrafo-11/text-block-1/text-wrapper-1/text-1",
+                "content": "Y las colocó en el firmamento o extensión del cielo, para que resplandeciesen sobre la tierra.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__i__m.0",
+    "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/resumen/parrafo-11",
+    "paragraphNumber": 11,
+    "url": "/part-1/section-1/chapter-3#11"
+  },
+  "12": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__o.0__m.0",
+        "semanticPath": "parte-2/parrafo-12/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__o.0__m.0__m.0",
+            "semanticPath": "parte-2/parrafo-12/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__o.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/parrafo-12/text-block-1/text-wrapper-1/text-1",
+                "content": "Y presidiesen el día y a la noche, y separasen la luz de las tinieblas. Y vio Dios que la cosa era buena.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__o.0",
+    "semanticPath": "parte-2/parrafo-12",
+    "paragraphNumber": 12,
+    "url": "/part-2#12"
+  },
+  "13": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-13/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-13/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-13/text-block-1/text-wrapper-1/text-1",
+                "content": "Dijo también Dios: Produzcan las aguas reptiles animados que vivan en el agua, y aves que vuelen sobre la tierra, debajo del firmamento del cielo.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": [
+              27
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/subartículo-1/parrafo-grupo-1/parrafo-13",
     "paragraphNumber": 13,
-    "url": "/part-2/section-1/chapter-1/article-2#13"
+    "url": "/part-2#13"
   },
   "14": {
     "contentType": "PARAGRAPH",
@@ -640,22 +680,1158 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/subartículo-1/parrafo-grupo-1/parrafo-14/text-block-1",
+        "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-14/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/subartículo-1/parrafo-grupo-1/parrafo-14/text-block-1/text-wrapper-1",
+            "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-14/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/subartículo-1/parrafo-grupo-1/parrafo-14/text-block-1/text-wrapper-1/text-1",
-                "content": "Desde entonces empezó Jesús a predicar y decir: Haced penitencia, porque está cerca el reino de los cielos.",
+                "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-14/text-block-1/text-wrapper-1/text-1",
+                "content": "Creó, pues, Dios los grandes peces , y todos los animales que viven y se mueven, producidos por las aguas según sus especies, y asimismo todo lo volátil según su género. Y vio Dios que lo hecho era bueno.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen/parrafo-14",
+    "paragraphNumber": 14,
+    "url": "/part-2#14"
+  },
+  "15": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-15/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-15/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-15/text-block-1/text-wrapper-1/text-1",
+                "content": "Con lo que de la tarde y mañana resultó el día quinto.",
+                "strong": false,
+                "emphasis": true,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-15",
+    "paragraphNumber": 15,
+    "url": "/part-2/section-1/chapter-2#15"
+  },
+  "16": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/resumen/parrafo-16/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/resumen/parrafo-16/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/resumen/parrafo-16/text-block-1/text-wrapper-1/text-1",
+                "content": "Dijo todavía Dios: Produzca la tierra animales vivientes en cada género animales domésticos, reptiles y bestias silvestres de la tierra, según sus especies. Y fue hecho así.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/resumen/parrafo-16",
+    "paragraphNumber": 16,
+    "url": "/part-2/section-1/chapter-2#16"
+  },
+  "17": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-17/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-17/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-17/text-block-1/text-wrapper-1/text-1",
+                "content": "Y por fin dijo: Hagamos al hombre a imagen y semejanza nuestra; y domine a los peces del mar, y a las aves del cielo, y a las bestias, y a toda la tierra, y a todo reptil que se mueve sobre la tierra.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "John",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              26
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-17",
+    "paragraphNumber": 17,
+    "url": "/part-2/section-1/chapter-2/article-2#17"
+  },
+  "18": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-grupo-1/parrafo-18/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-grupo-1/parrafo-18/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-grupo-1/parrafo-18/text-block-1/text-wrapper-1/text-1",
+                "content": "Creó, pues, Dios al hombre a imagen suya: a imagen de Dios le creó; los creó varón y hembra.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.1__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/parrafo-grupo-1/parrafo-18",
+    "paragraphNumber": 18,
+    "url": "/part-2/section-1/chapter-2/article-2#18"
+  },
+  "19": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/resumen/parrafo-19/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/resumen/parrafo-19/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/resumen/parrafo-19/text-block-1/text-wrapper-1/text-1",
+                "content": "Y les echó Dios su bendición y dijo: Creced y multiplicaos, y henchid la tierra, y enseñoreaos de ella, y dominad a los peces del mar y a las aves del cielo y a todos los animales que se mueven sobre la tierra.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__i__m.0",
+    "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/resumen/parrafo-19",
+    "paragraphNumber": 19,
+    "url": "/part-2/section-1/chapter-2/article-2#19"
+  },
+  "20": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1/text-wrapper-1/text-1",
+                "content": "Y vio Dios todas las cosas que había hecho; y eran en gran manera buenas. Con lo que de la tarde y de la mañana se formó el día sexto.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20",
+    "paragraphNumber": 20,
+    "url": "/part-2/section-2#20"
+  },
+  "21": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/resumen/parrafo-21/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/resumen/parrafo-21/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/resumen/parrafo-21/text-block-1/text-wrapper-1/text-1",
+                "content": "En aquella temporada se dejó ver Juan Bautista predicando en el desierto de Judea,",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__i__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/resumen/parrafo-21",
+    "paragraphNumber": 21,
+    "url": "/part-2/section-2#21"
+  },
+  "22": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/subartículo-1/parrafo-22/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/subartículo-1/parrafo-22/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/subartículo-1/parrafo-22/text-block-1/text-wrapper-1/text-1",
+                "content": "Este es aquel de quien se dijo por el profeta Isaías: Es la voz del que clama en el desierto, diciendo: Preparad el camino del Señor. Haced derechas sus sendas.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": [
+              6
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__m.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/subartículo-1/parrafo-22",
+    "paragraphNumber": 22,
+    "url": "/part-2/section-2/chapter-1/article-2#22"
+  },
+  "23": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/resumen/parrafo-23/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/resumen/parrafo-23/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/resumen/parrafo-23/text-block-1/text-wrapper-1/text-1",
+                "content": "Traía Juan un vestido de pelos de camello y un cinto de cuero a sus lomos, y su comida eran langostas y miel silvestre.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Hebrews",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__i__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/resumen/parrafo-23",
+    "paragraphNumber": 23,
+    "url": "/part-2/section-2/chapter-1/article-2#23"
+  },
+  "24": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/subartículo-1/parrafo-grupo-1/parrafo-24/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/subartículo-1/parrafo-grupo-1/parrafo-24/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/subartículo-1/parrafo-grupo-1/parrafo-24/text-block-1/text-wrapper-1/text-1",
+                "content": "y recibían de él el bautismo en el Jordán, confesando sus pecados.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 9,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/subartículo-1/parrafo-grupo-1/parrafo-24",
+    "paragraphNumber": 24,
+    "url": "/part-2/section-2/chapter-1/article-3#24"
+  },
+  "25": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/resumen/parrafo-25/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/resumen/parrafo-25/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/resumen/parrafo-25/text-block-1/text-wrapper-1/text-1",
+                "content": "Haced, pues, frutos dignos de penitencia;",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 10,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__i__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/resumen/parrafo-25",
+    "paragraphNumber": 25,
+    "url": "/part-2/section-2/chapter-1/article-3#25"
+  },
+  "26": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/contenido-final/parrafo-26/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/contenido-final/parrafo-26/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/contenido-final/parrafo-26/text-block-1/text-wrapper-1/text-1",
+                "content": "Pero como viese venir a su bautismo muchos de los fariseos y saduceos, les dijo: ¡Oh raza de víboras!, ¿quién os ha enseñado que con solas exterioridades podéis huir de la ira que os amenaza?",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 11,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__f.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/contenido-final/parrafo-26",
+    "paragraphNumber": 26,
+    "url": "/part-2/section-2/chapter-1/article-3#26"
+  },
+  "27": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-27/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-27/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-27/text-block-1/text-wrapper-1/text-1",
+                "content": "Yo a la verdad os bautizo con agua para moveros a la penitencia; pero el que ha de venir después de mí es más poderoso que yo, y no soy yo digno siquiera de llevarle las sandalias; él es quien ha de bautizaros en el Espíritu Santo y en el fuego.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-27",
+    "paragraphNumber": 27,
+    "url": "/part-2/section-2/chapter-2#27"
+  },
+  "28": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-grupo-1/parrafo-28/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-grupo-1/parrafo-28/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-grupo-1/parrafo-28/text-block-1/text-wrapper-1/text-1",
+                "content": "El tiene en sus manos la pala, y limpiará perfectamente su era; y su trigo lo meterá en el granero; mas las pajas quemarás en un fuego inextinguible.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": []
+            },
+            "paragraphReferences": [
+              5
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.1__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/parrafo-grupo-1/parrafo-28",
+    "paragraphNumber": 28,
+    "url": "/part-2/section-2/chapter-2#28"
+  },
+  "29": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/resumen/parrafo-29/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/resumen/parrafo-29/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/resumen/parrafo-29/text-block-1/text-wrapper-1/text-1",
+                "content": "Juan se resistía a ello, diciendo: Yo debo ser bautizado de ti, ¿y tú vienes a mí?",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__i__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/resumen/parrafo-29",
+    "paragraphNumber": 29,
+    "url": "/part-2/section-2/chapter-2#29"
+  },
+  "30": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0",
+        "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/contenido-final/parrafo-30/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/contenido-final/parrafo-30/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/contenido-final/parrafo-30/text-block-1/text-wrapper-1/text-1",
+                "content": "Por este tiempo vino Jesús de Galilea al Jordán en busca de Juan para ser de él bautizado.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__f.0__m.0",
+    "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/contenido-final/parrafo-30",
+    "paragraphNumber": 30,
+    "url": "/part-2/section-2/chapter-2#30"
+  },
+  "31": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-31/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-31/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-31/text-block-1/text-wrapper-1/text-1",
+                "content": "Y se oyó una voz del cielo que decía: Este es mi hijo amado, en quien he puesto toda mi complacencia.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              "16–17"
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-31",
+    "paragraphNumber": 31,
+    "url": "/part-3#31"
+  },
+  "32": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-32/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-32/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-32/text-block-1/text-wrapper-1/text-1",
+                "content": "En aquella sazón, Jesús fue conducido del espíritu de Dios al desierto, para que fuese tentado allí por el diablo.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              12
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.1__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/parrafo-grupo-1/parrafo-32",
+    "paragraphNumber": 32,
+    "url": "/part-3#32"
+  },
+  "33": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/resumen/parrafo-33/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/resumen/parrafo-33/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/resumen/parrafo-33/text-block-1/text-wrapper-1/text-1",
+                "content": "Entonces, acercándose el tentador, le dijo: Si eres el Hijo de Dios, di que esas piedras se conviertan en panes.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/resumen/parrafo-33",
+    "paragraphNumber": 33,
+    "url": "/part-3#33"
+  },
+  "34": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/contenido-final/parrafo-34/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/contenido-final/parrafo-34/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/contenido-final/parrafo-34/text-block-1/text-wrapper-1/text-1",
+                "content": "Y después de haber ayunado cuarenta días con cuarenta noches, tuvo hambre.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__f.0__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/contenido-final/parrafo-34",
+    "paragraphNumber": 34,
+    "url": "/part-3#34"
+  },
+  "35": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-35/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-35/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-35/text-block-1/text-wrapper-1/text-1",
+                "content": "Después de esto lo transportó el diablo a la santa ciudad de Jerusalén , y lo puso sobre lo alto del templo;",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -673,33 +1849,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/subartículo-1/parrafo-grupo-1/parrafo-14",
-    "paragraphNumber": 14,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#14"
+    "pathID": "3__m.0__m.0__m.1__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-35",
+    "paragraphNumber": 35,
+    "url": "/part-3/section-1/chapter-1/article-2#35"
   },
-  "15": {
+  "36": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/resumen/parrafo-15/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-grupo-1/parrafo-36/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/resumen/parrafo-15/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-grupo-1/parrafo-36/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/resumen/parrafo-15/text-block-1/text-wrapper-1/text-1",
-                "content": "Caminando un día Jesús por la ribera del mar de Galilea vio a dos hermanos, Simón, llamado Pedro, y Andrés su hermano, echando la red en el mar (pues eran pescadores)",
+                "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-grupo-1/parrafo-36/text-block-1/text-wrapper-1/text-1",
+                "content": "y le dijo: Si eres el Hijo de Dios, échate de aquí abajo; pues está escrito: Que te ha encomendado a sus ángeles, los cuales te tomarán en las palmas de sus manos para que tu pie no tropiece contra alguna piedra.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -711,7 +1887,15 @@
               "references": [
                 {
                   "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
                   "direct": false,
+                  "folio": false,
                   "source": "Christifideles Laici",
                   "pointer": "742"
                 }
@@ -724,33 +1908,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__i__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-2/resumen/parrafo-15",
-    "paragraphNumber": 15,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#15"
+    "pathID": "3__m.0__m.0__m.1__m.1__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/parrafo-grupo-1/parrafo-36",
+    "paragraphNumber": 36,
+    "url": "/part-3/section-1/chapter-1/article-2#36"
   },
-  "16": {
+  "37": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/subartículo-1/parrafo-grupo-1/parrafo-16/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/resumen/parrafo-37/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/subartículo-1/parrafo-grupo-1/parrafo-16/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/resumen/parrafo-37/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/subartículo-1/parrafo-grupo-1/parrafo-16/text-block-1/text-wrapper-1/text-1",
-                "content": "y les dijo: Seguidme a mí, y yo os haré pescadores de hombres.",
+                "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/resumen/parrafo-37/text-block-1/text-wrapper-1/text-1",
+                "content": "Le replicó Jesús : También está escrito: No tentarás al Señor tu Dios.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -768,476 +1952,32 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/subartículo-1/parrafo-grupo-1/parrafo-16",
-    "paragraphNumber": 16,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#16"
+    "pathID": "3__m.0__m.0__m.1__i__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/resumen/parrafo-37",
+    "paragraphNumber": 37,
+    "url": "/part-3/section-1/chapter-1/article-2#37"
   },
-  "17": {
+  "38": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0",
-        "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/resumen/parrafo-17/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-38/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/resumen/parrafo-17/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-38/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/resumen/parrafo-17/text-block-1/text-wrapper-1/text-1",
-                "content": "Al instante los dos, dejadas las redes, lo siguieron.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 11,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__i__m.0",
-    "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-2/articulo-parrafo-3/resumen/parrafo-17",
-    "paragraphNumber": 17,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#17"
-  },
-  "18": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-1/subartículo-1/parrafo-grupo-1/parrafo-18/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-1/subartículo-1/parrafo-grupo-1/parrafo-18/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-1/subartículo-1/parrafo-grupo-1/parrafo-18/text-block-1/text-wrapper-1/text-1",
-                "content": "Pasando más adelante, vio a otros dos hermanos, Santiago, hijo de Zebedeo, y Juan su hermano, remendando sus redes en la barca con Zebedeo su padre, y los llamó;",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-1/subartículo-1/parrafo-grupo-1/parrafo-18",
-    "paragraphNumber": 18,
-    "url": "/part-3#18"
-  },
-  "19": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-1/resumen/parrafo-19/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-1/resumen/parrafo-19/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-1/resumen/parrafo-19/text-block-1/text-wrapper-1/text-1",
-                "content": "Ellos también al punto, dejadas las redes y a su padre, lo siguieron.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Ch. IX, p.4"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__i__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-1/resumen/parrafo-19",
-    "paragraphNumber": 19,
-    "url": "/part-3#19"
-  },
-  "20": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20/text-block-1/text-wrapper-1/text-1",
-                "content": "Y le iba siguiendo mucha gente de Galilea, y Decápolis, y Jerusalén , y Judea, y de la otra parte del Jordán.",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": false,
-                  "source": "Gaudium et spes",
-                  "pointer": null
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Article VII, 8, 3, 1-2"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-20",
-    "paragraphNumber": 20,
-    "url": "/part-3/section-1/chapter-2#20"
-  },
-  "21": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/resumen/parrafo-21/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/resumen/parrafo-21/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/resumen/parrafo-21/text-block-1/text-wrapper-1/text-1",
-                "content": "En aquella sazón, Jesús fue conducido del espíritu de Dios al desierto, para que fuese tentado allí por el diablo.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 4,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-2/articulo-1/resumen/parrafo-21",
-    "paragraphNumber": 21,
-    "url": "/part-3/section-1/chapter-2#21"
-  },
-  "22": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-22/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-22/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-22/text-block-1/text-wrapper-1/text-1",
-                "content": "Entonces, acercándose el tentador, le dijo: Si eres el Hijo de Dios, di que esas piedras se conviertan en panes.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Humanae Vitae",
-                  "pointer": "Ch. IX, p.4"
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Hebrews",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": [
-              6
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/subartículo-1/parrafo-22",
-    "paragraphNumber": 22,
-    "url": "/part-3/section-1/chapter-3#22"
-  },
-  "23": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/resumen/parrafo-23/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/resumen/parrafo-23/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/resumen/parrafo-23/text-block-1/text-wrapper-1/text-1",
-                "content": "Mas Jesús le respondió: Escrito está: No sólo de pan vive el hombre, sino de toda palabra o disposición que sale de la boca de Dios.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Micah",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__i__m.0",
-    "semanticPath": "parte-3/seccion-1/capitulo-3/articulo-1/resumen/parrafo-23",
-    "paragraphNumber": 23,
-    "url": "/part-3/section-1/chapter-3#23"
-  },
-  "24": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-1/subartículo-1/parrafo-24/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-1/subartículo-1/parrafo-24/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-1/subartículo-1/parrafo-24/text-block-1/text-wrapper-1/text-1",
-                "content": "Después de esto lo transportó el diablo a la santa ciudad de Jerusalén , y lo puso sobre lo alto del templo;",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              "7–8"
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-1/subartículo-1/parrafo-24",
-    "paragraphNumber": 24,
-    "url": "/part-3/section-2#24"
-  },
-  "25": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-2/subartículo-1/parrafo-grupo-1/parrafo-25/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-2/subartículo-1/parrafo-grupo-1/parrafo-25/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-2/subartículo-1/parrafo-grupo-1/parrafo-25/text-block-1/text-wrapper-1/text-1",
-                "content": "Le replicó Jesús : También está escrito: No tentarás al Señor tu Dios.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-2/subartículo-1/parrafo-grupo-1/parrafo-25",
-    "paragraphNumber": 25,
-    "url": "/part-3/section-2/chapter-2#25"
-  },
-  "26": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-26/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-26/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-26/text-block-1/text-wrapper-1/text-1",
+                "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-38/text-block-1/text-wrapper-1/text-1",
                 "content": "Y le dijo: Todas estas cosas te daré si, postrándote delante de mí, me adorares.",
                 "strong": false,
                 "emphasis": false,
@@ -1246,128 +1986,20 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 2,
+              "referenceNumber": 12,
               "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                }
-              ]
-            },
-            "paragraphReferences": [
-              17
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/subartículo-1/parrafo-grupo-1/parrafo-26",
-    "paragraphNumber": 26,
-    "url": "/part-3/section-2/chapter-3#26"
-  },
-  "27": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/resumen/parrafo-27/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/resumen/parrafo-27/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/resumen/parrafo-27/text-block-1/text-wrapper-1/text-1",
-                "content": "Le respondió entonces Jesús : Apártate de ahí, Satanás; porque está escrito: Adorarás al Señor Dios tuyo, y a él solo servirás.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "Ch. IX, p.4"
-                },
                 {
                   "referenceType": "OTHER",
                   "direct": false,
+                  "folio": false,
                   "source": "Humanae Vitae",
                   "pointer": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__i__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-1/resumen/parrafo-27",
-    "paragraphNumber": 27,
-    "url": "/part-3/section-2/chapter-3#27"
-  },
-  "28": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/subartículo-1/parrafo-grupo-1/parrafo-28/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/subartículo-1/parrafo-grupo-1/parrafo-28/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/subartículo-1/parrafo-grupo-1/parrafo-28/text-block-1/text-wrapper-1/text-1",
-                "content": "Oyendo después Jesús que Juan había sido encarcelado, se retiró a Galilea.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 5,
-              "references": [
+                },
                 {
                   "referenceType": "BIBLE",
                   "direct": true,
-                  "book": "Acts of the Apostles",
+                  "folio": false,
+                  "book": "John",
                   "chapter": 1,
                   "verses": "1–2",
                   "auxillaryText": null
@@ -1381,33 +2013,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/subartículo-1/parrafo-grupo-1/parrafo-28",
-    "paragraphNumber": 28,
-    "url": "/part-3/section-2/chapter-3/article-2#28"
+    "pathID": "3__m.0__m.0__m.2__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-38",
+    "paragraphNumber": 38,
+    "url": "/part-3/section-1/chapter-1/article-3#38"
   },
-  "29": {
+  "39": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/resumen/parrafo-29/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-grupo-1/parrafo-39/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/resumen/parrafo-29/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-grupo-1/parrafo-39/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/resumen/parrafo-29/text-block-1/text-wrapper-1/text-1",
-                "content": "Y dejando la ciudad de Nazaret, fue a morar en Cafarnaúm, ciudad marítima en los confines de Zabulón y Neftalí;",
+                "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-grupo-1/parrafo-39/text-block-1/text-wrapper-1/text-1",
+                "content": "Le respondió entonces Jesús : Apártate de ahí, Satanás; porque está escrito: Adorarás al Señor Dios tuyo, y a él solo servirás.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -1415,7 +2047,7 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 6,
+              "referenceNumber": 13,
               "references": []
             },
             "paragraphReferences": []
@@ -1425,132 +2057,59 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__i__m.0",
-    "semanticPath": "parte-3/seccion-2/capitulo-3/articulo-2/resumen/parrafo-29",
-    "paragraphNumber": 29,
-    "url": "/part-3/section-2/chapter-3/article-2#29"
+    "pathID": "3__m.0__m.0__m.2__m.1__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/parrafo-grupo-1/parrafo-39",
+    "paragraphNumber": 39,
+    "url": "/part-3/section-1/chapter-1/article-3#39"
   },
-  "30": {
+  "40": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.0__m.0__m.0",
-        "semanticPath": "parte-3/seccion-3/parrafo-grupo-1/parrafo-30/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.0__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-3/parrafo-grupo-1/parrafo-30/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-3/parrafo-grupo-1/parrafo-30/text-block-1/text-wrapper-1/text-1",
-                "content": "con que vino a cumplirse lo que dijo el profeta Isaías:",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.0__m.0",
-    "semanticPath": "parte-3/seccion-3/parrafo-grupo-1/parrafo-30",
-    "paragraphNumber": 30,
-    "url": "/part-3/section-3#30"
-  },
-  "31": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.1__m.0__m.0",
-        "semanticPath": "parte-3/seccion-3/parrafo-grupo-2/parrafo-31/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.1__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-3/parrafo-grupo-2/parrafo-31/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-3/parrafo-grupo-2/parrafo-31/text-block-1/text-wrapper-1/text-1",
-                "content": "El país de Zabulón y el país de Neftalí, por donde se va al mar de Tiberíades a la otra parte del Jordán, la Galilea de los gentiles,",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": [
-              4
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.1__m.0",
-    "semanticPath": "parte-3/seccion-3/parrafo-grupo-2/parrafo-31",
-    "paragraphNumber": 31,
-    "url": "/part-3/section-3#31"
-  },
-  "32": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__i__m.0__m.0",
-        "semanticPath": "parte-3/seccion-3/resumen/parrafo-32/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/resumen/parrafo-40/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "parte-3/seccion-3/resumen/parrafo-32/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/resumen/parrafo-40/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "3__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "parte-3/seccion-3/resumen/parrafo-32/text-block-1/text-wrapper-1/text-1",
-                "content": "este pueblo que yacía en las tinieblas, ha visto una luz grande: Luz que ha venido a iluminar a los que habitan en la región de las sombras de la muerte.",
+                "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/resumen/parrafo-40/text-block-1/text-wrapper-1/text-1",
+                "content": "Y con esto le dejó el diablo; y he aquí que se acercaron los ángeles y le servían.",
                 "strong": false,
                 "emphasis": false,
-                "smallCaps": true
+                "smallCaps": false
               }
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
+              "referenceNumber": 14,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
             },
             "paragraphReferences": []
           }
@@ -1559,9 +2118,9 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.2__i__m.0",
-    "semanticPath": "parte-3/seccion-3/resumen/parrafo-32",
-    "paragraphNumber": 32,
-    "url": "/part-3/section-3#32"
+    "pathID": "3__m.0__m.0__m.2__i__m.0",
+    "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/resumen/parrafo-40",
+    "paragraphNumber": 40,
+    "url": "/part-3/section-1/chapter-1/article-3#40"
   }
 }

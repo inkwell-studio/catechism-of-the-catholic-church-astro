@@ -1,6 +1,6 @@
 ---
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types';
-import { getSupportedLanguages } from '@catechism/source/utils/language';
+import { getLanguages } from '@catechism/source/utils/language';
 
 import { getPathIdLanguageUrlMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { path as joinPaths } from '@logic/navigation-utils';
@@ -21,7 +21,7 @@ const paragraphNumber = getParagraphNumber(path);
 
 const languageUrlMap = pathID ? pathIdLanguageUrlMap[pathID] : [];
 
-const languagesAndUrls = getSupportedLanguages().map(([languageKey, language]) => {
+const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
     let path = '';
 
     if (paragraphNumber) {

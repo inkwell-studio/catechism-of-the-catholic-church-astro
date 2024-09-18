@@ -1,6 +1,6 @@
 import { assertStrictEquals } from '$std/assert';
 import { DEFAULT_LANGUAGE, Language, SemanticPath } from '@catechism/source/types/types.ts';
-import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { getLanguages } from '@catechism/source/utils/language.ts';
 
 import { getLanguageFromPathname, getLanguageTag, getParagraphNumber, getUrl, removeLanguageTag } from './routing.ts';
 
@@ -308,7 +308,7 @@ Deno.test('removeLanguageTag()', async (t) => {
 //#region getLanguageFromPathname()
 Deno.test('getLanguageFromPathname()', async (test) => {
     await test.step('supported languages', async (t) => {
-        for (const [_languageKey, language] of getSupportedLanguages()) {
+        for (const [_languageKey, language] of getLanguages()) {
             const tests = buildTestCases(language);
             for (const pathname of tests) {
                 await t.step(pathname, () => {
@@ -377,7 +377,7 @@ Deno.test('getParagraphNumberUrl(): /123/', () => {
 Deno.test('getParagraphNumberUrl(): all languages', async (t) => {
     const num = 123;
 
-    for (const [_languageKey, language] of getSupportedLanguages()) {
+    for (const [_languageKey, language] of getLanguages()) {
         await t.step(`${language}/${num}`, () => {
             const result = getParagraphNumber(`${language}/${num}`);
             assertStrictEquals(result, num);

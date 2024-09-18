@@ -16,6 +16,7 @@ import {
     OtherReference,
     Paragraph,
     ParagraphGroup,
+    ParagraphReference,
     ParagraphSubitem,
     ParagraphSubitemContainer,
     Part,
@@ -35,7 +36,7 @@ import {
 
 //#region Specific content retrieval
 export async function getCatechism(language: Language): Promise<CatechismStructure> {
-    const catechismJson = await import(`@catechism/content/catechism-${language}.json`, { with: { type: 'json' } });
+    const catechismJson = await import(`../../../catechism/content/catechism-${language}.json`, { with: { type: 'json' } });
     return catechismJson.default;
 }
 
@@ -261,6 +262,10 @@ export function isParagraphGroup(c: ContentBase): c is ParagraphGroup {
     return Content.PARAGRAPH_GROUP === c.contentType;
 }
 
+export function isParagraphReference(r: ReferenceBase): r is ParagraphReference {
+    return ReferenceEnum.CATECHISM_PARAGRAPH === r.referenceType;
+}
+
 export function isParagraphSubitem(c: ContentBase): c is ParagraphSubitem {
     return Content.PARAGRAPH_SUB_ITEM === c.contentType;
 }
@@ -274,6 +279,12 @@ export function isPart(c: ContentBase): c is Part {
 }
 export function isPrologue(c: ContentBase): c is Prologue {
     return Content.PROLOGUE === c.contentType;
+}
+
+// deno-lint-ignore no-explicit-any
+export function isReference(o: any): o is ReferenceBase {
+    const referenceType = o['referenceType'];
+    return !!referenceType && Object.values(ReferenceEnum).includes(referenceType);
 }
 
 export function isSection(c: ContentBase): c is Section {

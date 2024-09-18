@@ -76,6 +76,7 @@ function buildBibleReference(): BibleReference {
     return {
         referenceType: ReferenceEnum.BIBLE,
         direct: randomBoolean(),
+        folio: false,
         book: books[randomInt(indexLimits(books))],
         chapter: randomInt(getLimits().bibleReference.chapter),
         verses,
@@ -93,6 +94,7 @@ function buildOtherReference(language: Language): OtherReference {
     return {
         referenceType: ReferenceEnum.OTHER,
         direct: randomBoolean(),
+        folio: false,
         source: sources[randomInt(indexLimits(sources))],
         pointer: getPointer(language),
     };

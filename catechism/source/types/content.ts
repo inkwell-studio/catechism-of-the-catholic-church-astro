@@ -1,3 +1,4 @@
+// This enumeration does not include the apostolic documents, glossary, indexes, or any other "auxillary" material
 export enum Content {
     PROLOGUE = 'PROLOGUE',
     PART = 'PART',

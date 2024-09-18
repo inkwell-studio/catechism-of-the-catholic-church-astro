@@ -1,0 +1,17 @@
+---
+import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
+
+import Glossary from '@components/glossary.astro';
+import BaseLayout from '@layouts/base-layout.astro';
+import { ContentRoute, getLandingPageRoutes } from '@pages/_routes';
+
+export function getStaticPaths(): Array<ContentRoute> {
+    return getLandingPageRoutes();
+}
+
+const language = Astro.params.language;
+---
+
+<BaseLayout language={DEFAULT_LANGUAGE}>
+    <Glossary language={DEFAULT_LANGUAGE} />
+</BaseLayout>

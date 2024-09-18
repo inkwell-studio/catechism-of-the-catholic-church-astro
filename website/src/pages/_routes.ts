@@ -1,9 +1,11 @@
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
-import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { getLanguages } from '@catechism/source/utils/language.ts';
 import { getTopLevelUrls } from '@catechism/source/utils/table-of-contents.ts';
 
 import { getAllCrossReferencesSync, getAllParagraphNumbersSync, getTableOfContentsSync } from '../logic/artifacts.ts';
 import { path as joinPaths } from '../logic/navigation-utils.ts';
+
+const languages = getLanguages().map(([_languageKey, language]) => language);
 
 export interface ContentRoute {
     params: {
@@ -19,36 +21,52 @@ export interface CrossReferenceRoute {
     };
 }
 
+export enum Path {
+    APOSTOLIC_CONSTITUTION = 'apostolic-constitution',
+    APOSTOLIC_LETTER = 'apostolic-letter',
+}
+
+export function getApostolicConstitutionRoutes(): Array<ContentRoute> {
+    return languages.map((language) => {
+        const prefix = DEFAULT_LANGUAGE === language ? '' : language;
+        return { params: { language, path: joinPaths('/', prefix, Path.APOSTOLIC_CONSTITUTION) } };
+    });
+}
+
+export function getApostolicLetterRoutes(): Array<ContentRoute> {
+    return languages.map((language) => {
+        const prefix = DEFAULT_LANGUAGE === language ? '' : language;
+        return { params: { language, path: joinPaths('/', prefix, Path.APOSTOLIC_LETTER) } };
+    });
+}
+
 export function getCrossReferencePartialRoutes(): Array<CrossReferenceRoute> {
-    return getSupportedLanguages()
-        .map(([_languageKey, language]) => language)
-        .flatMap((language) =>
-            getAllCrossReferencesSync(language).flatMap((reference) => {
-                /*
+    return languages.flatMap((language) =>
+        getAllCrossReferencesSync(language).flatMap((reference) => {
+            /*
                 For robustness, build an endpoint for each cross-reference specifying
                 multiple paragraphs with an en dash and a hyphen (e.g. `/101–105` and `/101-105`)
                 */
 
-                const withEnDash = reference.toString();
-                const withHyphen = reference.toString().replace('–', '-');
+            const withEnDash = reference.toString();
+            const withHyphen = reference.toString().replace('–', '-');
 
-                return [
-                    { params: { language, reference: withEnDash } },
-                    { params: { language, reference: withHyphen } },
-                ];
-            })
-        );
+            return [
+                { params: { language, reference: withEnDash } },
+                { params: { language, reference: withHyphen } },
+            ];
+        })
+    );
 }
 
-export function getIndexPageRoutes(): Array<ContentRoute> {
-    return getSupportedLanguages()
-        .map(([_languageKey, language]) => language)
+export function getLandingPageRoutes(): Array<ContentRoute> {
+    return languages
         .filter((language) => DEFAULT_LANGUAGE !== language)
         .flatMap((language) => ({ params: { language, path: `/${language}` } }));
 }
 
 export function getParagraphNumberRoutes(): Array<ContentRoute> {
-    return getSupportedLanguages().flatMap(([_languageKey, language]) =>
+    return languages.flatMap((language) =>
         getAllParagraphNumbersSync(language)
             .map((n) =>
                 // deno-fmt-ignore
@@ -61,7 +79,7 @@ export function getParagraphNumberRoutes(): Array<ContentRoute> {
 }
 
 export function getTableOfContentsRoutes(): Array<ContentRoute> {
-    return getSupportedLanguages().flatMap(([_languageKey, language]) => {
+    return languages.flatMap((language) => {
         const table = getTableOfContentsSync(language);
         return getTopLevelUrls(table)
             .map((path) =>

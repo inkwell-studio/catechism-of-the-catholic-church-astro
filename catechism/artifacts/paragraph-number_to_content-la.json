@@ -5,22 +5,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "0__m.0__m.0__m.0__m.0",
-        "semanticPath": "prooemium/subarticulus-1/paragraphus-classis-1/paragraphus-1/text-block-1",
-        "supplementary": false,
+        "pathID": "0__m.0__m.0__m.0",
+        "semanticPath": "prooemium/subarticulus-1/paragraphus-1/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "prooemium/subarticulus-1/paragraphus-classis-1/paragraphus-1/text-block-1/text-wrapper-1",
+            "pathID": "0__m.0__m.0__m.0__m.0",
+            "semanticPath": "prooemium/subarticulus-1/paragraphus-1/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "prooemium/subarticulus-1/paragraphus-classis-1/paragraphus-1/text-block-1/text-wrapper-1/text-1",
-                "content": "Et cum jejunasset quadraginta diebus, et quadraginta noctibus, postea esuriit.",
+                "pathID": "0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "prooemium/subarticulus-1/paragraphus-1/text-block-1/text-wrapper-1/text-1",
+                "content": "Terra autem erat inanis et vacua, et tenebrae erant super faciem abyssi: et spiritus Dei ferebatur super aquas.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -29,17 +29,29 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 2,
-              "references": []
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              36
+            ]
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "0__m.0__m.0__m.0",
-    "semanticPath": "prooemium/subarticulus-1/paragraphus-classis-1/paragraphus-1",
+    "pathID": "0__m.0__m.0",
+    "semanticPath": "prooemium/subarticulus-1/paragraphus-1",
     "paragraphNumber": 1,
     "url": "/prologue#1"
   },
@@ -64,8 +76,8 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.1__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prooemium/subarticulus-2/paragraphus-classis-1/paragraphus-2/text-block-1/text-wrapper-1/text-1",
-                "content": "Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes fiant.",
-                "strong": false,
+                "content": "Dixitque Deus: Fiat lux. Et facta est lux.",
+                "strong": true,
                 "emphasis": false,
                 "smallCaps": false
               }
@@ -76,8 +88,9 @@
               "references": [
                 {
                   "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Genesis",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
                   "chapter": 1,
                   "verses": 1,
                   "auxillaryText": null
@@ -104,7 +117,7 @@
         "contentType": "TEXT_BLOCK",
         "pathID": "0__m.2__m.0__m.0__m.0",
         "semanticPath": "prooemium/subarticulus-3/paragraphus-classis-1/paragraphus-3/text-block-1",
-        "supplementary": true,
+        "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
@@ -117,43 +130,20 @@
                 "contentType": "TEXT",
                 "pathID": "0__m.2__m.0__m.0__m.0__m.0__m.0",
                 "semanticPath": "prooemium/subarticulus-3/paragraphus-classis-1/paragraphus-3/text-block-1/text-wrapper-1/text-1",
-                "content": "Qui respondens dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procedit de ore Dei.",
+                "content": "Et vidit Deus lucem quod esset bona: et divisit lucem a tenebris.",
                 "strong": false,
                 "emphasis": false,
-                "smallCaps": true
+                "smallCaps": false
               }
             ],
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 4,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Genesis",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Acts of the Apostles",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Psalms",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": []
+            "paragraphReferences": [
+              34
+            ]
           }
         ],
         "finalContent": []
@@ -171,22 +161,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__o.0__m.0",
-        "semanticPath": "pars-1/paragraphus-4/text-block-1",
+        "pathID": "1__m.0__o.0__m.0",
+        "semanticPath": "pars-1/sectio-1/paragraphus-4/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__o.0__m.0__m.0",
-            "semanticPath": "pars-1/paragraphus-4/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__o.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/paragraphus-4/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__o.0__m.0__m.0__m.0",
-                "semanticPath": "pars-1/paragraphus-4/text-block-1/text-wrapper-1/text-1",
-                "content": "Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super pinnaculum templi,",
+                "pathID": "1__m.0__o.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/paragraphus-4/text-block-1/text-wrapper-1/text-1",
+                "content": "Appellavitque lucem Diem, et tenebras Noctem: factumque est vespere et mane, dies unus.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -195,28 +185,17 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 1,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "John",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
+              "references": []
             },
-            "paragraphReferences": [
-              13
-            ]
+            "paragraphReferences": []
           }
         ],
         "finalContent": []
       }
     ],
     "finalContent": [],
-    "pathID": "1__o.0",
-    "semanticPath": "pars-1/paragraphus-4",
+    "pathID": "1__m.0__o.0",
+    "semanticPath": "pars-1/sectio-1/paragraphus-4",
     "paragraphNumber": 4,
     "url": "/part-1#4"
   },
@@ -226,110 +205,22 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-1/sectio-1/paragraphus-classis-1/paragraphus-5/text-block-1",
-        "supplementary": false,
+        "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-5/text-block-1",
+        "supplementary": true,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-1/sectio-1/paragraphus-classis-1/paragraphus-5/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-5/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-1/sectio-1/paragraphus-classis-1/paragraphus-5/text-block-1/text-wrapper-1/text-1",
-                "content": "et dixit ei: Si Filius Dei es, mitte te deorsum. Scriptum est enim: Quia angelis suis mandavit de te, et in manibus tollent te, ne forte offendas ad lapidem pedem tuum.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__m.0__m.0",
-    "semanticPath": "pars-1/sectio-1/paragraphus-classis-1/paragraphus-5",
-    "paragraphNumber": 5,
-    "url": "/part-1#5"
-  },
-  "6": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "1__m.0__i__m.0__m.0",
-        "semanticPath": "pars-1/sectio-1/compendium/paragraphus-6/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-1/sectio-1/compendium/paragraphus-6/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-1/sectio-1/compendium/paragraphus-6/text-block-1/text-wrapper-1/text-1",
-                "content": "Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "1__m.0__i__m.0",
-    "semanticPath": "pars-1/sectio-1/compendium/paragraphus-6",
-    "paragraphNumber": 6,
-    "url": "/part-1#6"
-  },
-  "7": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__o.0__m.0",
-        "semanticPath": "pars-2/paragraphus-7/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__o.0__m.0__m.0",
-            "semanticPath": "pars-2/paragraphus-7/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__o.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/paragraphus-7/text-block-1/text-wrapper-1/text-1",
-                "content": "Iterum assumpsit eum diabolus in montem excelsum valde: et ostendit ei omnia regna mundi, et gloriam eorum,",
+                "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-5/text-block-1/text-wrapper-1/text-1",
+                "content": "Vocavitque Deus firmamentum, Caelum: et factum est vespere et mane, dies secundus.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -338,104 +229,13 @@
             "finalContent": [],
             "referenceCollection": {
               "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__o.0",
-    "semanticPath": "pars-2/paragraphus-7",
-    "paragraphNumber": 7,
-    "url": "/part-2#7"
-  },
-  "8": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__o.0__m.0",
-        "semanticPath": "pars-2/sectio-1/paragraphus-8/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__o.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/paragraphus-8/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__o.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/paragraphus-8/text-block-1/text-wrapper-1/text-1",
-                "content": "et dixit ei: Haec omnia tibi dabo, si cadens adoraveris me.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              20
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__o.0",
-    "semanticPath": "pars-2/sectio-1/paragraphus-8",
-    "paragraphNumber": 8,
-    "url": "/part-2#8"
-  },
-  "9": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-9/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-9/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-9/text-block-1/text-wrapper-1/text-1",
-                "content": "Tunc reliquit eum diabolus: et ecce angeli accesserunt, et ministrabant ei.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
               "references": [
                 {
-                  "referenceType": "BIBLE",
-                  "direct": true,
-                  "book": "Ephesians",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
                 }
               ]
             },
@@ -446,79 +246,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-9",
-    "paragraphNumber": 9,
-    "url": "/part-2#9"
+    "pathID": "1__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-5",
+    "paragraphNumber": 5,
+    "url": "/part-1#5"
   },
-  "10": {
+  "6": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-10/text-block-1",
+        "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-6/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-10/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-6/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-10/text-block-1/text-wrapper-1/text-1",
-                "content": "Cum autem audisset Jesus quod Joannes traditus esset, secessit in Galilaeam:",
+                "pathID": "1__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-6/text-block-1/text-wrapper-1/text-1",
+                "content": "Dixit vero Deus: Congregentur aquae, quae sub caelo sunt, in locum unum: et appareat arida. Et factum est ita.",
                 "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__m.1__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-10",
-    "paragraphNumber": 10,
-    "url": "/part-2#10"
-  },
-  "11": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/compendium/paragraphus-11/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/compendium/paragraphus-11/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/compendium/paragraphus-11/text-block-1/text-wrapper-1/text-1",
-                "content": "et, relicta civitate Nazareth, venit, et habitavit in Capharnaum maritima, in finibus Zabulon et Nephthalim:",
-                "strong": false,
-                "emphasis": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -529,8 +285,18 @@
                 {
                   "referenceType": "OTHER",
                   "direct": false,
-                  "source": "Humanae Vitae",
-                  "pointer": "Article VII, 8, 3, 1-2"
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
                 }
               ]
             },
@@ -541,35 +307,35 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.0__i__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/compendium/paragraphus-11",
-    "paragraphNumber": 11,
-    "url": "/part-2#11"
+    "pathID": "1__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-6",
+    "paragraphNumber": 6,
+    "url": "/part-1#6"
   },
-  "12": {
+  "7": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-12/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-7/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-12/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-7/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-12/text-block-1/text-wrapper-1/text-1",
-                "content": "Terra Zabulon, et terra Nephthalim, via maris trans Jordanem, Galilaea gentium:",
-                "strong": true,
-                "emphasis": false,
+                "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-7/text-block-1/text-wrapper-1/text-1",
+                "content": "Et ait: Germinet terra herbam virentem, et facientem semen, et lignum pomiferum faciens fructum juxta genus suum, cujus semen in semetipso sit super terram. Et factum est ita.",
+                "strong": false,
+                "emphasis": true,
                 "smallCaps": false
               }
             ],
@@ -585,33 +351,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-12",
-    "paragraphNumber": 12,
-    "url": "/part-2/section-1/chapter-1/article-2#12"
+    "pathID": "1__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-7",
+    "paragraphNumber": 7,
+    "url": "/part-1/section-1/chapter-1/article-2#7"
   },
-  "13": {
+  "8": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-13/text-block-1",
+        "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-8/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-13/text-block-1/text-wrapper-1",
+            "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-8/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-13/text-block-1/text-wrapper-1/text-1",
-                "content": "populus, qui sedebat in tenebris, vidit lucem magnam: et sedentibus in regione umbrae mortis, lux orta est eis.",
+                "pathID": "1__m.0__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-8/text-block-1/text-wrapper-1/text-1",
+                "content": "Et protulit terra herbam virentem, et facientem semen juxta genus suum, lignumque faciens fructum, et habens unumquodque sementem secundum speciem suam. Et vidit Deus quod esset bonum.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -629,10 +395,284 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-13",
+    "pathID": "1__m.0__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-1/articulus-2/articulus-paragraphus-1/compendium/paragraphus-8",
+    "paragraphNumber": 8,
+    "url": "/part-1/section-1/chapter-1/article-2#8"
+  },
+  "9": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-2/subarticulus-1/paragraphus-9/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-2/subarticulus-1/paragraphus-9/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-2/subarticulus-1/paragraphus-9/text-block-1/text-wrapper-1/text-1",
+                "content": "Et factum est vespere et mane, dies tertius.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 1,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.1__m.0__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-2/subarticulus-1/paragraphus-9",
+    "paragraphNumber": 9,
+    "url": "/part-1/section-1/chapter-2#9"
+  },
+  "10": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-10/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-10/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-10/text-block-1/text-wrapper-1/text-1",
+                "content": "Fecitque Deus duo luminaria magna: luminare majus, ut praeesset diei: et luminare minus, ut praeesset nocti: et stellas.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": []
+            },
+            "paragraphReferences": [
+              16
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-10",
+    "paragraphNumber": 10,
+    "url": "/part-1/section-1/chapter-3#10"
+  },
+  "11": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "1__m.0__m.2__m.0__i__m.0__m.0",
+        "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/compendium/paragraphus-11/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/compendium/paragraphus-11/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "1__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/compendium/paragraphus-11/text-block-1/text-wrapper-1/text-1",
+                "content": "Et posuit eas in firmamento caeli, ut lucerent super terram,",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "1__m.0__m.2__m.0__i__m.0",
+    "semanticPath": "pars-1/sectio-1/caput-3/articulus-1/compendium/paragraphus-11",
+    "paragraphNumber": 11,
+    "url": "/part-1/section-1/chapter-3#11"
+  },
+  "12": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__o.0__m.0",
+        "semanticPath": "pars-2/paragraphus-12/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__o.0__m.0__m.0",
+            "semanticPath": "pars-2/paragraphus-12/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__o.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/paragraphus-12/text-block-1/text-wrapper-1/text-1",
+                "content": "et praeessent diei ac nocti, et dividerent lucem ac tenebras. Et vidit Deus quod esset bonum.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__o.0",
+    "semanticPath": "pars-2/paragraphus-12",
+    "paragraphNumber": 12,
+    "url": "/part-2#12"
+  },
+  "13": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-13/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-13/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-13/text-block-1/text-wrapper-1/text-1",
+                "content": "Dixit etiam Deus: Producant aquae reptile animae viventis, et volatile super terram sub firmamento caeli.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": [
+              27
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/subarticulus-1/paragraphus-classis-1/paragraphus-13",
     "paragraphNumber": 13,
-    "url": "/part-2/section-1/chapter-1/article-2#13"
+    "url": "/part-2#13"
   },
   "14": {
     "contentType": "PARAGRAPH",
@@ -640,22 +680,1158 @@
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/subarticulus-1/paragraphus-classis-1/paragraphus-14/text-block-1",
+        "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-14/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/subarticulus-1/paragraphus-classis-1/paragraphus-14/text-block-1/text-wrapper-1",
+            "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-14/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/subarticulus-1/paragraphus-classis-1/paragraphus-14/text-block-1/text-wrapper-1/text-1",
-                "content": "Exinde coepit Jesus praedicare, et dicere: Poenitentiam agite: appropinquavit enim regnum caelorum.",
+                "pathID": "2__m.0__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-14/text-block-1/text-wrapper-1/text-1",
+                "content": "Creavitque Deus cete grandia, et omnem animam viventem atque motabilem, quam produxerant aquae in species suas, et omne volatile secundum genus suum. Et vidit Deus quod esset bonum.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-1/articulus-1/articulus-paragraphus-1/compendium/paragraphus-14",
+    "paragraphNumber": 14,
+    "url": "/part-2#14"
+  },
+  "15": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-15/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-15/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-15/text-block-1/text-wrapper-1/text-1",
+                "content": "Et factum est vespere et mane, dies quintus.",
+                "strong": false,
+                "emphasis": true,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 2,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-15",
+    "paragraphNumber": 15,
+    "url": "/part-2/section-1/chapter-2#15"
+  },
+  "16": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/compendium/paragraphus-16/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/compendium/paragraphus-16/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/compendium/paragraphus-16/text-block-1/text-wrapper-1/text-1",
+                "content": "Dixit quoque Deus: Producat terra animam viventem in genere suo, jumenta, et reptilia, et bestias terrae secundum species suas. Factumque est ita.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.0__i__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-2/articulus-1/compendium/paragraphus-16",
+    "paragraphNumber": 16,
+    "url": "/part-2/section-1/chapter-2#16"
+  },
+  "17": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-17/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-17/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-17/text-block-1/text-wrapper-1/text-1",
+                "content": "et ait: Faciamus hominem ad imaginem et similitudinem nostram: et praesit piscibus maris, et volatilibus caeli, et bestiis, universaeque terrae, omnique reptili, quod movetur in terra.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "John",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              26
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-17",
+    "paragraphNumber": 17,
+    "url": "/part-2/section-1/chapter-2/article-2#17"
+  },
+  "18": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-classis-1/paragraphus-18/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-classis-1/paragraphus-18/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-classis-1/paragraphus-18/text-block-1/text-wrapper-1/text-1",
+                "content": "Et creavit Deus hominem ad imaginem suam: ad imaginem Dei creavit illum, masculum et feminam creavit eos.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__m.1__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/paragraphus-classis-1/paragraphus-18",
+    "paragraphNumber": 18,
+    "url": "/part-2/section-1/chapter-2/article-2#18"
+  },
+  "19": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.0__m.1__m.1__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/compendium/paragraphus-19/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/compendium/paragraphus-19/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/compendium/paragraphus-19/text-block-1/text-wrapper-1/text-1",
+                "content": "Benedixitque illis Deus, et ait: Crescite et multiplicamini, et replete terram, et subjicite eam, et dominamini piscibus maris, et volatilibus caeli, et universis animantibus, quae moventur super terram.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.0__m.1__m.1__i__m.0",
+    "semanticPath": "pars-2/sectio-1/caput-2/articulus-2/compendium/paragraphus-19",
+    "paragraphNumber": 19,
+    "url": "/part-2/section-1/chapter-2/article-2#19"
+  },
+  "20": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1/text-wrapper-1/text-1",
+                "content": "Viditque Deus cuncta quae fecerat, et erant valde bona. Et factum est vespere et mane, dies sextus.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20",
+    "paragraphNumber": 20,
+    "url": "/part-2/section-2#20"
+  },
+  "21": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/compendium/paragraphus-21/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/compendium/paragraphus-21/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/compendium/paragraphus-21/text-block-1/text-wrapper-1/text-1",
+                "content": "In diebus autem illis venit Joannes Baptista praedicans in deserto Judaeae,",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.0__i__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-1/compendium/paragraphus-21",
+    "paragraphNumber": 21,
+    "url": "/part-2/section-2#21"
+  },
+  "22": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/subarticulus-1/paragraphus-22/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/subarticulus-1/paragraphus-22/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/subarticulus-1/paragraphus-22/text-block-1/text-wrapper-1/text-1",
+                "content": "Hic est enim, qui dictus est per Isaiam prophetam dicentem: Vox clamantis in deserto: Parate viam Domini; rectas facite semitas ejus.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": []
+            },
+            "paragraphReferences": [
+              6
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__m.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/subarticulus-1/paragraphus-22",
+    "paragraphNumber": 22,
+    "url": "/part-2/section-2/chapter-1/article-2#22"
+  },
+  "23": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/compendium/paragraphus-23/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/compendium/paragraphus-23/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/compendium/paragraphus-23/text-block-1/text-wrapper-1/text-1",
+                "content": "Ipse autem Joannes habebat vestimentum de pilis camelorum, et zonam pelliceam circa lumbos suos: esca autem ejus erat locustae, et mel silvestre.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 7,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Hebrews",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.1__i__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-2/compendium/paragraphus-23",
+    "paragraphNumber": 23,
+    "url": "/part-2/section-2/chapter-1/article-2#23"
+  },
+  "24": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/subarticulus-1/paragraphus-classis-1/paragraphus-24/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/subarticulus-1/paragraphus-classis-1/paragraphus-24/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/subarticulus-1/paragraphus-classis-1/paragraphus-24/text-block-1/text-wrapper-1/text-1",
+                "content": "et baptizabantur ab eo in Jordane, confitentes peccata sua.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 9,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__m.0__m.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/subarticulus-1/paragraphus-classis-1/paragraphus-24",
+    "paragraphNumber": 24,
+    "url": "/part-2/section-2/chapter-1/article-3#24"
+  },
+  "25": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/compendium/paragraphus-25/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/compendium/paragraphus-25/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/compendium/paragraphus-25/text-block-1/text-wrapper-1/text-1",
+                "content": "Facite ergo fructum dignum poenitentiae.",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 10,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__i__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/compendium/paragraphus-25",
+    "paragraphNumber": 25,
+    "url": "/part-2/section-2/chapter-1/article-3#25"
+  },
+  "26": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/finalis-contentus/paragraphus-26/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/finalis-contentus/paragraphus-26/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.0__m.2__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/finalis-contentus/paragraphus-26/text-block-1/text-wrapper-1/text-1",
+                "content": "Videns autem multos pharisaeorum, et sadducaeorum, venientes ad baptismum suum, dixit eis: Progenies viperarum, quis demonstravit vobis fugere a ventura ira?",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 11,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Ephesians",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.0__m.2__f.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-1/articulus-3/finalis-contentus/paragraphus-26",
+    "paragraphNumber": 26,
+    "url": "/part-2/section-2/chapter-1/article-3#26"
+  },
+  "27": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-27/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-27/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-27/text-block-1/text-wrapper-1/text-1",
+                "content": "Ego quidem baptizo vos in aqua in poenitentiam: qui autem post me venturus est, fortior me est, cujus non sum dignus calceamenta portare: ipse vos baptizabit in Spiritu Sancto, et igni.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "398–401"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              34
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-27",
+    "paragraphNumber": 27,
+    "url": "/part-2/section-2/chapter-2#27"
+  },
+  "28": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-classis-1/paragraphus-28/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-classis-1/paragraphus-28/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-classis-1/paragraphus-28/text-block-1/text-wrapper-1/text-1",
+                "content": "Cujus ventilabrum in manu sua: et permundabit aream suam: et congregabit triticum suum in horreum, paleas autem comburet igni inextinguibili.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": []
+            },
+            "paragraphReferences": [
+              5
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__m.1__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/paragraphus-classis-1/paragraphus-28",
+    "paragraphNumber": 28,
+    "url": "/part-2/section-2/chapter-2#28"
+  },
+  "29": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__i__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/compendium/paragraphus-29/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/compendium/paragraphus-29/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/compendium/paragraphus-29/text-block-1/text-wrapper-1/text-1",
+                "content": "Joannes autem prohibebat eum, dicens: Ego a te debeo baptizari, et tu venis ad me?",
+                "strong": true,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": []
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__i__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/compendium/paragraphus-29",
+    "paragraphNumber": 29,
+    "url": "/part-2/section-2/chapter-2#29"
+  },
+  "30": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0",
+        "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/finalis-contentus/paragraphus-30/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/finalis-contentus/paragraphus-30/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "2__m.1__m.1__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/finalis-contentus/paragraphus-30/text-block-1/text-wrapper-1/text-1",
+                "content": "Tunc venit Jesus a Galilaea in Jordanem ad Joannem, ut baptizaretur ab eo.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": false,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "2__m.1__m.1__m.0__f.0__m.0",
+    "semanticPath": "pars-2/sectio-2/caput-2/articulus-1/finalis-contentus/paragraphus-30",
+    "paragraphNumber": 30,
+    "url": "/part-2/section-2/chapter-2#30"
+  },
+  "31": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-31/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-31/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-31/text-block-1/text-wrapper-1/text-1",
+                "content": "Et ecce vox de caelis dicens: Hic est Filius meus dilectus, in quo mihi complacui.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 3,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Christifideles Laici",
+                  "pointer": null
+                },
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Humanae Vitae",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": [
+              "16–17"
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-31",
+    "paragraphNumber": 31,
+    "url": "/part-3#31"
+  },
+  "32": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-32/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-32/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-32/text-block-1/text-wrapper-1/text-1",
+                "content": "Tunc Jesus ductus est in desertum a Spiritu, ut tentaretur a diabolo.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": true
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 4,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Micah",
+                  "chapter": 1,
+                  "verses": 1,
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": [
+              12
+            ]
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__m.1__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/paragraphus-classis-1/paragraphus-32",
+    "paragraphNumber": 32,
+    "url": "/part-3#32"
+  },
+  "33": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__i__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/compendium/paragraphus-33/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/compendium/paragraphus-33/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/compendium/paragraphus-33/text-block-1/text-wrapper-1/text-1",
+                "content": "Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes fiant.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 5,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__i__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/compendium/paragraphus-33",
+    "paragraphNumber": 33,
+    "url": "/part-3#33"
+  },
+  "34": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/finalis-contentus/paragraphus-34/text-block-1",
+        "supplementary": false,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/finalis-contentus/paragraphus-34/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.0__f.0__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/finalis-contentus/paragraphus-34/text-block-1/text-wrapper-1/text-1",
+                "content": "Et cum jejunasset quadraginta diebus, et quadraginta noctibus, postea esuriit.",
+                "strong": false,
+                "emphasis": false,
+                "smallCaps": false
+              }
+            ],
+            "finalContent": [],
+            "referenceCollection": {
+              "referenceNumber": 6,
+              "references": [
+                {
+                  "referenceType": "BIBLE",
+                  "direct": false,
+                  "folio": false,
+                  "book": "Genesis",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
+            },
+            "paragraphReferences": []
+          }
+        ],
+        "finalContent": []
+      }
+    ],
+    "finalContent": [],
+    "pathID": "3__m.0__m.0__m.0__f.0__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-1/finalis-contentus/paragraphus-34",
+    "paragraphNumber": 34,
+    "url": "/part-3#34"
+  },
+  "35": {
+    "contentType": "PARAGRAPH",
+    "openingContent": [],
+    "mainContent": [
+      {
+        "contentType": "TEXT_BLOCK",
+        "pathID": "3__m.0__m.0__m.1__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-35/text-block-1",
+        "supplementary": true,
+        "openingContent": [],
+        "mainContent": [
+          {
+            "contentType": "TEXT_WRAPPER",
+            "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-35/text-block-1/text-wrapper-1",
+            "openingContent": [],
+            "mainContent": [
+              {
+                "contentType": "TEXT",
+                "pathID": "3__m.0__m.0__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-35/text-block-1/text-wrapper-1/text-1",
+                "content": "Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super pinnaculum templi,",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -673,33 +1849,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/subarticulus-1/paragraphus-classis-1/paragraphus-14",
-    "paragraphNumber": 14,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#14"
+    "pathID": "3__m.0__m.0__m.1__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-35",
+    "paragraphNumber": 35,
+    "url": "/part-3/section-1/chapter-1/article-2#35"
   },
-  "15": {
+  "36": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/compendium/paragraphus-15/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-classis-1/paragraphus-36/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/compendium/paragraphus-15/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-classis-1/paragraphus-36/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/compendium/paragraphus-15/text-block-1/text-wrapper-1/text-1",
-                "content": "Ambulans autem Jesus juxta mare Galilaeae, vidit duos fratres, Simonem, qui vocatur Petrus, et Andream fratrem ejus, mittentes rete in mare (erant enim piscatores),",
+                "pathID": "3__m.0__m.0__m.1__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-classis-1/paragraphus-36/text-block-1/text-wrapper-1/text-1",
+                "content": "et dixit ei: Si Filius Dei es, mitte te deorsum. Scriptum est enim: Quia angelis suis mandavit de te, et in manibus tollent te, ne forte offendas ad lapidem pedem tuum.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -711,7 +1887,15 @@
               "references": [
                 {
                   "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "742"
+                },
+                {
+                  "referenceType": "OTHER",
                   "direct": false,
+                  "folio": false,
                   "source": "Christifideles Laici",
                   "pointer": "742"
                 }
@@ -724,33 +1908,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.1__i__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-2/compendium/paragraphus-15",
-    "paragraphNumber": 15,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-2#15"
+    "pathID": "3__m.0__m.0__m.1__m.1__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/paragraphus-classis-1/paragraphus-36",
+    "paragraphNumber": 36,
+    "url": "/part-3/section-1/chapter-1/article-2#36"
   },
-  "16": {
+  "37": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/subarticulus-1/paragraphus-classis-1/paragraphus-16/text-block-1",
+        "pathID": "3__m.0__m.0__m.1__i__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/compendium/paragraphus-37/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/subarticulus-1/paragraphus-classis-1/paragraphus-16/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/compendium/paragraphus-37/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/subarticulus-1/paragraphus-classis-1/paragraphus-16/text-block-1/text-wrapper-1/text-1",
-                "content": "et ait illis: Venite post me, et faciam vos fieri piscatores hominum.",
+                "pathID": "3__m.0__m.0__m.1__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/compendium/paragraphus-37/text-block-1/text-wrapper-1/text-1",
+                "content": "Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -768,476 +1952,32 @@
       }
     ],
     "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__m.0__m.0__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/subarticulus-1/paragraphus-classis-1/paragraphus-16",
-    "paragraphNumber": 16,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#16"
+    "pathID": "3__m.0__m.0__m.1__i__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-2/compendium/paragraphus-37",
+    "paragraphNumber": 37,
+    "url": "/part-3/section-1/chapter-1/article-2#37"
   },
-  "17": {
+  "38": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0",
-        "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/compendium/paragraphus-17/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-38/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/compendium/paragraphus-17/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-38/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "2__m.0__m.0__m.1__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/compendium/paragraphus-17/text-block-1/text-wrapper-1/text-1",
-                "content": "At illi continuo relictis retibus secuti sunt eum.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 11,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "2__m.0__m.0__m.1__m.2__i__m.0",
-    "semanticPath": "pars-2/sectio-1/caput-1/articulus-2/articulus-paragraphus-3/compendium/paragraphus-17",
-    "paragraphNumber": 17,
-    "url": "/part-2/section-1/chapter-1/article-2/article-paragraph-3#17"
-  },
-  "18": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-1/paragraphus-classis-1/paragraphus-18/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-1/paragraphus-classis-1/paragraphus-18/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-1/paragraphus-classis-1/paragraphus-18/text-block-1/text-wrapper-1/text-1",
-                "content": "Et procedens inde, vidit alios duos fratres, Jacobum Zebedaei, et Joannem fratrem ejus, in navi cum Zebedaeo patre eorum, reficientes retia sua: et vocavit eos.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-1/subarticulus-1/paragraphus-classis-1/paragraphus-18",
-    "paragraphNumber": 18,
-    "url": "/part-3#18"
-  },
-  "19": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.0__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-1/compendium/paragraphus-19/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-1/compendium/paragraphus-19/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-1/compendium/paragraphus-19/text-block-1/text-wrapper-1/text-1",
-                "content": "Illi autem statim relictis retibus et patre, secuti sunt eum.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Ch. IX, p.4"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.0__i__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-1/compendium/paragraphus-19",
-    "paragraphNumber": 19,
-    "url": "/part-3#19"
-  },
-  "20": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20/text-block-1/text-wrapper-1/text-1",
-                "content": "lilaea, et Decapoli, et de Jerosolymis, et de Judaea, et de trans Jordanem.",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": false,
-                  "source": "Gaudium et spes",
-                  "pointer": null
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Christifideles Laici",
-                  "pointer": "Article VII, 8, 3, 1-2"
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-20",
-    "paragraphNumber": 20,
-    "url": "/part-3/section-1/chapter-2#20"
-  },
-  "21": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.1__m.0__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/compendium/paragraphus-21/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/compendium/paragraphus-21/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.1__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/compendium/paragraphus-21/text-block-1/text-wrapper-1/text-1",
-                "content": "Tunc Jesus ductus est in desertum a Spiritu, ut tentaretur a diabolo.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 4,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.1__m.0__i__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-2/articulus-1/compendium/paragraphus-21",
-    "paragraphNumber": 21,
-    "url": "/part-3/section-1/chapter-2#21"
-  },
-  "22": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-22/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-22/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-22/text-block-1/text-wrapper-1/text-1",
-                "content": "Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes fiant.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Humanae Vitae",
-                  "pointer": "Ch. IX, p.4"
-                },
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Hebrews",
-                  "chapter": 1,
-                  "verses": "1–2",
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": [
-              6
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/subarticulus-1/paragraphus-22",
-    "paragraphNumber": 22,
-    "url": "/part-3/section-1/chapter-3#22"
-  },
-  "23": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.0__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/compendium/paragraphus-23/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/compendium/paragraphus-23/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.0__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/compendium/paragraphus-23/text-block-1/text-wrapper-1/text-1",
-                "content": "Qui respondens dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procedit de ore Dei.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "BIBLE",
-                  "direct": false,
-                  "book": "Micah",
-                  "chapter": 1,
-                  "verses": 1,
-                  "auxillaryText": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.0__m.2__m.0__i__m.0",
-    "semanticPath": "pars-3/sectio-1/caput-3/articulus-1/compendium/paragraphus-23",
-    "paragraphNumber": 23,
-    "url": "/part-3/section-1/chapter-3#23"
-  },
-  "24": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-1/subarticulus-1/paragraphus-24/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-1/subarticulus-1/paragraphus-24/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-1/subarticulus-1/paragraphus-24/text-block-1/text-wrapper-1/text-1",
-                "content": "Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super pinnaculum templi,",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": [
-              "7–8"
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-1/subarticulus-1/paragraphus-24",
-    "paragraphNumber": 24,
-    "url": "/part-3/section-2#24"
-  },
-  "25": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-2/subarticulus-1/paragraphus-classis-1/paragraphus-25/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-2/subarticulus-1/paragraphus-classis-1/paragraphus-25/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-2/subarticulus-1/paragraphus-classis-1/paragraphus-25/text-block-1/text-wrapper-1/text-1",
-                "content": "Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.1__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-2/subarticulus-1/paragraphus-classis-1/paragraphus-25",
-    "paragraphNumber": 25,
-    "url": "/part-3/section-2/chapter-2#25"
-  },
-  "26": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-26/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-26/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-26/text-block-1/text-wrapper-1/text-1",
+                "pathID": "3__m.0__m.0__m.2__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-38/text-block-1/text-wrapper-1/text-1",
                 "content": "et dixit ei: Haec omnia tibi dabo, si cadens adoraveris me.",
                 "strong": false,
                 "emphasis": false,
@@ -1246,128 +1986,20 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 2,
+              "referenceNumber": 12,
               "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                },
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "742"
-                }
-              ]
-            },
-            "paragraphReferences": [
-              17
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/subarticulus-1/paragraphus-classis-1/paragraphus-26",
-    "paragraphNumber": 26,
-    "url": "/part-3/section-2/chapter-3#26"
-  },
-  "27": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.0__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/compendium/paragraphus-27/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/compendium/paragraphus-27/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.0__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/compendium/paragraphus-27/text-block-1/text-wrapper-1/text-1",
-                "content": "Tunc dicit ei Jesus: Vade Satana: Scriptum est enim: Dominum Deum tuum adorabis, et illi soli servies.",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 3,
-              "references": [
-                {
-                  "referenceType": "OTHER",
-                  "direct": true,
-                  "source": "Gaudium et spes",
-                  "pointer": "Ch. IX, p.4"
-                },
                 {
                   "referenceType": "OTHER",
                   "direct": false,
+                  "folio": false,
                   "source": "Humanae Vitae",
                   "pointer": null
-                }
-              ]
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.1__m.2__m.0__i__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-3/articulus-1/compendium/paragraphus-27",
-    "paragraphNumber": 27,
-    "url": "/part-3/section-2/chapter-3#27"
-  },
-  "28": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/subarticulus-1/paragraphus-classis-1/paragraphus-28/text-block-1",
-        "supplementary": false,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/subarticulus-1/paragraphus-classis-1/paragraphus-28/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/subarticulus-1/paragraphus-classis-1/paragraphus-28/text-block-1/text-wrapper-1/text-1",
-                "content": "Cum autem audisset Jesus quod Joannes traditus esset, secessit in Galilaeam:",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 5,
-              "references": [
+                },
                 {
                   "referenceType": "BIBLE",
                   "direct": true,
-                  "book": "Acts of the Apostles",
+                  "folio": false,
+                  "book": "John",
                   "chapter": 1,
                   "verses": "1–2",
                   "auxillaryText": null
@@ -1381,33 +2013,33 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__m.0__m.0__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/subarticulus-1/paragraphus-classis-1/paragraphus-28",
-    "paragraphNumber": 28,
-    "url": "/part-3/section-2/chapter-3/article-2#28"
+    "pathID": "3__m.0__m.0__m.2__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-38",
+    "paragraphNumber": 38,
+    "url": "/part-3/section-1/chapter-1/article-3#38"
   },
-  "29": {
+  "39": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.1__m.2__m.1__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/compendium/paragraphus-29/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-classis-1/paragraphus-39/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/compendium/paragraphus-29/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-classis-1/paragraphus-39/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "3__m.1__m.2__m.1__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/compendium/paragraphus-29/text-block-1/text-wrapper-1/text-1",
-                "content": "et, relicta civitate Nazareth, venit, et habitavit in Capharnaum maritima, in finibus Zabulon et Nephthalim:",
+                "pathID": "3__m.0__m.0__m.2__m.1__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-classis-1/paragraphus-39/text-block-1/text-wrapper-1/text-1",
+                "content": "Tunc dicit ei Jesus: Vade Satana: Scriptum est enim: Dominum Deum tuum adorabis, et illi soli servies.",
                 "strong": false,
                 "emphasis": false,
                 "smallCaps": false
@@ -1415,7 +2047,7 @@
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 6,
+              "referenceNumber": 13,
               "references": []
             },
             "paragraphReferences": []
@@ -1425,132 +2057,59 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.1__m.2__m.1__i__m.0",
-    "semanticPath": "pars-3/sectio-2/caput-3/articulus-2/compendium/paragraphus-29",
-    "paragraphNumber": 29,
-    "url": "/part-3/section-2/chapter-3/article-2#29"
+    "pathID": "3__m.0__m.0__m.2__m.1__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/paragraphus-classis-1/paragraphus-39",
+    "paragraphNumber": 39,
+    "url": "/part-3/section-1/chapter-1/article-3#39"
   },
-  "30": {
+  "40": {
     "contentType": "PARAGRAPH",
     "openingContent": [],
     "mainContent": [
       {
         "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.0__m.0__m.0",
-        "semanticPath": "pars-3/sectio-3/paragraphus-classis-1/paragraphus-30/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.0__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-3/paragraphus-classis-1/paragraphus-30/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.0__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-3/paragraphus-classis-1/paragraphus-30/text-block-1/text-wrapper-1/text-1",
-                "content": "ut adimpleretur quod dictum est per Isaiam prophetam:",
-                "strong": true,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 1,
-              "references": []
-            },
-            "paragraphReferences": []
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.0__m.0",
-    "semanticPath": "pars-3/sectio-3/paragraphus-classis-1/paragraphus-30",
-    "paragraphNumber": 30,
-    "url": "/part-3/section-3#30"
-  },
-  "31": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__m.1__m.0__m.0",
-        "semanticPath": "pars-3/sectio-3/paragraphus-classis-2/paragraphus-31/text-block-1",
-        "supplementary": true,
-        "openingContent": [],
-        "mainContent": [
-          {
-            "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__m.1__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-3/paragraphus-classis-2/paragraphus-31/text-block-1/text-wrapper-1",
-            "openingContent": [],
-            "mainContent": [
-              {
-                "contentType": "TEXT",
-                "pathID": "3__m.2__m.1__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-3/paragraphus-classis-2/paragraphus-31/text-block-1/text-wrapper-1/text-1",
-                "content": "Terra Zabulon, et terra Nephthalim, via maris trans Jordanem, Galilaea gentium:",
-                "strong": false,
-                "emphasis": false,
-                "smallCaps": false
-              }
-            ],
-            "finalContent": [],
-            "referenceCollection": {
-              "referenceNumber": 2,
-              "references": []
-            },
-            "paragraphReferences": [
-              4
-            ]
-          }
-        ],
-        "finalContent": []
-      }
-    ],
-    "finalContent": [],
-    "pathID": "3__m.2__m.1__m.0",
-    "semanticPath": "pars-3/sectio-3/paragraphus-classis-2/paragraphus-31",
-    "paragraphNumber": 31,
-    "url": "/part-3/section-3#31"
-  },
-  "32": {
-    "contentType": "PARAGRAPH",
-    "openingContent": [],
-    "mainContent": [
-      {
-        "contentType": "TEXT_BLOCK",
-        "pathID": "3__m.2__i__m.0__m.0",
-        "semanticPath": "pars-3/sectio-3/compendium/paragraphus-32/text-block-1",
+        "pathID": "3__m.0__m.0__m.2__i__m.0__m.0",
+        "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/compendium/paragraphus-40/text-block-1",
         "supplementary": false,
         "openingContent": [],
         "mainContent": [
           {
             "contentType": "TEXT_WRAPPER",
-            "pathID": "3__m.2__i__m.0__m.0__m.0",
-            "semanticPath": "pars-3/sectio-3/compendium/paragraphus-32/text-block-1/text-wrapper-1",
+            "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0",
+            "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/compendium/paragraphus-40/text-block-1/text-wrapper-1",
             "openingContent": [],
             "mainContent": [
               {
                 "contentType": "TEXT",
-                "pathID": "3__m.2__i__m.0__m.0__m.0__m.0",
-                "semanticPath": "pars-3/sectio-3/compendium/paragraphus-32/text-block-1/text-wrapper-1/text-1",
-                "content": "populus, qui sedebat in tenebris, vidit lucem magnam: et sedentibus in regione umbrae mortis, lux orta est eis.",
+                "pathID": "3__m.0__m.0__m.2__i__m.0__m.0__m.0__m.0",
+                "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/compendium/paragraphus-40/text-block-1/text-wrapper-1/text-1",
+                "content": "Tunc reliquit eum diabolus: et ecce angeli accesserunt, et ministrabant ei.",
                 "strong": false,
                 "emphasis": false,
-                "smallCaps": true
+                "smallCaps": false
               }
             ],
             "finalContent": [],
             "referenceCollection": {
-              "referenceNumber": 3,
-              "references": []
+              "referenceNumber": 14,
+              "references": [
+                {
+                  "referenceType": "OTHER",
+                  "direct": true,
+                  "folio": false,
+                  "source": "Gaudium et spes",
+                  "pointer": "Ch. IX, p.4"
+                },
+                {
+                  "referenceType": "BIBLE",
+                  "direct": true,
+                  "folio": false,
+                  "book": "Psalms",
+                  "chapter": 1,
+                  "verses": "1–2",
+                  "auxillaryText": null
+                }
+              ]
             },
             "paragraphReferences": []
           }
@@ -1559,9 +2118,9 @@
       }
     ],
     "finalContent": [],
-    "pathID": "3__m.2__i__m.0",
-    "semanticPath": "pars-3/sectio-3/compendium/paragraphus-32",
-    "paragraphNumber": 32,
-    "url": "/part-3/section-3#32"
+    "pathID": "3__m.0__m.0__m.2__i__m.0",
+    "semanticPath": "pars-3/sectio-1/caput-1/articulus-3/compendium/paragraphus-40",
+    "paragraphNumber": 40,
+    "url": "/part-3/section-1/chapter-1/article-3#40"
   }
 }

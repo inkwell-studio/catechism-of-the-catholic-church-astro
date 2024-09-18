@@ -1,11 +1,12 @@
 import { assert, assertStrictEquals } from '$std/assert';
-import { DEFAULT_LANGUAGE } from '@catechism/source/types/language.ts';
-import { getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
+import { getLanguages } from '@catechism/source/utils/language.ts';
 
+import { path as joinPaths } from '../src/logic/navigation-utils.ts';
 import { translate } from '../src/logic/translation.ts';
 
 const baseUrl = 'http://localhost:8085';
-const supportedLanguages = getSupportedLanguages();
+const languages = getLanguages();
 
 //#region tests: static files
 Deno.test('website: static files', async (test) => {
@@ -83,8 +84,8 @@ Deno.test('website: rendered content', async (test) => {
     });
 
     await test.step('the `lang` attribute is correct for the landing page of each supported language', async (t) => {
-        for (const [_languageKey, language] of supportedLanguages) {
-            const url = `${language}/`;
+        for (const [_languageKey, language] of languages) {
+            const url = language;
 
             await t.step(url, async () => {
                 const r = await get(url);
@@ -103,8 +104,53 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
+    await test.step('can navigate to the Apostolic Letter', async (t) => {
+        const routes = getRoutesForAllLanguages('apostolic-letter');
+
+        for (const { route, language } of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+
+                const html = await r.text();
+                const lang = getLangAttribute(html);
+                assertStrictEquals(lang, language);
+            });
+        }
+    });
+
+    await test.step('can navigate to the Apostolic Constitution', async (t) => {
+        const routes = getRoutesForAllLanguages('apostolic-constitution');
+
+        for (const { route, language } of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+
+                const html = await r.text();
+                const lang = getLangAttribute(html);
+                assertStrictEquals(lang, language);
+            });
+        }
+    });
+
+    await test.step('can navigate to the glossary', async (t) => {
+        const routes = getRoutesForAllLanguages('glossary');
+
+        for (const { route, language } of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+
+                const html = await r.text();
+                const lang = getLangAttribute(html);
+                assertStrictEquals(lang, language);
+            });
+        }
+    });
+
     await test.step('can navigate to the prologue', async (t) => {
-        const routes = getAllTranslatableRoutes('/prologue/');
+        const routes = getAllTranslatableRoutes('/prologue');
 
         for (const route of routes) {
             await t.step(route, async () => {
@@ -122,7 +168,7 @@ Deno.test('website: rendered content', async (test) => {
             assertStrictEquals(r.status, 200);
         });
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             const route = `/${language}${paragraphRoute}`;
             await t.step(`${route}`, async () => {
                 const r = await get(route);
@@ -153,7 +199,7 @@ Deno.test('website: data API', async (test) => {
     await test.step('[language]/paragraph/: single paragraph number', async (t) => {
         const paragraphNumber = 12;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraph/${paragraphNumber}.json`);
                 assertStrictEquals(r.status, 200);
@@ -169,7 +215,7 @@ Deno.test('website: data API', async (test) => {
     await test.step('[language]/paragraph/: single paragraph number (out of range)', async (t) => {
         const paragraphNumber = 12000;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraph/${paragraphNumber}.json`);
                 assertStrictEquals(r.status, 404);
@@ -187,7 +233,7 @@ Deno.test('website: data API', async (test) => {
     await test.step('[language]/paragraphs/: single paragraph number', async (t) => {
         const paragraphNumber = 13;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraphs/${paragraphNumber}`);
                 assertStrictEquals(r.status, 200);
@@ -203,7 +249,7 @@ Deno.test('website: data API', async (test) => {
     await test.step('[language]/paragraphs/: single paragraph number (out of range)', async (t) => {
         const paragraphNumber = 13000;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraphs/${paragraphNumber}`);
                 assertStrictEquals(r.status, 200);
@@ -227,7 +273,7 @@ Deno.test('website: data API', async (test) => {
         const paragraphNumberEnd = 13;
         const diff = paragraphNumberEnd - paragraphNumberStart;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraphs/${paragraphNumberStart}-${paragraphNumberEnd}`);
                 assertStrictEquals(r.status, 200);
@@ -248,7 +294,7 @@ Deno.test('website: data API', async (test) => {
         const paragraphNumberEnd = 13;
         const diff = paragraphNumberEnd - paragraphNumberStart;
 
-        for (const [_languageKey, language] of supportedLanguages) {
+        for (const [_languageKey, language] of languages) {
             await t.step(`[${language}]`, async () => {
                 const r = await get(`${language}/paragraphs/${paragraphNumberStart}–${paragraphNumberEnd}`);
                 assertStrictEquals(r.status, 200);
@@ -280,13 +326,22 @@ function getLangAttribute(html: string): string | null {
     return regex.exec(html)?.[2] ?? null;
 }
 
+function getRoutesForAllLanguages(path: string): Array<{ route: string; language: Language }> {
+    return languages.map(([_languageKey, language]) =>
+        // deno-fmt-ignore
+        DEFAULT_LANGUAGE === language
+            ? { route: path, language }
+            : { route: joinPaths(language, path), language }
+    );
+}
+
 function getAllTranslatableRoutes(subpath: string): Array<string> {
     const routes = [
         // the default-language route
         subpath,
     ];
 
-    for (const [_languageKey, language] of supportedLanguages) {
+    for (const [_languageKey, language] of languages) {
         // deno-fmt-ignore
         // This is a simple path translation function, and only needs to be robust enough for the corresponding e2e tests to pass
         const translatedSubpath = subpath

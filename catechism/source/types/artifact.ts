@@ -1,4 +1,5 @@
 export enum Artifact {
+    GLOSSARY = 'glossary',
     RENDERABLE_PATH_ID_TO_CONTENT = 'renderable-path-id_to_content',
     PATH_ID_TO_RENDERABLE_NODES = 'path-id_to_renderable-nodes',
     PATH_ID_TO_URLS = 'path-id_to_urls',

@@ -1,5 +1,5 @@
 import { Language, SemanticPath } from '@catechism/source/types/types.ts';
-import { getLanguage, getSupportedLanguages } from '@catechism/source/utils/language.ts';
+import { getLanguage, getLanguages } from '@catechism/source/utils/language.ts';
 
 import { translate } from './translation.ts';
 
@@ -58,7 +58,7 @@ export function getUrlFragment(
  * @returns the language tag from the start of the given path, or `null` if no language tag is present at the start
  */
 export function getLanguageTag(path: string): Language | null {
-    for (const [_key, language] of getSupportedLanguages()) {
+    for (const [_key, language] of getLanguages()) {
         const regex = new RegExp(`(^|\/)?${language}(?=\/|$)`);
         const matches = path.match(regex);
 

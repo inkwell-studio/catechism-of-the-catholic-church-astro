@@ -14,7 +14,6 @@ import {
     Content,
     ContentBase,
     ContentContainer,
-    DEFAULT_LANGUAGE,
     InBriefContainer,
     Language,
     Mutable,
@@ -41,18 +40,8 @@ import {
     isSubarticle as isSubarticleOriginal,
     isText as isTextOriginal,
 } from '../../source/utils/content.ts';
-import { getSupportedLanguages } from '../../source/utils/language.ts';
 
-export function* getTranslations(catechism: CatechismStructure): Generator<CatechismStructure> {
-    const nonDefaultLanguages = getSupportedLanguages().filter(([_languageKey, language]) => DEFAULT_LANGUAGE !== language);
-
-    for (const [languageKey, language] of nonDefaultLanguages) {
-        console.log(`Translating [${languageKey}] ...`);
-        yield translate(catechism, language);
-    }
-}
-
-function translate(catechism: Mutable<CatechismStructure>, language: Language): CatechismStructure {
+export function translateCatechism(catechism: Mutable<CatechismStructure>, language: Language): CatechismStructure {
     catechism = structuredClone(catechism);
 
     setLanguage(language);

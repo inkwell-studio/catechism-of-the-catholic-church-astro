@@ -1,0 +1,15 @@
+---
+import Glossary from '@components/glossary.astro';
+import BaseLayout from '@layouts/base-layout.astro';
+import { ContentRoute, getLandingPageRoutes } from '@pages/_routes';
+
+export function getStaticPaths(): Array<ContentRoute> {
+    return getLandingPageRoutes();
+}
+
+const language = Astro.params.language;
+---
+
+<BaseLayout language={language}>
+    <Glossary language={language} />
+</BaseLayout>
