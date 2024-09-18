@@ -2,6 +2,8 @@
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 import BaseLayout from '@layouts/base-layout.astro';
 
+import { Slot } from '@logic/ui';
+
 export const prerender = false;
 
 // prettier-ignore
@@ -14,7 +16,7 @@ return Astro.redirect(redirectUrl, 308);
 ---
 
 <BaseLayout language={DEFAULT_LANGUAGE}>
-    <div class="flex flex-col justify-center items-center gap-6 mt-[20vh]">
+    <div slot={Slot.CONTENT} class="flex flex-col justify-center items-center gap-6 mt-[20vh]">
         <div>In a moment, you should be automatically redirected.</div>
         <div>If not, please click the link below:</div>
         <a href={redirectUrl} class="bg-white/30 dark:bg-white/10 text-sm font-mono p-4 rounded">{redirectUrl}</a>

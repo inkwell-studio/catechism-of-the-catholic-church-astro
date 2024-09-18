@@ -10,3 +10,7 @@ export enum ElementID {
 
     LANGUAGE_SWITCHER_WRAPPER = 'language-switcher-wrapper',
 }
+
+export enum Slot {
+    CONTENT = 'content',
+}

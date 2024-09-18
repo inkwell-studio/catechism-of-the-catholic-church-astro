@@ -3,6 +3,7 @@ import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 
 import Glossary from '@components/glossary.astro';
 import BaseLayout from '@layouts/base-layout.astro';
+import { Slot } from '@logic/ui';
 import { ContentRoute, getLandingPageRoutes } from '@pages/_routes';
 
 export function getStaticPaths(): Array<ContentRoute> {
@@ -13,5 +14,5 @@ const language = Astro.params.language;
 ---
 
 <BaseLayout language={DEFAULT_LANGUAGE}>
-    <Glossary language={DEFAULT_LANGUAGE} />
+    <Glossary slot={Slot.CONTENT} language={DEFAULT_LANGUAGE} />
 </BaseLayout>

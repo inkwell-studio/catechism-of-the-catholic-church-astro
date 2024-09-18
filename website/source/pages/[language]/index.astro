@@ -2,6 +2,7 @@
 import BaseLayout from '@layouts/base-layout.astro';
 
 import Home from '@components/home/content.astro';
+import { Slot } from '@logic/ui';
 import { ContentRoute, getLandingPageRoutes } from '@pages/_routes';
 
 export function getStaticPaths(): Array<ContentRoute> {
@@ -12,5 +13,5 @@ const language = Astro.params.language;
 ---
 
 <BaseLayout language={language}>
-    <Home language={language} />
+    <Home slot={Slot.CONTENT} language={language} />
 </BaseLayout>

@@ -1,5 +1,5 @@
-import { ElementID } from './element-id.ts';
 import { getParagraphNumber } from './routing.ts';
+import { ElementID } from './ui.ts';
 
 /**
  * @returns a new path constructed constructed from the segments.

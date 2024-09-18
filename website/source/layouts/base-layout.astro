@@ -74,8 +74,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
         <h1 class="text-center mt-16">{t('Catechism of the Catholic Church', language)}</h1>
 
         <div>
-            {/* content is inserted here */}
-            <slot />
+            {/* This slot name must match the `website/source/logic/ui.ts::Slot.CONTENT` enum value */}
+            <slot name="content" />
         </div>
 
         <div class="fixed bottom-0 inset-x-0">
