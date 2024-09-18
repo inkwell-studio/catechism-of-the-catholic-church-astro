@@ -5,7 +5,7 @@ website/source/env.d.ts
 website/.astro/
 
 # Astro build output
-website/dist/
+website/distribution/
 
 # dependencies
 website/node_modules/
