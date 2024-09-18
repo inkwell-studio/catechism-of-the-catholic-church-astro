@@ -25,7 +25,7 @@
   - [ ] see note in `website/src/artifacts.ts` about tyring to use `import.meta.*`
   - [ ] handle Vite rollup error from
         `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
-
+    - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
 - [ ] implement app shell with content-HTMX functionality
   - [ ] language switching: consider adding the React menu for proof of full functionality
   - [ ] add e2e tests for the table-of-contents pages?

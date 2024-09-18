@@ -1,3 +1,6 @@
+env:
+  ASTRO_TELEMETRY_DISABLED: true
+
 name: Deploy
 on:
   push:
