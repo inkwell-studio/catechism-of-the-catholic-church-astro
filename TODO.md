@@ -22,7 +22,7 @@
         - how the Search may be used (e.g. keywords, phrases, content titles, paragraph numbers)
         - how the JSON API may be used
   - [ ] ensure content navigation with HTMX works appropriately in all cases
-  - [ ] see note in `website/src/artifacts.ts` about tyring to use `import.meta.*`
+  - [ ] see note in `website/source/artifacts.ts` about tyring to use `import.meta.*`
   - [ ] handle Vite rollup error from
         `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
     - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
@@ -37,7 +37,7 @@
 - [ ] implement landing page
   - [ ] consider adding to the list of existing online versions of the CCC:
         https://dn790005.ca.archive.org/0/items/catechismofthecatholicchurch/Catechism%20of%20the%20Catholic%20Church%20-%20USCCB.pdf
-- [ ] look into removing `website/src/env.d.ts` (https://github.com/withastro/astro/pull/11859)
+- [ ] look into removing `website/source/env.d.ts` (https://github.com/withastro/astro/pull/11859)
 - [ ] update UI
   - [ ] look into the mobile apps that William mentioned, and their features:
     - Blue Letter Bible
@@ -73,7 +73,7 @@
   - [ ] update text on intro page
   - merge
   - [ ] consider using: https://react-spectrum.adobe.com/react-aria/index.html
-  - [ ] when relevant, re-add the following to the `deno.jsonc::check` task: `deno check website/src/**/*.tsx`
+  - [ ] when relevant, re-add the following to the `deno.jsonc::check` task: `deno check website/source/**/*.tsx`
   - [ ] implement Action Bar menus
     - [ ] Table of Contents
     - [ ] Search
@@ -93,11 +93,11 @@
 - [ ] consider opening the cross-reference window only after the desired response is received (or otherwise improve the behavior)
 - [ ] remove all unused artifacts and their generators
 - [ ] remove all unused artifact utility functions
-- [ ] remove all unused utility function (e.g. `website/src/logic/routing.ts::*`)
+- [ ] remove all unused utility function (e.g. `website/source/logic/routing.ts::*`)
 - [ ] remove unused entries from `translation.ts`
 - [ ] determine if the Catechism JSON artifacts should be created without formatting (will the saved disk space be beneficial?) (see
       `catechism/artifact-builders/build.ts`)
-- [ ] verify helper function usage (in the `website/src/logic` directory):
+- [ ] verify helper function usage (in the `website/source/logic` directory):
 - [ ] all exported functions are used externally
 - [ ] all functions are used
 

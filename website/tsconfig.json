@@ -3,10 +3,10 @@
         "baseUrl": ".",
         "paths": {
             "@catechism/*": ["../catechism/*"],
-            "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"],
-            "@logic/*": ["src/logic/*"],
-            "@pages/*": ["src/pages/*"]
+            "@components/*": ["source/components/*"],
+            "@layouts/*": ["source/layouts/*"],
+            "@logic/*": ["source/logic/*"],
+            "@pages/*": ["source/pages/*"]
         }
     }
 }

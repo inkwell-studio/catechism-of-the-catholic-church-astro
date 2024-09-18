@@ -50,7 +50,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
         {
             /* This script is necessary to prevent a flash of the inaccurate theme being applied. It must be included inline within the <head> element to function properly.
-            The logic and constant values here must be kept in sync with those of `src/logic/theme.ts`. */
+            The logic and constant values here must be kept in sync with those of `source/logic/theme.ts`. */
         }
         <script is:inline>
             (() => {

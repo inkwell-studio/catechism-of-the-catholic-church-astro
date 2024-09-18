@@ -2,8 +2,8 @@ import { assert, assertStrictEquals } from '$std/assert';
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
 import { getLanguages } from '@catechism/source/utils/language.ts';
 
-import { path as joinPaths } from '../src/logic/navigation-utils.ts';
-import { translate } from '../src/logic/translation.ts';
+import { path as joinPaths } from '../source/logic/navigation-utils.ts';
+import { translate } from '../source/logic/translation.ts';
 
 const baseUrl = 'http://localhost:8085';
 const languages = getLanguages();

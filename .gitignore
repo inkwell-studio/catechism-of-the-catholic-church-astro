@@ -1,5 +1,5 @@
 # TODO: The file may be able to removed in a future update of Astro: https://github.com/withastro/astro/pull/11859
-website/src/env.d.ts
+website/source/env.d.ts
 
 # generated types
 website/.astro/

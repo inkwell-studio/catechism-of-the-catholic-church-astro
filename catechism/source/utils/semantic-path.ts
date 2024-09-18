@@ -11,7 +11,7 @@ import {
     isSection,
     isSubarticle,
 } from '../utils/content.ts';
-import { translate } from '../../../website/src/logic/translation.ts';
+import { translate } from '../../../website/source/logic/translation.ts';
 
 /**
  * @param ancestors a list of ancestors of `child`, in descending order (i.e. `ancestors[i]` is the parent of `ancestors[i+1]`)

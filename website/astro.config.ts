@@ -12,6 +12,7 @@ export default defineConfig({
     site: baseUrl,
     output: 'hybrid',
     trailingSlash: 'never',
+    srcDir: 'source',
     adapter: deno(),
     integrations: [
         react(),

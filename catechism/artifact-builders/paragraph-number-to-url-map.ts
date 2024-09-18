@@ -1,6 +1,6 @@
 import { CatechismStructure, ParagraphNumberUrlMap } from '../source/types/types.ts';
 import { getAllParagraphs } from '../source/utils/content.ts';
-import { getUrl } from '../../website/src/logic/routing.ts';
+import { getUrl } from '../../website/source/logic/routing.ts';
 
 export function build(catechism: CatechismStructure): ParagraphNumberUrlMap {
     const urlMap: ParagraphNumberUrlMap = {};
