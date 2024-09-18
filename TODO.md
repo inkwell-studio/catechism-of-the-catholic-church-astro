@@ -1,15 +1,15 @@
 # References
 
-## Advanced translation needs
-
-- https://github.com/nanostores/i18n
-
 # Tasks to complete now
 
 - [ ] add routing for other content:
+  - [ ] implement app shell with content-HTMX functionality
+    - [ ] language switching: consider adding the React menu for proof of full functionality
+    - [ ] add e2e tests for the table-of-contents pages?
+    - [ ] implement "sketch" versions of the index pages
+  - add translation functionality for the home page
+    - consider using `https://github.com/nanostores/i18n`
   - [ ] pages (add e2e tests as you go)
-    - [ ] language-specific landing/"home" pages
-      - include layout demo
     - [ ] index: citations
       - include backend work
     - [ ] index: topics
@@ -26,10 +26,6 @@
   - [ ] handle Vite rollup error from
         `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
     - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
-- [ ] implement app shell with content-HTMX functionality
-  - [ ] language switching: consider adding the React menu for proof of full functionality
-  - [ ] add e2e tests for the table-of-contents pages?
-  - [ ] implement "sketch" versions of the index pages
 - [ ] add theme switching (light/dark/system)
 - [ ] consider adding a note to `DEVELOPMENT.md` about adding languages (does just `catechism/source/types/language.ts` have to be modified
       for additional language support, and the `~/pages/en/index.astro` path have to be modified if the default language changes?)

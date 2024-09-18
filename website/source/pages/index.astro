@@ -1,11 +1,10 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 
+import Home from '@components/home/content.astro';
 import BaseLayout from '@layouts/base-layout.astro';
 ---
 
 <BaseLayout language={DEFAULT_LANGUAGE}>
-    <div class="flex justify-center items-center">
-        <h1>Index: root</h1>
-    </div>
+    <Home language={DEFAULT_LANGUAGE} />
 </BaseLayout>
