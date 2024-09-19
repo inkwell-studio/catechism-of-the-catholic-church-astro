@@ -25,6 +25,8 @@ export enum BasicPath {
     APOSTOLIC_CONSTITUTION = 'apostolic-constitution',
     APOSTOLIC_LETTER = 'apostolic-letter',
     GLOSSARY = 'glossary',
+    INDEX_CITATIONS = 'index-citations',
+    INDEX_TOPICS = 'index-topics',
 }
 
 export const basicPaths = Object.values(BasicPath);

@@ -4,6 +4,7 @@ import { getLanguages } from '@catechism/source/utils/language.ts';
 
 import { path as joinPaths } from '../source/logic/navigation-utils.ts';
 import { translate } from '../source/logic/translation.ts';
+import { basicPaths } from '../source/pages/_routes.ts';
 
 const baseUrl = 'http://localhost:8085';
 const languages = getLanguages();
@@ -104,48 +105,20 @@ Deno.test('website: rendered content', async (test) => {
         }
     });
 
-    await test.step('can navigate to the Apostolic Letter', async (t) => {
-        const routes = getRoutesForAllLanguages('apostolic-letter');
+    await test.step('can navigate to all the basic pages', async (t) => {
+        for (const basicPath of basicPaths) {
+            const routes = getRoutesForAllLanguages(basicPath);
 
-        for (const { route, language } of routes) {
-            await t.step(route, async () => {
-                const r = await get(route);
-                assertStrictEquals(r.status, 200);
+            for (const { route, language } of routes) {
+                await t.step(route, async () => {
+                    const r = await get(route);
+                    assertStrictEquals(r.status, 200);
 
-                const html = await r.text();
-                const lang = getLangAttribute(html);
-                assertStrictEquals(lang, language);
-            });
-        }
-    });
-
-    await test.step('can navigate to the Apostolic Constitution', async (t) => {
-        const routes = getRoutesForAllLanguages('apostolic-constitution');
-
-        for (const { route, language } of routes) {
-            await t.step(route, async () => {
-                const r = await get(route);
-                assertStrictEquals(r.status, 200);
-
-                const html = await r.text();
-                const lang = getLangAttribute(html);
-                assertStrictEquals(lang, language);
-            });
-        }
-    });
-
-    await test.step('can navigate to the glossary', async (t) => {
-        const routes = getRoutesForAllLanguages('glossary');
-
-        for (const { route, language } of routes) {
-            await t.step(route, async () => {
-                const r = await get(route);
-                assertStrictEquals(r.status, 200);
-
-                const html = await r.text();
-                const lang = getLangAttribute(html);
-                assertStrictEquals(lang, language);
-            });
+                    const html = await r.text();
+                    const lang = getLangAttribute(html);
+                    assertStrictEquals(lang, language);
+                });
+            }
         }
     });
 
