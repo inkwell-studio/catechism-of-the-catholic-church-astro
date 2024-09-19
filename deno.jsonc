@@ -14,7 +14,7 @@
         "build-robots-txt": "deno run --allow-write website/source/robots.txt.ts",
 
         "build-website": "cd website && pnpm build && cd .. && deno task build-robots-txt",
-        "serve": "deno run --allow-read --allow-env --allow-net website/distribution/server/entry.mjs",
+        "serve": "deno run --allow-read --allow-env --allow-net website/dist/server/entry.mjs",
 
         "build": "deno task pre-commit && deno task build-website",
 
@@ -28,7 +28,7 @@
             "catechism/artifacts/*.json",
             "catechism/content/*.json",
             "website/.astro/",
-            "website/distribution/",
+            "website/dist/",
             "website/public/",
             "website/source/env.d.ts"
         ]
@@ -43,7 +43,7 @@
             "catechism/artifacts/*.json",
             "catechism/content/*.json",
             "website/.astro/",
-            "website/distribution/",
+            "website/dist/",
             "website/public/",
             "website/source/env.d.ts"
         ]

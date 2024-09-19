@@ -27,12 +27,17 @@ const languageUrlMap = pathID ? pathIdLanguageUrlMap[pathID] : [];
 const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
     let segment = '';
 
-    if (isBasicPath) {
+    if (!path) {
+        segment = '';
+    } else if (isBasicPath) {
         segment = path;
     } else if (paragraphNumber) {
         segment = paragraphNumber + '';
     } else {
         segment = languageUrlMap[language];
+        if (!segment) {
+            throw new Error(`A language-switching URL could not be determined (pathID: ${pathID}, language: ${language})`);
+        }
     }
 
     const languagePrefix = DEFAULT_LANGUAGE === language ? '' : language;

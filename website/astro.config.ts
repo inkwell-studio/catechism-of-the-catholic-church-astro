@@ -4,7 +4,7 @@ import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
-import { baseUrl, outputDirectoryName } from './config.ts';
+import { baseUrl } from './config.ts';
 import { DEFAULT_LANGUAGE } from '../catechism/source/types/types.ts';
 import { getLanguages } from '../catechism/source/utils/language.ts';
 
@@ -12,8 +12,7 @@ export default defineConfig({
     site: baseUrl,
     output: 'hybrid',
     trailingSlash: 'never',
-    srcDir: 'source',
-    outDir: outputDirectoryName,
+    srcDir: './source',
     adapter: deno(),
     integrations: [
         react(),

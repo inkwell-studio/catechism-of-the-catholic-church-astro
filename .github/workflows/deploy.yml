@@ -49,4 +49,4 @@ jobs:
         with:
           project: "catholic-catechism-astro"
           entrypoint: "server/entry.mjs"
-          root: "website/distribution"
+          root: "website/dist"

@@ -1,7 +1,6 @@
 import { build as buildMockGlossary } from './build/artifacts/glossary.ts';
 import { buildMockData } from './build/build.ts';
-import { LIMITS_SIZE } from './build/config/defaults.ts';
-import { setLimits } from './build/config/limits.ts';
+import { LimitsSize, setLimits } from './build/config/limits.ts';
 import { setLanguage } from './language/language-state.ts';
 import { translateCatechism } from './language/translate.ts';
 
@@ -12,7 +11,7 @@ run();
 
 function run(): void {
     console.log('\nBuilding mock data...');
-    setLimits(LIMITS_SIZE);
+    setLimits(LimitsSize.MEDIUM);
 
     const catechism = buildMockData();
     const translatedCatechisms = getTranslatedCatechisms(catechism);

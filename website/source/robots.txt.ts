@@ -1,4 +1,4 @@
-import { baseUrl, outputDirectoryName } from '../config.ts';
+import { baseUrl } from '../config.ts';
 
 createRobotsTxt();
 
@@ -10,5 +10,5 @@ Disallow: /
 Sitemap: ${baseUrl}/sitemap-index.xml
 `;
 
-    await Deno.writeTextFile(`website/${outputDirectoryName}/client/robots.txt`, text);
+    await Deno.writeTextFile('website/dist/client/robots.txt', text);
 }
