@@ -21,23 +21,23 @@ export interface CrossReferenceRoute {
     };
 }
 
-export enum Path {
+export enum BasicPath {
     APOSTOLIC_CONSTITUTION = 'apostolic-constitution',
     APOSTOLIC_LETTER = 'apostolic-letter',
+    GLOSSARY = 'glossary',
 }
 
-export function getApostolicConstitutionRoutes(): Array<ContentRoute> {
-    return languages.map((language) => {
-        const prefix = DEFAULT_LANGUAGE === language ? '' : language;
-        return { params: { language, path: joinPaths('/', prefix, Path.APOSTOLIC_CONSTITUTION) } };
-    });
-}
+export const basicPaths = Object.values(BasicPath);
 
-export function getApostolicLetterRoutes(): Array<ContentRoute> {
-    return languages.map((language) => {
-        const prefix = DEFAULT_LANGUAGE === language ? '' : language;
-        return { params: { language, path: joinPaths('/', prefix, Path.APOSTOLIC_LETTER) } };
-    });
+export function getBasicRoutes(): Array<ContentRoute> {
+    return basicPaths.flatMap((basicPath) =>
+        languages.map((language) => {
+            const prefix = DEFAULT_LANGUAGE === language ? '' : language;
+            const path = joinPaths('/', prefix, basicPath);
+
+            return { params: { language, path } };
+        })
+    );
 }
 
 export function getCrossReferencePartialRoutes(): Array<CrossReferenceRoute> {

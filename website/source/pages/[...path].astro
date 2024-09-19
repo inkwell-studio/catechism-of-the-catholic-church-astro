@@ -5,24 +5,17 @@ import BaseLayout from '@layouts/base-layout.astro';
 import CatechismContentWrapper from '@components/catechism-content/catechism-content-wrapper.astro';
 import ApostolicConstitution from '@components/apostolic-constitution/apostolic-constitution.astro';
 import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro';
+import Glossary from '@components/glossary.astro';
 
 import { getAllParagraphNumbersSync, getParagraphPathIdMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { getLanguageTag, getParagraphNumber, removeLanguageTag } from '@logic/routing';
 import { Slot } from '@logic/ui';
-import {
-    ContentRoute,
-    getApostolicConstitutionRoutes,
-    getApostolicLetterRoutes,
-    getParagraphNumberRoutes,
-    getTableOfContentsRoutes,
-    Path,
-} from '@pages/_routes';
+import { BasicPath, ContentRoute, getBasicRoutes, getParagraphNumberRoutes, getTableOfContentsRoutes } from '@pages/_routes';
 
 export function getStaticPaths(): Array<ContentRoute> {
     // prettier-ignore
     return [
-        ...getApostolicConstitutionRoutes(),
-        ...getApostolicLetterRoutes(),
+        ...getBasicRoutes(),
         ...getParagraphNumberRoutes(),
         ...getTableOfContentsRoutes()
     ];
@@ -30,8 +23,10 @@ export function getStaticPaths(): Array<ContentRoute> {
 
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
-const isApostolicConstitution = Path.APOSTOLIC_CONSTITUTION === path;
-const isApostolicLetter = Path.APOSTOLIC_LETTER === path;
+
+const isApostolicConstitution = BasicPath.APOSTOLIC_CONSTITUTION === path;
+const isApostolicLetter = BasicPath.APOSTOLIC_LETTER === path;
+const isGlossary = BasicPath.GLOSSARY === path;
 
 let pathID = null;
 
@@ -56,6 +51,7 @@ const isCatechismContent = !!pathID;
     <Fragment slot={Slot.CONTENT}>
         {isApostolicConstitution && <ApostolicConstitution language={language} />}
         {isApostolicLetter && <ApostolicLetter language={language} />}
+        {isGlossary && <Glossary language={language} />}
         {isCatechismContent && <CatechismContentWrapper pathID={pathID} language={language} />}
     </Fragment>
 </BaseLayout>

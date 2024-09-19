@@ -5,6 +5,7 @@ import { getLanguages } from '@catechism/source/utils/language';
 import { getPathIdLanguageUrlMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { path as joinPaths } from '@logic/navigation-utils';
 import { getParagraphNumber, removeLanguageTag } from '@logic/routing';
+import { BasicPath, basicPaths } from '@pages/_routes';
 
 interface Props {
     currentLanguage: Language;
@@ -17,21 +18,25 @@ const pathIdLanguageUrlMap = getPathIdLanguageUrlMapSync();
 
 const path = removeLanguageTag(Astro.params.path, currentLanguage);
 const pathID = semanticPathPathIdMap[path] ?? null;
-const paragraphNumber = getParagraphNumber(path);
 
+const isBasicPath = basicPaths.includes(path as BasicPath);
+
+const paragraphNumber = getParagraphNumber(path);
 const languageUrlMap = pathID ? pathIdLanguageUrlMap[pathID] : [];
 
 const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
-    let path = '';
+    let segment = '';
 
-    if (paragraphNumber) {
-        path = paragraphNumber + '';
+    if (isBasicPath) {
+        segment = path;
+    } else if (paragraphNumber) {
+        segment = paragraphNumber + '';
     } else {
-        path = languageUrlMap[language];
+        segment = languageUrlMap[language];
     }
 
     const languagePrefix = DEFAULT_LANGUAGE === language ? '' : language;
-    const url = joinPaths('/', languagePrefix, path);
+    const url = joinPaths('/', languagePrefix, segment);
 
     return { languageKey, language, url };
 });

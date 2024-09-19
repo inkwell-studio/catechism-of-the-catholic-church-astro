@@ -16,7 +16,6 @@
     - [ ] table of contents (same page as above?)
     - [ ] concordance (?)
     - [ ] project-explanation landing page (no need to populate it yet)
-    - [ ] handle language-switching navigation links
       - eventually add:
         - what the CCC is
         - how the Search may be used (e.g. keywords, phrases, content titles, paragraph numbers)
