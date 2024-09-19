@@ -63,7 +63,7 @@ function createDomChangeObserver(): MutationObserver {
             if (hash) {
                 document.getElementById(hash.slice(1))?.scrollIntoView();
             } else {
-                document.getElementById(ElementID.CATECHISM_CONTENT_WRAPPER)?.scrollIntoView();
+                document.getElementById(ElementID.CONTENT_WRAPPER)?.scrollIntoView();
             }
         }
 

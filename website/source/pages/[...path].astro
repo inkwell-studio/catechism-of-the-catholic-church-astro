@@ -1,10 +1,10 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 
-import BaseLayout from '@layouts/base-layout.astro';
-import CatechismContentWrapper from '@components/catechism-content/catechism-content-wrapper.astro';
 import ApostolicConstitution from '@components/apostolic-constitution/apostolic-constitution.astro';
 import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro';
+import BaseLayout from '@layouts/base-layout.astro';
+import CatechismContent from '@components/catechism-content/catechism-content.astro';
 import Glossary from '@components/glossary.astro';
 import IndexCitations from '@components/index-citations.astro';
 import IndexTopics from '@components/index-topics.astro';
@@ -54,11 +54,15 @@ const isCatechismContent = !!pathID;
 <BaseLayout language={language}>
     <Fragment slot={Slot.CONTENT}>
         {isApostolicConstitution && <ApostolicConstitution language={language} />}
-        {isApostolicLetter && <ApostolicLetter language={language} />}
-        {isGlossary && <Glossary language={language} />}
-        {isIndexCitations && <IndexCitations language={language} />}
-        {isIndexTopics && <IndexTopics language={language} />}
 
-        {isCatechismContent && <CatechismContentWrapper pathID={pathID} language={language} />}
+        {isApostolicLetter && <ApostolicLetter language={language} />}
+
+        {isCatechismContent && <CatechismContent pathID={pathID} language={language} />}
+
+        {isGlossary && <Glossary language={language} />}
+
+        {isIndexCitations && <IndexCitations language={language} />}
+
+        {isIndexTopics && <IndexTopics language={language} />}
     </Fragment>
 </BaseLayout>

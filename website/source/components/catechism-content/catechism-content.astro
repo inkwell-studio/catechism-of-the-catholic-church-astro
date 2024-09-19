@@ -27,8 +27,11 @@ const previousUrl = renderableNodes?.previous?.url;
         - Finalize the bottom padding when the position and height of the navigation buttons container is finalized
     */
 }
-<div class="max-w-prose mx-auto pt-8 pb-32 break-all">
-    {content && <ContentBase content={content} language={language} />}
+<!-- Finalize the height when the UI is finalized (ensure it handles the case of the screen being taller than the content) -->
+<div class="min-h-[calc(100vh_-_4rem)] grid grid-rows-[1fr_auto] border border-white/20 relative">
+    <div class="max-w-prose mx-auto pt-8 pb-32 break-all">
+        {content && <ContentBase content={content} language={language} />}
+    </div>
 </div>
 
 <!-- TODO: Finalize the `bottom` positioning when the height of the action bar is finalized (the construction paradigm may need to be improved) -->

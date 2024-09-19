@@ -1,6 +1,6 @@
 export enum ElementID {
-    CATECHISM_CONTENT_WRAPPER = 'catechism-content-wrapper',
-    CATECHISM_CONTENT_WRAPPER_SELECTOR = '#catechism-content-wrapper',
+    CONTENT_WRAPPER = 'content-wrapper',
+    CONTENT_WRAPPER_SELECTOR = '#content-wrapper',
 
     CROSS_REFERENCE_CONTENT = 'cross-reference-content',
 
