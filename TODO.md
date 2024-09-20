@@ -2,6 +2,13 @@
 
 # Tasks to complete now
 
+- [ ] handle Vite rollup error from
+      `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
+  - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
+- [ ] move the Glossary artifact out of the "artifacts" domain — it is not an artifact like the rest, since it is not derived from the
+      Catechism data
+  - consider adding a note to the `artifacts` directory (or somewhere) about them being derived from the Catechism JSON data
+- [ ] see note in `website/source/artifacts.ts` about tyring to use `import.meta.*`
 - [ ] add routing for other content:
   - [ ] implement app shell with content-HTMX functionality
     - [ ] language switching: consider adding the React menu for proof of full functionality
@@ -16,10 +23,6 @@
         - how the JSON API may be used
   - [ ] populate the index pages
   - [ ] ensure content navigation with HTMX works appropriately in all cases
-  - [ ] see note in `website/source/artifacts.ts` about tyring to use `import.meta.*`
-  - [ ] handle Vite rollup error from
-        `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
-    - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
 - [ ] add theme switching (light/dark/system)
 - [ ] consider adding a note to `DEVELOPMENT.md` about adding languages (does just `catechism/source/types/language.ts` have to be modified
       for additional language support, and the `~/pages/en/index.astro` path have to be modified if the default language changes?)

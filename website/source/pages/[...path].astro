@@ -6,13 +6,13 @@ import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro
 import BaseLayout from '@layouts/base-layout.astro';
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
 import Glossary from '@components/glossary.astro';
+import Home from '@components/home/content.astro';
 import IndexCitations from '@components/index-citations.astro';
 import IndexTopics from '@components/index-topics.astro';
 
 import { getAllParagraphNumbersSync, getParagraphPathIdMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { getLanguageTag, getParagraphNumber, removeLanguageTag } from '@logic/routing';
-import { Slot } from '@logic/ui';
-import { BasicPath, ContentRoute, getBasicRoutes, getParagraphNumberRoutes, getTableOfContentsRoutes } from '@pages/_routes';
+import { BasicPath, basicPaths, ContentRoute, getBasicRoutes, getParagraphNumberRoutes, getTableOfContentsRoutes } from '@pages/_routes';
 
 export function getStaticPaths(): Array<ContentRoute> {
     // prettier-ignore
@@ -26,15 +26,17 @@ export function getStaticPaths(): Array<ContentRoute> {
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
 
-const isApostolicConstitution = BasicPath.APOSTOLIC_CONSTITUTION === path;
-const isApostolicLetter = BasicPath.APOSTOLIC_LETTER === path;
+const isHome = !path;
 const isGlossary = BasicPath.GLOSSARY === path;
-const isIndexCitations = BasicPath.INDEX_CITATIONS === path;
 const isIndexTopics = BasicPath.INDEX_TOPICS === path;
+const isIndexCitations = BasicPath.INDEX_CITATIONS === path;
+const isApostolicLetter = BasicPath.APOSTOLIC_LETTER === path;
+const isApostolicConstitution = BasicPath.APOSTOLIC_CONSTITUTION === path;
 
 let pathID = null;
 
-if (!isApostolicConstitution && !isApostolicLetter) {
+const isPotentialContentPath = path && !basicPaths.includes(path as BasicPath);
+if (isPotentialContentPath) {
     pathID = getSemanticPathPathIdMapSync(language)[path] ?? null;
 
     if (!pathID) {
@@ -52,17 +54,17 @@ const isCatechismContent = !!pathID;
 ---
 
 <BaseLayout language={language}>
-    <Fragment slot={Slot.CONTENT}>
-        {isApostolicConstitution && <ApostolicConstitution language={language} />}
+    {isHome && <Home language={language} />}
 
-        {isApostolicLetter && <ApostolicLetter language={language} />}
+    {isGlossary && <Glossary language={language} />}
 
-        {isCatechismContent && <CatechismContent pathID={pathID} language={language} />}
+    {isIndexTopics && <IndexTopics language={language} />}
 
-        {isGlossary && <Glossary language={language} />}
+    {isIndexCitations && <IndexCitations language={language} />}
 
-        {isIndexCitations && <IndexCitations language={language} />}
+    {isApostolicLetter && <ApostolicLetter language={language} />}
 
-        {isIndexTopics && <IndexTopics language={language} />}
-    </Fragment>
+    {isApostolicConstitution && <ApostolicConstitution language={language} />}
+
+    {isCatechismContent && <CatechismContent pathID={pathID} language={language} />}
 </BaseLayout>

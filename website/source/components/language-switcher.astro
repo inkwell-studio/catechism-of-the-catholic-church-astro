@@ -36,12 +36,19 @@ const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
     } else {
         segment = languageUrlMap[language];
         if (!segment) {
-            throw new Error(`A language-switching URL could not be determined (pathID: ${pathID}, language: ${language})`);
+            throw new Error(`A language-switching URL could not be determined (path: ${path}, pathID: ${pathID}, language: ${language})`);
         }
     }
 
-    const languagePrefix = DEFAULT_LANGUAGE === language ? '' : language;
-    const url = joinPaths('/', languagePrefix, segment);
+    // prettier-ignore
+    const languagePrefix = DEFAULT_LANGUAGE === language
+        ? ''
+        : language;
+
+    // prettier-ignore
+    const url = !languagePrefix && !segment
+        ? '/'
+        : joinPaths('/', languagePrefix, segment);
 
     return { languageKey, language, url };
 });

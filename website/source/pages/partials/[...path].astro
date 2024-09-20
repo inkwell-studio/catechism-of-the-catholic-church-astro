@@ -1,27 +1,54 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/language';
 
+import ApostolicConstitution from '@components/apostolic-constitution/apostolic-constitution.astro';
+import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro';
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
+import Glossary from '@components/glossary.astro';
+import Home from '@components/home/content.astro';
+import IndexCitations from '@components/index-citations.astro';
+import IndexTopics from '@components/index-topics.astro';
 import Replacement from '@components/replacement.astro';
 
 import { getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { getLanguageTag, removeLanguageTag } from '@logic/routing';
 import { ElementID } from '@logic/ui';
-import { ContentRoute, getTableOfContentsRoutes } from '@pages/_routes';
+import { BasicPath, ContentRoute, getBasicRoutes, getTableOfContentsRoutes } from '@pages/_routes';
 import LanguageSwitcher from '../../components/language-switcher.astro';
 
 export const partial = true;
 
 export function getStaticPaths(): Array<ContentRoute> {
-    return getTableOfContentsRoutes();
+    return [...getBasicRoutes(), ...getTableOfContentsRoutes()];
 }
 
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
 const pathID = getSemanticPathPathIdMapSync(language)[path] ?? null;
+
+const isHome = !path;
+const isGlossary = BasicPath.GLOSSARY === path;
+const isIndexTopics = BasicPath.INDEX_TOPICS === path;
+const isIndexCitations = BasicPath.INDEX_CITATIONS === path;
+const isApostolicLetter = BasicPath.APOSTOLIC_LETTER === path;
+const isApostolicConstitution = BasicPath.APOSTOLIC_CONSTITUTION === path;
+
+const isCatechismContent = !!pathID;
 ---
 
-{pathID && <CatechismContent pathID={pathID} language={language} />}
+{isHome && <Home language={language} />}
+
+{isGlossary && <Glossary language={language} />}
+
+{isIndexTopics && <IndexTopics language={language} />}
+
+{isIndexCitations && <IndexCitations language={language} />}
+
+{isApostolicLetter && <ApostolicLetter language={language} />}
+
+{isApostolicConstitution && <ApostolicConstitution language={language} />}
+
+{isCatechismContent && <CatechismContent pathID={pathID} language={language} />}
 
 <Replacement target={ElementID.LANGUAGE_SWITCHER_WRAPPER}>
     <LanguageSwitcher currentLanguage={language} />

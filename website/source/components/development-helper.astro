@@ -1,10 +1,11 @@
 ---
-import { Language } from '@catechism/source/types/types';
-import { getLanguages } from '@catechism/source/utils/language';
+import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types';
 
-import TableOfContentsDemo from '@components/table-of-contents-demo.astro';
-
+import PartialLink from '@components/partial-link.astro';
+import { getTableOfContentsSync } from '@logic/artifacts';
 import { path } from '@logic/navigation-utils';
+import { ElementID } from '@logic/ui';
+import { BasicPath } from '../pages/_routes';
 
 interface Props {
     language: Language;
@@ -12,25 +13,86 @@ interface Props {
 
 const { language } = Astro.props;
 
-const languages = getLanguages().map(([key, lang]) => lang);
+const linkClasses = 'block opacity-80 rounded p-4 text-center hover:bg-white/10';
+
+// prettier-ignore
+const homeClientUrl = DEFAULT_LANGUAGE === language
+    ? '/'
+    : `/${language}`;
+
+const homeContentUrl = path('/partials', homeClientUrl);
+
+const basicPathLinks = [
+    ['AP Const.', BasicPath.APOSTOLIC_CONSTITUTION],
+    ['AP Letter', BasicPath.APOSTOLIC_LETTER],
+    ['Glossary', BasicPath.GLOSSARY],
+    ['Index | C', BasicPath.INDEX_CITATIONS],
+    ['Index | T', BasicPath.INDEX_TOPICS],
+].map(([label, segment]) => {
+    // prettier-ignore
+    const clientUrl = DEFAULT_LANGUAGE === language
+        ? path(segment)
+        : path('/', language, segment);
+
+    const contentUrl = path('/partials', clientUrl);
+
+    return {
+        label,
+        clientUrl,
+        contentUrl,
+    };
+});
+
+const tableOfContents = getTableOfContentsSync(language);
+const tocEntries = [tableOfContents.prologue, ...tableOfContents.parts].map((entry) => {
+    // prettier-ignore
+    const clientUrl = DEFAULT_LANGUAGE === language
+        ? path(entry.url)
+        : path('/', language, entry.url);
+
+    const contentUrl = path('/partials', clientUrl);
+
+    return {
+        clientUrl,
+        contentUrl,
+        label: entry.title,
+    };
+});
 ---
 
 <div
     class="opacity-20 hover:opacity-100 flex flex-col gap-2 p-3 rounded border-4 border-black/20 dark:border-white/20 transition-opacity delay-100 hover:delay-0"
 >
-    <TableOfContentsDemo language={language} />
+    <div class="flex flex-col align-stretch gap-4">
+        <PartialLink target={ElementID.CONTENT_WRAPPER_SELECTOR} clientUrl={homeClientUrl} contentUrl={homeContentUrl} class={linkClasses}>
+            Home
+        </PartialLink>
 
-    <div class="font-bold font-mono text-center py-4 border-b border-white/40">{language}</div>
-
-    <ul class="flex flex-col align-stretch gap-4">
+        <div class="h-px border-t border-dashed border-white/40"></div>
         {
-            languages.map((language) => (
-                <li>
-                    <a class="block font-mono text-center opacity-80 p-4 hover:bg-white/20 rounded" href={path('/', language)}>
-                        {language}
-                    </a>
-                </li>
+            tocEntries.map((entry) => (
+                <PartialLink
+                    target={ElementID.CONTENT_WRAPPER_SELECTOR}
+                    clientUrl={entry.clientUrl}
+                    contentUrl={entry.contentUrl}
+                    class={linkClasses}
+                >
+                    {entry.label}
+                </PartialLink>
             ))
         }
-    </ul>
+        <div class="h-px border-t border-dashed border-white/40"></div>
+        {
+            basicPathLinks.map((entry) => (
+                <PartialLink
+                    target={ElementID.CONTENT_WRAPPER_SELECTOR}
+                    clientUrl={entry.clientUrl}
+                    contentUrl={entry.contentUrl}
+                    class={linkClasses}
+                >
+                    {entry.label}
+                </PartialLink>
+            ))
+        }
+    </div>
 </div>

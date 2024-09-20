@@ -18,7 +18,7 @@ export function Subtitle(props: { text: string }): JSX.Element {
 export function AuthorText(props: { lines: Array<string> }): JSX.Element {
     return (
         <div className='flex flex-col items-center'>
-            {props.lines.map((text) => <span>{text}</span>)}
+            {props.lines.map((text, i) => <span key={i}>{text}</span>)}
         </div>
     );
 }

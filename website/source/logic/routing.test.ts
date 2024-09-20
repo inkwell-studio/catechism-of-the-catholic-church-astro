@@ -240,6 +240,7 @@ Deno.test('getUrl(): low-level content within a subsequent ArticleParagraph', ()
 //#region getLanguageTag
 Deno.test('getLanguageTag()', async (t) => {
     const testCases = [
+        [undefined, null],
         ['', null],
         ['/', null],
         ['abc', null],
@@ -265,7 +266,7 @@ Deno.test('getLanguageTag()', async (t) => {
     ] as const;
 
     for (const [path, expectedResult] of testCases) {
-        await t.step(path, () => {
+        await t.step(path ?? `(${JSON.stringify(path)})`, () => {
             const result = getLanguageTag(path);
             assertStrictEquals(result, expectedResult);
         });
@@ -276,6 +277,7 @@ Deno.test('getLanguageTag()', async (t) => {
 //#region removeLanguageTag
 Deno.test('removeLanguageTag()', async (t) => {
     const testCases = [
+        [DEFAULT_LANGUAGE, undefined, ''],
         [DEFAULT_LANGUAGE, 'abc/xyz', 'abc/xyz'],
         [DEFAULT_LANGUAGE, 'abc/xyz/', 'abc/xyz/'],
         [DEFAULT_LANGUAGE, '/abc/xyz', '/abc/xyz'],
@@ -297,7 +299,7 @@ Deno.test('removeLanguageTag()', async (t) => {
     ] as const;
 
     for (const [language, path, expectedResult] of testCases) {
-        await t.step(path, () => {
+        await t.step(path ?? `(${JSON.stringify(path)})`, () => {
             const result = removeLanguageTag(path, language);
             assertStrictEquals(result, expectedResult);
         });

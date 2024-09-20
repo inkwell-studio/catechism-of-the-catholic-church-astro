@@ -12,3 +12,5 @@ website/node_modules/
 
 # macOS-specific files
 .DS_Store
+
+scratch.ts

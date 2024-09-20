@@ -1,4 +1,7 @@
 import { assert, assertStrictEquals } from '$std/assert';
+
+import crossReferenceMap from '@catechism/artifacts/paragraph-cross-reference_to_content-en.json' with { type: 'json' };
+
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
 import { getLanguages } from '@catechism/source/utils/language.ts';
 
@@ -64,23 +67,26 @@ Deno.test('website: rendered content', async (test) => {
         assertStrictEquals(lang, DEFAULT_LANGUAGE);
     });
 
-    await test.step('paths with the default language code are redirected to the same subpath without the language code', async () => {
+    await test.step('paths with the default language code are redirected to the same subpath without the language code', async (t) => {
         const testCases = [
-            `${DEFAULT_LANGUAGE}/`,
-            `${DEFAULT_LANGUAGE}/prologue/`,
+            DEFAULT_LANGUAGE,
+            `${DEFAULT_LANGUAGE}/prologue`,
         ];
 
-        for (const url of testCases) {
-            const r = await get(url);
+        for (const path of testCases) {
+            await t.step(path, async () => {
+                const r = await get(path);
 
-            assert(r.redirected);
+                assert(r.redirected);
 
-            const expectedUrl = baseUrl + url.slice(2);
-            assertStrictEquals(r.url, expectedUrl);
+                const pathWithoutLanguageTag = path.slice(2);
+                const expectedUrl = new URL(pathWithoutLanguageTag, baseUrl).href;
+                assertStrictEquals(r.url, expectedUrl);
 
-            const html = await r.text();
-            const lang = getLangAttribute(html);
-            assertStrictEquals(lang, DEFAULT_LANGUAGE);
+                const html = await r.text();
+                const lang = getLangAttribute(html);
+                assertStrictEquals(lang, DEFAULT_LANGUAGE);
+            });
         }
     });
 
@@ -154,6 +160,76 @@ Deno.test('website: rendered content', async (test) => {
         await close(responses);
     });
 });
+//#endregion
+
+//#region test: partials
+Deno.test('website: partials', async (test) => {
+    const responses: Array<Response> = [];
+
+    async function get(url = ''): Promise<Response> {
+        url = new URL(url, baseUrl).href;
+
+        const response = await fetch(new Request(url));
+        responses.push(response);
+
+        return response;
+    }
+
+    await test.step('basic pages', async (t) => {
+        for (const basicPath of basicPaths) {
+            const routes = getRoutesForAllLanguages(basicPath);
+
+            for (let { route, language: _language } of routes) {
+                route = joinPaths('partials', route);
+
+                await t.step(route, async () => {
+                    const r = await get(route);
+                    assertStrictEquals(r.status, 200);
+                });
+            }
+        }
+    });
+
+    await test.step('prologue', async (t) => {
+        const routes = getAllTranslatableRoutes('/prologue', true).map((route) => joinPaths('partials', route));
+
+        for (const route of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+            });
+        }
+    });
+
+    await test.step('cross-references', async (t) => {
+        const crossReferences = Object.keys(crossReferenceMap);
+        const crossReferenceSingleNumber = crossReferences.find((ref) => !ref.includes('–'));
+        const crossReferenceNumberRange = crossReferences.find((ref) => ref.includes('–'));
+
+        assert(crossReferenceSingleNumber, 'this test requires a single-number cross-reference to exist');
+        assert(crossReferenceNumberRange, 'this test requires a number-range cross-reference to exist');
+
+        const routes = languages.flatMap(([_languageKey, language]) =>
+            [
+                crossReferenceSingleNumber,
+                crossReferenceNumberRange, // en-dash
+                crossReferenceNumberRange.replace('–', '-'), // hyphen
+            ].map((crossReference) => joinPaths('partials/cross-reference', language, crossReference))
+        );
+
+        for (const route of routes) {
+            await t.step(route, async () => {
+                const r = await get(route);
+                assertStrictEquals(r.status, 200);
+            });
+        }
+    });
+
+    await test.step('close all responses', async () => {
+        await close(responses);
+    });
+});
+
 //#endregion
 
 //#region tests: data API
@@ -308,7 +384,7 @@ function getRoutesForAllLanguages(path: string): Array<{ route: string; language
     );
 }
 
-function getAllTranslatableRoutes(subpath: string): Array<string> {
+function getAllTranslatableRoutes(subpath: string, omitDefaultLanguageTag = false): Array<string> {
     const routes = [
         // the default-language route
         subpath,
@@ -326,7 +402,11 @@ function getAllTranslatableRoutes(subpath: string): Array<string> {
             .join('/');
 
         // It is assumed that `translatedSubpath` includes a preceding slash
-        routes.push(language + translatedSubpath);
+        if (omitDefaultLanguageTag && DEFAULT_LANGUAGE === language) {
+            routes.push(translatedSubpath);
+        } else {
+            routes.push(language + translatedSubpath);
+        }
     }
 
     return routes;

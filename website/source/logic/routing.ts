@@ -57,13 +57,15 @@ export function getUrlFragment(
 /**
  * @returns the language tag from the start of the given path, or `null` if no language tag is present at the start
  */
-export function getLanguageTag(path: string): Language | null {
-    for (const [_key, language] of getLanguages()) {
-        const regex = new RegExp(`(^|\/)?${language}(?=\/|$)`);
-        const matches = path.match(regex);
+export function getLanguageTag(path: string | undefined): Language | null {
+    if (path) {
+        for (const [_key, language] of getLanguages()) {
+            const regex = new RegExp(`(^|\/)?${language}(?=\/|$)`);
+            const matches = path.match(regex);
 
-        if (matches?.[0]) {
-            return matches?.[0].replaceAll('/', '') as Language;
+            if (matches?.[0]) {
+                return matches?.[0].replaceAll('/', '') as Language;
+            }
         }
     }
 
@@ -75,18 +77,22 @@ export function getLanguageTag(path: string): Language | null {
  * It assumes that the language segment will either be the first segment or absent.
  * `path` may or may not start with a slash (`/`).
  */
-export function removeLanguageTag(path: string, language: Language): string {
-    const regex = new RegExp('^/?' + language + '(\/|$)');
+export function removeLanguageTag(path: string | undefined, language: Language): string {
+    if (path) {
+        const regex = new RegExp('^/?' + language + '(\/|$)');
 
-    const containsLanguageTag = regex.test(path);
-    if (containsLanguageTag) {
-        path = path.replace(language, '');
-        if (path.length > 1) {
-            path = path.slice(1);
+        const containsLanguageTag = regex.test(path);
+        if (containsLanguageTag) {
+            path = path.replace(language, '');
+            if (path.length > 1) {
+                path = path.slice(1);
+            }
         }
-    }
 
-    return path;
+        return path;
+    } else {
+        return '';
+    }
 }
 
 export function getLanguageFromPathname(pathname: string): Language | null {

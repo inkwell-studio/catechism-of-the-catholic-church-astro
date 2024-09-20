@@ -10,7 +10,7 @@ const languages = getLanguages().map(([_languageKey, language]) => language);
 export interface ContentRoute {
     params: {
         language: Language;
-        path: string;
+        path: string | undefined;
     };
 }
 
@@ -22,11 +22,12 @@ export interface CrossReferenceRoute {
 }
 
 export enum BasicPath {
-    APOSTOLIC_CONSTITUTION = 'apostolic-constitution',
-    APOSTOLIC_LETTER = 'apostolic-letter',
+    HOME = '',
     GLOSSARY = 'glossary',
-    INDEX_CITATIONS = 'index-citations',
     INDEX_TOPICS = 'index-topics',
+    INDEX_CITATIONS = 'index-citations',
+    APOSTOLIC_LETTER = 'apostolic-letter',
+    APOSTOLIC_CONSTITUTION = 'apostolic-constitution',
 }
 
 export const basicPaths = Object.values(BasicPath);
@@ -34,10 +35,15 @@ export const basicPaths = Object.values(BasicPath);
 export function getBasicRoutes(): Array<ContentRoute> {
     return basicPaths.flatMap((basicPath) =>
         languages.map((language) => {
-            const prefix = DEFAULT_LANGUAGE === language ? '' : language;
-            const path = joinPaths('/', prefix, basicPath);
+            const isDefaultLanguage = DEFAULT_LANGUAGE === language;
 
-            return { params: { language, path } };
+            if (isDefaultLanguage && BasicPath.HOME === basicPath) {
+                return { params: { language, path: undefined } };
+            } else {
+                const prefix = isDefaultLanguage ? '' : language;
+                const path = joinPaths('/', prefix, basicPath);
+                return { params: { language, path } };
+            }
         })
     );
 }

@@ -7,7 +7,7 @@
     "semanticPath": "prologo",
     "url": "/prologo",
     "firstParagraphNumber": 1,
-    "lastParagraphNumber": 3,
+    "lastParagraphNumber": 15,
     "children": [
       {
         "contentType": "SUB_ARTICLE",
@@ -16,7 +16,7 @@
         "semanticPath": "prologo/subartículo-1",
         "url": "/prologo#subartículo-1",
         "firstParagraphNumber": 1,
-        "lastParagraphNumber": 1,
+        "lastParagraphNumber": 5,
         "children": []
       },
       {
@@ -25,8 +25,8 @@
         "pathID": "0__m.1",
         "semanticPath": "prologo/subartículo-2",
         "url": "/prologo#subartículo-2",
-        "firstParagraphNumber": 2,
-        "lastParagraphNumber": 2,
+        "firstParagraphNumber": 6,
+        "lastParagraphNumber": 8,
         "children": []
       },
       {
@@ -35,8 +35,8 @@
         "pathID": "0__m.2",
         "semanticPath": "prologo/subartículo-3",
         "url": "/prologo#subartículo-3",
-        "firstParagraphNumber": 3,
-        "lastParagraphNumber": 3,
+        "firstParagraphNumber": 9,
+        "lastParagraphNumber": 15,
         "children": []
       }
     ]
@@ -48,8 +48,8 @@
       "pathID": "1",
       "semanticPath": "parte-1",
       "url": "/parte-1",
-      "firstParagraphNumber": 4,
-      "lastParagraphNumber": 11,
+      "firstParagraphNumber": 16,
+      "lastParagraphNumber": 146,
       "children": [
         {
           "contentType": "SECTION",
@@ -57,8 +57,8 @@
           "pathID": "1__m.0",
           "semanticPath": "parte-1/seccion-1",
           "url": "/parte-1#seccion-1",
-          "firstParagraphNumber": 4,
-          "lastParagraphNumber": 11,
+          "firstParagraphNumber": 16,
+          "lastParagraphNumber": 84,
           "children": [
             {
               "contentType": "CHAPTER",
@@ -66,72 +66,28 @@
               "pathID": "1__m.0__m.0",
               "semanticPath": "parte-1/seccion-1/capitulo-1",
               "url": "/parte-1#seccion-1/capitulo-1",
-              "firstParagraphNumber": 5,
-              "lastParagraphNumber": 8,
+              "firstParagraphNumber": 16,
+              "lastParagraphNumber": 26,
               "children": [
                 {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 1",
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
                   "pathID": "1__m.0__m.0__m.0",
-                  "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1",
-                  "url": "/parte-1#seccion-1/capitulo-1/articulo-1",
-                  "firstParagraphNumber": 5,
-                  "lastParagraphNumber": 6,
-                  "children": [
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulo Parrafo 1",
-                      "pathID": "1__m.0__m.0__m.0__m.0",
-                      "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1",
-                      "url": "/parte-1#seccion-1/capitulo-1/articulo-1/articulo-parrafo-1",
-                      "firstParagraphNumber": 5,
-                      "lastParagraphNumber": 6,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Resumen",
-                          "pathID": "1__m.0__m.0__m.0__m.0__i",
-                          "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen",
-                          "url": "/parte-1#seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen",
-                          "firstParagraphNumber": 6,
-                          "lastParagraphNumber": 6,
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
+                  "semanticPath": "parte-1/seccion-1/capitulo-1/subartículo-1",
+                  "url": "/parte-1#seccion-1/capitulo-1/subartículo-1",
+                  "firstParagraphNumber": 16,
+                  "lastParagraphNumber": 19,
+                  "children": []
                 },
                 {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 2",
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
                   "pathID": "1__m.0__m.0__m.1",
-                  "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2",
-                  "url": "/parte-1/seccion-1/capitulo-1/articulo-2",
-                  "firstParagraphNumber": 7,
-                  "lastParagraphNumber": 8,
-                  "children": [
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulo Parrafo 1",
-                      "pathID": "1__m.0__m.0__m.1__m.0",
-                      "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1",
-                      "url": "/parte-1/seccion-1/capitulo-1/articulo-2#articulo-parrafo-1",
-                      "firstParagraphNumber": 7,
-                      "lastParagraphNumber": 8,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Resumen",
-                          "pathID": "1__m.0__m.0__m.1__m.0__i",
-                          "semanticPath": "parte-1/seccion-1/capitulo-1/articulo-2/articulo-parrafo-1/resumen",
-                          "url": "/parte-1/seccion-1/capitulo-1/articulo-2#articulo-parrafo-1/resumen",
-                          "firstParagraphNumber": 8,
-                          "lastParagraphNumber": 8,
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
+                  "semanticPath": "parte-1/seccion-1/capitulo-1/subartículo-2",
+                  "url": "/parte-1#seccion-1/capitulo-1/subartículo-2",
+                  "firstParagraphNumber": 20,
+                  "lastParagraphNumber": 26,
+                  "children": []
                 }
               ]
             },
@@ -141,18 +97,82 @@
               "pathID": "1__m.0__m.1",
               "semanticPath": "parte-1/seccion-1/capitulo-2",
               "url": "/parte-1/seccion-1/capitulo-2",
-              "firstParagraphNumber": 9,
-              "lastParagraphNumber": 9,
+              "firstParagraphNumber": 27,
+              "lastParagraphNumber": 71,
               "children": [
                 {
-                  "contentType": "SUB_ARTICLE",
-                  "title": "Subartículo 1",
+                  "contentType": "ARTICLE",
+                  "title": "Articulo 1",
                   "pathID": "1__m.0__m.1__m.0",
-                  "semanticPath": "parte-1/seccion-1/capitulo-2/subartículo-1",
-                  "url": "/parte-1/seccion-1/capitulo-2#subartículo-1",
-                  "firstParagraphNumber": 9,
-                  "lastParagraphNumber": 9,
-                  "children": []
+                  "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1",
+                  "url": "/parte-1/seccion-1/capitulo-2#articulo-1",
+                  "firstParagraphNumber": 27,
+                  "lastParagraphNumber": 71,
+                  "children": [
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 1",
+                      "pathID": "1__m.0__m.1__m.0__m.0",
+                      "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-1",
+                      "url": "/parte-1/seccion-1/capitulo-2#articulo-1/articulo-parrafo-1",
+                      "firstParagraphNumber": 27,
+                      "lastParagraphNumber": 40,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "1__m.0__m.1__m.0__m.0__i",
+                          "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-1/resumen",
+                          "url": "/parte-1/seccion-1/capitulo-2#articulo-1/articulo-parrafo-1/resumen",
+                          "firstParagraphNumber": 38,
+                          "lastParagraphNumber": 40,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 2",
+                      "pathID": "1__m.0__m.1__m.0__m.1",
+                      "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-2",
+                      "url": "/parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-2",
+                      "firstParagraphNumber": 41,
+                      "lastParagraphNumber": 56,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "1__m.0__m.1__m.0__m.1__i",
+                          "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-2/resumen",
+                          "url": "/parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-2#resumen",
+                          "firstParagraphNumber": 53,
+                          "lastParagraphNumber": 56,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 3",
+                      "pathID": "1__m.0__m.1__m.0__m.2",
+                      "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-3",
+                      "url": "/parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-3",
+                      "firstParagraphNumber": 57,
+                      "lastParagraphNumber": 71,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "1__m.0__m.1__m.0__m.2__i",
+                          "semanticPath": "parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-3/resumen",
+                          "url": "/parte-1/seccion-1/capitulo-2/articulo-1/articulo-parrafo-3#resumen",
+                          "firstParagraphNumber": 67,
+                          "lastParagraphNumber": 71,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -162,8 +182,8 @@
               "pathID": "1__m.0__m.2",
               "semanticPath": "parte-1/seccion-1/capitulo-3",
               "url": "/parte-1/seccion-1/capitulo-3",
-              "firstParagraphNumber": 10,
-              "lastParagraphNumber": 11,
+              "firstParagraphNumber": 72,
+              "lastParagraphNumber": 84,
               "children": [
                 {
                   "contentType": "ARTICLE",
@@ -171,30 +191,196 @@
                   "pathID": "1__m.0__m.2__m.0",
                   "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1",
                   "url": "/parte-1/seccion-1/capitulo-3#articulo-1",
-                  "firstParagraphNumber": 10,
-                  "lastParagraphNumber": 11,
+                  "firstParagraphNumber": 72,
+                  "lastParagraphNumber": 84,
                   "children": [
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subartículo 1",
-                      "pathID": "1__m.0__m.2__m.0__m.0",
-                      "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/subartículo-1",
-                      "url": "/parte-1/seccion-1/capitulo-3#articulo-1/subartículo-1",
-                      "firstParagraphNumber": 10,
-                      "lastParagraphNumber": 10,
-                      "children": []
-                    },
                     {
                       "contentType": "IN_BRIEF",
                       "title": "Resumen",
                       "pathID": "1__m.0__m.2__m.0__i",
                       "semanticPath": "parte-1/seccion-1/capitulo-3/articulo-1/resumen",
                       "url": "/parte-1/seccion-1/capitulo-3#articulo-1/resumen",
-                      "firstParagraphNumber": 11,
-                      "lastParagraphNumber": 11,
+                      "firstParagraphNumber": 81,
+                      "lastParagraphNumber": 84,
                       "children": []
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "contentType": "SECTION",
+          "title": "Seccion 2",
+          "pathID": "1__m.1",
+          "semanticPath": "parte-1/seccion-2",
+          "url": "/parte-1/seccion-2",
+          "firstParagraphNumber": 85,
+          "lastParagraphNumber": 146,
+          "children": [
+            {
+              "contentType": "CHAPTER",
+              "title": "Capitulo 1",
+              "pathID": "1__m.1__m.0",
+              "semanticPath": "parte-1/seccion-2/capitulo-1",
+              "url": "/parte-1/seccion-2#capitulo-1",
+              "firstParagraphNumber": 85,
+              "lastParagraphNumber": 127,
+              "children": [
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulo 1",
+                  "pathID": "1__m.1__m.0__m.0",
+                  "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-1",
+                  "url": "/parte-1/seccion-2#capitulo-1/articulo-1",
+                  "firstParagraphNumber": 85,
+                  "lastParagraphNumber": 98,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 1",
+                      "pathID": "1__m.1__m.0__m.0__m.0",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-1/subartículo-1",
+                      "url": "/parte-1/seccion-2#capitulo-1/articulo-1/subartículo-1",
+                      "firstParagraphNumber": 85,
+                      "lastParagraphNumber": 88,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 2",
+                      "pathID": "1__m.1__m.0__m.0__m.1",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-1/subartículo-2",
+                      "url": "/parte-1/seccion-2#capitulo-1/articulo-1/subartículo-2",
+                      "firstParagraphNumber": 89,
+                      "lastParagraphNumber": 94,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Resumen",
+                      "pathID": "1__m.1__m.0__m.0__i",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-1/resumen",
+                      "url": "/parte-1/seccion-2#capitulo-1/articulo-1/resumen",
+                      "firstParagraphNumber": 95,
+                      "lastParagraphNumber": 98,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulo 2",
+                  "pathID": "1__m.1__m.0__m.1",
+                  "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-2",
+                  "url": "/parte-1/seccion-2/capitulo-1/articulo-2",
+                  "firstParagraphNumber": 99,
+                  "lastParagraphNumber": 116,
+                  "children": [
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 1",
+                      "pathID": "1__m.1__m.0__m.1__m.0",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-2/subartículo-1",
+                      "url": "/parte-1/seccion-2/capitulo-1/articulo-2#subartículo-1",
+                      "firstParagraphNumber": 99,
+                      "lastParagraphNumber": 102,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 2",
+                      "pathID": "1__m.1__m.0__m.1__m.1",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-2/subartículo-2",
+                      "url": "/parte-1/seccion-2/capitulo-1/articulo-2#subartículo-2",
+                      "firstParagraphNumber": 103,
+                      "lastParagraphNumber": 105,
+                      "children": []
+                    },
+                    {
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 3",
+                      "pathID": "1__m.1__m.0__m.1__m.2",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-2/subartículo-3",
+                      "url": "/parte-1/seccion-2/capitulo-1/articulo-2#subartículo-3",
+                      "firstParagraphNumber": 106,
+                      "lastParagraphNumber": 111,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Resumen",
+                      "pathID": "1__m.1__m.0__m.1__i",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-2/resumen",
+                      "url": "/parte-1/seccion-2/capitulo-1/articulo-2#resumen",
+                      "firstParagraphNumber": 112,
+                      "lastParagraphNumber": 116,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "contentType": "ARTICLE",
+                  "title": "Articulo 3",
+                  "pathID": "1__m.1__m.0__m.2",
+                  "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-3",
+                  "url": "/parte-1/seccion-2/capitulo-1/articulo-3",
+                  "firstParagraphNumber": 117,
+                  "lastParagraphNumber": 127,
+                  "children": [
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Resumen",
+                      "pathID": "1__m.1__m.0__m.2__i",
+                      "semanticPath": "parte-1/seccion-2/capitulo-1/articulo-3/resumen",
+                      "url": "/parte-1/seccion-2/capitulo-1/articulo-3#resumen",
+                      "firstParagraphNumber": 125,
+                      "lastParagraphNumber": 127,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "contentType": "CHAPTER",
+              "title": "Capitulo 2",
+              "pathID": "1__m.1__m.1",
+              "semanticPath": "parte-1/seccion-2/capitulo-2",
+              "url": "/parte-1/seccion-2/capitulo-2",
+              "firstParagraphNumber": 128,
+              "lastParagraphNumber": 146,
+              "children": [
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
+                  "pathID": "1__m.1__m.1__m.0",
+                  "semanticPath": "parte-1/seccion-2/capitulo-2/subartículo-1",
+                  "url": "/parte-1/seccion-2/capitulo-2#subartículo-1",
+                  "firstParagraphNumber": 128,
+                  "lastParagraphNumber": 132,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
+                  "pathID": "1__m.1__m.1__m.1",
+                  "semanticPath": "parte-1/seccion-2/capitulo-2/subartículo-2",
+                  "url": "/parte-1/seccion-2/capitulo-2#subartículo-2",
+                  "firstParagraphNumber": 133,
+                  "lastParagraphNumber": 138,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 3",
+                  "pathID": "1__m.1__m.1__m.2",
+                  "semanticPath": "parte-1/seccion-2/capitulo-2/subartículo-3",
+                  "url": "/parte-1/seccion-2/capitulo-2#subartículo-3",
+                  "firstParagraphNumber": 139,
+                  "lastParagraphNumber": 146,
+                  "children": []
                 }
               ]
             }
@@ -208,8 +394,8 @@
       "pathID": "2",
       "semanticPath": "parte-2",
       "url": "/parte-2",
-      "firstParagraphNumber": 12,
-      "lastParagraphNumber": 30,
+      "firstParagraphNumber": 147,
+      "lastParagraphNumber": 275,
       "children": [
         {
           "contentType": "SECTION",
@@ -217,112 +403,78 @@
           "pathID": "2__m.0",
           "semanticPath": "parte-2/seccion-1",
           "url": "/parte-2#seccion-1",
-          "firstParagraphNumber": 13,
-          "lastParagraphNumber": 19,
+          "firstParagraphNumber": 147,
+          "lastParagraphNumber": 171,
           "children": [
             {
-              "contentType": "CHAPTER",
-              "title": "Capitulo 1",
+              "contentType": "ARTICLE",
+              "title": "Articulo 1",
               "pathID": "2__m.0__m.0",
-              "semanticPath": "parte-2/seccion-1/capitulo-1",
-              "url": "/parte-2#seccion-1/capitulo-1",
-              "firstParagraphNumber": 13,
-              "lastParagraphNumber": 14,
+              "semanticPath": "parte-2/seccion-1/articulo-1",
+              "url": "/parte-2#seccion-1/articulo-1",
+              "firstParagraphNumber": 151,
+              "lastParagraphNumber": 159,
               "children": [
                 {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 1",
-                  "pathID": "2__m.0__m.0__m.0",
-                  "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1",
-                  "url": "/parte-2#seccion-1/capitulo-1/articulo-1",
-                  "firstParagraphNumber": 13,
-                  "lastParagraphNumber": 14,
-                  "children": [
-                    {
-                      "contentType": "ARTICLE_PARAGRAPH",
-                      "title": "Articulo Parrafo 1",
-                      "pathID": "2__m.0__m.0__m.0__m.0",
-                      "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1",
-                      "url": "/parte-2#seccion-1/capitulo-1/articulo-1/articulo-parrafo-1",
-                      "firstParagraphNumber": 13,
-                      "lastParagraphNumber": 14,
-                      "children": [
-                        {
-                          "contentType": "IN_BRIEF",
-                          "title": "Resumen",
-                          "pathID": "2__m.0__m.0__m.0__m.0__i",
-                          "semanticPath": "parte-2/seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen",
-                          "url": "/parte-2#seccion-1/capitulo-1/articulo-1/articulo-parrafo-1/resumen",
-                          "firstParagraphNumber": 14,
-                          "lastParagraphNumber": 14,
-                          "children": []
-                        }
-                      ]
-                    }
-                  ]
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "2__m.0__m.0__i",
+                  "semanticPath": "parte-2/seccion-1/articulo-1/resumen",
+                  "url": "/parte-2#seccion-1/articulo-1/resumen",
+                  "firstParagraphNumber": 155,
+                  "lastParagraphNumber": 159,
+                  "children": []
                 }
               ]
             },
             {
-              "contentType": "CHAPTER",
-              "title": "Capitulo 2",
+              "contentType": "ARTICLE",
+              "title": "Articulo 2",
               "pathID": "2__m.0__m.1",
-              "semanticPath": "parte-2/seccion-1/capitulo-2",
-              "url": "/parte-2/seccion-1/capitulo-2",
-              "firstParagraphNumber": 15,
-              "lastParagraphNumber": 19,
+              "semanticPath": "parte-2/seccion-1/articulo-2",
+              "url": "/parte-2/seccion-1/articulo-2",
+              "firstParagraphNumber": 160,
+              "lastParagraphNumber": 171,
               "children": [
                 {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 1",
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
                   "pathID": "2__m.0__m.1__m.0",
-                  "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1",
-                  "url": "/parte-2/seccion-1/capitulo-2#articulo-1",
-                  "firstParagraphNumber": 15,
-                  "lastParagraphNumber": 16,
-                  "children": [
-                    {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subartículo 1",
-                      "pathID": "2__m.0__m.1__m.0__m.0",
-                      "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/subartículo-1",
-                      "url": "/parte-2/seccion-1/capitulo-2#articulo-1/subartículo-1",
-                      "firstParagraphNumber": 15,
-                      "lastParagraphNumber": 15,
-                      "children": []
-                    },
-                    {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "2__m.0__m.1__m.0__i",
-                      "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-1/resumen",
-                      "url": "/parte-2/seccion-1/capitulo-2#articulo-1/resumen",
-                      "firstParagraphNumber": 16,
-                      "lastParagraphNumber": 16,
-                      "children": []
-                    }
-                  ]
+                  "semanticPath": "parte-2/seccion-1/articulo-2/subartículo-1",
+                  "url": "/parte-2/seccion-1/articulo-2#subartículo-1",
+                  "firstParagraphNumber": 160,
+                  "lastParagraphNumber": 161,
+                  "children": []
                 },
                 {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 2",
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
                   "pathID": "2__m.0__m.1__m.1",
-                  "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2",
-                  "url": "/parte-2/seccion-1/capitulo-2/articulo-2",
-                  "firstParagraphNumber": 17,
-                  "lastParagraphNumber": 19,
-                  "children": [
-                    {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "2__m.0__m.1__m.1__i",
-                      "semanticPath": "parte-2/seccion-1/capitulo-2/articulo-2/resumen",
-                      "url": "/parte-2/seccion-1/capitulo-2/articulo-2#resumen",
-                      "firstParagraphNumber": 19,
-                      "lastParagraphNumber": 19,
-                      "children": []
-                    }
-                  ]
+                  "semanticPath": "parte-2/seccion-1/articulo-2/subartículo-2",
+                  "url": "/parte-2/seccion-1/articulo-2#subartículo-2",
+                  "firstParagraphNumber": 162,
+                  "lastParagraphNumber": 163,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 3",
+                  "pathID": "2__m.0__m.1__m.2",
+                  "semanticPath": "parte-2/seccion-1/articulo-2/subartículo-3",
+                  "url": "/parte-2/seccion-1/articulo-2#subartículo-3",
+                  "firstParagraphNumber": 164,
+                  "lastParagraphNumber": 168,
+                  "children": []
+                },
+                {
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "2__m.0__m.1__i",
+                  "semanticPath": "parte-2/seccion-1/articulo-2/resumen",
+                  "url": "/parte-2/seccion-1/articulo-2#resumen",
+                  "firstParagraphNumber": 169,
+                  "lastParagraphNumber": 171,
+                  "children": []
                 }
               ]
             }
@@ -334,159 +486,232 @@
           "pathID": "2__m.1",
           "semanticPath": "parte-2/seccion-2",
           "url": "/parte-2/seccion-2",
-          "firstParagraphNumber": 20,
-          "lastParagraphNumber": 30,
+          "firstParagraphNumber": 172,
+          "lastParagraphNumber": 199,
+          "children": [
+            {
+              "contentType": "ARTICLE",
+              "title": "Articulo 1",
+              "pathID": "2__m.1__m.0",
+              "semanticPath": "parte-2/seccion-2/articulo-1",
+              "url": "/parte-2/seccion-2#articulo-1",
+              "firstParagraphNumber": 172,
+              "lastParagraphNumber": 181,
+              "children": [
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
+                  "pathID": "2__m.1__m.0__m.0",
+                  "semanticPath": "parte-2/seccion-2/articulo-1/subartículo-1",
+                  "url": "/parte-2/seccion-2#articulo-1/subartículo-1",
+                  "firstParagraphNumber": 172,
+                  "lastParagraphNumber": 174,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
+                  "pathID": "2__m.1__m.0__m.1",
+                  "semanticPath": "parte-2/seccion-2/articulo-1/subartículo-2",
+                  "url": "/parte-2/seccion-2#articulo-1/subartículo-2",
+                  "firstParagraphNumber": 175,
+                  "lastParagraphNumber": 178,
+                  "children": []
+                },
+                {
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "2__m.1__m.0__i",
+                  "semanticPath": "parte-2/seccion-2/articulo-1/resumen",
+                  "url": "/parte-2/seccion-2#articulo-1/resumen",
+                  "firstParagraphNumber": 179,
+                  "lastParagraphNumber": 181,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "contentType": "ARTICLE",
+              "title": "Articulo 2",
+              "pathID": "2__m.1__m.1",
+              "semanticPath": "parte-2/seccion-2/articulo-2",
+              "url": "/parte-2/seccion-2/articulo-2",
+              "firstParagraphNumber": 182,
+              "lastParagraphNumber": 199,
+              "children": [
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
+                  "pathID": "2__m.1__m.1__m.0",
+                  "semanticPath": "parte-2/seccion-2/articulo-2/subartículo-1",
+                  "url": "/parte-2/seccion-2/articulo-2#subartículo-1",
+                  "firstParagraphNumber": 182,
+                  "lastParagraphNumber": 188,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
+                  "pathID": "2__m.1__m.1__m.1",
+                  "semanticPath": "parte-2/seccion-2/articulo-2/subartículo-2",
+                  "url": "/parte-2/seccion-2/articulo-2#subartículo-2",
+                  "firstParagraphNumber": 189,
+                  "lastParagraphNumber": 194,
+                  "children": []
+                },
+                {
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "2__m.1__m.1__i",
+                  "semanticPath": "parte-2/seccion-2/articulo-2/resumen",
+                  "url": "/parte-2/seccion-2/articulo-2#resumen",
+                  "firstParagraphNumber": 195,
+                  "lastParagraphNumber": 197,
+                  "children": []
+                },
+                {
+                  "contentType": "PARAGRAPH_GROUP",
+                  "title": "Parrafo Grupo 1",
+                  "pathID": "2__m.1__m.1__f.0",
+                  "semanticPath": "parte-2/seccion-2/articulo-2/contenido-final",
+                  "url": "/parte-2/seccion-2/articulo-2#contenido-final",
+                  "firstParagraphNumber": 198,
+                  "lastParagraphNumber": 199,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "contentType": "SECTION",
+          "title": "Seccion 3",
+          "pathID": "2__m.2",
+          "semanticPath": "parte-2/seccion-3",
+          "url": "/parte-2/seccion-3",
+          "firstParagraphNumber": 200,
+          "lastParagraphNumber": 275,
           "children": [
             {
               "contentType": "CHAPTER",
               "title": "Capitulo 1",
-              "pathID": "2__m.1__m.0",
-              "semanticPath": "parte-2/seccion-2/capitulo-1",
-              "url": "/parte-2/seccion-2#capitulo-1",
-              "firstParagraphNumber": 20,
-              "lastParagraphNumber": 26,
+              "pathID": "2__m.2__m.0",
+              "semanticPath": "parte-2/seccion-3/capitulo-1",
+              "url": "/parte-2/seccion-3#capitulo-1",
+              "firstParagraphNumber": 201,
+              "lastParagraphNumber": 275,
               "children": [
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulo 1",
-                  "pathID": "2__m.1__m.0__m.0",
-                  "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1",
-                  "url": "/parte-2/seccion-2#capitulo-1/articulo-1",
-                  "firstParagraphNumber": 20,
-                  "lastParagraphNumber": 21,
+                  "pathID": "2__m.2__m.0__m.0",
+                  "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1",
+                  "url": "/parte-2/seccion-3#capitulo-1/articulo-1",
+                  "firstParagraphNumber": 201,
+                  "lastParagraphNumber": 260,
                   "children": [
                     {
-                      "contentType": "SUB_ARTICLE",
-                      "title": "Subartículo 1",
-                      "pathID": "2__m.1__m.0__m.0__m.0",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/subartículo-1",
-                      "url": "/parte-2/seccion-2#capitulo-1/articulo-1/subartículo-1",
-                      "firstParagraphNumber": 20,
-                      "lastParagraphNumber": 20,
-                      "children": []
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 1",
+                      "pathID": "2__m.2__m.0__m.0__m.0",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-1",
+                      "url": "/parte-2/seccion-3#capitulo-1/articulo-1/articulo-parrafo-1",
+                      "firstParagraphNumber": 201,
+                      "lastParagraphNumber": 215,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "2__m.2__m.0__m.0__m.0__i",
+                          "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-1/resumen",
+                          "url": "/parte-2/seccion-3#capitulo-1/articulo-1/articulo-parrafo-1/resumen",
+                          "firstParagraphNumber": 212,
+                          "lastParagraphNumber": 215,
+                          "children": []
+                        }
+                      ]
                     },
                     {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "2__m.1__m.0__m.0__i",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-1/resumen",
-                      "url": "/parte-2/seccion-2#capitulo-1/articulo-1/resumen",
-                      "firstParagraphNumber": 21,
-                      "lastParagraphNumber": 21,
-                      "children": []
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 2",
+                      "pathID": "2__m.2__m.0__m.0__m.1",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-2",
+                      "url": "/parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-2",
+                      "firstParagraphNumber": 216,
+                      "lastParagraphNumber": 238,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "2__m.2__m.0__m.0__m.1__i",
+                          "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-2/resumen",
+                          "url": "/parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-2#resumen",
+                          "firstParagraphNumber": 234,
+                          "lastParagraphNumber": 238,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 3",
+                      "pathID": "2__m.2__m.0__m.0__m.2",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-3",
+                      "url": "/parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-3",
+                      "firstParagraphNumber": 239,
+                      "lastParagraphNumber": 260,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "2__m.2__m.0__m.0__m.2__i",
+                          "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-3/resumen",
+                          "url": "/parte-2/seccion-3/capitulo-1/articulo-1/articulo-parrafo-3#resumen",
+                          "firstParagraphNumber": 257,
+                          "lastParagraphNumber": 260,
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 },
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulo 2",
-                  "pathID": "2__m.1__m.0__m.1",
-                  "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2",
-                  "url": "/parte-2/seccion-2/capitulo-1/articulo-2",
-                  "firstParagraphNumber": 22,
-                  "lastParagraphNumber": 23,
+                  "pathID": "2__m.2__m.0__m.1",
+                  "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-2",
+                  "url": "/parte-2/seccion-3/capitulo-1/articulo-2",
+                  "firstParagraphNumber": 261,
+                  "lastParagraphNumber": 275,
                   "children": [
                     {
                       "contentType": "SUB_ARTICLE",
                       "title": "Subartículo 1",
-                      "pathID": "2__m.1__m.0__m.1__m.0",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/subartículo-1",
-                      "url": "/parte-2/seccion-2/capitulo-1/articulo-2#subartículo-1",
-                      "firstParagraphNumber": 22,
-                      "lastParagraphNumber": 22,
+                      "pathID": "2__m.2__m.0__m.1__m.0",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-2/subartículo-1",
+                      "url": "/parte-2/seccion-3/capitulo-1/articulo-2#subartículo-1",
+                      "firstParagraphNumber": 261,
+                      "lastParagraphNumber": 269,
                       "children": []
                     },
-                    {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "2__m.1__m.0__m.1__i",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-2/resumen",
-                      "url": "/parte-2/seccion-2/capitulo-1/articulo-2#resumen",
-                      "firstParagraphNumber": 23,
-                      "lastParagraphNumber": 23,
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 3",
-                  "pathID": "2__m.1__m.0__m.2",
-                  "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3",
-                  "url": "/parte-2/seccion-2/capitulo-1/articulo-3",
-                  "firstParagraphNumber": 24,
-                  "lastParagraphNumber": 26,
-                  "children": [
                     {
                       "contentType": "SUB_ARTICLE",
-                      "title": "Subartículo 1",
-                      "pathID": "2__m.1__m.0__m.2__m.0",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/subartículo-1",
-                      "url": "/parte-2/seccion-2/capitulo-1/articulo-3#subartículo-1",
-                      "firstParagraphNumber": 24,
-                      "lastParagraphNumber": 24,
+                      "title": "Subartículo 2",
+                      "pathID": "2__m.2__m.0__m.1__m.1",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-2/subartículo-2",
+                      "url": "/parte-2/seccion-3/capitulo-1/articulo-2#subartículo-2",
+                      "firstParagraphNumber": 270,
+                      "lastParagraphNumber": 272,
                       "children": []
                     },
                     {
                       "contentType": "IN_BRIEF",
                       "title": "Resumen",
-                      "pathID": "2__m.1__m.0__m.2__i",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/resumen",
-                      "url": "/parte-2/seccion-2/capitulo-1/articulo-3#resumen",
-                      "firstParagraphNumber": 25,
-                      "lastParagraphNumber": 25,
-                      "children": []
-                    },
-                    {
-                      "contentType": "PARAGRAPH_GROUP",
-                      "title": "Parrafo Grupo 1",
-                      "pathID": "2__m.1__m.0__m.2__f.0",
-                      "semanticPath": "parte-2/seccion-2/capitulo-1/articulo-3/contenido-final",
-                      "url": "/parte-2/seccion-2/capitulo-1/articulo-3#contenido-final",
-                      "firstParagraphNumber": 26,
-                      "lastParagraphNumber": 26,
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "contentType": "CHAPTER",
-              "title": "Capitulo 2",
-              "pathID": "2__m.1__m.1",
-              "semanticPath": "parte-2/seccion-2/capitulo-2",
-              "url": "/parte-2/seccion-2/capitulo-2",
-              "firstParagraphNumber": 27,
-              "lastParagraphNumber": 30,
-              "children": [
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 1",
-                  "pathID": "2__m.1__m.1__m.0",
-                  "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1",
-                  "url": "/parte-2/seccion-2/capitulo-2#articulo-1",
-                  "firstParagraphNumber": 27,
-                  "lastParagraphNumber": 30,
-                  "children": [
-                    {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "2__m.1__m.1__m.0__i",
-                      "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/resumen",
-                      "url": "/parte-2/seccion-2/capitulo-2#articulo-1/resumen",
-                      "firstParagraphNumber": 29,
-                      "lastParagraphNumber": 29,
-                      "children": []
-                    },
-                    {
-                      "contentType": "PARAGRAPH_GROUP",
-                      "title": "Parrafo Grupo 2",
-                      "pathID": "2__m.1__m.1__m.0__f.0",
-                      "semanticPath": "parte-2/seccion-2/capitulo-2/articulo-1/contenido-final",
-                      "url": "/parte-2/seccion-2/capitulo-2#articulo-1/contenido-final",
-                      "firstParagraphNumber": 30,
-                      "lastParagraphNumber": 30,
+                      "pathID": "2__m.2__m.0__m.1__i",
+                      "semanticPath": "parte-2/seccion-3/capitulo-1/articulo-2/resumen",
+                      "url": "/parte-2/seccion-3/capitulo-1/articulo-2#resumen",
+                      "firstParagraphNumber": 273,
+                      "lastParagraphNumber": 275,
                       "children": []
                     }
                   ]
@@ -503,8 +728,8 @@
       "pathID": "3",
       "semanticPath": "parte-3",
       "url": "/parte-3",
-      "firstParagraphNumber": 31,
-      "lastParagraphNumber": 40,
+      "firstParagraphNumber": 276,
+      "lastParagraphNumber": 401,
       "children": [
         {
           "contentType": "SECTION",
@@ -512,45 +737,179 @@
           "pathID": "3__m.0",
           "semanticPath": "parte-3/seccion-1",
           "url": "/parte-3#seccion-1",
-          "firstParagraphNumber": 31,
-          "lastParagraphNumber": 40,
+          "firstParagraphNumber": 277,
+          "lastParagraphNumber": 312,
+          "children": [
+            {
+              "contentType": "ARTICLE",
+              "title": "Articulo 1",
+              "pathID": "3__m.0__m.0",
+              "semanticPath": "parte-3/seccion-1/articulo-1",
+              "url": "/parte-3#seccion-1/articulo-1",
+              "firstParagraphNumber": 280,
+              "lastParagraphNumber": 295,
+              "children": [
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
+                  "pathID": "3__m.0__m.0__m.0",
+                  "semanticPath": "parte-3/seccion-1/articulo-1/subartículo-1",
+                  "url": "/parte-3#seccion-1/articulo-1/subartículo-1",
+                  "firstParagraphNumber": 280,
+                  "lastParagraphNumber": 284,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
+                  "pathID": "3__m.0__m.0__m.1",
+                  "semanticPath": "parte-3/seccion-1/articulo-1/subartículo-2",
+                  "url": "/parte-3#seccion-1/articulo-1/subartículo-2",
+                  "firstParagraphNumber": 285,
+                  "lastParagraphNumber": 292,
+                  "children": []
+                },
+                {
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "3__m.0__m.0__i",
+                  "semanticPath": "parte-3/seccion-1/articulo-1/resumen",
+                  "url": "/parte-3#seccion-1/articulo-1/resumen",
+                  "firstParagraphNumber": 293,
+                  "lastParagraphNumber": 295,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "contentType": "ARTICLE",
+              "title": "Articulo 2",
+              "pathID": "3__m.0__m.1",
+              "semanticPath": "parte-3/seccion-1/articulo-2",
+              "url": "/parte-3/seccion-1/articulo-2",
+              "firstParagraphNumber": 296,
+              "lastParagraphNumber": 312,
+              "children": [
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 1",
+                  "pathID": "3__m.0__m.1__m.0",
+                  "semanticPath": "parte-3/seccion-1/articulo-2/subartículo-1",
+                  "url": "/parte-3/seccion-1/articulo-2#subartículo-1",
+                  "firstParagraphNumber": 296,
+                  "lastParagraphNumber": 301,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 2",
+                  "pathID": "3__m.0__m.1__m.1",
+                  "semanticPath": "parte-3/seccion-1/articulo-2/subartículo-2",
+                  "url": "/parte-3/seccion-1/articulo-2#subartículo-2",
+                  "firstParagraphNumber": 302,
+                  "lastParagraphNumber": 305,
+                  "children": []
+                },
+                {
+                  "contentType": "SUB_ARTICLE",
+                  "title": "Subartículo 3",
+                  "pathID": "3__m.0__m.1__m.2",
+                  "semanticPath": "parte-3/seccion-1/articulo-2/subartículo-3",
+                  "url": "/parte-3/seccion-1/articulo-2#subartículo-3",
+                  "firstParagraphNumber": 306,
+                  "lastParagraphNumber": 308,
+                  "children": []
+                },
+                {
+                  "contentType": "IN_BRIEF",
+                  "title": "Resumen",
+                  "pathID": "3__m.0__m.1__i",
+                  "semanticPath": "parte-3/seccion-1/articulo-2/resumen",
+                  "url": "/parte-3/seccion-1/articulo-2#resumen",
+                  "firstParagraphNumber": 309,
+                  "lastParagraphNumber": 312,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "contentType": "SECTION",
+          "title": "Seccion 2",
+          "pathID": "3__m.1",
+          "semanticPath": "parte-3/seccion-2",
+          "url": "/parte-3/seccion-2",
+          "firstParagraphNumber": 313,
+          "lastParagraphNumber": 324,
+          "children": [
+            {
+              "contentType": "IN_BRIEF",
+              "title": "Resumen",
+              "pathID": "3__m.1__i",
+              "semanticPath": "parte-3/seccion-2/resumen",
+              "url": "/parte-3/seccion-2#resumen",
+              "firstParagraphNumber": 321,
+              "lastParagraphNumber": 324,
+              "children": []
+            }
+          ]
+        },
+        {
+          "contentType": "SECTION",
+          "title": "Seccion 3",
+          "pathID": "3__m.2",
+          "semanticPath": "parte-3/seccion-3",
+          "url": "/parte-3/seccion-3",
+          "firstParagraphNumber": 325,
+          "lastParagraphNumber": 401,
           "children": [
             {
               "contentType": "CHAPTER",
               "title": "Capitulo 1",
-              "pathID": "3__m.0__m.0",
-              "semanticPath": "parte-3/seccion-1/capitulo-1",
-              "url": "/parte-3#seccion-1/capitulo-1",
-              "firstParagraphNumber": 31,
-              "lastParagraphNumber": 40,
+              "pathID": "3__m.2__m.0",
+              "semanticPath": "parte-3/seccion-3/capitulo-1",
+              "url": "/parte-3/seccion-3#capitulo-1",
+              "firstParagraphNumber": 328,
+              "lastParagraphNumber": 401,
               "children": [
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulo 1",
-                  "pathID": "3__m.0__m.0__m.0",
-                  "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1",
-                  "url": "/parte-3#seccion-1/capitulo-1/articulo-1",
-                  "firstParagraphNumber": 31,
-                  "lastParagraphNumber": 34,
+                  "pathID": "3__m.2__m.0__m.0",
+                  "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-1",
+                  "url": "/parte-3/seccion-3#capitulo-1/articulo-1",
+                  "firstParagraphNumber": 328,
+                  "lastParagraphNumber": 339,
                   "children": [
                     {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "3__m.0__m.0__m.0__i",
-                      "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/resumen",
-                      "url": "/parte-3#seccion-1/capitulo-1/articulo-1/resumen",
-                      "firstParagraphNumber": 33,
-                      "lastParagraphNumber": 33,
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 1",
+                      "pathID": "3__m.2__m.0__m.0__m.0",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-1/subartículo-1",
+                      "url": "/parte-3/seccion-3#capitulo-1/articulo-1/subartículo-1",
+                      "firstParagraphNumber": 328,
+                      "lastParagraphNumber": 333,
                       "children": []
                     },
                     {
-                      "contentType": "PARAGRAPH_GROUP",
-                      "title": "Parrafo Grupo 2",
-                      "pathID": "3__m.0__m.0__m.0__f.0",
-                      "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-1/contenido-final",
-                      "url": "/parte-3#seccion-1/capitulo-1/articulo-1/contenido-final",
-                      "firstParagraphNumber": 34,
-                      "lastParagraphNumber": 34,
+                      "contentType": "SUB_ARTICLE",
+                      "title": "Subartículo 2",
+                      "pathID": "3__m.2__m.0__m.0__m.1",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-1/subartículo-2",
+                      "url": "/parte-3/seccion-3#capitulo-1/articulo-1/subartículo-2",
+                      "firstParagraphNumber": 334,
+                      "lastParagraphNumber": 336,
+                      "children": []
+                    },
+                    {
+                      "contentType": "IN_BRIEF",
+                      "title": "Resumen",
+                      "pathID": "3__m.2__m.0__m.0__i",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-1/resumen",
+                      "url": "/parte-3/seccion-3#capitulo-1/articulo-1/resumen",
+                      "firstParagraphNumber": 337,
+                      "lastParagraphNumber": 339,
                       "children": []
                     }
                   ]
@@ -558,42 +917,74 @@
                 {
                   "contentType": "ARTICLE",
                   "title": "Articulo 2",
-                  "pathID": "3__m.0__m.0__m.1",
-                  "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2",
-                  "url": "/parte-3/seccion-1/capitulo-1/articulo-2",
-                  "firstParagraphNumber": 35,
-                  "lastParagraphNumber": 37,
+                  "pathID": "3__m.2__m.0__m.1",
+                  "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2",
+                  "url": "/parte-3/seccion-3/capitulo-1/articulo-2",
+                  "firstParagraphNumber": 340,
+                  "lastParagraphNumber": 401,
                   "children": [
                     {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "3__m.0__m.0__m.1__i",
-                      "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-2/resumen",
-                      "url": "/parte-3/seccion-1/capitulo-1/articulo-2#resumen",
-                      "firstParagraphNumber": 37,
-                      "lastParagraphNumber": 37,
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "contentType": "ARTICLE",
-                  "title": "Articulo 3",
-                  "pathID": "3__m.0__m.0__m.2",
-                  "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3",
-                  "url": "/parte-3/seccion-1/capitulo-1/articulo-3",
-                  "firstParagraphNumber": 38,
-                  "lastParagraphNumber": 40,
-                  "children": [
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 1",
+                      "pathID": "3__m.2__m.0__m.1__m.0",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-1",
+                      "url": "/parte-3/seccion-3/capitulo-1/articulo-2#articulo-parrafo-1",
+                      "firstParagraphNumber": 340,
+                      "lastParagraphNumber": 358,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "3__m.2__m.0__m.1__m.0__i",
+                          "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-1/resumen",
+                          "url": "/parte-3/seccion-3/capitulo-1/articulo-2#articulo-parrafo-1/resumen",
+                          "firstParagraphNumber": 356,
+                          "lastParagraphNumber": 358,
+                          "children": []
+                        }
+                      ]
+                    },
                     {
-                      "contentType": "IN_BRIEF",
-                      "title": "Resumen",
-                      "pathID": "3__m.0__m.0__m.2__i",
-                      "semanticPath": "parte-3/seccion-1/capitulo-1/articulo-3/resumen",
-                      "url": "/parte-3/seccion-1/capitulo-1/articulo-3#resumen",
-                      "firstParagraphNumber": 40,
-                      "lastParagraphNumber": 40,
-                      "children": []
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 2",
+                      "pathID": "3__m.2__m.0__m.1__m.1",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-2",
+                      "url": "/parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-2",
+                      "firstParagraphNumber": 359,
+                      "lastParagraphNumber": 384,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "3__m.2__m.0__m.1__m.1__i",
+                          "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-2/resumen",
+                          "url": "/parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-2#resumen",
+                          "firstParagraphNumber": 380,
+                          "lastParagraphNumber": 384,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "contentType": "ARTICLE_PARAGRAPH",
+                      "title": "Articulo Parrafo 3",
+                      "pathID": "3__m.2__m.0__m.1__m.2",
+                      "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-3",
+                      "url": "/parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-3",
+                      "firstParagraphNumber": 385,
+                      "lastParagraphNumber": 401,
+                      "children": [
+                        {
+                          "contentType": "IN_BRIEF",
+                          "title": "Resumen",
+                          "pathID": "3__m.2__m.0__m.1__m.2__i",
+                          "semanticPath": "parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-3/resumen",
+                          "url": "/parte-3/seccion-3/capitulo-1/articulo-2/articulo-parrafo-3#resumen",
+                          "firstParagraphNumber": 397,
+                          "lastParagraphNumber": 401,
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 }
