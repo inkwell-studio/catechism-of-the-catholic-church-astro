@@ -62,25 +62,6 @@ artifacts are kept in-sync with the source.
 
 After that, the end-to-end tests should be successfully executed (see _End-to-end testing_ above).
 
-Commit messages should follow the following pattern:
-
-```
-type(scope): details
-
-more details (optional)
-```
-
-Where `type` is one of:
-
-- `change`
-- `chore`
-- `docs`
-- `build`
-- `feat`
-- `fix`
-- `refactor`
-- `style`
-
 ## Deployment
 
 This project is deployed to [Deno Deploy](https://deno.com/deploy) via [Github Actions](https://docs.github.com/en/actions). The deployment
