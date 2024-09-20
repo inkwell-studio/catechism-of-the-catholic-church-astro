@@ -1,6 +1,7 @@
 import { assertExists, assertStrictEquals } from '$std/assert';
 
-import { getAllParagraphs, getCatechism } from '../source/utils/content.ts';
+import { getCatechism } from '../source/utils/catechism.ts';
+import { getAllParagraphs } from '../source/utils/content.ts';
 import { CatechismStructure, ParagraphNumberContentMap } from '../source/types/types.ts';
 import { getParagraphNumberContentMap } from '../source/utils/artifacts.ts';
 import { getLanguages } from '../source/utils/language.ts';

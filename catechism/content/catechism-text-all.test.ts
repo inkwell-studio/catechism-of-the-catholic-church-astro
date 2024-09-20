@@ -4,7 +4,7 @@ import { CatechismText, getText } from './test-utils.ts';
 import { PathID } from '../source/types/types.ts';
 import { Language } from '../source/types/language.ts';
 import { getLanguages } from '../source/utils/language.ts';
-import { getCatechism } from '../source/utils/content.ts';
+import { getCatechism } from '../source/utils/catechism.ts';
 
 //#region tests
 console.log(`\nAll text fragments ...`);

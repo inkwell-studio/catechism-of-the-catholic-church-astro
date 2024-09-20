@@ -2,7 +2,8 @@ import { assertExists, assertStrictEquals } from '$std/assert';
 
 import { CatechismStructure, ParagraphNumberUrlMap } from '../source/types/types.ts';
 import { getParagraphNumberUrlMap } from '../source/utils/artifacts.ts';
-import { getAllParagraphs, getCatechism } from '../source/utils/content.ts';
+import { getCatechism } from '../source/utils/catechism.ts';
+import { getAllParagraphs } from '../source/utils/content.ts';
 import { getLanguages } from '../source/utils/language.ts';
 
 console.log('\nParagraph number to URL map ...');

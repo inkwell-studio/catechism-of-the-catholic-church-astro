@@ -2,7 +2,8 @@ import { assertStrictEquals } from '$std/assert';
 
 import { CatechismStructure, Glossary } from '../source/types/types.ts';
 import { getGlossary } from '../source/utils/artifacts.ts';
-import { getAllParagraphs, getCatechism, isParagraphReference, isReference } from '../source/utils/content.ts';
+import { getCatechism } from '../source/utils/catechism.ts';
+import { getAllParagraphs, isParagraphReference, isReference } from '../source/utils/content.ts';
 import { getLanguages } from '../source/utils/language.ts';
 
 console.log('\nGlossary ...');

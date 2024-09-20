@@ -15,6 +15,9 @@ import {
     SemanticPath,
     TextWrapper,
 } from '../source/types/types.ts';
+
+import { getCatechism } from '../source/utils/catechism.ts';
+
 import {
     getAll,
     getAllChildContent,
@@ -22,7 +25,6 @@ import {
     getAllParagraphs,
     getAllPathIDs,
     getAllSemanticPaths,
-    getCatechism,
     getFinalContent,
     getInBrief,
     getMainContent,

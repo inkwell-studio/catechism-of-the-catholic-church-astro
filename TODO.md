@@ -2,9 +2,6 @@
 
 # Tasks to complete now
 
-- [ ] handle Vite rollup error from
-      `/Users/Joseph/Repos/catechism-of-the-catholic-church-astro/catechism/source/utils/content.ts :: getCatechism()`
-  - see `https://docs.astro.build/en/reference/configuration-reference/#vite`
 - [ ] move the Glossary artifact out of the "artifacts" domain — it is not an artifact like the rest, since it is not derived from the
       Catechism data
   - consider adding a note to the `artifacts` directory (or somewhere) about them being derived from the Catechism JSON data

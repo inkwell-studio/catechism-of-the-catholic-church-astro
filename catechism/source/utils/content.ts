@@ -11,7 +11,6 @@ import {
     ContentContainer,
     InBrief,
     InBriefContainer,
-    Language,
     NumberOrNumberRange,
     OtherReference,
     Paragraph,
@@ -34,22 +33,7 @@ import {
     TextWrapper,
 } from '../types/types.ts';
 
-//#region Specific content retrieval
-export async function getCatechism(language: Language): Promise<CatechismStructure> {
-    const catechismJson = await import(`../../../catechism/content/catechism-${language}.json`, { with: { type: 'json' } });
-    return catechismJson.default;
-}
-
-export async function* getCatechisms(languages: Array<Language>): AsyncGenerator<CatechismStructure> {
-    for (const language of languages) {
-        try {
-            yield getCatechism(language);
-        } catch (error) {
-            console.error(`Could not retrieve the Catechism JSON for [${language}]`, error);
-        }
-    }
-}
-
+//#region Content retrieval
 /**
  * @returns the opening content of the argument if it has any; otherwise an empty array
  */

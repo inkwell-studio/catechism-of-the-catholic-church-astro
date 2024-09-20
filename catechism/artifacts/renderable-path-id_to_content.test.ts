@@ -1,7 +1,8 @@
 import { assertStrictEquals, fail } from '$std/assert';
 
-import { getAllOfProperty, getAllPathIDs, getCatechism } from '../source/utils/content.ts';
 import { CatechismStructure, PathID, PathIdContentMap, SemanticPathPathIdMap } from '../source/types/types.ts';
+import { getCatechism } from '../source/utils/catechism.ts';
+import { getAllOfProperty, getAllPathIDs } from '../source/utils/content.ts';
 import { getContentMap, getRenderablePathMap } from '../source/utils/artifacts.ts';
 import { getLanguages } from '../source/utils/language.ts';
 
