@@ -5,10 +5,28 @@
 - [ ] move the Glossary artifact out of the "artifacts" domain — it is not an artifact like the rest, since it is not derived from the
       Catechism data
   - consider adding a note to the `artifacts` directory (or somewhere) about them being derived from the Catechism JSON data
+
+- [ ] implement UI proofs of concept (e.g. React UI interactivity — especially with HTMX and Astro components)
+  - [ ] implement Action Bar menus
+    - [ ] Table of Contents
+    - [ ] Search
+    - [ ] Settings
+      - [ ] implement theme switching (light/dark/system)
+      - [ ] text size
+      - [ ] "About" (general info)
+      - [ ] language switcher
+    - [ ] determine which component library to use:
+      - https://react-spectrum.adobe.com/react-aria/index.html
+      - https://headlessui.com/
+        - cf. https://github.com/tailwindlabs/headlessui/tree/main/packages/%40headlessui-tailwindcss
+      - https://mantine.dev/
+      - https://www.radix-ui.com/primitives
+      - https://chakra-ui.com/
+- [ ] consider opening the cross-reference window only after the desired response is received (or otherwise improve the behavior)
+
 - [ ] see note in `website/source/artifacts.ts` about tyring to use `import.meta.*`
-- [ ] add routing for other content:
-  - [ ] implement app shell with content-HTMX functionality
-    - [ ] language switching: consider adding the React menu for proof of full functionality
+
+- [ ] populate the home page
   - add translation functionality for the home page
     - consider using `https://github.com/nanostores/i18n`
   - [ ] pages (add e2e tests as you go)
@@ -20,13 +38,14 @@
         - how the JSON API may be used
   - [ ] populate the index pages
   - [ ] ensure content navigation with HTMX works appropriately in all cases
-- [ ] add theme switching (light/dark/system)
+
+- [ ] add a project-intro page
+  - consider adding to the list of existing online versions of the CCC:
+    https://dn790005.ca.archive.org/0/items/catechismofthecatholicchurch/Catechism%20of%20the%20Catholic%20Church%20-%20USCCB.pdf
+
 - [ ] consider adding a note to `DEVELOPMENT.md` about adding languages (does just `catechism/source/types/language.ts` have to be modified
       for additional language support, and the `~/pages/en/index.astro` path have to be modified if the default language changes?)
 - [ ] add a 500 page
-- [ ] implement landing page
-  - [ ] consider adding to the list of existing online versions of the CCC:
-        https://dn790005.ca.archive.org/0/items/catechismofthecatholicchurch/Catechism%20of%20the%20Catholic%20Church%20-%20USCCB.pdf
 - [ ] look into removing `website/source/env.d.ts` (https://github.com/withastro/astro/pull/11859)
 - [ ] update UI
   - [ ] look into the mobile apps that William mentioned, and their features:
@@ -60,27 +79,6 @@
   - [ ] dark mode: try to avoid the "window blending" problem (cannot tell where the browser window starts and another application window
         begins)
   - [ ] consider all notes about colors found elsewhere in this file
-  - [ ] update text on intro page
-  - merge
-  - [ ] consider using: https://react-spectrum.adobe.com/react-aria/index.html
-  - [ ] when relevant, re-add the following to the `deno.jsonc::check` task: `deno check website/source/**/*.tsx`
-  - [ ] implement Action Bar menus
-    - [ ] Table of Contents
-    - [ ] Search
-    - [ ] Settings
-      - [ ] UI: light/dark/system
-      - [ ] text size
-      - [ ] "About" (general info)
-      - [ ] language switcher
-    - [ ] consider using a component library for buttons and other like elements
-      - https://react-spectrum.adobe.com/react-aria/index.html
-      - https://headlessui.com/
-      - https://mantine.dev/
-      - https://www.radix-ui.com/primitives
-      - https://chakra-ui.com/
-  - [ ] consider using https://github.com/tailwindlabs/headlessui/tree/main/packages/%40headlessui-tailwindcss (with the Headless UI
-        components)
-- [ ] consider opening the cross-reference window only after the desired response is received (or otherwise improve the behavior)
 - [ ] remove all unused artifacts and their generators
 - [ ] remove all unused artifact utility functions
 - [ ] remove all unused utility function (e.g. `website/source/logic/routing.ts::*`)
@@ -103,30 +101,20 @@
 - [ ] implement hierarchical navigation
 - merge
 
-- [ ] research artifact caching methods
+- [ ] research artifact caching methods (if necessary)
 
 ## Unprioritized
 
-- [ ] determine the proper status code to use for the paragraph-number redirects
 - [ ] add helpful information and links to the 404 page
-- [ ] look into using Astral for e2e testing: https://astral.deno.dev/
+- [ ] consider if advanced e2e testing is necessary - potentially helpful tools:
+  - Astral: https://astral.deno.dev/
+  - Puppeteer: https://github.com/puppeteer/puppeteer
 - [ ] consider improving artifact management
   - should artifacts not be commited, and instead be built during deployment?
 - [ ] UI: style for LTR and RTL text
 - [ ] add e2e UI tests to validate links
-- [ ] add a UI language switcher
-  - [ ] update all user-facing text to be
 - [ ] add JSON validation for `catechism.json`
-- [ ] render all content
-  - [ ] handle all TODO's in the component files
-  - [ ] opening content
-  - [ ] citation markers
-  - [ ] is there anything else?
-- [ ] implement content loading
-  - [ ] cross-reference navigation
-  - [ ] chapter > chapter navigation
-  - [ ] routing
-    - [ ] to in-page anchor tags
+
 - UI:
   - consider if any of the official Tailwind presets would be useful:
     - https://tailwindcss.com/docs/plugins#official-plugins
@@ -140,16 +128,10 @@
 - [ ] add a test to ensure that all cross-references are paired (in `catechism.test.ts`)
 - [ ] implement hierarchical navigation
 - [ ] implement historical navigation
-- [ ] implement search
-- [ ] implement index
-- [ ] implement glossary
 - [ ] implement "copy" buttons (click a button to copy the entire text of a paragraph, quote, etc.)
 
 # Tasks to complete once it has been decided to release a production-ready version
 
-- [ ] investigate more efficient content-loading mechanisms, e.g.
-  - can pages for all renderable routes be statically generated and cached on the server?
-  - can all JSON content be loaded in-memory on the server?
 - [ ] verify the translations in `catechism/artifact-builders/utils.ts` and `catechism/source/utils/semantic-path.ts` are correct
 
 # Possible features
