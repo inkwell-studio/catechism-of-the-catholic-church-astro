@@ -1,6 +1,6 @@
 import { assert, assertStrictEquals } from '$std/assert';
 
-import crossReferenceMap from '@catechism/artifacts/paragraph-cross-reference_to_content-en.json' with { type: 'json' };
+import crossReferenceMap from '@catechism/artifacts/derivative/paragraph-cross-reference_to_content-en.json' with { type: 'json' };
 
 import { DEFAULT_LANGUAGE, Language } from '@catechism/source/types/types.ts';
 import { getLanguages } from '@catechism/source/utils/language.ts';

@@ -4,9 +4,9 @@ import { Language, NumberOrNumberRange, ParagraphNumberContentMap } from '@catec
 import { getParagraphNumbers } from '@catechism/source/utils/content.ts';
 import { getLanguages } from '@catechism/source/utils/language.ts';
 
-const map_en = (await import('@catechism/artifacts/paragraph-number_to_content-en.json', { with: { type: 'json' } })).default;
-const map_es = (await import('@catechism/artifacts/paragraph-number_to_content-es.json', { with: { type: 'json' } })).default;
-const map_la = (await import('@catechism/artifacts/paragraph-number_to_content-la.json', { with: { type: 'json' } })).default;
+const map_en = (await import('@catechism/artifacts/derivative/paragraph-number_to_content-en.json', { with: { type: 'json' } })).default;
+const map_es = (await import('@catechism/artifacts/derivative/paragraph-number_to_content-es.json', { with: { type: 'json' } })).default;
+const map_la = (await import('@catechism/artifacts/derivative/paragraph-number_to_content-la.json', { with: { type: 'json' } })).default;
 
 const contentMaps: Record<Language, object> = {
     [Language.ENGLISH]: map_en,

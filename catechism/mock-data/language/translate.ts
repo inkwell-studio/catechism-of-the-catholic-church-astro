@@ -1,9 +1,8 @@
 import { setLanguage } from './language-state.ts';
 
-import { getTitleText } from '../build/parts/general.ts';
-
-import { setSemanticPaths } from '../build/build.ts';
-import { getText } from '../build/parts/text-samples.ts';
+import { setSemanticPaths } from '../builders/catechism/catechism.ts';
+import { getTitleText } from '../builders/catechism/general.ts';
+import { getText } from '../builders/catechism/text-samples.ts';
 
 import {
     Article,

@@ -1,6 +1,6 @@
-import { build as buildMockGlossary } from './build/artifacts/glossary.ts';
-import { buildMockData } from './build/build.ts';
-import { LimitsSize, setLimits } from './build/config/limits.ts';
+import { buildCatechism } from './builders/catechism/catechism.ts';
+import { build as buildMockGlossary } from './builders/glossary.ts';
+import { LimitsSize, setLimits } from './config/limits.ts';
 import { setLanguage } from './language/language-state.ts';
 import { translateCatechism } from './language/translate.ts';
 
@@ -11,15 +11,15 @@ run();
 
 function run(): void {
     console.log('\nBuilding mock data...');
-    setLimits(LimitsSize.MEDIUM);
+    setLimits(LimitsSize.TINY);
 
-    const catechism = buildMockData();
+    const catechism = buildCatechism();
     const translatedCatechisms = getTranslatedCatechisms(catechism);
 
     const allCatechisms = [catechism, ...translatedCatechisms];
     writeCatechismsToDisk(allCatechisms);
 
-    const artifacts = buildMockArtifacts(allCatechisms);
+    const artifacts = buildPrimitiveArtifacts(allCatechisms);
     writeArtifactsToDisk(artifacts);
 }
 
@@ -32,24 +32,24 @@ function getTranslatedCatechisms(catechism: CatechismStructure): Array<Catechism
         });
 }
 
-function buildMockArtifacts(catechisms: Array<CatechismStructure>): Array<{ artifact: Glossary; filepath: string }> {
-    console.log('\nBuilding mock artifacts...\n');
+function buildPrimitiveArtifacts(catechisms: Array<CatechismStructure>): Array<{ artifact: Glossary; filepath: string }> {
+    console.log('\nBuilding mock primitive artifacts...\n');
 
     return catechisms.flatMap((c) => {
         setLanguage(c.language);
         const glossary = buildMockGlossary(c);
 
         return [
-            { artifact: glossary, filepath: `catechism/artifacts/glossary-${c.language}.json` },
+            { artifact: glossary, filepath: `catechism/artifacts/primitive/glossary-${c.language}.json` },
         ];
     });
 }
 
 function writeCatechismsToDisk(catechisms: Array<CatechismStructure>): void {
-    catechisms.forEach((catechism) => writeToDisk(catechism, `catechism/content/catechism-${catechism.language}.json`));
+    catechisms.forEach((catechism) => writeToDisk(catechism, `catechism/artifacts/primitive/catechism-${catechism.language}.json`));
 }
 
-function writeArtifactsToDisk(artifactsData: ReturnType<typeof buildMockArtifacts>): void {
+function writeArtifactsToDisk(artifactsData: ReturnType<typeof buildPrimitiveArtifacts>): void {
     artifactsData.forEach((data) => writeToDisk(data.artifact, data.filepath));
 }
 

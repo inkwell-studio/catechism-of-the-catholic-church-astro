@@ -1,16 +1,15 @@
 {
     "tasks": {
         "check": "deno fmt --check && deno lint && deno check catechism/**/*.ts && deno check website/source/**/*.ts && deno check website/source/**/*.tsx",
-        "pre-commit": "deno lint && deno task check && deno fmt && deno task test-source && deno task test-content && deno task build-artifacts && deno task test-artifacts",
+        "pre-commit": "deno lint && deno task check && deno fmt && deno task test-source && deno task build-derivative-artifacts && deno task test-artifacts",
 
         "test-source": "deno test catechism/source website/source",
-        "test-content": "deno test --allow-read catechism/content",
         "test-artifacts": "deno test --allow-read catechism/artifacts",
 
         "test-e2e": "deno test --allow-net website/e2e-tests",
 
-        "build-artifacts": "deno run --allow-read --allow-write catechism/artifact-builders/build.ts",
-        "build-mock-data": "deno run --allow-read --allow-write catechism/mock-data/run.ts && deno task test-content && deno task build-artifacts && deno task test-artifacts",
+        "build-derivative-artifacts": "deno run --allow-read --allow-write catechism/artifacts/derivative/builders/build.ts",
+        "build-mock-data": "deno run --allow-read --allow-write catechism/mock-data/run.ts && deno task build-derivative-artifacts && deno task test-artifacts",
         "build-robots-txt": "deno run --allow-write website/source/robots.txt.ts",
 
         "build-website": "cd website && pnpm build && cd .. && deno task build-robots-txt",
@@ -25,8 +24,7 @@
         "lineWidth": 140,
         "singleQuote": true,
         "exclude": [
-            "catechism/artifacts/*.json",
-            "catechism/content/*.json",
+            "catechism/artifacts/**/*.json",
             "website/.astro/",
             "website/dist/",
             "website/public/",
@@ -40,8 +38,7 @@
             ]
         },
         "exclude": [
-            "catechism/artifacts/*.json",
-            "catechism/content/*.json",
+            "catechism/artifacts/**/*.json",
             "website/.astro/",
             "website/dist/",
             "website/public/",

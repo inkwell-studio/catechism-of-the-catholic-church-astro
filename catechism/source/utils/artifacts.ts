@@ -55,14 +55,36 @@ export function getTableOfContents(language: Language): Promise<TableOfContentsT
 
 // deno-lint-ignore no-explicit-any
 async function getArtifact(artifact: Artifact, language?: Language): Promise<any> {
-    // deno-fmt-ignore
-    const filepath = language
-        ? `${Deno.cwd()}/catechism/artifacts/${artifact}-${language}.json`
-        : `${Deno.cwd()}/catechism/artifacts/${artifact}.json`;
+    if (Artifact.GLOSSARY === artifact) {
+        return await getPrimitiveArtifact(artifact, language);
+    } else {
+        return await getDerivativeArtifact(artifact, language);
+    }
+}
 
+// deno-lint-ignore no-explicit-any
+async function getPrimitiveArtifact(artifact: Artifact, language?: Language): Promise<any> {
+    const filepath = language
+        ? `${Deno.cwd()}/catechism/artifacts/primitive/${artifact}-${language}.json`
+        : `${Deno.cwd()}/catechism/artifacts/primitive/${artifact}.json`;
+
+    return await readFile(filepath);
+}
+
+// deno-lint-ignore no-explicit-any
+async function getDerivativeArtifact(artifact: Artifact, language?: Language): Promise<any> {
+    const filepath = language
+        ? `${Deno.cwd()}/catechism/artifacts/derivative/${artifact}-${language}.json`
+        : `${Deno.cwd()}/catechism/artifacts/derivative/${artifact}.json`;
+
+    return await readFile(filepath);
+}
+
+// deno-lint-ignore no-explicit-any
+async function readFile(filepath: string): Promise<any> {
     try {
-        const artifactJson = await import(filepath, { with: { type: 'json' } });
-        return artifactJson.default;
+        const json = await import(filepath, { with: { type: 'json' } });
+        return json.default;
     } catch (error) {
         throw new Error(`Failed to load artifact: ${filepath}`, error);
     }

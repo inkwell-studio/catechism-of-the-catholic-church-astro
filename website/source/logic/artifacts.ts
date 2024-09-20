@@ -63,11 +63,33 @@ export function getTableOfContentsSync(language: Language): TableOfContentsType 
 
 // deno-lint-ignore no-explicit-any
 function getArtifactSync(artifact: Artifact, language?: Language): any {
-    // deno-fmt-ignore
-    const filepath = language
-        ? `../catechism/artifacts/${artifact}-${language}.json`
-        : `../catechism/artifacts/${artifact}.json`;
+    if (Artifact.GLOSSARY === artifact) {
+        return getPrimitiveArtifactSync(artifact, language);
+    } else {
+        return getDerivativeArtifactSync(artifact, language);
+    }
+}
 
+// deno-lint-ignore no-explicit-any
+function getPrimitiveArtifactSync(artifact: Artifact, language?: Language): any {
+    const filepath = language
+        ? `../catechism/artifacts/primitive/${artifact}-${language}.json`
+        : `../catechism/artifacts/primitive/${artifact}.json`;
+
+    return readFileSync(filepath);
+}
+
+// deno-lint-ignore no-explicit-any
+function getDerivativeArtifactSync(artifact: Artifact, language?: Language): any {
+    const filepath = language
+        ? `../catechism/artifacts/derivative/${artifact}-${language}.json`
+        : `../catechism/artifacts/derivative/${artifact}.json`;
+
+    return readFileSync(filepath);
+}
+
+// deno-lint-ignore no-explicit-any
+function readFileSync(filepath: string): any {
     try {
         // TODO: Can `import.meta.<X>` be used in the `.astro` components instead of this?
         return JSON.parse(fs.readFileSync(filepath, { encoding: 'utf8' }));

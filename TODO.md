@@ -2,10 +2,6 @@
 
 # Tasks to complete now
 
-- [ ] move the Glossary artifact out of the "artifacts" domain — it is not an artifact like the rest, since it is not derived from the
-      Catechism data
-  - consider adding a note to the `artifacts` directory (or somewhere) about them being derived from the Catechism JSON data
-
 - [ ] implement UI proofs of concept (e.g. React UI interactivity — especially with HTMX and Astro components)
   - [ ] implement Action Bar menus
     - [ ] Table of Contents
