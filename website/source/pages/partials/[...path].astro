@@ -5,7 +5,6 @@ import ApostolicConstitution from '@components/apostolic-constitution/apostolic-
 import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro';
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
 import Glossary from '@components/glossary.astro';
-import Home from '@components/home/content.astro';
 import IndexCitations from '@components/index-citations.astro';
 import IndexTopics from '@components/index-topics.astro';
 import Replacement from '@components/replacement.astro';
@@ -26,7 +25,6 @@ const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
 const pathID = getSemanticPathPathIdMapSync(language)[path] ?? null;
 
-const isHome = !path;
 const isGlossary = BasicPath.GLOSSARY === path;
 const isIndexTopics = BasicPath.INDEX_TOPICS === path;
 const isIndexCitations = BasicPath.INDEX_CITATIONS === path;
@@ -35,8 +33,6 @@ const isApostolicConstitution = BasicPath.APOSTOLIC_CONSTITUTION === path;
 
 const isCatechismContent = !!pathID;
 ---
-
-{isHome && <Home language={language} />}
 
 {isGlossary && <Glossary language={language} />}
 

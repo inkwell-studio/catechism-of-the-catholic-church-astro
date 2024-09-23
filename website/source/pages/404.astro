@@ -1,6 +1,7 @@
 ---
 import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
-import BaseLayout from '@layouts/base-layout.astro';
+
+import ContentLayout from '@layouts/content-layout.astro';
 
 import { getLanguageFromPathname } from '@logic/routing';
 import { translate as t } from '@logic/translation';
@@ -11,7 +12,7 @@ const language = getLanguageFromPathname(Astro.url.pathname) ?? DEFAULT_LANGUAGE
 const homeUrl = language === DEFAULT_LANGUAGE ? '/' : `/${language}`;
 ---
 
-<BaseLayout language={language}>
+<ContentLayout language={language}>
     <div class="h-[70vh] flex flex-col justify-center">
         <div class="flex flex-col justify-center items-center">
             <h1>{t('Page not found.', language)}</h1>
@@ -20,4 +21,4 @@ const homeUrl = language === DEFAULT_LANGUAGE ? '/' : `/${language}`;
             </h2>
         </div>
     </div>
-</BaseLayout>
+</ContentLayout>

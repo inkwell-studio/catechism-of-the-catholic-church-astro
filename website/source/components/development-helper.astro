@@ -9,18 +9,15 @@ import { BasicPath } from '../pages/_routes';
 
 interface Props {
     language: Language;
+    usePartialLinks: boolean;
 }
 
-const { language } = Astro.props;
+const { language, usePartialLinks } = Astro.props;
 
-const linkClasses = 'block opacity-80 rounded p-4 text-center hover:bg-white/10';
+const textElementClasses = 'opacity-80 text-center p-4';
+const linkClasses = `${textElementClasses} block rounded hover:bg-white/10`;
 
-// prettier-ignore
-const homeClientUrl = DEFAULT_LANGUAGE === language
-    ? '/'
-    : `/${language}`;
-
-const homeContentUrl = path('/partials', homeClientUrl);
+const homeUrl = DEFAULT_LANGUAGE === language ? '/' : `/${language}`;
 
 const basicPathLinks = [
     ['AP Const.', BasicPath.APOSTOLIC_CONSTITUTION],
@@ -60,39 +57,59 @@ const tocEntries = [tableOfContents.prologue, ...tableOfContents.parts].map((ent
 });
 ---
 
-<div
-    class="opacity-20 hover:opacity-100 flex flex-col gap-2 p-3 rounded border-4 border-black/20 dark:border-white/20 transition-opacity delay-100 hover:delay-0"
->
-    <div class="flex flex-col align-stretch gap-4">
-        <PartialLink target={ElementID.CONTENT_WRAPPER_SELECTOR} clientUrl={homeClientUrl} contentUrl={homeContentUrl} class={linkClasses}>
-            Home
-        </PartialLink>
+<div class="fixed bottom-4 left-4 w-fit">
+    <div
+        class="opacity-20 hover:opacity-100 flex flex-col gap-2 p-3 rounded border-4 border-black/20 dark:border-white/20 transition-opacity delay-100 hover:delay-0"
+    >
+        <div class="flex flex-col align-stretch gap-4">
+            <a href={homeUrl} class={linkClasses}>Home</a>
 
-        <div class="h-px border-t border-dashed border-white/40"></div>
-        {
-            tocEntries.map((entry) => (
-                <PartialLink
-                    target={ElementID.CONTENT_WRAPPER_SELECTOR}
-                    clientUrl={entry.clientUrl}
-                    contentUrl={entry.contentUrl}
-                    class={linkClasses}
-                >
-                    {entry.label}
-                </PartialLink>
-            ))
-        }
-        <div class="h-px border-t border-dashed border-white/40"></div>
-        {
-            basicPathLinks.map((entry) => (
-                <PartialLink
-                    target={ElementID.CONTENT_WRAPPER_SELECTOR}
-                    clientUrl={entry.clientUrl}
-                    contentUrl={entry.contentUrl}
-                    class={linkClasses}
-                >
-                    {entry.label}
-                </PartialLink>
-            ))
-        }
+            <div class="h-px border-t border-dashed border-white/40"></div>
+            {
+                tocEntries.map((entry) =>
+                    usePartialLinks ? (
+                        <PartialLink
+                            target={ElementID.CONTENT_WRAPPER_SELECTOR}
+                            clientUrl={entry.clientUrl}
+                            contentUrl={entry.contentUrl}
+                            class={linkClasses}
+                        >
+                            {entry.label}
+                        </PartialLink>
+                    ) : (
+                        <a href={entry.clientUrl} class={linkClasses}>
+                            {entry.label}
+                        </a>
+                    ),
+                )
+            }
+            <div class="h-px border-t border-dashed border-white/40"></div>
+            {
+                basicPathLinks.map((entry) =>
+                    usePartialLinks ? (
+                        <PartialLink
+                            target={ElementID.CONTENT_WRAPPER_SELECTOR}
+                            clientUrl={entry.clientUrl}
+                            contentUrl={entry.contentUrl}
+                            class={linkClasses}
+                        >
+                            {entry.label}
+                        </PartialLink>
+                    ) : (
+                        <a href={entry.clientUrl} class={linkClasses}>
+                            {entry.label}
+                        </a>
+                    ),
+                )
+            }
+
+            <div class="h-px border-t border-dashed border-white/40"></div>
+
+            {/* Theme info */}
+            <div class={textElementClasses}>
+                <span class="hidden dark:inline">Dark</span>
+                <span class="dark:hidden">Light</span>
+            </div>
+        </div>
     </div>
 </div>

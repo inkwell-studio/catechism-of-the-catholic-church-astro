@@ -3,6 +3,7 @@
 # Tasks to complete now
 
 - [ ] implement UI proofs of concept (e.g. React UI interactivity — especially with HTMX and Astro components)
+  - [ ] consider watching this, or other videos, first: https://www.youtube.com/watch?v=9iJK-Vl6PhE&list=PLlNdnoKwDZdxdh22NW9r3YAoMsM-xaSeb
   - [ ] implement Action Bar menus
     - [ ] Table of Contents
     - [ ] Search

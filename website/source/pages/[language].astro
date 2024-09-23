@@ -1,0 +1,13 @@
+---
+import HomeLayout from '@layouts/home-layout.astro';
+
+import { ContentRoute, getHomePageRoutes } from '@pages/_routes';
+
+export function getStaticPaths(): Array<ContentRoute> {
+    return getHomePageRoutes();
+}
+
+const language = Astro.params.language;
+---
+
+<HomeLayout language={language} />

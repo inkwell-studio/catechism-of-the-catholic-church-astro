@@ -3,12 +3,12 @@ import { DEFAULT_LANGUAGE } from '@catechism/source/types/types';
 
 import ApostolicConstitution from '@components/apostolic-constitution/apostolic-constitution.astro';
 import ApostolicLetter from '@components/apostolic-letter/apostolic-letter.astro';
-import BaseLayout from '@layouts/base-layout.astro';
 import CatechismContent from '@components/catechism-content/catechism-content.astro';
 import Glossary from '@components/glossary.astro';
-import Home from '@components/home/content.astro';
 import IndexCitations from '@components/index-citations.astro';
 import IndexTopics from '@components/index-topics.astro';
+
+import ContentLayout from '@layouts/content-layout.astro';
 
 import { getAllParagraphNumbersSync, getParagraphPathIdMapSync, getSemanticPathPathIdMapSync } from '@logic/artifacts';
 import { getLanguageTag, getParagraphNumber, removeLanguageTag } from '@logic/routing';
@@ -26,7 +26,6 @@ export function getStaticPaths(): Array<ContentRoute> {
 const language = getLanguageTag(Astro.params.path) ?? DEFAULT_LANGUAGE;
 const path = removeLanguageTag(Astro.params.path, language);
 
-const isHome = !path;
 const isGlossary = BasicPath.GLOSSARY === path;
 const isIndexTopics = BasicPath.INDEX_TOPICS === path;
 const isIndexCitations = BasicPath.INDEX_CITATIONS === path;
@@ -53,9 +52,7 @@ if (isPotentialContentPath) {
 const isCatechismContent = !!pathID;
 ---
 
-<BaseLayout language={language}>
-    {isHome && <Home language={language} />}
-
+<ContentLayout language={language}>
     {isGlossary && <Glossary language={language} />}
 
     {isIndexTopics && <IndexTopics language={language} />}
@@ -67,4 +64,4 @@ const isCatechismContent = !!pathID;
     {isApostolicConstitution && <ApostolicConstitution language={language} />}
 
     {isCatechismContent && <CatechismContent pathID={pathID} language={language} />}
-</BaseLayout>
+</ContentLayout>
