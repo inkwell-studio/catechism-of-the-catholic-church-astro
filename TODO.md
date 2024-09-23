@@ -126,6 +126,7 @@
 - [ ] implement hierarchical navigation
 - [ ] implement historical navigation
 - [ ] implement "copy" buttons (click a button to copy the entire text of a paragraph, quote, etc.)
+- [ ] consider using Framer Motion for animations: https://www.framer.com/motion/
 
 # Tasks to complete once it has been decided to release a production-ready version
 

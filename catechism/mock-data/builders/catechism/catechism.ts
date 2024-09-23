@@ -44,6 +44,7 @@ export function buildCatechism(): CatechismStructure {
             buildPart(1),
             buildPart(2),
             buildPart(3),
+            buildPart(4),
         ],
     };
 
