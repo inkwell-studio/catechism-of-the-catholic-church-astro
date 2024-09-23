@@ -5,6 +5,8 @@
 - [ ] implement UI proofs of concept (e.g. React UI interactivity — especially with HTMX and Astro components)
   - [ ] implement language-switcher
     - [ ] merge
+  - [ ] watch: https://www.youtube.com/watch?v=9iJK-Vl6PhE&list=PLlNdnoKwDZdxdh22NW9r3YAoMsM-xaSeb
+  - [ ] read: https://react-spectrum.adobe.com/react-aria/styling.html#tailwind-css
   - [ ] consider watching this, or other videos, first: https://www.youtube.com/watch?v=9iJK-Vl6PhE&list=PLlNdnoKwDZdxdh22NW9r3YAoMsM-xaSeb
   - [ ] implement Action Bar menus
     - [ ] Table of Contents

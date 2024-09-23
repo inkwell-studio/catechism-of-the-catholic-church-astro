@@ -7,6 +7,8 @@ import { path as joinPaths } from '@logic/navigation-utils';
 import { getParagraphNumber, removeLanguageTag } from '@logic/routing';
 import { BasicPath, basicPaths } from '@pages/_routes';
 
+import { Menu } from './menu';
+
 interface Props {
     currentLanguage: Language;
 }
@@ -24,7 +26,7 @@ const isBasicPath = basicPaths.includes(path as BasicPath);
 const paragraphNumber = getParagraphNumber(path);
 const languageUrlMap = pathID ? pathIdLanguageUrlMap[pathID] : [];
 
-const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
+const menuItems = getLanguages().map(([languageKey, language]) => {
     let segment = '';
 
     if (!path) {
@@ -40,29 +42,21 @@ const languagesAndUrls = getLanguages().map(([languageKey, language]) => {
         }
     }
 
-    // prettier-ignore
-    const languagePrefix = DEFAULT_LANGUAGE === language
-        ? ''
-        : language;
+    let url = null;
+    if (language !== currentLanguage) {
+        // prettier-ignore
+        const languagePrefix = DEFAULT_LANGUAGE === language
+            ? ''
+            : language;
 
-    // prettier-ignore
-    const url = !languagePrefix && !segment
-        ? '/'
-        : joinPaths('/', languagePrefix, segment);
+        // prettier-ignore
+        url = !languagePrefix && !segment
+            ? '/'
+            : joinPaths('/', languagePrefix, segment);
+    }
 
-    return { languageKey, language, url };
+    return { label: languageKey, url: url };
 });
 ---
 
-<ol class="flex gap-4 p-4 border rounded-sm">
-    {
-        languagesAndUrls.map(({ languageKey, language, url }) => {
-            return (
-                <li>
-                    {language === currentLanguage && <div class="opacity-50">{languageKey}</div>}
-                    {language !== currentLanguage && <a href={url}>{languageKey}</a>}
-                </li>
-            );
-        })
-    }
-</ol>
+<Menu items={menuItems} client:load />
