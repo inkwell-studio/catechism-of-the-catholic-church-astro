@@ -4,6 +4,9 @@
 
 This is a website for the _Catechism of the Catholic Church_, built with [Astro](https://astro.build/) and [Deno](https://deno.com/).
 
+It is available at [https://catholic-catechism-astro.deno.dev/](https://catholic-catechism-astro.deno.dev/).\
+Note that the UI styling is currently in a development state, and is only meant to be functional.
+
 ## Repository structure
 
 - `catechism` contains the Catechism data
