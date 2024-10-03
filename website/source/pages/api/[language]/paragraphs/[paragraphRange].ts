@@ -35,7 +35,7 @@ export const GET: APIRoute = ({ params }) => {
 
     if (paragraphRange) {
         const range = paragraphRange
-            // Decode a UTF-8-encoded en dashe
+            // Decode a UTF-8-encoded en dash
             .replace('%E2%80%93', '–')
             // Replace a hyphen with an en dash
             .replace('-', '–') as NumberOrNumberRange;
